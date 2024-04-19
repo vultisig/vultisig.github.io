@@ -21,6 +21,10 @@ body {
     overflow: hidden;
 }
 
+.rounded {
+    border-radius: 10px !important;
+}
+
 #circle-top-left {
     position: absolute;
     top: -300px;
@@ -275,10 +279,12 @@ hr.solid {
     color: linear-gradient(124deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%); */
 
 }
-.feature-img-size{
+
+.feature-img-size {
     width: 56px;
     height: 56px;
 }
+
 .gradient-border-left {
     position: relative;
 }
@@ -298,31 +304,32 @@ hr.solid {
     width: 440px;
     background: radial-gradient(circle, rgba(51, 230, 191, 0.57) 0%, rgba(16, 16, 16, 1) 100%);
     filter: blur(15px);
+    margin-top: -50px;
 }
 
 @media (min-width: 576px) {
     .container {
-        max-width: 90%;
+        max-width: 95%;
 
     }
 }
 
 @media (min-width: 768px) {
     .container {
-        max-width: 85%;
+        max-width: 90%;
 
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        max-width: 80%;
+        max-width: 85%;
 
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 75%;
+        max-width: 80%;
     }
 }
