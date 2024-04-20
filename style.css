@@ -1,17 +1,65 @@
 @font-face {
     font-family: 'Menlo';
     src: url('fonts/Menlo.ttf');
-    /* adjust the path accordingly */
 }
 
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat.ttf');
-    /* adjust the path accordingly */
+
 }
 
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('fonts/Montserrat-SemiBold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf');
+
+}
+
+/* FONTS */
+.monserrat {
+    font-family: 'Montserrat';
+}
+
+.monserrat-bold {
+    font-family: 'Montserrat-Bold';
+}
+
+.monserrat-semibold {
+    font-family: 'Montserrat-SemiBold';
+}
+
+.monserrat-regular {
+    font-family: 'Montserrat-Regular';
+}
+.monserrat-medium {
+    font-family: 'Montserrat-Regular';
+}
+
+.menlo {
+    font-family: 'Menlo';
+}
+
+/*  */
 body {
     background: #02122B;
+    /* -webkit-font-smoothing: antialiased; */
 }
 
 .content {
@@ -23,6 +71,18 @@ body {
 
 .rounded {
     border-radius: 10px !important;
+}
+
+p {
+    letter-spacing: -0.5px;
+    line-height: 150%;
+    margin: 0;
+}
+
+.p-text {
+    letter-spacing: -0.5px;
+    line-height: 150%;
+    margin: 0;
 }
 
 #circle-top-left {
@@ -174,13 +234,7 @@ h2 {
     font-size: medium;
 }
 
-.monserrat {
-    font-family: 'Montserrat';
-}
 
-.menlo {
-    font-family: 'Menlo';
-}
 
 .navbar {
     padding-block: 25px;
