@@ -1,0 +1,109 @@
+@import url(./style.css);
+
+
+
+.image {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slogan {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    font-size: 60pt;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 117%;
+
+}
+
+.header-img {
+    width: 518px;
+    height: 500px;
+}
+
+#back-logo {
+    position: absolute;
+    bottom: -8rem;
+    right: 2rem;
+}
+
+
+
+.blue-section {
+    position: relative;
+    background-color: #061B3A;
+    color: white;
+    padding-block: 50px;
+    border-radius: 0.75rem;
+}
+
+.text-small {
+    font-size: medium;
+    font-weight: 100;
+
+}
+
+.year-pin {
+    position: absolute;
+    right: 3rem;
+    top: -2rem;
+}
+
+.store {
+    margin-top: 150px;
+    position: relative;
+    background: rgb(0, 32, 119);
+    background: linear-gradient(66deg, rgba(0, 32, 119, 1) 0%, rgba(51, 230, 191, 1) 100%);
+    /* color: white; */
+    padding-block: 50px;
+    border-radius: 0.75rem;
+
+}
+
+.email-form {
+    display: flex;
+    justify-content: end;
+}
+
+#inputemail {
+    background: #061B3A !important;
+    border-color: transparent;
+    color: white
+}
+
+::placeholder {
+    color: #BDBDBD !important;
+}
+
+.feature-img-size {
+    width: 56px;
+    height: 56px;
+}
+
+.gradient-border-left {
+    position: relative;
+}
+
+.gradient-border-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    border-left: 5px solid;
+    border-image: linear-gradient(rgba(51, 230, 191, 1), rgba(4, 57, 199, 1)) 5;
+}
+
+#img-glow {
+    height: 50px;
+    width: 440px;
+    background: radial-gradient(circle, rgba(51, 230, 191, 0.57) 0%, rgba(16, 16, 16, 1) 100%);
+    filter: blur(15px);
+    margin-top: -50px;
+}

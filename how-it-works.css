@@ -1,0 +1,63 @@
+@import url(./style.css);
+
+.slogan {
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: start;
+    font-size: 60pt;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 117%;
+
+}
+
+#how-to-back-logo {
+    position: absolute;
+    top: 52%;
+    left: 10rem;
+    height: 100px;
+    width: 100px;
+}
+
+.header-img-container {
+    position: relative;
+    width: 512px;
+    height: 500px;
+    /* overflow: hidden; */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 400px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(4, 57, 199, 0.56) 0%, rgba(2, 18, 42, 0.59) 100%);
+    filter: blur(50px);
+}
+
+.header-img {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-box {
+    border-radius: 20px;
+    background-color: #061B3A;
+}
+
+.top-left-gradient {
+    background: rgb(0, 32, 119);
+    background: linear-gradient(125deg, rgba(0, 32, 119, 0.88) 0%, rgba(6, 27, 58, 1) 100%);
+}
+
+.bottom-right-gradient {
+    background: rgb(0, 32, 119);
+    background: linear-gradient(321deg, rgba(0, 32, 119, 0.88) 0%, rgba(6, 27, 58, 1) 100%);
+}
