@@ -9,7 +9,6 @@
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;
-
 }
 
 
@@ -20,6 +19,19 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
+
+@media (min-width: 576px) {
+    .faq {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .faq {
+        width: 100%;
+    }
+}
+
 
 .accordion-item {
     border: none;

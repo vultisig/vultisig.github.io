@@ -5,12 +5,26 @@
     /* display: flex; */
     /* justify-content: center; */
     text-align: start;
-    font-size: 60pt;
+    /* font-size: 60pt; */
+    font-size: 5rem;
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;
 
 }
+
+@media (min-width: 576px) {
+    .m-left {
+        margin-left: -5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .m-left {
+        margin-left: -5rem;
+    }
+}
+
 
 .header-img-container {
     position: relative;
