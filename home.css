@@ -15,7 +15,8 @@
     display: flex;
     justify-content: center;
     text-align: start;
-    font-size: 60pt;
+    /* font-size: 60pt; */
+    font-size: calc(1rem + 4vw);
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;
@@ -54,6 +55,15 @@
     right: 3rem;
     top: -2rem;
 }
+
+@media (max-width: 768px) {
+    .year-pin {
+        width: 100px;
+        height: 100px;
+        right: 1rem;
+    }
+}
+
 
 .store {
     margin-top: 150px;
@@ -107,3 +117,12 @@
     filter: blur(15px);
     margin-top: -50px;
 }
+
+@media (max-width: 768px) {
+    #img-glow {
+        height: 25px;
+        width: 240px;
+        margin-top: 0px;
+    }
+}
+

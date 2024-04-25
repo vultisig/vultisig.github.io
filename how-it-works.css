@@ -5,11 +5,16 @@
     /* display: flex; */
     /* justify-content: center; */
     text-align: start;
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: calc(1rem + 4vw);
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;
 
+}
+
+.sub-slogan {
+    font-size: 22pt
 }
 
 @media (min-width: 576px) {
@@ -53,7 +58,6 @@
 
 .header-img {
     position: relative;
-
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -75,37 +79,45 @@
 }
 
 
-
-@media (max-width: 576px) {
+@media (min-width: 993px) {
     .trusted-devices-cont {
-        height: 640px;
-
-    }
-
-    .trusted-devices-img-cont {
-        height: 400px;
+        height: 550px !important;
     }
 
     .trusted-devices-img {
-        height: 300px;
+        height: 550px !important;
+    }
+
+    .trusted-devices-img-cont {
+        height: 560px !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .trusted-devices-cont {
+        height: 750px !important;
+    }
+
+    .trusted-devices-img {
+        height: 350px !important;
+    }
+
+    .trusted-devices-img-cont {
+        height: 360px !important;
+    }
+
+    .slogan {
+        text-align: center;
+    }
+
+    .sub-slogan {
+        font-size: 18pt;
+        margin: auto;
     }
 }
 
 @media (max-width: 768px) {
-    .trusted-devices-cont {
-        height: 800px;
-    }
-
-    .trusted-devices-img-cont {
-        height: 300px;
-    }
-
-    .trusted-devices-img {
-        height: 300px;
-    }
-}
-
-@media (max-width: 992px) {
     .trusted-devices-cont {
         height: 850px !important;
     }
@@ -115,30 +127,38 @@
     }
 
     .trusted-devices-img-cont {
-        height: 410px;
+        height: 410px !important;
+    }
+
+    .slogan {
+        text-align: center;
+    }
+
+    .sub-slogan {
+        font-size: 16pt;
+        margin: auto;
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 576px) {
     .trusted-devices-cont {
-        height: 640px;
+        height: 850px !important;
+    }
+
+    .trusted-devices-img-cont {
+        height: 300px !important;
     }
 
     .trusted-devices-img {
-        height: 700px;
+        height: 300px !important;
     }
 
-    .trusted-devices-img {
-        height: 650px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .trusted-devices-cont {
-        height: 640px;
+    .slogan {
+        text-align: center;
     }
 
-    .trusted-devices-img {
-        height: 600px;
+    .sub-slogan {
+        font-size: 16pt;
+        margin: auto;
     }
 }

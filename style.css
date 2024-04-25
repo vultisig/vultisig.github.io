@@ -57,11 +57,17 @@
     font-family: 'Menlo';
 }
 
+
 /*  */
 body {
     background: #02122B;
+    font-size: 16px;
     /* -webkit-font-smoothing: antialiased; */
 }
+
+
+/* CONTAINER */
+
 
 .content {
     margin: auto;
@@ -232,6 +238,10 @@ h2 {
     color: #F3F4F5 !important;
 }
 
+.ps-7 {
+    padding-left: 7rem;
+}
+
 .color-neutral-200 {
     color: #EBECED !important;
 }
@@ -260,30 +270,54 @@ hr.solid {
     font-size: medium;
 }
 
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 95%;
-
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 90%;
-
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 85%;
-
-    }
-}
-
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 80%;
+
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+
+    }
+
+
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    small {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    .ps-7 {
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+
 }
