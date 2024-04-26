@@ -5,7 +5,9 @@
     /* display: flex; */
     /* justify-content: center; */
     text-align: center;
-    font-size: 60pt;
+    /* font-size: 60pt; */
+
+    font-size: calc(1.5rem + 4vw);
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;

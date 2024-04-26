@@ -6,30 +6,28 @@
     /* justify-content: center; */
     text-align: start;
     /* font-size: 60pt; */
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: calc(1rem + 4vw);
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;
 
 }
 
-@media (min-width: 576px) {
-    .m-left {
-        margin-left: -5rem;
-    }
+.sub-slogan {
+    font-size: 18px
 }
 
-@media (min-width: 768px) {
-    .m-left {
-        margin-left: -5rem;
-    }
-}
+
+
 
 
 .header-img-container {
     position: relative;
-    width: 512px;
-    height: 500px;
+    /* width: 512px;
+    height: 500px; */
+    width: 80%;
+    height: 80%;
     /* overflow: hidden; */
 }
 
@@ -95,4 +93,58 @@
     height: 120px;
     width: 120px;
 
+}
+
+@media (min-width: 993px) {
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .m-left {
+        /* margin-left: -5rem; */
+    }
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .m-left {
+        /* margin-left: -5rem; */
+    }
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+
+    .background-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .background-overlay {
+        width: 200px;
+        height: 200px;
+    }
+
+    .background-circle-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .background-overlay-2 {
+        width: 200px;
+        height: 200px;
+    }
 }
