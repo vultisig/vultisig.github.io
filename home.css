@@ -124,5 +124,11 @@
         width: 240px;
         margin-top: 0px;
     }
-}
 
+    #back-logo {
+        width: 100px;
+        bottom: 1rem;
+        left: 2rem;
+    }
+
+}

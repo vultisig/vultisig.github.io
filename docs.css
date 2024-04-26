@@ -113,7 +113,12 @@
     .m-left {
         /* margin-left: -5rem; */
     }
-
+    #docs-back-logo {
+        top: 10%;
+        left: 5rem;
+        height: 120px;
+        width: 120px;
+    }
     .sub-slogan {
         font-size: 16px !important;
     }
@@ -146,5 +151,11 @@
     .background-overlay-2 {
         width: 200px;
         height: 200px;
+    }
+    #docs-back-logo {
+        top: 10%;
+        left: 5rem;
+        height: 120px;
+        width: 120px;
     }
 }
