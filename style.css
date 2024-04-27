@@ -79,7 +79,9 @@ body {
 .rounded {
     border-radius: 10px !important;
 }
-
+a{
+    text-decoration: none;
+}
 p {
     letter-spacing: -0.5px;
     line-height: 150%;
@@ -268,6 +270,23 @@ hr.solid {
 
 .nav-link {
     font-size: medium;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.discord-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.discord-link-img {
+    width: 40px;
+    height: 30px;
 }
 
 @media (min-width: 1200px) {
