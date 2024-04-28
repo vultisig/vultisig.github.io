@@ -260,9 +260,6 @@ hr.solid {
     background: linear-gradient(143deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: rgb(51, 230, 191);
-    color: linear-gradient(124deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%); */
-
 }
 
 .btn-color {
@@ -291,15 +288,12 @@ hr.solid {
     height: 30px;
 }
 
-#footer-object {
-    width: 100%;
-    height: 450px;
-}
 
 @media (min-width: 993px) {
     .container {
         max-width: 80%;
     }
+
 
 }
 
@@ -309,20 +303,12 @@ hr.solid {
         max-width: 80%;
 
     }
-
-    #footer-object {
-        height: 550px;
-    }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 80%;
 
-    }
-
-    #footer-object {
-        height: 550px;
     }
 
     small {
@@ -347,9 +333,5 @@ hr.solid {
 @media (max-width: 576px) {
     .container {
         max-width: 80%;
-    }
-
-    #footer-object {
-        height: 550px;
     }
 }

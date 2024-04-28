@@ -26,36 +26,7 @@
 
 
             <div class="header mb-2">
-                <nav class="navbar navbar-expand-lg navbar-dark px-4 mb-5"
-                    style="background: #061B3A; border-radius: .75rem;">
-                    <button class="navbar-toggler ّ" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggleMain" aria-controls="navbarToggleMain" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand mx-auto d-flex align-items-center" href="./index.html">
-                        <img src="./img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                        <strong style="font-size: x-large;" class="monserrat-semibold">Voltix</strong>
-                    </a>
-                    <div id="navbarToggleMain" class="collapse navbar-collapse justify-content-end monserrat-medium">
-                        <ul class="navbar-nav align-items-center">
-                            <li class="nav-item active mx-lg-3 mx-auto">
-                                <a class="nav-link my-sm-3  " href="./how-it-works.html">How it Works </a>
-                            </li>
-                            <li class="nav-item mx-3 my-sm-2">
-                                <a class="nav-link " href="./docs.html">Docs</a>
-                            </li>
-                            <li class="nav-item mx-3 my-sm-2">
-                                <a class="nav-link monserrat-bold " href="./vix.html">$VIX</a>
-                            </li>
-                            <a class="btn px-lg-4 ms-lg-5  btn-primary my-2 mx-lg-2 my-sm-0 btn-color d-flex align-items-center justify-content-center rounded"
-                                style="height: 48px; width: 193px;" href="https://testflight.apple.com/join/CHHICwnO"
-                                target="_blank">
-                                Download App
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
+                <div id="navbar"></div>
 
 
             </div>
@@ -73,8 +44,10 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body monserrat-regular color-neutral-200">
-                                <p> Get 2 or more of your devices together and connected to your local WiFi, Hotspot or internet. 
-                                    Then simply pair them via QR code and create a new vault. You can then send funds in.</p>
+                                <p> Get 2 or more of your devices together and connected to your local WiFi, Hotspot or
+                                    internet.
+                                    Then simply pair them via QR code and create a new vault. You can then send funds
+                                    in.</p>
 
                             </div>
                         </div>
@@ -120,7 +93,8 @@
                         <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body monserrat-regular color-neutral-200">
-                                <p> Voltix only charges a flat fee on swap and bridging. There are no other hidden fees.</p>
+                                <p> Voltix only charges a flat fee on swap and bridging. There are no other hidden fees.
+                                </p>
 
                             </div>
                         </div>
@@ -171,9 +145,38 @@
     </div>
 
     <script>
-        document.getElementById('footer').innerHTML = '<object id="footer-object" type="text/html" data="./footer.html" ></object>';
-    </script>
+        function loadFooter() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', './footer.html', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('footer').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
 
+        function loadNavbar() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', './navbar.html', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('navbar').innerHTML = xhr.responseText;
+                    var currentPath = window.location.pathname;
+                    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
+                    navbarLinks.forEach(function (link) {
+                        var linkPath = link.getAttribute('href');
+                        if (currentPath === linkPath) {
+                            link.classList.add('gradient-text', 'active');
+                        }
+                    });
+                }
+            };
+            xhr.send();
+        }
+        loadNavbar();
+        loadFooter();
+    </script>
 </body>
 
 </html>
