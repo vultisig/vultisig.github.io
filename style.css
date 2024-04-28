@@ -79,9 +79,11 @@ body {
 .rounded {
     border-radius: 10px !important;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 p {
     letter-spacing: -0.5px;
     line-height: 150%;
@@ -289,39 +291,40 @@ hr.solid {
     height: 30px;
 }
 
-@media (min-width: 1200px) {
+#footer-object {
+    width: 100%;
+    height: 450px;
+}
+
+@media (min-width: 993px) {
     .container {
         max-width: 80%;
     }
-}
-
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 80%;
-
-    }
-
 
 }
 
-@media (min-width: 768px) {
+
+@media (max-width: 992px) {
     .container {
         max-width: 80%;
 
     }
 
-
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 80%;
+    #footer-object {
+        height: 550px;
     }
 }
-
 
 @media (max-width: 768px) {
+    .container {
+        max-width: 80%;
+
+    }
+
+    #footer-object {
+        height: 550px;
+    }
+
     small {
         font-size: 18px;
     }
@@ -339,4 +342,14 @@ hr.solid {
         transform: translateX(-30px);
     }
 
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 80%;
+    }
+
+    #footer-object {
+        height: 550px;
+    }
 }

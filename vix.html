@@ -90,7 +90,7 @@
                         <div class="px-5 justify-content-center">
                             <div class="text-uppercase monserrat-medium gradient-text m-auto mt-5 mt-lg-0"
                                 style="font-size: medium;">
-                                circulationg supply</div>
+                                circulating supply</div>
                             <div class="monserrat-bold text-center " style="font-size: xx-large;">80,000,000</div>
                         </div>
                         <div class="px-5">
@@ -195,67 +195,7 @@
                     src="./img/back-logo.svg" alt="VOLTIX logo">
             </div>
 
-            <div class="footer mt-5  text-light">
-                <div class="row" id="contact">
-                    <div class="col-md-6 monserrat-semibold">
-                        <h5>JOIN THE DISCORD TO REQUEST NEW <br> FEATURES!</h5>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://discord.gg/54wEtGYxuv" target="_blank">
-                            <button  type="submit" style="width: 200px;"
-                                class="btn btn-primary btn-color mb-2 py-3 rounded discord-button"> <img class="discord-link-img"
-                                    src="./img/discord-white.png" alt="Discord"> DISCORD
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <hr class="solid mt-5">
-                <div class="row mt-5 mb-5">
-                    <div class="col-6">
-                        <div class="d-flex align-items-center mb-5"> <img src="./img/logo.svg" alt="Voltix">
-                            <strong class=" monserrat-semibold" style="font-size:xx-large">Voltix</strong>
-                        </div>
-                        <div class="mt-5"><a href="https://github.com/voltix-vault/" target="_blank"> <img
-                                    src="./img/github-sign.svg" alt="Github"></a>
-                            <a class="mx-3" href="https://twitter.com/voltixvault" target="_blank"> <img
-                                    src="./img/twitter.svg" alt="Twitter"></a>
-                            <a href="https://discord.gg/54wEtGYxuv" target="_blank"> <img class="social-icon"
-                                    src="./img/discord.png" alt="Discord"></a>
-                        </div>
-                        <div class="mt-5 monserrat-regular color-neutral-200"> <span>@ Copyright 2024 - Voltix.</span>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div>
-                            <div class="row justify-content-end">
-                                <div class="col-md-3">
-                                    <ul class="list-unstyled monserrat-regular">
-                                        <li class="mb-2">
-                                            <strong>Support</strong>
-                                        </li>
-                                        <li> <a href="./faq.html" class="nav-link color-neutral-200">FAQs</a></li>
-                                        <li> <a href="https://twitter.com/voltixvault" target="_blank"
-                                                class="nav-link color-neutral-200">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <ul class="list-unstyled monserrat">
-                                        <li class="mb-2">
-                                            <strong>Legal</strong>
-                                        </li>
-                                        <li> <a href="https://github.com/voltix-vault/docs/blob/main/other/terms.md"
-                                                target="_blank" class="nav-link color-neutral-200">Terms of Service</a>
-                                        </li>
-                                        <li> <a href="https://github.com/voltix-vault/docs/blob/main/other/privacy.md"
-                                                target="_blank" class="nav-link color-neutral-200">Privacy Policy</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="footer"></div>
 
             <div class="circle-top-left"></div>
             <div class="circle-top-left-glow"></div>
@@ -268,7 +208,9 @@
 
     </div>
 
-
+    <script>
+        document.getElementById('footer').innerHTML = '<object id="footer-object" type="text/html" data="./footer.html" ></object>';
+    </script>
 
 </body>
 
