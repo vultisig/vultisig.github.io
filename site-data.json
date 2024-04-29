@@ -1,0 +1,160 @@
+{
+    "navbar": {
+        "navbar-links": [
+            {
+                "name": "How it Works",
+                "url": "/how-it-works.html"
+            },
+            {
+                "name": "Docs",
+                "url": "/docs.html"
+            },
+            {
+                "name": "$VLTX",
+                "url": "/vix.html"
+            }
+        ],
+        "download": {
+            "name:": "Download App",
+            "download-link": "https://testflight.apple.com/join/CHHICwnO"
+        }
+    },
+    "footer": {
+        "discord": {
+            "title": "JOIN THE DISCORD TO REQUEST NEW <br> FEATURES!",
+            "link": "https://discord.gg/54wEtGYxuv"
+        },
+        "social": {
+            "github-link": "https://github.com/voltix-vault/",
+            "twitter-link": "https://twitter.com/voltixvault",
+            "discord-link": "https://discord.gg/54wEtGYxuv"
+        },
+        "footer-links": [
+            {
+                "title": "Support",
+                "links": [
+                    {
+                        "name": "FAQs",
+                        "url": "/faq.html"
+                    },
+                    {
+                        "name": "Contact Us",
+                        "url": "https://twitter.com/voltixvault"
+                    }
+                ]
+            },
+            {
+                "title": "Legal",
+                "links": [
+                    {
+                        "name": "Terms of Service",
+                        "url": "https://github.com/voltix-vault/docs/blob/main/terms.md"
+                    },
+                    {
+                        "name": "Privacy Policy",
+                        "url": "https://github.com/voltix-vault/docs/blob/main/privacy.md"
+                    }
+                ]
+            }
+        ]
+    },
+    "home": {
+        "header": {
+            "slogan": "SECURE. SIMPLE.</br> <span class='ps-5'>COMPLETELY IN</span> </br> <span class='gradient-text'>YOUR</span> CONTROL.",
+            "sub-slogan": "Introducing <strong class='monserrat-semibold'>Voltix</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements."
+        },
+        "segment-1": {
+            "main-title": "PROBLEMS",
+            "sub-title": "WHAT IS WRONG WITH <br>WALLETS",
+            "items": [
+                {
+                    "title": "Single-signature wallets are dangerous",
+                    "description": "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your metamask? Forget your backup phrase? Get your iCloud hacked? <strong class='monserrat-bold'>One mistake and forever rekt.</strong>"
+                },
+                {
+                    "title": "Hardware wallets are clunky",
+                    "description": "Small screens, small buttons, annoying interfaces. Complicated setup instructions, scary firmware updates and confusing transactions. <br> <strong class='monserrat-bold'>Why can’t it be better.</strong>"
+                },
+                {
+                    "title": "Multi-sig wallets are painful",
+                    "description": "Lose one key, lose it all. Multi-sig is the solution, but does not work natively. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. <strong class='monserrat-bold'>If only there was something that works.</strong>"
+                }
+            ]
+        },
+        "segment-2": {
+            "main-title": "THE <span class='gradient-text'>SOLUTION</span> ",
+            "sub-title": "VOLTIX is the next evolution in crypto vaults",
+            "items": [
+                {
+                    "title": "USE YOUR EXISTING DEVICES",
+                    "description": "Forget hardware - use your phone as a co-signer device! Large screens, excellent user experience - easily verify transactions. Camera, bluetooth, wifi, cellular, USBC, secure enclaves, biometrics - all there."
+                },
+                {
+                    "title": "EVERYONE HAS THEM ALREADY",
+                    "description": "Everyone has a phone, laptop or tablet. They are fast and powerful. They have full encryption and security. They don’t look like crypto wallets! You don’t need anything else."
+                },
+                {
+                    "title": "BUILT WITH MAGIC",
+                    "description": "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key is vulnerable. No seed phrases. And native to all crypto networks."
+                }
+            ]
+        },
+        "segment-3": {
+            "main-title": "USER EXPERIENCE",
+            "sub-title": "SEAMLESS SECURITY",
+            "items": [
+                {
+                    "title": "Vault Generation",
+                    "description": "KeyGen time: <strong class='monserrat-bold'>10 seconds.</strong> <br> 2of2, 2of3, or 3of4 - choose your vault type. Key generation is fast. No device holds the vault private key."
+                },
+                {
+                    "title": "Transaction Signing",
+                    "description": "KeySign time: <strong class='monserrat-bold'>5 seconds.</strong><br> One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and must be done in-person."
+                },
+                {
+                    "title": "Re-sharing",
+                    "description": "Reshare Time: <strong class='monserrat-bold'>10 seconds.</strong> <br> Lost a device? Replace it easily without changing the vault. Want to increase security? Go from 2of3 to 3of4 easily."
+                }
+            ]
+        },
+        "segment-4": {
+            "main-title": "OTHER <span class='gradient-text'>FEATURES</span> ",
+            "items": [
+                {
+                    "title": "Full DeFi",
+                    "description": "Swaps, Bridging, DeFi - right from your Vault."
+                },
+                {
+                    "title": "Remote Signing",
+                    "description": "Sign securely with a remote co-signer around the world."
+                },
+                {
+                    "title": "Transaction Policies",
+                    "description": "Nominate spend limits, address whitelists and more."
+                }
+            ]
+        },
+        "segment-5": {
+            "main-title": "WHO IS <span class='gradient-text'>VOLTIX </span>FOR ",
+            "items": [
+                {
+                    "title": "WHALES",
+                    "description": "If you have more than $100k in crypto, you MUST consider upgrading to a TSS vault. Your funds are at-risk on all other wallets. <br> Download it now. "
+                },
+                {
+                    "title": "FUNDS",
+                    "description": "Voltix is the open-source audited alternative to your current “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world."
+                },
+                {
+                    "title": "TREASURIES",
+                    "description": "TSS is natively compatible to all chains. Together with transaction policies, designate your leads the ability to pay staff with limits, whitelists and more."
+                }
+            ]
+        },
+        "store": {
+            "title": "SECURE YOUR DIGITAL <br> ASSETS NOW",
+            "app-store-link": "https://testflight.apple.com/join/CHHICwnO",
+            "play-store-link": "#"
+        }
+    }
+}
