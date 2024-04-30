@@ -33,7 +33,7 @@
                     <div class="row  py-5 align-items-center">
                         <div class="col-lg-5 ps-lg-5" style="position: relative;">
                             <div class="monserrat-bold  slogan ms-auto">
-                                <strong>THE <span class="gradient-text">$VLTX</span> <br>TOKEN</strong>
+                                <strong data-query="vltx.header.title"> </strong>
                                 <br>
 
                             </div>
@@ -48,33 +48,32 @@
 
                         </div>
                         <div class="col-lg-3">
-                            <div class="monserrat-bold slogan text-center text-lg-start"><strong>$0.01</strong></div>
+                            <div class="monserrat-bold slogan text-center text-lg-start"><strong
+                                    data-query="vltx.header.price"></strong></div>
                         </div>
                     </div>
                     <div class="mt-5 pt-4 d-flex" style="justify-content: space-around;flex-wrap: wrap;">
                         <div class="px-5">
                             <div class="text-uppercase monserrat-medium gradient-text mx-lg-0 mx-auto mt-5 mt-lg-0"
-                                style="font-size: medium;">max
-                                supply</div>
-                            <div class="monserrat-bold text-start" style="font-size: xx-large;">100,000,000</div>
+                                style="font-size: medium;" data-query="vltx.header.data.0.title"></div>
+                            <div class="monserrat-bold text-start" style="font-size: xx-large;"
+                                data-query="vltx.header.data.0.value"></div>
                         </div>
                         <div class="px-5 justify-content-center">
                             <div class="text-uppercase monserrat-medium gradient-text m-auto mt-5 mt-lg-0"
-                                style="font-size: medium;">
-                                circulating supply</div>
-                            <div class="monserrat-bold text-center " style="font-size: xx-large;">80,000,000</div>
+                                style="font-size: medium;" data-query="vltx.header.data.1.title"></div>
+                            <div class="monserrat-bold text-center " style="font-size: xx-large;"
+                                data-query="vltx.header.data.0.value"></div>
                         </div>
                         <div class="px-5">
                             <div class="text-uppercase monserrat-medium gradient-text mx-lg-0 mx-auto mt-5 mt-lg-0"
-                                style="font-size: medium;">burnt
-                                supply</div>
-                            <div class="monserrat-bold text-start" style="font-size: xx-large;">0</div>
+                                style="font-size: medium;" data-query="vltx.header.data.2.title"></div>
+                            <div class="monserrat-bold text-start" style="font-size: xx-large;"
+                                data-query="vltx.header.data.2.value"></div>
                         </div>
                     </div>
 
-                    <div class="mt-5 monserrat-medium" style="font-size: medium;">
-                        All swap and bridge fees buy and burn $VLTX. Simply hold in your wallet to participate.
-                    </div>
+                    <div class="mt-5 monserrat-medium" style="font-size: medium; " data-query="vltx.header.text"></div>
                 </div>
 
 
@@ -87,12 +86,12 @@
             </div>
 
             <div class="mt-5 mb-5 air-drop text-center" style="position: relative;">
-                <h2 class="mt-5 p-text monserrat-bold">THE VOLTIX AIRDROP</h2>
-                <h1 class="mt-4 monserrat-bold gradient-text mx-auto">10,000,000</h1>
-                <h5 class="mt-4 p-text monserrat-medium text-uppercase">current airdrop value</h5>
-                <h2 class="mt-4 p-text monserrat-bold gradient-text mx-auto">MARCH 2025</h2>
-
-                <h5 class="mt-4 p-text monserrat-medium text-uppercase">expected airdrop value</h5>
+                <h2 class="mt-5 p-text monserrat-bold" data-query="vltx.airdrop.main-title"></h2>
+                <h1 class="mt-4 monserrat-bold gradient-text mx-auto" data-query="vltx.airdrop.details.0.value"></h1>
+                <h5 class="mt-4 p-text monserrat-medium text-uppercase" data-query="vltx.airdrop.details.0.title"></h5>
+                <h2 class="mt-4 p-text monserrat-bold gradient-text mx-auto" data-query="vltx.airdrop.details.1.value">
+                </h2>
+                <h5 class="mt-4 p-text monserrat-medium text-uppercase" data-query="vltx.airdrop.details.1.title"></h5>
                 <img style="position: absolute;bottom: -5rem;left: 10%;width: 220px;height: 220px;"
                     src="./img/back-logo.svg" alt="VOLTIX logo">
             </div>
@@ -102,60 +101,46 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button  menlo" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                How do I register for the airdrop?
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                data-query="vltx.faq.0.q">
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body monserrat-regular color-neutral-200">
-                                <p>
-                                    Become a user and move funds into Voltix. You can then register some or all of your
-                                    Vaults.
-                                    <br><br>
-                                    Note: Airdrop is based on your total vault amounts, multiplied by the length of time
-                                    your funds are kept in the vault. The largest holders for the longest amount of time
-                                    earn the most.
+                                <p data-query="vltx.faq.0.a">
                                 </p>
-
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header " id="headingTwo">
                             <button class="accordion-button  collapsed menlo" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What assets are counted for the Airdrop?
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                data-query="vltx.faq.1.q">
+
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body monserrat-regular color-neutral-200">
-                                <p>
-                                    Any supported Layer1 or Layer2 asset, and any token on the 1inch token list.
-                                    <br><br>You can register as many vaults as you wish.
+                                <p data-query="vltx.faq.1.a">
                                 </p>
-
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed menlo " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What is the Airdrop Strategy?
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                data-query="vltx.faq.2.q">
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body monserrat-regular color-neutral-200">
-                                <p>
-                                    The first Airdrop period goes for 12 months - it is 10% of the Supply of $VLTX.
-                                    <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of
-                                    20%
-                                    will be airdropped.
+                                <p data-query="vltx.faq.2.a">
                                 </p>
-
                             </div>
                         </div>
                     </div>
@@ -179,39 +164,6 @@
 
     </div>
 
-    <script>
-        function loadFooter() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', './footer.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('footer').innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        }
-
-        function loadNavbar() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', './navbar.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('navbar').innerHTML = xhr.responseText;
-                    var currentPath = window.location.pathname;
-                    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
-                    navbarLinks.forEach(function (link) {
-                        var linkPath = link.getAttribute('href');
-                        if (currentPath === linkPath) {
-                            link.classList.add('gradient-text', 'active');
-                        }
-                    });
-                }
-            };
-            xhr.send();
-        }
-        loadNavbar();
-        loadFooter();
-    </script>
 
 </body>
 

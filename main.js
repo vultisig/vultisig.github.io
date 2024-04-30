@@ -12,7 +12,6 @@ function loadJs() {
     loadNavbar();
     loadFooter();
     loadJsonData();
-
 }
 function loadNavbar() {
     var xhr = new XMLHttpRequest();
@@ -20,17 +19,22 @@ function loadNavbar() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             document.getElementById('navbar').innerHTML = xhr.responseText;
-            var currentPath = window.location.pathname;
-            var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
-            navbarLinks.forEach(function (link) {
-                var linkPath = link.getAttribute('href');
-                if (currentPath === linkPath) {
-                    link.classList.add('gradient-text', 'active');
-                }
-            });
+
         }
     };
     xhr.send();
+}
+
+function navActiveLink() {
+    var currentPath = window.location.pathname;
+    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
+
+    navbarLinks.forEach(function (link) {
+        var linkPath = link.getAttribute('href');
+        if (currentPath === linkPath) {
+            link.classList.add('gradient-text', 'active');
+        }
+    });
 }
 
 
@@ -47,7 +51,7 @@ function loadJsonData() {
     xhr.send();
 
 }
-// loadJsonData();
+
 
 function getValue(query) {
     const keys = query.split('.');
@@ -75,7 +79,6 @@ function getValue(query) {
 }
 
 function replaceInnerHTMLWithJSONValues() {
-
     const allElements = document.querySelectorAll('*');
     allElements.forEach(element => {
         const query = element.getAttribute('data-query');
@@ -84,21 +87,16 @@ function replaceInnerHTMLWithJSONValues() {
             if (value !== null && value !== undefined) {
                 element.innerHTML = value;
             }
-        }
-    });
-}
-
-
-
-function setHrefAttributesFromJSON() {
-    const anchorElements = document.querySelectorAll('a');
-    anchorElements.forEach(anchor => {
-        const query = anchor.getAttribute('data-query').split('.').pop().concat('.url');
-        if (query && anchor.getAttribute('data-attribute') === 'href') {
-            const href = getLinkValue(query);
-            if (href !== null && href !== undefined) {
-                anchor.setAttribute('href', href);
+            if (element.getAttribute('data-attribute') === 'href') {
+                const linkQuery = query.split('.').splice(0, query.split('.').length - 1).join('.').concat('.url');
+                const hrefValue = getValue(linkQuery);
+                element.setAttribute('href', hrefValue);
             }
         }
     });
+    navActiveLink();
 }
+
+
+
+
