@@ -14,13 +14,13 @@
     <link rel="manifest" href="./fav/site.webmanifest">
 </head>
 
-<body>
+<body onload="loadJs()">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-
+    <script src="./main.js"></script>
     <div class="content  text-light">
         <div class="container">
 
@@ -32,11 +32,10 @@
                     <div class="row align-items-center">
                         <div class="col-lg-7" style="position: relative;">
                             <div class="monserrat-bold slogan ">
-                                <strong> SIMPLE STEPS,</br> <span class="ps-7">SUPERIOR</span> </br>
-                                    SECURITY</strong>
+                                <strong data-query="how-it-works.header.slogan"> </strong>
                                 <br>
-                                <div class="sub-slogan gradient-text monserrat-medium p-text mt-2 text-uppercase ">The
-                                    Voltix Difference
+                                <div class="sub-slogan gradient-text monserrat-medium p-text mt-2 text-uppercase"
+                                    data-query="how-it-works.header.sub-slogan">
                                 </div>
 
                             </div>
@@ -54,9 +53,8 @@
             </div>
 
             <h2 style="height: 16rem;margin-top: 8rem;"
-                class=" monserrat-semibold color-neutral  text-uppercase text-center ">
-                UNDERSTAND THE full capabilities of <br> <span class="gradient-text">Voltix</span> and how it SOLVES
-                <span class="gradient-text">crypto security</span>.
+                class=" monserrat-semibold color-neutral  text-uppercase text-center "
+                data-query="how-it-works.segment-1.title">
             </h2>
 
 
@@ -67,18 +65,10 @@
                             src="./img/trusted-devices.png" alt="Trusted Devices">
                     </div>
                     <div class="col-lg-6 px-4 my-auto">
-                        <h2><strong class="monserrat-bold text-uppercase">USE Your <span class="gradient-text"> Trusted
-                                </span> <br> Devices</strong>
+                        <h2><strong class="monserrat-bold text-uppercase"
+                                data-query="how-it-works.segment-2.title"></strong>
                         </h2>
-                        <p class="monserrat-medium mt-4 fs-6">With Voltix, you bring your own
-                            devices -
-                            phone, desktop. laptops
-                            or tablets. <br>
-                            Your devices create vaults using their unique keys “vault shares”. <br><br>
-
-                            Vault-shares never store funds and can be safely imported/exported anywhere. <br> <br>
-
-                            Each vault is natively two-factor -- and you can co-sign safely anywhere in the world. </p>
+                        <p class="monserrat-medium mt-4 fs-6" data-query="how-it-works.segment-2.description"></p>
                     </div>
                 </div>
             </div>
@@ -89,15 +79,8 @@
                 <div class="row ">
                     <div class="col-lg-6 pe-lg-4 my-lg-0 my-2">
                         <div class="info-box text-center px-5 pt-5 h-100 bottom-right-gradient">
-                            <h3 class="text-uppercase monserrat-bold ">Asset Management Hub</h3>
-                            <p class="fs-lg-6 fs-5">All chains are compatible - Bitcoin, Ethereum, THORChain and even
-                                Solana.
-                                The first
-                                multi-chain
-                                multi-asset multi-signature wallet in the world. <br>You can deposit, send, swap and
-                                more
-                                inside
-                                Voltix. </p>
+                            <h3 class="text-uppercase monserrat-bold " data-query="how-it-works.segment-3.title"></h3>
+                            <p class="fs-lg-6 fs-5" data-query="how-it-works.segment-3.description"> </p>
                             <img width="50%" class="my-5" src="./img/asset-hub.png" alt="ASSET MANAGEMENT HUB">
                         </div>
 
@@ -106,11 +89,9 @@
                         <div class="info-box text-center px-5 pb-5 pb-lg-0 h-100 top-left-gradient ">
                             <img style="width: 50%;" class="mt-5" src="./img/asset-exchange.png"
                                 alt="EASY Asset Exchange">
-                            <h3 class="text-uppercase monserrat-bold mt-5">EASY Asset Exchange</h3>
-                            <p class="fs-lg-6 fs-5">Voltix is natively DeFi compatible - rebalance your portfolio right
-                                inside the vault.
-                                <br>
-                                It also supports advanced DeFi functions such as bonding to Nodes, Lending and Savers.
+                            <h3 class="text-uppercase monserrat-bold mt-5" data-query="how-it-works.segment-4.title">
+                            </h3>
+                            <p class="fs-lg-6 fs-5" data-query="how-it-works.segment-4.description">
                             </p>
 
                         </div>
@@ -125,17 +106,14 @@
                         <img style=" width: 90%;" src="./img/store-ipad.png" alt="Store Links">
                     </div>
                     <div class="col-md-6 px-4">
-                        <h5 style="padding-top: 9rem; line-height: 170%;" class="monserrat-semibold ">Join many other
-                            users who trust
-                            VOLTIX
-                            with their digital assets.
-                            <br>No registration required!
+                        <h5 style="padding-top: 9rem; line-height: 170%;" class="monserrat-semibold "
+                            data-query="how-it-works.store.title">
                         </h5>
                         <div class="mt-5 text-center text-lg-start">
-                            <a href="https://testflight.apple.com/join/CHHICwnO" target="_blank">
+                            <a data-query="how-it-works.store.app-store-link._" data-attribute="href" target="_blank">
                                 <img class="my-2 my-lg-0" src="./img/appstore.svg" alt="Download on AppStore">
                             </a>
-                            <a href="#">
+                            <a data-query="how-it-works.store.play-store-link._" data-attribute="href" target="_blank">
                                 <img src="./img/playstore.svg" alt="Download on PlayStore">
                             </a>
                         </div>
@@ -156,40 +134,7 @@
         <div class="circle-bottom-glow"></div>
     </div>
 
-    
-    <script>
-        function loadFooter() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', './footer.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('footer').innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        }
 
-        function loadNavbar() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', './navbar.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('navbar').innerHTML = xhr.responseText;
-                    var currentPath = window.location.pathname;
-                    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
-                    navbarLinks.forEach(function (link) {
-                        var linkPath = link.getAttribute('href');
-                        if (currentPath === linkPath) {
-                            link.classList.add('gradient-text', 'active');
-                        }
-                    });
-                }
-            };
-            xhr.send();
-        }
-        loadNavbar();
-        loadFooter();
-    </script>
 
 </body>
 

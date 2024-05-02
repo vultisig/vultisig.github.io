@@ -13,33 +13,26 @@
     <link rel="manifest" href="./fav/site.webmanifest">
 </head>
 
-<body>
+<body onload="loadJs()">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1yTLwNiCZhIdCWolQldwq4spHQkgZDqkG">
-
+    <script src="./main.js"></script>
+  
     <div class="content">
         <div class="header container mb-2">
             <div id="navbar"></div>
-
-
             <div class=" mt-2 text-white">
                 <div class="monserrat-bold slogan">
-                    <strong> SECURE. SIMPLE.</br> <span class="ps-5">COMPLETELY IN</span> </br> <span
-                            class="gradient-text">YOUR</span>
-                        CONTROL.</strong>
+                    <strong data-query="home.header.slogan"></strong>
                     <img id="back-logo" src="./img/back-logo.svg" alt="Logo">
                 </div>
 
                 <div class="blue-section text-small color-neutral text-start py-4 px-4 mt-5 col-lg-8 col-12">
                     <img class="year-pin" src="./img/2024.svg" alt="2024">
-                    <p class=" col-9 monserrat ">
-                        Introducing <strong class="monserrat-semibold">Voltix</strong> : <br>
-                        A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication,
-                        and no tracking or registration requirements.
+                    <p class="col-9 monserrat" data-query="home.header.sub-slogan">
                     </p>
                 </div>
             </div>
@@ -50,37 +43,23 @@
             <div class="problems mt-5 mb-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h4 class="gradient-text monserrat-medium">PROBLEMS</h4>
-                        <h2 class="mt-5 monserrat-bold" style="line-height: 150%;">WHAT IS WRONG WITH <br>WALLETS</h2>
+                        <h4 class="gradient-text monserrat-medium" data-query="home.segment-1.main-title"></h4>
+                        <h2 class="mt-5 monserrat-bold" style="line-height: 150%;"
+                            data-query="home.segment-1.sub-title"></h2>
                         <div class="mt-5 ps-4 gradient-border-left">
-                            <h3 class="menlo text-bold py-1">Single-signature wallets are dangerous</h3>
-                            <p class="monserrat-regular fs-5">Accidentally lose your phone? Upload your private keys to
-                                a
-                                phishing site? Download a
-                                trojan and drain your metamask? Forget your backup phrase? Get your iCloud hacked?
-                                <strong class="monserrat-bold">One
-                                    mistake and forever rekt.</strong>
+                            <h3 class="menlo text-bold py-1" data-query="home.segment-1.items.0.title"></h3>
+                            <p class="monserrat-regular fs-5" data-query="home.segment-1.items.0.description">
                             </p>
                         </div>
 
                         <div class="mt-4 ps-4 gradient-border-left">
-                            <h3 class="menlo text-bold py-1">Hardware wallets are clunky</h3>
-                            <p class="monserrat-regular fs-5">Small screens, small buttons, annoying interfaces.
-                                Complicated
-                                setup instructions, scary
-                                firmware updates and confusing transactions. <br>
-                                <strong class="monserrat-bold">Why can’t it be better.</strong>
-                            </p>
+                            <h3 class="menlo text-bold py-1" data-query="home.segment-1.items.1.title"></h3>
+                            <p class="monserrat-regular fs-5" data-query="home.segment-1.items.1.description"></p>
                         </div>
 
                         <div class="mt-4 ps-4 gradient-border-left">
-                            <h3 class="menlo text-bold py-1">Multi-sig wallets are painful</h3>
-                            <p class="monserrat-regular fs-5">Lose one key, lose it all. Multi-sig is the solution, but
-                                does
-                                not work natively.
-                                Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX
-                                impossible. <strong class="monserrat-bold">If only there was something that
-                                    works.</strong></p>
+                            <h3 class="menlo text-bold py-1" data-query="home.segment-1.items.2.title"></h3>
+                            <p class="monserrat-regular fs-5" data-query="home.segment-1.items.2.description"></p>
                         </div>
 
                     </div>
@@ -95,38 +74,28 @@
                 </div>
             </div>
             <div class="solutions blue-section mt-5 mb-5 text-center">
-                <h2 class=" monserrat-bold">THE <span class="gradient-text">SOLUTION</span> </h2>
-                <span class="color-neutral monserrat-regular p-text"> <small>VOLTIX is the next evolution in crypto
-                        vaults</small></span>
+                <h2 class=" monserrat-bold" data-query="home.segment-2.main-title"></h2>
+                <span class="color-neutral monserrat-regular p-text">
+                    <small data-query="home.segment-2.sub-title"></small></span>
                 <div class="row justify-content-lg-between justify-content-center p-lg-5 p-4">
                     <div class="col-lg-4 col-md-12  mb-3 px-3">
                         <img style="height: 150px;" src="./img/rich-hardware.svg" alt="Rich Hardware">
-                        <h5 class="menlo mt-5 text-bold mb-4 "> USE YOUR EXISTING DEVICES</h5>
-                        <p class="monserrat-regular text-start"><small> Forget hardware - use your phone as a co-signer
-                                device!
-                                Large
-                                screens,
-                                excellent user experience - easily verify transactions. Camera, bluetooth, wifi,
-                                cellular,
-                                USBC, secure enclaves, biometrics - all there.</small> </p>
+                        <h5 class="menlo mt-5 text-bold mb-4" data-query="home.segment-2.items.0.title"> </h5>
+                        <p class="monserrat-regular text-start"><small data-query="home.segment-2.items.0.description">
+                            </small> </p>
                     </div>
                     <div class="col-lg-4 col-md-12  mb-3  px-3">
                         <img style="height: 150px;" src="./img/familiar-hardware.svg" alt="Rich Hardware">
-                        <h5 class="menlo mt-5 text-bold mb-4 ">EVERYONE HAS THEM ALREADY</h5>
-                        <p class="monserrat-regular text-start"><small> Everyone has a phone, laptop or tablet. They are
-                                fast and
-                                powerful.
-                                They
-                                have full encryption and security. They don’t look like crypto wallets! You don’t need
-                                anything else. </small></p>
+                        <h5 class="menlo mt-5 text-bold mb-4 " data-query="home.segment-2.items.1.title"></h5>
+                        <p class="monserrat-regular text-start"><small data-query="home.segment-2.items.1.description">
+                            </small></p>
                     </div>
                     <div class="col-lg-4 col-md-12 mb-3  px-3">
                         <img style="height: 150px;" src="./img/threshold.svg" alt="Rich Hardware">
-                        <h5 class="menlo mt-5 text-bold mb-4 ">BUILT WITH MAGIC</h5>
-                        <p class="monserrat-regular text-start"><small> Threshold signatures are the magic.
-                                The private key never exits. Vault-shares never hold funds. No single key is vulnerable.
-                                No
-                                seed phrases. And native to all crypto networks.</small> </p>
+                        <h5 class="menlo mt-5 text-bold mb-4 " data-query="home.segment-2.items.2.title">BUILT WITH
+                            MAGIC</h5>
+                        <p class="monserrat-regular text-start"><small data-query="home.segment-2.items.2.description">
+                            </small> </p>
                     </div>
                 </div>
             </div>
@@ -137,7 +106,7 @@
                 <div class="row p-5 justify-content-center">
                     <div class="col-lg-6"></div>
                     <div class="col-lg-6 d-flex  justify-content-lg-start justify-content-center">
-                        <h4 class="monserrat-medium gradient-text ">USER EXPERIENCE</h4>
+                        <h4 class="monserrat-medium gradient-text " data-query="home.segment-3.main-title"></h4>
                     </div>
 
                     <!-- img -->
@@ -147,31 +116,25 @@
 
                     <div class="col-lg-6">
 
-                        <h2 class="mt-5 monserrat-bold" style="line-height: 150%;">SEAMLESS SECURITY</h2>
+                        <h2 class="mt-5 monserrat-bold" style="line-height: 150%;"
+                            data-query="home.segment-3.sub-title"></h2>
                         <div class="mt-5 ps-4 gradient-border-left">
-                            <h4 class="menlo text-bold py-1">Vault Generation</h4>
-                            <p class="monserrat-regular fs-5"> <small>KeyGen time: <strong class="monserrat-bold">10
-                                        seconds.</strong> <br>
-                                    2of2, 2of3, or 3of4 - choose your vault type.
-                                    Key generation is fast. No device holds the vault private key.</small> </p>
+                            <h4 class="menlo text-bold py-1" data-query="home.segment-3.items.0.title">
+                            </h4>
+                            <p class="monserrat-regular fs-5"> <small
+                                    data-query="home.segment-3.items.0.description"></small> </p>
                         </div>
 
                         <div class="mt-4 ps-4 gradient-border-left">
-                            <h4 class="menlo text-bold py-1">Transaction Signing</h4>
-                            <p class="monserrat-regular fs-5"><small> KeySign time: <strong class="monserrat-bold">5
-                                        seconds.</strong><br>
-                                    One device starts the transaction. A second paired device confirms the transaction.
-                                    It
-                                    is natively “two-factor” and must be done in-person.</small> </p>
+                            <h4 class="menlo text-bold py-1" data-query="home.segment-3.items.1.title"></h4>
+                            <p class="monserrat-regular fs-5"><small data-query="home.segment-3.items.1.description">
+                                </small> </p>
                         </div>
 
                         <div class="mt-4 ps-4 gradient-border-left">
-                            <h4 class="menlo text-bold py-1">Re-sharing</h4>
-                            <p class="monserrat-regular fs-5"><small>Reshare Time: <strong class="monserrat-bold">10
-                                        seconds.</strong> <br>
-                                    Lost a device? Replace it easily without changing the vault. Want to increase
-                                    security?
-                                    Go from 2of3 to 3of4 easily. </small> </p>
+                            <h4 class="menlo text-bold py-1" data-query="home.segment-3.items.2.title"></h4>
+                            <p class="monserrat-regular fs-5"><small
+                                    data-query="home.segment-3.items.2.description"></small> </p>
                         </div>
 
                     </div>
@@ -182,59 +145,53 @@
             </div>
 
             <div class="features  mt-5 mb-5 pt-5 text-center">
-                <h2 class="monserrat-bold">OTHER <span class="gradient-text">FEATURES</span> </h2>
+                <h2 class="monserrat-bold" data-query="home.segment-4.main-title"></h2>
                 <div class="row py-5 justify-content-center">
                     <div class="col-lg-4 text-center mt-5 mt-lg-0 ">
                         <img src="./img/full-defi.svg" class="feature-img-size" alt="Full Defi">
-                        <h3 class="menlo text-bold mt-4 mb-4"> Full DeFi</h3>
-                        <p class="monserrat-regular px-5"> <small>Swaps, Bridging, DeFi - right from your Vault.</small>
+                        <h3 class="menlo text-bold mt-4 mb-4" data-query="home.segment-4.items.0.title"> </h3>
+                        <p class="monserrat-regular px-5"> <small
+                                data-query="home.segment-4.items.0.description"></small>
                         </p>
                     </div>
                     <div class="col-lg-4 text-center mt-5 mt-lg-0 "> <img src="./img/remote-sign.svg"
                             class="feature-img-size" alt="Remote Signing">
-                        <h3 class="menlo text-bold mt-4 mb-4"> Remote Signing</h3>
-                        <p class="monserrat-regular px-5"> <small> Sign securely with a remote co-signer around the
-                                world.</small>
+                        <h3 class="menlo text-bold mt-4 mb-4" data-query="home.segment-4.items.1.title">
+                        </h3>
+                        <p class="monserrat-regular px-5"> <small data-query="home.segment-4.items.1.description">
+                            </small>
                         </p>
                     </div>
                     <div class="col-lg-4 text-center mt-5 mt-lg-0"> <img src="./img/tx-policies.svg"
                             class="feature-img-size" alt="Transaction Policies">
-                        <h3 class="menlo text-bold mt-4 mb-4"> Transaction Policies</h3>
-                        <p class="monserrat-regular px-5"> <small>Nominate spend limits, address whitelists and
-                                more.</small> </p>
+                        <h3 class="menlo text-bold mt-4 mb-4" data-query="home.segment-4.items.2.title"> </h3>
+                        <p class="monserrat-regular px-5"> <small
+                                data-query="home.segment-4.items.2.description"></small> </p>
                     </div>
                 </div>
             </div>
 
             <div class="whoisfor mt-5 mb-5  pt-5 text-center">
-                <h2 class="monserrat-bold">WHO IS <span class="gradient-text">VOLTIX </span>FOR </h2>
+                <h2 class="monserrat-bold" data-query="home.segment-5.main-title"></h2>
                 <div class="row py-5 justify-content-center">
                     <div class="col-lg-4 text-center  mt-5 mt-lg-0 ">
                         <img src="./img/whales.svg" class="feature-img-size" alt="Full Defi">
-                        <h3 class="menlo text-bold mt-4 mb-4"> WHALES</h3>
-                        <p class="monserrat-regular px-5"><small> If you have more than $100k in crypto, you MUST
-                                consider upgrading to a
-                                TSS vault. Your funds are at-risk on all other wallets. <br>
-                                Download it now. </small></p>
+                        <h3 class="menlo text-bold mt-4 mb-4" data-query="home.segment-5.items.0.title"> </h3>
+                        <p class="monserrat-regular px-5"><small data-query="home.segment-5.items.0.description">
+                            </small></p>
                     </div>
                     <div class="col-lg-4 text-center mt-5 mt-lg-0 "> <img src="./img/funds.svg" class="feature-img-size"
                             alt="Remote Signing">
-                        <h3 class="menlo text-bold mt-4 mb-4"> FUNDS</h3>
-                        <p class="monserrat-regular px-5"><small> Voltix is the open-source audited alternative to your
-                                current
-                                “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you
-                                can
-                                access funds anywhere in the world. </small>
+                        <h3 class="menlo text-bold mt-4 mb-4" data-query="home.segment-5.items.1.title"></h3>
+                        <p class="monserrat-regular px-5"><small
+                                data-query="home.segment-5.items.1.description"></small>
                         </p>
                     </div>
                     <div class="col-lg-4 text-center mt-5 mt-lg-0 "> <img src="./img/treasuries.svg "
                             class="feature-img-size" alt="Transaction Policies">
-                        <h3 class="menlo text-bold mt-4 mb-4"> TREASURIES</h3>
-                        <p class="monserrat-regular px-5"> <small>TSS is natively compatible to all chains. Together
-                                with
-                                transaction
-                                policies, designate your leads the ability to pay staff with limits, whitelists and
-                                more.</small>
+                        <h3 class="menlo text-bold mt-4 mb-4" data-query="home.segment-5.items.2.title"></h3>
+                        <p class="monserrat-regular px-5"> <small
+                                data-query="home.segment-5.items.2.description"></small>
                         </p>
                     </div>
                 </div>
@@ -244,17 +201,16 @@
                 <div class="row">
                     <div class="col-lg-6  px-5 d-flex align-items-center">
                         <div class="ms-3">
-                            <h2 style="line-height: 150%; " class="monserrat-bold"> <strong> SECURE YOUR DIGITAL <br>
-                                    ASSETS
-                                    NOW</strong>
+                            <h2 style="line-height: 150%; " class="monserrat-bold"> <strong
+                                    data-query="home.store.title"></strong>
 
                             </h2>
                             <div class="mt-4">
-                                <a href="https://testflight.apple.com/join/CHHICwnO" target="_blank">
+                                <a data-query="home.store.app-store-link._" data-attribute="href" target="_blank">
                                     <img class="my-sm-2 me-lg-3" src="./img/appstore.svg" alt="Download on AppStore">
                                 </a>
-                                <a href="#">
-                                    <img src="./img/playstore.svg" alt="Download on PlayStore">
+                                <a data-query="home.store.play-store-link._" data-attribute="href" target="_blank"> <img
+                                        src="./img/playstore.svg" alt="Download on PlayStore">
                                 </a>
                             </div>
                         </div>
@@ -282,40 +238,7 @@
         <div class="circle-bottom-glow"></div>
     </div>
 
-    <script>
-        function loadFooter() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', './footer.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('footer').innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        }
 
-        function loadNavbar() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', './navbar.html', true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('navbar').innerHTML = xhr.responseText;
-                    var currentPath = window.location.pathname;
-                    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
-                    navbarLinks.forEach(function (link) {
-                        var linkPath = link.getAttribute('href');
-                        if (currentPath === linkPath) {
-                            link.classList.add('gradient-text', 'active');
-                        }
-                    });
-                }
-            };
-            xhr.send();
-        }
-        loadNavbar();
-        loadFooter();
-    </script>
 </body>
-
 
 </html>
