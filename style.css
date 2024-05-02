@@ -293,8 +293,6 @@ hr.solid {
     .container {
         max-width: 80%;
     }
-
-
 }
 
 
@@ -302,6 +300,9 @@ hr.solid {
     .container {
         max-width: 80%;
 
+    }
+    .ps-5 {
+        padding-left: 2rem !important;
     }
 }
 
