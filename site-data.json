@@ -26,10 +26,10 @@
         },
         "social": {
             "github-link": {
-                "url": "https://github.com/Vultisig-vault/"
+                "url": "https://github.com/vultisig/"
             },
             "twitter-link": {
-                "url": "https://twitter.com/voltixvault"
+                "url": "https://twitter.com/vultisigvault"
             },
             "discord-link": {
                 "url": "https://discord.gg/54wEtGYxuv"
@@ -45,7 +45,7 @@
                     },
                     {
                         "name": "Contact Us",
-                        "url": "https://twitter.com/voltixvault"
+                        "url": "https://twitter.com/vultisigvault"
                     }
                 ]
             },
@@ -54,12 +54,12 @@
                 "links": [
                     {
                         "name": "Terms of Service",
-                        "url": "https://github.com/Vultisig-vault/docs/blob/main/terms.md"
+                        "url": "https://github.com/vultisig/docs/blob/main/terms.md"
                     },
                     {
                         "name": "Privacy Policy",
-                        "url": "https://github.com/Vultisig-vault/docs/blob/main/privacy.md"
-                    }
+                        "url": "https://github.com/vultisig/docs/blob/main/privacy.md"
+                    },
                 ]
             }
         ]
