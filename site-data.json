@@ -10,7 +10,7 @@
                 "url": "/docs.html"
             },
             {
-                "name": "$VLTX",
+                "name": "$VLTI",
                 "url": "/vix.html"
             }
         ],
@@ -26,10 +26,10 @@
         },
         "social": {
             "github-link": {
-                "url": "https://github.com/voltix-vault/"
+                "url": "https://github.com/vultisig/"
             },
             "twitter-link": {
-                "url": "https://twitter.com/voltixvault"
+                "url": "https://twitter.com/vultisig_com"
             },
             "discord-link": {
                 "url": "https://discord.gg/54wEtGYxuv"
@@ -45,7 +45,7 @@
                     },
                     {
                         "name": "Contact Us",
-                        "url": "https://twitter.com/voltixvault"
+                        "url": "https://twitter.com/vultisig_com"
                     }
                 ]
             },
@@ -54,11 +54,11 @@
                 "links": [
                     {
                         "name": "Terms of Service",
-                        "url": "https://github.com/voltix-vault/docs/blob/main/terms.md"
+                        "url": "https://github.com/vultisig/docs/blob/main/terms.md"
                     },
                     {
                         "name": "Privacy Policy",
-                        "url": "https://github.com/voltix-vault/docs/blob/main/privacy.md"
+                        "url": "https://github.com/vultisig/docs/blob/main/privacy.md"
                     }
                 ]
             }
@@ -67,7 +67,7 @@
     "home": {
         "header": {
             "slogan": "SECURE. SIMPLE.</br> <span class='ps-5'>COMPLETELY IN</span> </br> <span class='gradient-text'>YOUR</span> CONTROL.",
-            "sub-slogan": "Introducing <strong class='monserrat-semibold'>Voltix</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements."
+            "sub-slogan": "Introducing <strong class='monserrat-semibold'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements."
         },
         "segment-1": {
             "main-title": "PROBLEMS",
@@ -89,7 +89,7 @@
         },
         "segment-2": {
             "main-title": "THE <span class='gradient-text'>SOLUTION</span> ",
-            "sub-title": "VOLTIX is the next evolution in crypto vaults",
+            "sub-title": "Vultisig is the next evolution in crypto vaults",
             "items": [
                 {
                     "title": "USE YOUR EXISTING DEVICES",
@@ -141,7 +141,7 @@
             ]
         },
         "segment-5": {
-            "main-title": "WHO IS <span class='gradient-text'>VOLTIX </span>FOR ",
+            "main-title": "WHO IS <span class='gradient-text'>Vultisig </span>FOR ",
             "items": [
                 {
                     "title": "WHALES",
@@ -149,7 +149,7 @@
                 },
                 {
                     "title": "FUNDS",
-                    "description": "Voltix is the open-source audited alternative to your current “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world."
+                    "description": "Vultisig is the open-source audited alternative to your current “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world."
                 },
                 {
                     "title": "TREASURIES",
@@ -170,25 +170,25 @@
     "how-it-works": {
         "header": {
             "slogan": " SIMPLE STEPS,</br> <span class='ps-7'>SUPERIOR</span> </br> SECURITY",
-            "sub-slogan": "The Voltix Difference"
+            "sub-slogan": "The Vultisig Difference"
         },
         "segment-1": {
-            "title": "UNDERSTAND THE full capabilities of <br> <span class='gradient-text'>Voltix</span> and how it SOLVES <span class='gradient-text'>crypto security</span>."
+            "title": "UNDERSTAND THE full capabilities of <br> <span class='gradient-text'>Vultisig</span> and how it SOLVES <span class='gradient-text'>crypto security</span>."
         },
         "segment-2": {
             "title": "USE Your <span class='gradient-text'> Trusted </span> <br> Devices",
-            "description": "With Voltix, you bring your own devices - phone, desktop. laptops or tablets. <br> Your devices create vaults using their unique keys “vault shares”. <br><br> Vault-shares never store funds and can be safely imported/exported anywhere. <br> <br> Each vault is natively two-factor -- and you can co-sign safely anywhere in the world. "
+            "description": "With Vultisig, you bring your own devices - phone, desktop. laptops or tablets. <br> Your devices create vaults using their unique keys “vault shares”. <br><br> Vault-shares never store funds and can be safely imported/exported anywhere. <br> <br> Each vault is natively two-factor -- and you can co-sign safely anywhere in the world. "
         },
         "segment-3": {
             "title": "Asset Management Hub",
-            "description": "All chains are compatible - Bitcoin, Ethereum, THORChain and even Solana. The first multi-chain multi-asset multi-signature wallet in the world. <br>You can deposit, send, swap and more inside Voltix. "
+            "description": "All chains are compatible - Bitcoin, Ethereum, THORChain and even Solana. The first multi-chain multi-asset multi-signature wallet in the world. <br>You can deposit, send, swap and more inside Vultisig. "
         },
         "segment-4": {
             "title": "EASY Asset Exchange",
-            "description": "Voltix is natively DeFi compatible - rebalance your portfolio right inside the vault. <br> It also supports advanced DeFi functions such as bonding to Nodes, Lending and Savers."
+            "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. <br> It also supports advanced DeFi functions such as bonding to Nodes, Lending and Savers."
         },
         "store": {
-            "title": "Join many other users who trust VOLTIX with their digital assets. <br>No registration required!",
+            "title": "Join many other users who trust Vultisig with their digital assets. <br>No registration required!",
             "app-store-link": {
                 "url": "https://testflight.apple.com/join/CHHICwnO"
             },
@@ -207,8 +207,8 @@
             }
         },
         "segment-2": {
-            "title": "INTEGRATE <br>VOLTIX",
-            "sub-title": "Any DeFi app, chrome extension or wallet can integrate the Voltix SDK - safely let your users generate/upload vault shares and co-sign transactions.",
+            "title": "INTEGRATE <br>Vultisig",
+            "sub-title": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions.",
             "link": {
                 "name": "LEARN MORE",
                 "url": "https://discord.gg/54wEtGYxuv"
@@ -217,7 +217,7 @@
     },
     "vltx": {
         "header": {
-            "title": "THE <span class='gradient-text'>$VLTX</span> <br>TOKEN",
+            "title": "THE <span class='gradient-text'>$VLTI</span> <br>TOKEN",
             "price": "$0.01",
             "data": [
                 {
@@ -233,10 +233,10 @@
                     "value": "0"
                 }
             ],
-            "text": "All swap and bridge fees buy and burn $VLTX. Simply hold in your wallet to participate."
+            "text": "All swap and bridge fees buy and burn $VLTI. Simply hold in your wallet to participate."
         },
         "airdrop": {
-            "main-title": "THE VOLTIX AIRDROP",
+            "main-title": "THE Vultisig AIRDROP",
             "details": [
                 {
                     "title": "current airdrop value",
@@ -251,7 +251,7 @@
         "faq": [
             {
                 "q": "How do I register for the airdrop?",
-                "a": " Become a user and move funds into Voltix. You can then register some or all of your Vaults. <br><br> Note: Airdrop is based on your total vault amounts, multiplied by the length of time your funds are kept in the vault. The largest holders for the longest amount of time earn the most."
+                "a": " Become a user and move funds into Vultisig. You can then register some or all of your Vaults. <br><br> Note: Airdrop is based on your total vault amounts, multiplied by the length of time your funds are kept in the vault. The largest holders for the longest amount of time earn the most."
             },
             {
                 "q": "What assets are counted for the Airdrop?",
@@ -259,7 +259,7 @@
             },
             {
                 "q": "What is the Airdrop Strategy?",
-                "a": "     The first Airdrop period goes for 12 months - it is 10% of the Supply of $VLTX. <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of 20% will be airdropped."
+                "a": "     The first Airdrop period goes for 12 months - it is 10% of the Supply of $VLTI. <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of 20% will be airdropped."
             }
         ]
     },
@@ -271,16 +271,16 @@
                 "a": "Get 2 or more of your devices together and connected to your local WiFi, Hotspot or internet. Then simply pair them via QR code and create a new vault. You can then send funds in."
             },
             {
-                "q": "What cryptocurrencies are supported by Voltix?",
-                "a": "All assets supported by Trust Wallet Core are supported in Voltix."
+                "q": "What cryptocurrencies are supported by Vultisig?",
+                "a": "All assets supported by Trust Wallet Core are supported in Vultisig."
             },
             {
                 "q": "How does the crypto vault app secure my cryptocurrencies?",
-                "a": "Voltix is audited, open-source and uses a very well-proven TSS libarary."
+                "a": "Vultisig is audited, open-source and uses a very well-proven TSS libarary."
             },
             {
-                "q": "How does VOLTIX make money?",
-                "a": "Voltix only charges a flat fee on swap and bridging. There are no other hidden fees."
+                "q": "How does Vultisig make money?",
+                "a": "Vultisig only charges a flat fee on swap and bridging. There are no other hidden fees."
             },
             {
                 "q": "Can I recover my assets if I lose a device?",
