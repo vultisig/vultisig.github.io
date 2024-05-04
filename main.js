@@ -5,13 +5,14 @@ function loadFooter() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             document.getElementById('footer').innerHTML = xhr.responseText;
         }
+        loadJsonData();
     };
     xhr.send();
 }
 function loadJs() {
     loadNavbar();
-    loadFooter();
-    loadJsonData();
+    
+    
 }
 function loadNavbar() {
     var xhr = new XMLHttpRequest();
@@ -19,8 +20,8 @@ function loadNavbar() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             document.getElementById('navbar').innerHTML = xhr.responseText;
-
         }
+        loadFooter();
     };
     xhr.send();
 }

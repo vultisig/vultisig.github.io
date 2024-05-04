@@ -14,7 +14,7 @@
 }
 
 
-.faq {
+.vix-faq {
     position: relative;
     width: 80%;
     margin: auto;
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 576px) {
-    .faq {
+    .vix-faq {
         width: 100%;
     }
 }
