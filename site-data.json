@@ -89,7 +89,7 @@
         },
         "segment-2": {
             "main-title": "THE <span class='gradient-text'>SOLUTION</span> ",
-            "sub-title": "VOLTIX is the next evolution in crypto vaults",
+            "sub-title": "Vultisig is the next evolution in crypto vaults",
             "items": [
                 {
                     "title": "USE YOUR EXISTING DEVICES",
@@ -141,7 +141,7 @@
             ]
         },
         "segment-5": {
-            "main-title": "WHO IS <span class='gradient-text'>VOLTIX </span>FOR ",
+            "main-title": "WHO IS <span class='gradient-text'>Vultisig </span>FOR ",
             "items": [
                 {
                     "title": "WHALES",
@@ -188,7 +188,7 @@
             "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. <br> It also supports advanced DeFi functions such as bonding to Nodes, Lending and Savers."
         },
         "store": {
-            "title": "Join many other users who trust VOLTIX with their digital assets. <br>No registration required!",
+            "title": "Join many other users who trust Vultisig with their digital assets. <br>No registration required!",
             "app-store-link": {
                 "url": "https://testflight.apple.com/join/CHHICwnO"
             },
@@ -207,7 +207,7 @@
             }
         },
         "segment-2": {
-            "title": "INTEGRATE <br>VOLTIX",
+            "title": "INTEGRATE <br>Vultisig",
             "sub-title": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions.",
             "link": {
                 "name": "LEARN MORE",
@@ -236,7 +236,7 @@
             "text": "All swap and bridge fees buy and burn $VLTX. Simply hold in your wallet to participate."
         },
         "airdrop": {
-            "main-title": "THE VOLTIX AIRDROP",
+            "main-title": "THE Vultisig AIRDROP",
             "details": [
                 {
                     "title": "current airdrop value",
@@ -279,7 +279,7 @@
                 "a": "Vultisig is audited, open-source and uses a very well-proven TSS libarary."
             },
             {
-                "q": "How does VOLTIX make money?",
+                "q": "How does Vultisig make money?",
                 "a": "Vultisig only charges a flat fee on swap and bridging. There are no other hidden fees."
             },
             {
