@@ -61,7 +61,6 @@
     }
 }
 
-
 @media (max-width: 992px) {
     .faq {
         width:90%;
@@ -70,14 +69,14 @@
 
 @media (max-width: 768px) {
     .faq {
-        width: 90%;
+        width: 100%;
      
     }
 }
 
 @media (max-width: 576px) {
     .faq {
-        width:90%;
+        width:100%;
  
     }
 }
