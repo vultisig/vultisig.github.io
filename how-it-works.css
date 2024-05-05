@@ -82,6 +82,10 @@
     width: 50% !important;
 }
 
+.pt-9{
+    padding-top: 9rem !important;
+}
+
 @media (min-width: 1301px) {
     .trusted-devices-cont {
         height: 550px !important;
@@ -179,6 +183,10 @@
     .w-75-50 {
         width: 75% !important;
     }
+
+    .pt-9 {
+        padding-top: 2rem !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -202,5 +210,9 @@
     .sub-slogan {
         font-size: 16pt;
         margin: auto;
+    }
+
+    .pt-9 {
+        padding-top: 2rem !important;
     }
 }

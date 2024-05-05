@@ -13,6 +13,9 @@
     line-height: 117%;
 }
 
+.vix-chart {
+    width: 80% !important;
+}
 
 .vix-faq {
     position: relative;
@@ -22,16 +25,26 @@
     margin-bottom: 10rem;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .vix-faq {
-        width: 100%;
+        width: 100% !important;
     }
+
+    .vix-chart {
+        width: 100% !important;
+    }
+
 }
 
-@media (min-width: 768px) {
-    .faq {
-        width: 100%;
+@media (max-width: 768px) {
+    .vix-faq {
+        width: 100% !important;
     }
+
+    .vix-chart {
+        width: 100% !important;
+    }
+
 }
 
 
