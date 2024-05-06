@@ -5,22 +5,22 @@ function loadFooter() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             document.getElementById('footer').innerHTML = xhr.responseText;
         }
+        loadJsonData();
     };
     xhr.send();
 }
 function loadJs() {
     loadNavbar();
-    loadFooter();
-    loadJsonData();
 }
 function loadNavbar() {
+
     var xhr = new XMLHttpRequest();
     xhr.open('GET', './navbar.html', true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             document.getElementById('navbar').innerHTML = xhr.responseText;
-
         }
+        loadFooter();
     };
     xhr.send();
 }
@@ -28,7 +28,6 @@ function loadNavbar() {
 function navActiveLink() {
     var currentPath = window.location.pathname;
     var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link')
-
     navbarLinks.forEach(function (link) {
         var linkPath = link.getAttribute('href');
         if (currentPath === linkPath) {
@@ -96,6 +95,7 @@ function replaceInnerHTMLWithJSONValues() {
     });
     navActiveLink();
 }
+
 
 
 

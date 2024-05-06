@@ -11,7 +11,7 @@
             },
             {
                 "name": "$VLTI",
-                "url": "/vix.html"
+                "url": "/vlti.html"
             }
         ],
         "download": {
@@ -26,7 +26,7 @@
         },
         "social": {
             "github-link": {
-                "url": "https://github.com/vultisig/"
+                "url": "https://github.com/Vultisig/"
             },
             "twitter-link": {
                 "url": "https://twitter.com/vultisig_com"
@@ -54,11 +54,11 @@
                 "links": [
                     {
                         "name": "Terms of Service",
-                        "url": "https://github.com/vultisig/docs/blob/main/terms.md"
+                        "url": "https://github.com/Vultisig/docs/blob/main/terms.md"
                     },
                     {
                         "name": "Privacy Policy",
-                        "url": "https://github.com/vultisig/docs/blob/main/privacy.md"
+                        "url": "https://github.com/Vultisig/docs/blob/main/privacy.md"
                     }
                 ]
             }
@@ -203,7 +203,7 @@
             "sub-title": "Have questions? Want to learn about how it works?",
             "link": {
                 "name": "DOCS",
-                "url": "https://docs.voltix.org/"
+                "url": "https://docs.vultisig.com/"
             }
         },
         "segment-2": {
@@ -215,7 +215,7 @@
             }
         }
     },
-    "vltx": {
+    "vlti": {
         "header": {
             "title": "THE <span class='gradient-text'>$VLTI</span> <br>TOKEN",
             "price": "$0.01",
