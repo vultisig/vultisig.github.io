@@ -29,7 +29,7 @@
                 "url": "https://github.com/Vultisig/"
             },
             "twitter-link": {
-                "url": "https://twitter.com/vultisig_com"
+                "url": "https://twitter.com/vultisig"
             },
             "discord-link": {
                 "url": "https://discord.gg/54wEtGYxuv"
@@ -45,7 +45,7 @@
                     },
                     {
                         "name": "Contact Us",
-                        "url": "https://twitter.com/vultisig_com"
+                        "url": "https://twitter.com/vultisig"
                     }
                 ]
             },
@@ -54,11 +54,11 @@
                 "links": [
                     {
                         "name": "Terms of Service",
-                        "url": "https://github.com/Vultisig/docs/blob/main/terms.md"
+                        "url": "https://github.com/vultisig/docs/blob/main/other/terms.md" 
                     },
                     {
                         "name": "Privacy Policy",
-                        "url": "https://github.com/Vultisig/docs/blob/main/privacy.md"
+                        "url": "https://github.com/vultisig/docs/blob/main/other/privacy.md"
                     }
                 ]
             }
