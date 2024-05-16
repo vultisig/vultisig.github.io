@@ -36,6 +36,9 @@
             },
             "discord-link": {
                 "url": "https://discord.gg/54wEtGYxuv"
+            },
+            "telegram-link": {
+                "url": "https://t.me/vultisig"
             }
         },
         "footer-links": [
@@ -71,7 +74,8 @@
             "social": {
                 "discord-img": "Discord",
                 "github-img": "Github",
-                "twitter-img": "Twitter"
+                "twitter-img": "Twitter",
+                "telegram-link": "Telegram"
             }
         }
     },
