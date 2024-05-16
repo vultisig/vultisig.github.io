@@ -82,14 +82,21 @@ function replaceInnerHTMLWithJSONValues() {
     allElements.forEach(element => {
         const query = element.getAttribute('data-query');
         if (query) {
-            const value = getValue(query);
-            if (value !== null && value !== undefined) {
-                element.innerHTML = value;
-            }
-            if (element.getAttribute('data-attribute') === 'href') {
-                const linkQuery = query.split('.').splice(0, query.split('.').length - 1).join('.').concat('.url');
-                const hrefValue = getValue(linkQuery);
-                element.setAttribute('href', hrefValue);
+            // Set Alt values of images
+            if (element.getAttribute('data-attribute') === 'alt') {
+                const altValue = getValue(query);
+                element.setAttribute('alt', altValue);
+            } else {
+                // set innerhtml & href
+                const value = getValue(query);
+                if (value !== null && value !== undefined) {
+                    element.innerHTML = value;
+                }
+                if (element.getAttribute('data-attribute') === 'href') {
+                    const linkQuery = query.split('.').splice(0, query.split('.').length - 1).join('.').concat('.url');
+                    const hrefValue = getValue(linkQuery);
+                    element.setAttribute('href', hrefValue);
+                }
             }
         }
     });

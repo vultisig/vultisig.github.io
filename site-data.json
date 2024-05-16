@@ -17,6 +17,9 @@
         "download": {
             "name:": "Download App",
             "url": "https://testflight.apple.com/join/CHHICwnO"
+        },
+        "alts": {
+            "logo": "Vultisig Logo"
         }
     },
     "footer": {
@@ -54,7 +57,7 @@
                 "links": [
                     {
                         "name": "Terms of Service",
-                        "url": "https://github.com/vultisig/docs/blob/main/other/terms.md" 
+                        "url": "https://github.com/vultisig/docs/blob/main/other/terms.md"
                     },
                     {
                         "name": "Privacy Policy",
@@ -62,7 +65,15 @@
                     }
                 ]
             }
-        ]
+        ],
+        "alts": {
+            "logo": "Vultisig",
+            "social": {
+                "discord-img": "Discord",
+                "github-img": "Github",
+                "twitter-img": "Twitter"
+            }
+        }
     },
     "home": {
         "header": {
@@ -165,6 +176,62 @@
             "play-store-link": {
                 "url": "#"
             }
+        },
+        "alts": {
+            "header": {
+                "logo": "Vultisig Logo",
+                "2024": "2024"
+            },
+            "segment-1": {
+                "img": "WHAT IS WRONG WITH WALLETS"
+            },
+            "segment-2": {
+                "items": [
+                    {
+                        "img": "Vultisig is the next evolution in crypto vaults"
+                    },
+                    {
+                        "img": "Vultisig is the next evolution in crypto vaults"
+                    },
+                    {
+                        "img": "Vultisig is the next evolution in crypto vaults"
+                    }
+                ]
+            },
+            "segment-3": {
+                "img": "SEAMLESS SECURITY Of Vultisig"
+            },
+            "segment-4": {
+                "items": [
+                    {
+                        "img": "Full Defi"
+                    },
+                    {
+                        "img": "Remote Signing"
+                    },
+                    {
+                        "img": "Transaction Policies"
+                    }
+                ]
+            },
+            "segment-5": {
+                "items": [
+                    {
+                        "img": "Full Defi"
+                    },
+                    {
+                        "img": "Remote Signing"
+                    },
+                    {
+                        "img": "Transaction Policies"
+                    }
+                ]
+            },
+            "store": {
+                "iphone-img": "SECURE YOUR DIGITAL ASSETS NOW",
+                "app-store-img": "Download on AppStore",
+                "play-store-img": "Download on PlayStore"
+            }
         }
     },
     "how-it-works": {
@@ -195,6 +262,26 @@
             "play-store-link": {
                 "url": "#"
             }
+        },
+        "alts": {
+            "header": {
+                "logo": "Vultisig Logo",
+                "img": "SIMPLE STEPS,SUPERIOR SECURITY - THE VULTISIG DIFFERENCE"
+            },
+            "segment-2": {
+                "img": "USE YOUR TRUSTED DEVICES"
+            },
+            "segment-3": {
+                "img": "ASSET MANAGEMENT HUB"
+            },
+            "segment-4": {
+                "img": "EASY Asset Exchange"
+            },
+            "store": {
+                "ipad": "Store Links",
+                "app-store-img": "Download on AppStore",
+                "play-store-img": "Download on PlayStore"
+            }
         }
     },
     "docs": {
@@ -212,6 +299,17 @@
             "link": {
                 "name": "LEARN MORE",
                 "url": "https://discord.gg/54wEtGYxuv"
+            }
+        },
+        "alts": {
+            "header": {
+                "img": "Want to learn about how Vultisig works"
+            },
+            "segment-1": {
+                "logo": "Vultisig Logo"
+            },
+            "segment-2": {
+                "img": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions."
             }
         }
     },
@@ -261,7 +359,17 @@
                 "q": "What is the Airdrop Strategy?",
                 "a": "     The first Airdrop period goes for 12 months - it is 10% of the Supply of $VULT. <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of 20% will be airdropped."
             }
-        ]
+        ],
+        "alts": {
+            "header": {
+                "img": "VLTI"
+            },
+            "chart": "Launch Chart",
+            "airdrop": {
+                "logo": "Vultisig logo"
+            },
+            "back-logo": "Vultisig logo"
+        }
     },
     "faqs": {
         "main-title": "FAQ",
