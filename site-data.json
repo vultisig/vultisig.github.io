@@ -11,7 +11,7 @@
             },
             {
                 "name": "$VULT",
-                "url": "/vlti.html"
+                "url": "/vult.html"
             }
         ],
         "download": {
@@ -362,7 +362,7 @@
         ],
         "alts": {
             "header": {
-                "img": "VLTI"
+                "img": "VULT"
             },
             "chart": "Launch Chart",
             "airdrop": {
