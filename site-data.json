@@ -10,7 +10,7 @@
                 "url": "/docs.html"
             },
             {
-                "name": "$VLTI",
+                "name": "$VULT",
                 "url": "/vlti.html"
             }
         ],
@@ -217,7 +217,7 @@
     },
     "vlti": {
         "header": {
-            "title": "THE <span class='gradient-text'>$VLTI</span> <br>TOKEN",
+            "title": "THE <span class='gradient-text'>$VULT</span> <br>TOKEN",
             "price": "$0.01",
             "data": [
                 {
@@ -233,7 +233,7 @@
                     "value": "0"
                 }
             ],
-            "text": "All swap and bridge fees buy and burn $VLTI. Simply hold in your wallet to participate."
+            "text": "All swap and bridge fees buy and burn $VULT. Simply hold in your wallet to participate."
         },
         "airdrop": {
             "main-title": "THE Vultisig AIRDROP",
@@ -259,7 +259,7 @@
             },
             {
                 "q": "What is the Airdrop Strategy?",
-                "a": "     The first Airdrop period goes for 12 months - it is 10% of the Supply of $VLTI. <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of 20% will be airdropped."
+                "a": "     The first Airdrop period goes for 12 months - it is 10% of the Supply of $VULT. <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of 20% will be airdropped."
             }
         ]
     },
