@@ -16,7 +16,7 @@
         ],
         "download": {
             "name:": "Download App",
-            "url": "https://testflight.apple.com/join/kpVufItl"
+            "url": "./index.html#store-section"
         },
         "alts": {
             "logo": "Vultisig Logo"
