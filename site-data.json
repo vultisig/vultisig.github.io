@@ -82,7 +82,8 @@
     "home": {
         "header": {
             "slogan": "SECURE. SIMPLE.</br> <span class='ps-5'>COMPLETELY IN</span> </br> <span class='gradient-text'>YOUR</span> CONTROL.",
-            "sub-slogan": "Introducing <strong class='monserrat-semibold'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements."
+            "sub-slogan": "Introducing <strong class='monserrat-semibold'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
+            "download-title": "Now Available for iOS, Mac and Android:"
         },
         "segment-1": {
             "main-title": "PROBLEMS",
@@ -287,7 +288,7 @@
             "store": {
                 "ipad": "Store Links",
                 "app-store-img": "Download on AppStore",
-                "github-img":"Download on Github",
+                "github-img": "Download on Github",
                 "play-store-img": "Download on PlayStore"
             }
         }
