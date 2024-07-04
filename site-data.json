@@ -177,6 +177,9 @@
             "app-store-link": {
                 "url": "https://testflight.apple.com/join/kpVufItl"
             },
+            "github-link": {
+                "url": "https://github.com/vultisig/vultisig-ios/releases"
+            },
             "play-store-link": {
                 "url": "https://play.google.com/store/apps/details?id=com.vultisig.wallet"
             }
@@ -284,6 +287,7 @@
             "store": {
                 "ipad": "Store Links",
                 "app-store-img": "Download on AppStore",
+                "github-img":"Download on Github",
                 "play-store-img": "Download on PlayStore"
             }
         }
