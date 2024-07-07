@@ -86,7 +86,7 @@
     "home": {
         "header": {
             "slogan": "SECURE. SIMPLE.</br> <span class='ps-5'>COMPLETELY IN</span> </br> <span class='gradient-text'>YOUR</span> CONTROL.",
-            "sub-slogan": "Introducing <strong class='monserrat-semibold'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
+            "sub-slogan": "Introducing <strong class='monserrat-semibold gradient-text'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
             "download-title": "Now Available for iOS, Mac and Android:"
         },
         "segment-1": {
@@ -112,16 +112,16 @@
             "sub-title": "Vultisig is the next evolution in crypto vaults",
             "items": [
                 {
-                    "title": "USE YOUR EXISTING DEVICES",
-                    "description": "Forget hardware - use your phone as a co-signer device! Large screens, excellent user experience - easily verify transactions. Camera, bluetooth, wifi, cellular, USBC, secure enclaves, biometrics - all there."
+                    "title": "Rich hardware",
+                    "description": "Forget special hardware - use your current phone as a co-signer device! <br/> Large screens, excellent user experience - easily verify transactions. Camera, bluetooth, wifi, cellular, USBC, secure enclaves, biometrics - all there. "
                 },
                 {
-                    "title": "EVERYONE HAS THEM ALREADY",
-                    "description": "Everyone has a phone, laptop or tablet. They are fast and powerful. They have full encryption and security. They don’t look like crypto wallets! You don’t need anything else."
+                    "title": "Familiar hardware",
+                    "description": "Everyone has a phone, laptop or tablet. They are fast and powerful. They have full encryption and security. They don’t look like crypto wallets! You don’t need anything else. "
                 },
                 {
-                    "title": "BUILT WITH MAGIC",
-                    "description": "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key is vulnerable. No seed phrases. And native to all crypto networks."
+                    "title": "Threshold Signatures",
+                    "description": "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key is vulnerable. No seed phrases. And native to all crypto networks. "
                 }
             ]
         },
@@ -131,15 +131,15 @@
             "items": [
                 {
                     "title": "Vault Generation",
-                    "description": "KeyGen time: <strong class='monserrat-bold'>10 seconds.</strong> <br> 2of2, 2of3, or 3of4 - choose your vault type. Key generation is fast. No device holds the vault private key."
+                    "description": "KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 2of2, 2of3, or 3of4 - choose your vault type. Key generation is fast. No device holds the vault private key."
                 },
                 {
                     "title": "Transaction Signing",
-                    "description": "KeySign time: <strong class='monserrat-bold'>5 seconds.</strong><br> One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and must be done in-person."
+                    "description": "KeySign time: <strong class='monserrat-bold'>5 - 10 seconds.</strong><br> One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and must be done in-person."
                 },
                 {
-                    "title": "Re-sharing",
-                    "description": "Reshare Time: <strong class='monserrat-bold'>10 seconds.</strong> <br> Lost a device? Replace it easily without changing the vault. Want to increase security? Go from 2of3 to 3of4 easily."
+                    "title": "Resharing",
+                    "description": "Reshare Time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> Lost a device? Replace it easily without changing the vault. Want to increase security? Go from 2of3 to 3of4 easily."
                 }
             ]
         },
@@ -152,16 +152,16 @@
                 },
                 {
                     "title": "Remote Signing",
-                    "description": "Sign securely with a remote co-signer around the world."
+                    "description": "Sign with a remote co-signer. All messages are encrypted between devices and can never be intercepted."
                 },
                 {
                     "title": "Transaction Policies",
-                    "description": "Nominate spend limits, address whitelists and more."
+                    "description": "Nominate transaction policies for your vault - spend limits, address whitelists and more. <br/>(COMING SOON)"
                 }
             ]
         },
         "segment-5": {
-            "main-title": "WHO IS <span class='gradient-text'>Vultisig </span>FOR ",
+            "main-title": "WHO IS <span class='gradient-text'>VULTISIG </span>FOR ",
             "items": [
                 {
                     "title": "WHALES",
