@@ -50,6 +50,10 @@
                         "url": "/faq.html"
                     },
                     {
+                        "name": "Audits",
+                        "url": "https://docs.vultisig.com/threshold-signature-scheme/security"
+                    },
+                    {
                         "name": "Contact Us",
                         "url": "https://twitter.com/vultisig"
                     }
