@@ -235,6 +235,7 @@ h2 {
 
 .navbar {
     padding-block: 25px;
+    height: 122px;
 }
 
 .color-neutral {
@@ -287,6 +288,13 @@ hr.solid {
     height: 30px;
 }
 
+.blue-section {
+    position: relative;
+    background-color: #061B3A;
+    color: white;
+    padding-block: 50px;
+    border-radius: 1.5rem;
+}
 
 @media (min-width: 993px) {
     .container {

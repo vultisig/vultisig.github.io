@@ -86,6 +86,9 @@ function replaceInnerHTMLWithJSONValues() {
             if (element.getAttribute('data-attribute') === 'alt') {
                 const altValue = getValue(query);
                 element.setAttribute('alt', altValue);
+            } else if (element.getAttribute('data-attribute') === 'src') {
+                const srcValue = getValue(query);
+                element.setAttribute('src', srcValue);
             } else {
                 // set innerhtml & href
                 const value = getValue(query);
