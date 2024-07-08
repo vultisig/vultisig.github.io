@@ -34,16 +34,6 @@
     right: 2rem;
 }
 
-
-
-.blue-section {
-    position: relative;
-    background-color: #061B3A;
-    color: white;
-    padding-block: 50px;
-    border-radius: 0.75rem;
-}
-
 .text-small {
     font-size: medium;
     font-weight: 100;
@@ -160,7 +150,7 @@
 }
 
 @media (max-width: 576px) {
- 
+
     #store-img-cont {
         min-height: 250px;
     }

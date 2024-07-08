@@ -3,3 +3,32 @@
 #page-title {
     font-size: calc(1rem + 2vw);
 }
+
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 10%;
+    gap: 10px;
+}
+
+.card-item {
+    background: #02122B;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item img {
+    border-radius: 50%;
+}
+
+@media (max-width:992px) {
+    .card-cont {
+        justify-content: center;
+    }
+}

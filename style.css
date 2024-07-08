@@ -287,6 +287,13 @@ hr.solid {
     height: 30px;
 }
 
+.blue-section {
+    position: relative;
+    background-color: #061B3A;
+    color: white;
+    padding-block: 50px;
+    border-radius: 0.75rem;
+}
 
 @media (min-width: 993px) {
     .container {
