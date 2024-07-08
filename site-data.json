@@ -260,7 +260,7 @@
         },
         "segment-2": {
             "title": "USE Your <span class='gradient-text'> Trusted </span> <br> Devices",
-            "description": "With Vultisig, you bring your own devices - phone, desktop, laptops or tablets. Your devices create vaults together using their unique keys called “vault shares”, which are unique to each device. <br/> <br/> Vault-shares never store funds and can be safely imported/exported anywhere. <br/> <br/> Each vault is natively two-factor -- and you can co-sign safely anywhere in the world."
+            "description": "With Vultisig, you bring your own devices - phone, desktop, laptops or tablets. <br/> Your devices create vaults together using their unique keys called “vault shares”, which are unique to each device. <br/> <br/> Vault-shares never store funds and can be safely imported/exported anywhere. <br/> <br/> Each vault is natively two-factor -- and you can co-sign safely anywhere in the world."
         },
         "segment-3": {
             "title": "Asset Management Hub",
