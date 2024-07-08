@@ -292,7 +292,7 @@ hr.solid {
     background-color: #061B3A;
     color: white;
     padding-block: 50px;
-    border-radius: 0.75rem;
+    border-radius: 1.5rem;
 }
 
 @media (min-width: 993px) {
