@@ -301,6 +301,9 @@
             }
         }
     },
+    "backed-by": {
+        "title": "BACKED AND TRUSTED BY"
+    },
     "docs": {
         "segment-1": {
             "title": "READ THE <br>DOCS",
