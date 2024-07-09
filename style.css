@@ -312,6 +312,9 @@ hr.solid {
     .ps-5 {
         padding-left: 2rem !important;
     }
+    .navbar {
+        height: unset;
+    }
 }
 
 @media (max-width: 768px) {
