@@ -37,6 +37,26 @@
 #segment-1 .card-item {
     width: 250px;
     height: 250px;
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: 1em;
+    margin: auto;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -5px;
+        border-radius: inherit;
+        background: linear-gradient(153deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%);
+    }
 }
 
 #segment-2 .card-item {
