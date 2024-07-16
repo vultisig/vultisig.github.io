@@ -2,7 +2,7 @@
 
 import { NavBar } from "./shared-components/NavBar";
 import { Footer } from "./shared-components/Footer";
-import Home from "./(pages)/Home/page";
+import Home from "./(pages)/home/page";
 
 
 export default async function Main() {
