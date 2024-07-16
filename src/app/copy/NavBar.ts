@@ -2,12 +2,12 @@ export const navBarCopy = {
     navbarLinks: [
         {
             name: "How it Works",
-            url: "/Howitworks",
+            url: "/HowItWorks",
             target: "_self"
         },
         {
             name: "Backed by",
-            url: "/Backedby",
+            url: "/BackedBy",
             target: "_self"
         },
         {
@@ -17,7 +17,7 @@ export const navBarCopy = {
         },
         {
             name: "$VULT",
-            url: "/Vult",
+            url: "/VULT",
             target: "_self"
         }
     ],

@@ -1,0 +1,10 @@
+{
+  "/(pages)/BackedBy/page": "app/(pages)/BackedBy/page.js",
+  "/(pages)/Docs/page": "app/(pages)/Docs/page.js",
+  "/(pages)/VULT/page": "app/(pages)/VULT/page.js",
+  "/(pages)/faq/page": "app/(pages)/faq/page.js",
+  "/(pages)/Privacy/page": "app/(pages)/Privacy/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(pages)/HowItWorks/page": "app/(pages)/HowItWorks/page.js",
+  "/page": "app/page.js"
+}

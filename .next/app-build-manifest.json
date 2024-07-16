@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/(pages)/HowItWorks/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/HowItWorks/page.css",
+      "static/chunks/app/(pages)/HowItWorks/page.js"
+    ],
+    "/(pages)/BackedBy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/BackedBy/page.css",
+      "static/chunks/app/(pages)/BackedBy/page.js"
+    ],
+    "/(pages)/Docs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/Docs/page.css",
+      "static/chunks/app/(pages)/Docs/page.js"
+    ],
+    "/(pages)/VULT/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/VULT/page.css",
+      "static/chunks/app/(pages)/VULT/page.js"
+    ],
+    "/(pages)/faq/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/faq/page.css",
+      "static/chunks/app/(pages)/faq/page.js"
+    ],
+    "/(pages)/Privacy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/Privacy/page.css",
+      "static/chunks/app/(pages)/Privacy/page.js"
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "node": {
+    "c353ef8f32bc404ff7bb2242e0433c939437d6f8": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CHome%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "51cad5f23a1e0ea67b6d8cae940ea125a85c5777": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CHome%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "6f3373fcf08d001d0870977fbdb753374a6e8139": {
+      "workers": {
+        "app/(pages)/HowItWorks/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CHowItWorks%5C%5Cpage.tsx%22%2C%5B%22default%22%2C%22metadata%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/HowItWorks/page": "rsc"
+      }
+    },
+    "26debf4e5d159d78f8c4c669f497be1366eb7e51": {
+      "workers": {
+        "app/(pages)/BackedBy/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CBackedBy%5C%5Cpage.tsx%22%2C%5B%22metadata%22%2C%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/BackedBy/page": "rsc"
+      }
+    },
+    "c18f413c9cc01c7071d8e1d6b25a4fa09cd53889": {
+      "workers": {
+        "app/(pages)/BackedBy/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CBackedBy%5C%5Cpage.tsx%22%2C%5B%22metadata%22%2C%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/BackedBy/page": "rsc"
+      }
+    },
+    "9e793725fa83b83094a4f1150fcefb2be8b1ae40": {
+      "workers": {
+        "app/(pages)/Docs/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CDocs%5C%5Cpage.tsx%22%2C%5B%22metadata%22%2C%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/Docs/page": "rsc"
+      }
+    },
+    "113c012b36e9235b7a6355f42916472d5e6f9ae3": {
+      "workers": {
+        "app/(pages)/VULT/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CVULT%5C%5Cpage.tsx%22%2C%5B%22default%22%2C%22metadata%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/VULT/page": "rsc"
+      }
+    },
+    "73a06394161c620c13a5940de7b48d10b345a819": {
+      "workers": {
+        "app/(pages)/faq/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5Cfaq%5C%5Cpage.tsx%22%2C%5B%22metadata%22%2C%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/faq/page": "rsc"
+      }
+    },
+    "489178a028b2a7c3d995b15f97ab69481ad6a2f3": {
+      "workers": {
+        "app/(pages)/Docs/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CDocs%5C%5Cpage.tsx%22%2C%5B%22metadata%22%2C%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/Docs/page": "rsc"
+      }
+    },
+    "2c53ff6eee18f3078f43eace688e909b920f70ef": {
+      "workers": {
+        "app/(pages)/faq/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5Cfaq%5C%5Cpage.tsx%22%2C%5B%22metadata%22%2C%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/faq/page": "rsc"
+      }
+    },
+    "9d26f6e4df1eb7147822cde9e22a03b375a45e64": {
+      "workers": {
+        "app/(pages)/HowItWorks/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CHowItWorks%5C%5Cpage.tsx%22%2C%5B%22default%22%2C%22metadata%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/HowItWorks/page": "rsc"
+      }
+    },
+    "04f24ecab60ee274a19bfb502c3bf76c5956e635": {
+      "workers": {
+        "app/(pages)/Privacy/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CPrivacy%5C%5Cpage.tsx%22%2C%5B%22default%22%2C%22metadata%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/Privacy/page": "rsc"
+      }
+    },
+    "ec189415b4ed5589887ff4f1bebee1c03503a6c4": {
+      "workers": {
+        "app/(pages)/Privacy/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CPrivacy%5C%5Cpage.tsx%22%2C%5B%22default%22%2C%22metadata%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/Privacy/page": "rsc"
+      }
+    },
+    "b960576f1158394688a102e41fa3bde2e68c8cd4": {
+      "workers": {
+        "app/(pages)/VULT/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22G%3A%5C%5CMeysam%5C%5CProgramming%20Projects%5C%5CBitwatt%5C%5Cvultisig.github.io%5C%5Csrc%5C%5Capp%5C%5C(pages)%5C%5CVULT%5C%5Cpage.tsx%22%2C%5B%22default%22%2C%22metadata%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(pages)/VULT/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "m+TApI2YfzmS57OoTSxjjL/5Bdeqsbh768hbeghziN8="
+}
