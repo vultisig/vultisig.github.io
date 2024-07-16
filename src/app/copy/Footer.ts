@@ -31,9 +31,9 @@ export const footerCopy = {
             title: "Support",
             links: [
                 {
-                    name: "FAQs",
+                    name: "faq",
                     url: "/Faq",
-                    target: "_blank"
+                    target: "_self"
                 },
                 {
                     name: "Audits",
@@ -57,8 +57,8 @@ export const footerCopy = {
                 },
                 {
                     name: "Privacy Policy",
-                    url: "/Privacy",
-                    target: "_blank"
+                    url: "/privacy",
+                    target: "_self"
                 }
             ]
         }
