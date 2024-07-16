@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Vultisig | VULT</title>
+    <meta name="description"
+        content="Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.">
+    <meta name="keywords"
+        content="Vultisig, Vultisig Token, Vultisig VULT, Vultisig Airdrop, Vultisig CIRCULATING SUPPLY, Vultisig asset exchange">
+    <meta name="author" content="Vultisig">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Vultisig">
+    <meta property="og:title" content="Vultisig | VULT">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.">
+    <meta property="og:image" content="https://vultisig.com/img/vix-header.png">
+    <meta property="og:url" content="https://vultisig.com/vult.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://vultisig.com/vult.html">
+    <meta name="twitter:creator" content="Vultisig">
+    <meta name="twitter:title" content="Vultisig | VULT">
+    <meta name="twitter:description"
+        content="Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.">
+    <meta name="twitter:image" content="https://vultisig.com/img/vix-header.png">
+    <link rel="stylesheet" href="./vult.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+</head>
+
+<body onload="loadJs()">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+    <div class="content text-light">
+        <div class="container">
+
+            <header class="header mb-2">
+                <nav id="navbar"></nav>
+
+                <div class="mt-5 mb-5 text-white">
+                    <div class="row  py-5 align-items-center">
+                        <div class="col-lg-5 ps-lg-5" style="position: relative;">
+                            <div class="monserrat-bold  slogan ms-auto">
+                                <strong data-query="vlti.header.title"> </strong>
+                                <br>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 d-flex ">
+                            <div class="header-img-container d-flex align-items-center mx-auto ms-lg-auto">
+                                <div class="background-circle"></div>
+                                <div class="background-overlay"></div>
+                                <img class="header-img" data-query="vlti.alts.header.img" data-attribute="alt"
+                                    src="./img/vix-header.svg" alt="VLTI">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="monserrat-bold slogan text-center text-lg-start"><strong
+                                    data-query="vlti.header.price"></strong></div>
+                        </div>
+                    </div>
+                    <div class="mt-5 pt-4 d-flex" style="justify-content: space-around;flex-wrap: wrap;">
+                        <div class="px-5">
+                            <div class="text-uppercase monserrat-medium gradient-text mx-lg-0 mx-auto mt-5 mt-lg-0"
+                                style="font-size: medium;" data-query="vlti.header.data.0.title"></div>
+                            <div class="monserrat-bold text-lg-start text-center" style="font-size: xx-large;"
+                                data-query="vlti.header.data.0.value"></div>
+                        </div>
+                        <div class="px-5 justify-content-center">
+                            <div class="text-uppercase monserrat-medium gradient-text m-auto mt-5 mt-lg-0"
+                                style="font-size: medium;" data-query="vlti.header.data.1.title"></div>
+                            <div class="monserrat-bold text-center " style="font-size: xx-large;"
+                                data-query="vlti.header.data.1.value"></div>
+                        </div>
+                        <div class="px-5">
+                            <div class="text-uppercase monserrat-medium gradient-text mx-lg-0 mx-auto mt-5 mt-lg-0"
+                                style="font-size: medium;" data-query="vlti.header.data.2.title"></div>
+                            <div class="monserrat-bold text-lg-start text-center" style="font-size: xx-large;"
+                                data-query="vlti.header.data.2.value"></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 monserrat-medium" style="font-size: medium; " data-query="vlti.header.text"></div>
+                </div>
+
+            </header>
+
+            <div class="mt-5 text-center ">
+                <img class="vix-chart" src="./img/vix-chart.svg" data-query="vlti.alts.chart" data-attribute="alt"
+                    alt="Launch Chart">
+            </div>
+
+            <div class="mt-5 mb-5 air-drop text-center" style="position: relative;">
+                <h2 class="mt-5 p-text monserrat-bold" data-query="vlti.airdrop.main-title"></h2>
+                <h1 class="mt-4 monserrat-bold gradient-text mx-auto" data-query="vlti.airdrop.details.0.value"></h1>
+                <h5 class="mt-4 p-text monserrat-medium text-uppercase" data-query="vlti.airdrop.details.0.title"></h5>
+                <h2 class="mt-4 p-text monserrat-bold gradient-text mx-auto" data-query="vlti.airdrop.details.1.value">
+                </h2>
+                <h5 class="mt-4 p-text monserrat-medium text-uppercase" data-query="vlti.airdrop.details.1.title"></h5>
+                <img style="position: absolute;bottom: -5rem;left: 10%;width: 220px;height: 220px;"
+                    data-query="vlti.alts.airdrop.logo" data-attribute="alt" src="./img/back-logo.svg"
+                    alt="Vultisig logo">
+            </div>
+
+            <div class="vix-faq">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button  menlo" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                data-query="vlti.faq.0.q">
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body monserrat-regular color-neutral-200">
+                                <p data-query="vlti.faq.0.a">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingTwo">
+                            <button class="accordion-button  collapsed menlo" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                data-query="vlti.faq.1.q">
+
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body monserrat-regular color-neutral-200">
+                                <p data-query="vlti.faq.1.a">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed menlo " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                data-query="vlti.faq.2.q">
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body monserrat-regular color-neutral-200">
+                                <p data-query="vlti.faq.2.a">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <img style="position: absolute;bottom: -15rem;right: -3rem;width: 220px;height: 220px;z-index: -1;"
+                    src="./img/back-logo.svg" data-query="vlti.alts.back-logo" data-attribute="alt" alt="Vultisig logo">
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div class="circle-top-left"></div>
+            <div class="circle-top-left-glow"></div>
+            <div class="circle-top-right"></div>
+            <div class="circle-top-right-glow"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

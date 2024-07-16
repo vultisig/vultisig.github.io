@@ -1,0 +1,124 @@
+@import url('style.css');
+
+#page-title {
+    font-size: calc(1rem + 2vw);
+}
+
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 10%;
+    gap: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.card-item {
+    background: #02122B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item:hover {
+    background: #02122bb0;
+
+}
+
+.card-item .avatar {
+    width: 100px;
+    height: 100px;
+}
+
+#segment-1 .card-item {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: 1em;
+    margin: auto;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -5px;
+        border-radius: inherit;
+        background: linear-gradient(153deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%);
+    }
+}
+
+#segment-2 .card-item {
+    width: 350px;
+    height: 275px;
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: 1em;
+    margin: auto;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -5px;
+        border-radius: inherit;
+        background: linear-gradient(153deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%);
+    }
+}
+
+#segment-3 .card-item {
+    width: 210px;
+    height: 250px;
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: 1em;
+    margin: auto;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin-top: -5px;
+        border-radius: inherit;
+        background: linear-gradient(153deg, rgba(51, 230, 191, 1) 0%, rgba(4, 57, 199, 1) 100%);
+    }
+}
+
+#segment-3 {
+    margin-bottom: 8rem;
+}
+
+.card-item img {
+    border-radius: 50%;
+}
+
+@media (max-width:992px) {
+    .card-cont {
+        justify-content: center;
+    }
+}

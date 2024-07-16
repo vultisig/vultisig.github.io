@@ -1,0 +1,160 @@
+@import url(./style.css);
+
+.slogan {
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: start;
+    /* font-size: 60pt; */
+    /* font-size: 5rem; */
+    font-size: calc(1rem + 4vw);
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 117%;
+
+}
+
+.sub-slogan {
+    font-size: 18px
+}
+
+.header-img-container {
+    position: relative;
+    /* width: 512px;
+    height: 500px; */
+    width: 80%;
+    height: 80%;
+    /* overflow: hidden; */
+}
+
+.background-circle-2 {
+    position: absolute;
+    bottom: 5%;
+    right: -20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 2px solid #33e6bf27;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.background-overlay-2 {
+    position: absolute;
+    bottom: 5%;
+    right: -20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(321deg, rgba(4, 57, 199, 0.21) 0%, rgba(2, 18, 42, 0.38) 100%);
+    filter: blur(50px);
+}
+
+.background-circle {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 2px solid #33e6bf27;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.background-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(321deg, rgba(4, 57, 199, 0.21) 0%, rgba(2, 18, 42, 0.38) 100%);
+    filter: blur(50px);
+}
+
+.header-img {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#docs-back-logo {
+    position: absolute;
+    top: 25%;
+    left: 15rem;
+    height: 120px;
+    width: 120px;
+
+}
+
+@media (min-width: 993px) {
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .m-left {
+        /* margin-left: -5rem; */
+    }
+
+    #docs-back-logo {
+        top: 10%;
+        left: 5rem;
+        height: 120px;
+        width: 120px;
+    }
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .m-left {
+        /* margin-left: -5rem; */
+    }
+
+    .sub-slogan {
+        font-size: 16px !important;
+    }
+
+    .background-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .background-overlay {
+        width: 200px;
+        height: 200px;
+    }
+
+    .background-circle-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .background-overlay-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    #docs-back-logo {
+        top: 10%;
+        left: 5rem;
+        height: 120px;
+        width: 120px;
+    }
+}

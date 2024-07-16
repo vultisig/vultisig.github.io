@@ -1,0 +1,600 @@
+{
+    "navbar": {
+        "navbar-links": [
+            {
+                "name": "How it Works",
+                "url": "/how-it-works.html"
+            },
+            {
+                "name": "Backed by",
+                "url": "/backed-by.html"
+            },
+            {
+                "name": "Docs",
+                "url": "/docs.html"
+            },
+            {
+                "name": "$VULT",
+                "url": "/vult.html"
+            }
+        ],
+        "download": {
+            "name:": "Download App",
+            "url": "./index.html#store-section"
+        },
+        "alts": {
+            "logo": "Vultisig Logo"
+        }
+    },
+    "footer": {
+        "discord": {
+            "title": "JOIN THE DISCORD TO REQUEST NEW <br> FEATURES!",
+            "url": "https://discord.gg/54wEtGYxuv"
+        },
+        "social": {
+            "github-link": {
+                "url": "https://github.com/Vultisig/"
+            },
+            "twitter-link": {
+                "url": "https://twitter.com/vultisig"
+            },
+            "discord-link": {
+                "url": "https://discord.gg/54wEtGYxuv"
+            },
+            "telegram-link": {
+                "url": "https://t.me/vultisig"
+            }
+        },
+        "footer-links": [
+            {
+                "title": "Support",
+                "links": [
+                    {
+                        "name": "FAQs",
+                        "url": "/faq.html"
+                    },
+                    {
+                        "name": "Audits",
+                        "url": "https://docs.vultisig.com/threshold-signature-scheme/security"
+                    },
+                    {
+                        "name": "Contact Us",
+                        "url": "https://twitter.com/vultisig"
+                    }
+                ]
+            },
+            {
+                "title": "Legal",
+                "links": [
+                    {
+                        "name": "Terms of Service",
+                        "url": "https://github.com/vultisig/docs/blob/main/other/terms.md"
+                    },
+                    {
+                        "name": "Privacy Policy",
+                        "url": "/privacy-policy.html"
+                    }
+                ]
+            }
+        ],
+        "alts": {
+            "logo": "Vultisig",
+            "social": {
+                "discord-img": "Discord",
+                "github-img": "Github",
+                "twitter-img": "Twitter",
+                "telegram-link": "Telegram"
+            }
+        }
+    },
+    "home": {
+        "header": {
+            "slogan": "SECURE. SIMPLE.</br> <span class='ps-5'>COMPLETELY IN</span> </br> <span class='gradient-text'>YOUR</span> CONTROL.",
+            "sub-slogan": "Introducing <strong class='monserrat-semibold gradient-text'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
+            "download-title": "Now Available for iOS, Mac and Android:"
+        },
+        "segment-1": {
+            "main-title": "PROBLEMS",
+            "sub-title": "WHAT IS WRONG WITH <br>WALLETS",
+            "items": [
+                {
+                    "title": "Single-signature wallets are dangerous",
+                    "description": "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your metamask? Forget your backup phrase? Get your iCloud hacked? <strong class='monserrat-bold'>One mistake and forever rekt.</strong>"
+                },
+                {
+                    "title": "Hardware wallets are clunky",
+                    "description": "Small screens, small buttons, annoying interfaces. Complicated setup instructions, scary firmware updates and confusing transactions. <br> <strong class='monserrat-bold'>Why can’t it be better.</strong>"
+                },
+                {
+                    "title": "Multi-sig wallets are painful",
+                    "description": "Lose one key, lose it all. Multi-sig is the solution, but does not work natively. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. <strong class='monserrat-bold'>If only there was something that works.</strong>"
+                }
+            ]
+        },
+        "segment-2": {
+            "main-title": "THE <span class='gradient-text'>SOLUTION</span> ",
+            "sub-title": "Vultisig is the next evolution in crypto vaults",
+            "items": [
+                {
+                    "title": "Rich hardware",
+                    "description": "Forget special hardware - use your current phone as a co-signer device! <br/> Large screens, excellent user experience - easily verify transactions. Camera, bluetooth, wifi, cellular, USBC, secure enclaves, biometrics - all there. "
+                },
+                {
+                    "title": "Familiar hardware",
+                    "description": "Everyone has a phone, laptop or tablet. They are fast and powerful. They have full encryption and security. They don’t look like crypto wallets! You don’t need anything else. "
+                },
+                {
+                    "title": "Threshold Signatures",
+                    "description": "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key is vulnerable. No seed phrases. And native to all crypto networks. "
+                }
+            ]
+        },
+        "segment-3": {
+            "main-title": "USER EXPERIENCE",
+            "sub-title": "SEAMLESS SECURITY",
+            "items": [
+                {
+                    "title": "Vault Generation",
+                    "description": "KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 2of2, 2of3, or 3of4 - choose your vault type. Key generation is fast. No device holds the vault private key."
+                },
+                {
+                    "title": "Transaction Signing",
+                    "description": "KeySign time: <strong class='monserrat-bold'>5 - 10 seconds.</strong><br> One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and must be done in-person."
+                },
+                {
+                    "title": "Resharing",
+                    "description": "Reshare Time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> Lost a device? Replace it easily without changing the vault. Want to increase security? Go from 2of3 to 3of4 easily."
+                }
+            ]
+        },
+        "segment-4": {
+            "main-title": "OTHER <span class='gradient-text'>FEATURES</span> ",
+            "items": [
+                {
+                    "title": "Full DeFi",
+                    "description": "Swaps, Bridging, DeFi - right from your Vault."
+                },
+                {
+                    "title": "Remote Signing",
+                    "description": "Sign with a remote co-signer. All messages are encrypted between devices and can never be intercepted."
+                },
+                {
+                    "title": "Transaction Policies",
+                    "description": "Nominate transaction policies for your vault - spend limits, address whitelists and more. <br/>(COMING SOON)"
+                }
+            ]
+        },
+        "segment-5": {
+            "main-title": "WHO IS <span class='gradient-text'>VULTISIG </span>FOR ",
+            "items": [
+                {
+                    "title": "WHALES",
+                    "description": "If you have more than $100k in crypto, you MUST consider upgrading to a TSS vault. Your funds are at-risk on all other wallets. Download it now. "
+                },
+                {
+                    "title": "FUNDS",
+                    "description": "Vultisig is the open-source audited alternative to your current “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world."
+                },
+                {
+                    "title": "TREASURIES",
+                    "description": "TSS is natively compatible to all chains. Together with transaction policies, designate your leads the ability to pay staff with limits, whitelists and more."
+                }
+            ]
+        },
+        "store": {
+            "title": "SECURE YOUR DIGITAL <br> ASSETS NOW",
+            "app-store-link": {
+                "url": "https://testflight.apple.com/join/kpVufItl"
+            },
+            "github-link": {
+                "url": "https://github.com/vultisig/vultisig-ios/releases"
+            },
+            "play-store-link": {
+                "url": "https://play.google.com/store/apps/details?id=com.vultisig.wallet"
+            }
+        },
+        "alts": {
+            "header": {
+                "logo": "Vultisig Logo",
+                "2024": "2024"
+            },
+            "segment-1": {
+                "img": "WHAT IS WRONG WITH WALLETS"
+            },
+            "segment-2": {
+                "items": [
+                    {
+                        "img": "Vultisig is the next evolution in crypto vaults"
+                    },
+                    {
+                        "img": "Vultisig is the next evolution in crypto vaults"
+                    },
+                    {
+                        "img": "Vultisig is the next evolution in crypto vaults"
+                    }
+                ]
+            },
+            "segment-3": {
+                "img": "SEAMLESS SECURITY Of Vultisig"
+            },
+            "segment-4": {
+                "items": [
+                    {
+                        "img": "Full Defi"
+                    },
+                    {
+                        "img": "Remote Signing"
+                    },
+                    {
+                        "img": "Transaction Policies"
+                    }
+                ]
+            },
+            "segment-5": {
+                "items": [
+                    {
+                        "img": "Full Defi"
+                    },
+                    {
+                        "img": "Remote Signing"
+                    },
+                    {
+                        "img": "Transaction Policies"
+                    }
+                ]
+            },
+            "store": {
+                "iphone-img": "SECURE YOUR DIGITAL ASSETS NOW",
+                "app-store-img": "Download on AppStore",
+                "play-store-img": "Download on PlayStore"
+            }
+        }
+    },
+    "how-it-works": {
+        "header": {
+            "slogan": "SIMPLE STEPS,</br> <span class='ps-7'>SUPERIOR</span></br>SECURITY",
+            "sub-slogan": "The Vultisig Difference"
+        },
+        "segment-1": {
+            "title": "UNDERSTAND THE full capabilities of <br> <span class='gradient-text'>Vultisig</span> and how it SOLVES <span class='gradient-text'>crypto <br/> security</span>."
+        },
+        "segment-2": {
+            "title": "USE Your <span class='gradient-text'> Trusted </span> <br> Devices",
+            "description": "With Vultisig, you bring your own devices - phone, desktop, laptops or tablets. <br/> Your devices create vaults together using their unique keys called “vault shares”, which are unique to each device. <br/> <br/> Vault-shares never store funds and can be safely imported/exported anywhere. <br/> <br/> Each vault is natively two-factor -- and you can co-sign safely anywhere in the world."
+        },
+        "segment-3": {
+            "title": "Asset Management Hub",
+            "description": "All chains are compatible - Bitcoin, Ethereum, THORChain and even Solana. The first multi-chain multi-asset multi-signature wallet in the world. <br>You can deposit, send, swap and more inside Vultisig. "
+        },
+        "segment-4": {
+            "title": "EASY Asset Exchange",
+            "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. <br> It also supports advanced DeFi functions such as bonding to Nodes, Lending and Savers."
+        },
+        "store": {
+            "title": "Join thousands of users who trust VULTISIG with their digital assets. <br/>There is no registration required.",
+            "app-store-link": {
+                "url": "https://testflight.apple.com/join/CHHICwnO"
+            },
+            "play-store-link": {
+                "url": "https://play.google.com/store/apps/details?id=com.vultisig.wallet"
+            }
+        },
+        "alts": {
+            "header": {
+                "logo": "Vultisig Logo",
+                "img": "SIMPLE STEPS,SUPERIOR SECURITY - THE VULTISIG DIFFERENCE"
+            },
+            "segment-2": {
+                "img": "USE YOUR TRUSTED DEVICES"
+            },
+            "segment-3": {
+                "img": "ASSET MANAGEMENT HUB"
+            },
+            "segment-4": {
+                "img": "EASY Asset Exchange"
+            },
+            "store": {
+                "ipad": "Store Links",
+                "app-store-img": "Download on AppStore",
+                "github-img": "Download on Github",
+                "play-store-img": "Download on PlayStore"
+            }
+        }
+    },
+    "backed-by": {
+        "title": "BACKED AND TRUSTED BY",
+        "segment-1": {
+            "title": "FUNDS",
+            "cards": [
+                {
+                    "src": "./img/backed-by/logo-21e8.png",
+                    "title": "21e8 Capital",
+                    "twitter": "@21e8Capital",
+                    "url": "https://x.com/21e8Capital"
+                },
+                {
+                    "src": "./img/backed-by/logo-apollo.png",
+                    "title": "Apollo Capital",
+                    "twitter": "@ApolloCryptoAu",
+                    "url": "https://x.com/ApolloCryptoAu"
+                },
+                {
+                    "src": "./img/backed-by/logo-delphi.png",
+                    "title": "Delphi Labs",
+                    "twitter": "@Delphi_Digital",
+                    "url": "https://x.com/Delphi_Digital"
+                },
+                {
+                    "src": "./img/backed-by/logo-winter.png",
+                    "title": "Wintermute",
+                    "twitter": "@wintermute_t",
+                    "url": "https://x.com/wintermute_t"
+                },
+                {
+                    "src": "./img/backed-by/logo-danxia.png",
+                    "title": "Danxia Capital",
+                    "twitter": "@Danxia_Capital",
+                    "url": "https://x.com/Danxia_Capital"
+                },
+                {
+                    "src": "./img/backed-by/avatar-crypto-banter.png",
+                    "title": "Banter Capital",
+                    "twitter": "@cbantercap",
+                    "url": "https://x.com/bantercap"
+                },
+                {
+                    "src": "./img/backed-by/logo-proof.png",
+                    "title": "Proof Group",
+                    "twitter": "@njess",
+                    "url": "https://x.com/njess"
+                },
+                {
+                    "src": "./img/backed-by/logo-thunderbolt.png",
+                    "title": "Thunderbolt",
+                    "twitter": "@*",
+                    "url": "https://x.com/*"
+                },
+                {
+                    "src": "./img/backed-by/logo-upsidedao.png",
+                    "title": "UpsideDAO",
+                    "twitter": "@0xUpside",
+                    "url": "https://x.com/0xUpside"
+                },
+                {
+                    "src": "./img/backed-by/logo-magnet.png",
+                    "title": "Magnet Capital",
+                    "twitter": "@Magnet_Capital",
+                    "url": "https://x.com/Magnet_Capital"
+                },
+                {
+                    "src": "./img/backed-by/logo-kotti.png",
+                    "title": "Kotti Capital",
+                    "twitter": "@*",
+                    "url": "https://x.com/*"
+                },
+                {
+                    "src": "./img/backed-by/logo-masterventures.png",
+                    "title": "Master Ventures",
+                    "twitter": "@buildwithMV",
+                    "url": "https://x.com/buildwithMV"
+                }
+            ]
+        },
+        "segment-2": {
+            "title": "Founders",
+            "cards": [
+                {
+                    "src": "./img/backed-by/avatar-jpthor.png",
+                    "title": "JP THOR <br/> THORChain",
+                    "twitter": "@jpthor",
+                    "url": "https://x.com/jpthor"
+                },
+                {
+                    "src": "./img/backed-by/avatar-perklin.png",
+                    "title": "Perklin <br/> Shapeshift",
+                    "twitter": "@mperklin",
+                    "url": "https://x.com/mperklin"
+                },
+                {
+                    "src": "./img/backed-by/avatar-loilui.png",
+                    "title": "LoiLui <br/>Kyber",
+                    "twitter": "@loi_luu",
+                    "url": "https://x.com/loi_luu"
+                },
+                {
+                    "src": "./img/backed-by/avatar-marcel.png",
+                    "title": "Marcel<br/>THORWallet",
+                    "twitter": "@marcelharmann",
+                    "url": "https://x.com/marcelharmann"
+                },
+                {
+                    "src": "./img/backed-by/avatar-viktor.png",
+                    "title": "Viktor<br/>TrustWallet",
+                    "twitter": "@Vikmeup",
+                    "url": "https://x.com/Vikmeup"
+                },
+                {
+                    "src": "./img/backed-by/avatar-vik.png",
+                    "title": "Vik<br/>Cake Wallet",
+                    "twitter": "@vikrantnyc",
+                    "url": "https://x.com/vikrantnyc"
+                }
+            ]
+        },
+        "segment-3": {
+            "title": "KOLs",
+            "cards": [
+                {
+                    "src": "./img/backed-by/avatar-thortrades.png",
+                    "title": "THORTrades",
+                    "twitter": "@ThorTrades8",
+                    "url": "https://x.com/ThorTrades8"
+                },
+                {
+                    "src": "./img/backed-by/avatar-bruce.png",
+                    "title": "Bruce",
+                    "twitter": "@asparagoid",
+                    "url": "https://x.com/asparagoid"
+                },
+                {
+                    "src": "./img/backed-by/avatar-saunders.png",
+                    "title": "Saunders <br/> <span class='small'> Nuggets</span>",
+                    "twitter": "@NuggetsNewsAU",
+                    "url": "https://x.com/NuggetsNewsAU"
+                },
+                {
+                    "src": "./img/backed-by/avatar-slicex.png",
+                    "title": "SliceX",
+                    "twitter": "@SliceTank",
+                    "url": "https://x.com/SliceTank"
+                },
+                {
+                    "src": "./img/backed-by/avatar-ncf.png",
+                    "title": "NCF",
+                    "twitter": "@NoTableNoFun",
+                    "url": "https://x.com/NoTableNoFun"
+                },
+                {
+                    "src": "./img/backed-by/avatar-elroy.png",
+                    "title": "Elroy ARC",
+                    "twitter": "@icunucmi",
+                    "url": "https://x.com/icunucmi"
+                },
+                {
+                    "src": "./img/backed-by/logo-mechanism.png",
+                    "title": "Mechanism Capital",
+                    "twitter": "@MechanismCap",
+                    "url": "https://x.com/MechanismCap"
+                },
+                {
+                    "src": "./img/backed-by/avatar-wolf-of-defi.png",
+                    "title": "Wolf of Defi",
+                    "twitter": "@thewolfofdefi",
+                    "url": "https://x.com/thewolfofdefi"
+                },
+                {
+                    "src": "./img/backed-by/avatar-tyler.png",
+                    "title": "Tyler Reynolds",
+                    "twitter": "@tbr90",
+                    "url": "https://x.com/tbr90"
+                }
+            ]
+        }
+    },
+    "docs": {
+        "segment-1": {
+            "title": "READ THE <br>DOCS",
+            "sub-title": "Have questions? Want to learn about how it works?",
+            "link": {
+                "name": "DOCS",
+                "url": "https://docs.vultisig.com/"
+            }
+        },
+        "segment-2": {
+            "title": "INTEGRATE <br>Vultisig",
+            "sub-title": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions.",
+            "link": {
+                "name": "LEARN MORE",
+                "url": "https://discord.gg/54wEtGYxuv"
+            }
+        },
+        "alts": {
+            "header": {
+                "img": "Want to learn about how Vultisig works"
+            },
+            "segment-1": {
+                "logo": "Vultisig Logo"
+            },
+            "segment-2": {
+                "img": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions."
+            }
+        }
+    },
+    "vlti": {
+        "header": {
+            "title": "THE <span class='gradient-text'>$VULT</span> <br>TOKEN",
+            "price": "$0.01",
+            "data": [
+                {
+                    "title": "max supply",
+                    "value": "100,000,000"
+                },
+                {
+                    "title": "circulating supply",
+                    "value": "80,000,000"
+                },
+                {
+                    "title": "burnt supply",
+                    "value": "0"
+                }
+            ],
+            "text": "All swap and bridge fees buy and burn $VULT. Simply hold in your wallet to participate."
+        },
+        "airdrop": {
+            "main-title": "THE Vultisig AIRDROP",
+            "details": [
+                {
+                    "title": "current airdrop value",
+                    "value": "10,000,000"
+                },
+                {
+                    "title": "expected airdrop value",
+                    "value": "MARCH 2025"
+                }
+            ]
+        },
+        "faq": [
+            {
+                "q": "How do I register for the airdrop?",
+                "a": " Become a user and move funds into Vultisig. You can then register some or all of your Vaults. <br><br> Note: Airdrop is based on your total vault amounts, multiplied by the length of time your funds are kept in the vault. The largest holders for the longest amount of time earn the most."
+            },
+            {
+                "q": "What assets are counted for the Airdrop?",
+                "a": "Any supported Layer1 or Layer2 asset, and any token on the 1inch token list. <br><br>You can register as many vaults as you wish."
+            },
+            {
+                "q": "What is the Airdrop Strategy?",
+                "a": "     The first Airdrop period goes for 12 months - it is 10% of the Supply of $VULT. <br><br>Then there is an annual airdrop of 2% of the supply for 5 years. A total of 20% will be airdropped."
+            }
+        ],
+        "alts": {
+            "header": {
+                "img": "VULT"
+            },
+            "chart": "Launch Chart",
+            "airdrop": {
+                "logo": "Vultisig logo"
+            },
+            "back-logo": "Vultisig logo"
+        }
+    },
+    "faqs": {
+        "main-title": "FAQ",
+        "items": [
+            {
+                "q": "How do I set up my crypto vault?",
+                "a": "Get 2 or more of your devices together and connected to your local WiFi, Hotspot or internet. Then simply pair them via QR code and create a new vault. You can then send funds in."
+            },
+            {
+                "q": "What cryptocurrencies are supported by Vultisig?",
+                "a": "All assets supported by Trust Wallet Core are supported in Vultisig."
+            },
+            {
+                "q": "How does the crypto vault app secure my cryptocurrencies?",
+                "a": "Vultisig is audited, open-source and uses a very well-proven TSS libarary."
+            },
+            {
+                "q": "How does Vultisig make money?",
+                "a": "Vultisig only charges a flat fee on swap and bridging. There are no other hidden fees."
+            },
+            {
+                "q": "Can I recover my assets if I lose a device?",
+                "a": "You can back-up your vault by exporting the vault shares."
+            },
+            {
+                "q": "Do I need to register?",
+                "a": "No, there are no registration requirements."
+            }
+        ]
+    }
+}
