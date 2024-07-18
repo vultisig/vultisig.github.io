@@ -15,16 +15,16 @@ export function Sections() {
                 <div className="card-cont mt-5">
                     {BackedByCopy["segment-1"].cards.map((item, index) => (
                         <a key={index} href={item.url} target="_blank"
-                            className="card-item p-3 my-4 text-white">
+                            className="card-item p-3 my-4 text-white ">
                             <Image className="avatar"  width={100} height={100} 
                                 src={item.src} alt="21e8 Capital" />
                             <h5 dangerouslySetInnerHTML={{ __html: item.title }}
-                                className="menlo text-bold mt-2"></h5>
-                            <div className="text-underline text-white">
+                                className="menlo text-bold mt-2 "></h5>
+                            <div className=" text-white">
                                 <span>
                                     <Image src="/img/backed-by/icon-x.png" alt="X" width={25} height={25} />
                                 </span>
-                                <u dangerouslySetInnerHTML={{ __html: item.twitter }} className="menlo"></u>
+                                <u dangerouslySetInnerHTML={{ __html: item.twitter }} className="menlo "></u>
                             </div>
                         </a>
                     ))}
