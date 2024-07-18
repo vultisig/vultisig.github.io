@@ -28,9 +28,7 @@ export function NavBar() {
                     <Offcanvas />
                 </OffcanvasProvider>
                 <Link className="navbar-brand mx-auto d-flex align-items-center" href="/">
-                    <Image src="./img/logo.svg" width={30} height={30} className="d-inline-block align-top"
-                        data-attribute="alt"
-                        data-query="navbar.alts.logo" alt="Vultisig Logo" />
+                    <Image src="./img/logo.svg" width={30} height={30} className="d-inline-block align-top" alt="Vultisig Logo" />
                     <strong style={{ fontSize: "x-large" }} className="monserrat-semibold">Vultisig</strong>
                 </Link>
                 <div id="navbarToggleMain" className="collapse navbar-collapse justify-content-end monserrat-medium">
