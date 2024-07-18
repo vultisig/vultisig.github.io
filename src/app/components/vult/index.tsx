@@ -22,7 +22,7 @@ export function Sections() {
                         <div className="col-lg-4 d-flex ">
                             <div className="header-img-container d-flex align-items-center mx-auto ms-lg-auto">
                                 <div className="background-circle"></div>
-                                <Image className="header-img" width={280} height={240} src="./img/vix-header.svg" alt="VULT" />
+                                <Image className="header-imgv mx-auto" width={280} height={240} src="./img/vix-header.svg" alt="VULT" />
                             </div>
 
                         </div>

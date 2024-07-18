@@ -107,8 +107,8 @@ export const BackedByCopy = {
             {
                 "src": "/img/backed-by/avatar-viktor.png",
                 "title": "Viktor<br/>TrustWallet",
-                "twitter": "@Vikemeeup",
-                "url": "https://x.com/Vikemeeup"
+                "twitter": "@Vikmeup",
+                "url": "https://x.com/Vikmeup"
             },
             {
                 "src": "/img/backed-by/avatar-vik.png",
