@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
   title: "Vultisig - Multisig Crypto Vault",
   description: "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
