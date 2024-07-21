@@ -1,6 +1,6 @@
 export const homeCopy = {
     header: {
-        slogan: "SECURE. SIMPLE.<br/> <span class='ps-5'>COMPLETELY IN</span> <br/> <span class='gradient-text'>YOUR</span> CONTROL.",
+        slogan: "SECURE. SIMPLE.<br/> <span class='ps-lg-5'>COMPLETELY IN</span> <br/> <span class='gradient-text'>YOUR</span> CONTROL.",
         subSlogan: "Introducing <strong class='monserrat-semibold gradient-text'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
         downloadTitle: "Now Available for iOS, Mac and Android:"
     },
@@ -10,15 +10,15 @@ export const homeCopy = {
         items: [
             {
                 title: "Single-signature wallets are dangerous",
-                description: "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your metamask? Forget your backup phrase? Get your iCloud hacked? <strong class='monserrat-bold'>One mistake and forever rekt.</strong>"
+                description: "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your metamask? Forget your backup phrase? Get your iCloud hacked? <br/> <strong class='monserrat-bold'>One mistake and forever rekt.</strong>"
             },
             {
                 title: "Hardware wallets are clunky",
-                description: "Small screens, small buttons, annoying interfaces. Complicated setup instructions, scary firmware updates and confusing transactions. <br> <strong class='monserrat-bold'>Why can’t it be better.</strong>"
+                description: "Small screens, small buttons, annoying interfaces. Complicated setup instructions, scary firmware updates and confusing transactions. <br/> <strong class='monserrat-bold'>Why can’t it be better.</strong>"
             },
             {
                 title: "Multi-sig wallets are painful",
-                description: "Lose one key, lose it all. Multi-sig is the solution, but does not work natively. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. <strong class='monserrat-bold'>If only there was something that works.</strong>"
+                description: "Lose one key, lose it all. Multi-sig is the solution, but does not work natively. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. <br/> <strong class='monserrat-bold'>If only there was something that works.</strong>"
             }
         ]
     },

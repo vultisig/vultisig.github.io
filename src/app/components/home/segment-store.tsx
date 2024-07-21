@@ -7,7 +7,7 @@ export function SegmentStore() {
         <>
             <div id="store-section" className={styles["store"]}>
                 <div className="row" style={{ minHeight: "inherit" }}>
-                    <div className="col-lg-7 px-5 d-flex align-items-center">
+                    <div className="col-lg-7 px-lg-5 px-3 d-flex align-items-center">
                         <div className="ms-1">
                             <h2 style={{ lineHeight: "150%" }} className="monserrat-bold"> <strong
                                 dangerouslySetInnerHTML={{ __html: homeCopy.store.title }}></strong>
@@ -26,9 +26,9 @@ export function SegmentStore() {
                         </div>
                     </div>
                     <div className={"col-lg-5 text-center position-relative " + styles["store-img-cont"]}>
-                        <Image src="/img/iPhone-new.png"
+                        <img src="/img/iPhone-new.png"
                         className={styles["store-img"]}
-                            width={320} height={416} alt="SECURE YOUR DIGITAL ASSETS NOW" />
+                             alt="SECURE YOUR DIGITAL ASSETS NOW" />
                     </div>
                 </div>
 
