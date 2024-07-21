@@ -23,9 +23,9 @@ export const BackedByCopy = {
             },
             {
                 "src": "/img/backed-by/logo-winter.png",
-                "title": "Wintermute",
-                "twitter": "@wintermute_t",
-                "url": "https://x.com/wintermute_t"
+                "title": "Wintermute Ventures",
+                "twitter": "wintermute-ventures",
+                "url": "https://wintermute.com/ventures"
             },
             {
                 "src": "/img/backed-by/logo-danxia.png",
@@ -36,7 +36,7 @@ export const BackedByCopy = {
             {
                 "src": "/img/backed-by/avatar-crypto-banter.png",
                 "title": "Banter Capital",
-                "twitter": "@cbantercap",
+                "twitter": "Banter Capital",
                 "url": "https://x.com/bantercap"
             },
             {
@@ -60,8 +60,8 @@ export const BackedByCopy = {
             {
                 "src": "/img/backed-by/logo-magnet.png",
                 "title": "Magnet Capital",
-                "twitter": "@Magnet_Capital",
-                "url": "https://x.com/Magnet_Capital"
+                "twitter": "@Magnet_Cap",
+                "url": "https://x.com/Magnet_Cap"
             },
             {
                 "src": "/img/backed-by/logo-kotti.png",
