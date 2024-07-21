@@ -14,7 +14,7 @@ export function Sections() {
                                     dangerouslySetInnerHTML={{ __html: HowItWorksCopy.header.subSlogan }}>
                                 </div>
                             </div>
-                            <Image id="how-to-back-logo" src="/img/back-logo.svg"   width={220} height={220} alt="Vultisig Logo" />
+                            <Image id="how-to-back-logo" src="/img/back-logo.svg" width={220} height={220} alt="Vultisig Logo" />
                         </div>
                         <div className="col-lg-5">
                             <div className="header-img-container mx-sm-auto w-100 w-md-75">
@@ -35,10 +35,10 @@ export function Sections() {
             <div className="info-box mb-5 top-left-gradient">
                 <div className="row p-2 px-lg-5 trusted-devices-cont" style={{ overflow: "hidden" }}>
                     <div className="col-lg-6 px-4 text-center trusted-devices-img-cont" style={{ position: "relative" }}>
-                        <Image   width={550} height={650} className="trusted-devices-img mt-5" src="./img/trusted-devices.svg"
+                        <img className="trusted-devices-img mt-lg-5 mt-2" src="./img/trusted-devices.svg"
                             alt={HowItWorksCopy.alts["segment-2"].img} />
                     </div>
-                    <div className="col-lg-6 px-4 my-lg-auto mt-lg-5 py-lg-5">
+                    <div className="col-lg-6 px-4 my-lg-auto mt-lg-5 py-lg-5 mt-2">
                         <h1 className="monserrat-bold text-uppercase text-white"
                             dangerouslySetInnerHTML={{ __html: HowItWorksCopy["segment-2"].title }}>
                         </h1>
@@ -59,7 +59,7 @@ export function Sections() {
                             <p className="mt-3 fs-lg-6 fs-5 color-neutral monserrat-regular"
                                 dangerouslySetInnerHTML={{ __html: HowItWorksCopy["segment-3"].description }}>
                             </p>
-                            <img  className="my-5 w-75-50" src="/img/asset-hub.png"
+                            <img className="my-5 w-75-50" src="/img/asset-hub.png"
                                 alt="ASSET MANAGEMENT HUB" />
                         </div>
                     </div>
@@ -81,7 +81,7 @@ export function Sections() {
             <div className="info-box mb-5 top-left-gradient">
                 <div className="row p-2 px-lg-5 d-flex align-items-center">
                     <div className="mt-5 col-md-6 px-lg-4 text-center">
-                        <img  style={{ width: "90%" }} src="/img/store-ipad.png"
+                        <img style={{ width: "90%" }} src="/img/store-ipad.png"
                             alt="Store Links" />
                     </div>
                     <div className="col-md-6">
@@ -91,14 +91,14 @@ export function Sections() {
                         <div className="mt-lg-5 mt-2 px-4 text-center text-lg-start"
                             style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
                             <a href={HowItWorksCopy.store["app-store-link"].url} target="_blank">
-                                <Image  width={180} height={55}  className="my-2 my-lg-0" src="./img/appstore.svg"
+                                <Image width={180} height={55} className="my-2 my-lg-0" src="./img/appstore.svg"
                                     alt="Download on AppStore" />
                             </a>
                             <a href={HowItWorksCopy.store["github-link"].url} target="_blank">
-                                <Image  width={180} height={55}  src="./img/github-download.svg" alt="Download on Github" />
+                                <Image width={180} height={55} src="./img/github-download.svg" alt="Download on Github" />
                             </a>
                             <a href={HowItWorksCopy.store["play-store-link"].url} target="_blank">
-                                <Image  width={180} height={55}  src="./img/playstore.svg" alt="Download on PlayStore" />
+                                <Image width={180} height={55} src="./img/playstore.svg" alt="Download on PlayStore" />
                             </a>
                         </div>
                     </div>

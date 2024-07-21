@@ -23,7 +23,7 @@ export function SegmentOne() {
                     {/* <!-- img --> */}
                     <div className="col-lg-6  text-end m-auto d-flex justify-content-lg-end justify-content-center"
                         style={{ flexDirection: "column", alignItems: "center" }}>
-                        <Image className="col-8 col-lg-12" width={744} height={744}
+                        <img className="col-8 col-lg-12"
                             src="./img/problems.svg" alt="WHAT IS WRONG WITH WALLETS" />
                         <div id="img-glow"></div>
                     </div>

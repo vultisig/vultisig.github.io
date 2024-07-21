@@ -23,10 +23,7 @@ export function NavBar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark px-lg-4 px-1 my-5" style={{ background: "#061B3A", borderRadius: ".75rem" }}>
-                <OffcanvasProvider onOpen={handleOpen} onClose={handleClose}>
-                    <Trigger />
-                    <Offcanvas />
-                </OffcanvasProvider>
+
                 <Link className="navbar-brand mx-auto d-flex align-items-center" href="/">
                     <Image src="./img/logo.svg" width={30} height={30} className="d-inline-block align-top" alt="Vultisig Logo" />
                     <strong style={{ fontSize: "x-large" }} className="monserrat-semibold">Vultisig</strong>
@@ -46,6 +43,10 @@ export function NavBar() {
                         </Link>
                     </ul>
                 </div>
+                <OffcanvasProvider onOpen={handleOpen} onClose={handleClose}>
+                    <Trigger />
+                    <Offcanvas />
+                </OffcanvasProvider>
             </nav >
         </>
     )

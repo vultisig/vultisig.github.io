@@ -142,11 +142,18 @@
     .store-img-cont {
         min-height: 350px;
     }
+
+    .store-img {
+        width: 50%;
+    }
 }
 
 @media (max-width: 576px) {
-
     .store-img-cont {
         min-height: 250px;
+    }
+
+    .store-img {
+        width: 60%;
     }
 }

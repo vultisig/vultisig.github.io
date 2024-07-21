@@ -19,8 +19,8 @@ export default async function Home() {
                         <Image width={180} height={52} className={styles["back-logo"]} src="./img/back-logo.svg" alt="Vultisig Logo" />
                     </div>
 
-                    <div className="blue-section text-small color-neutral text-start py-4 px-4 mt-5 col-lg-8 col-12">
-                        <p className="col-9 monserrat" dangerouslySetInnerHTML={{ __html: homeCopy.header.subSlogan }}>
+                    <div className="blue-section text-small color-neutral text-lg-start text-center py-4 px-4 mt-5 col-lg-8 col-12">
+                        <p className="col-lg-9 col-12 monserrat" dangerouslySetInnerHTML={{ __html: homeCopy.header.subSlogan }}>
                         </p>
                     </div>
 

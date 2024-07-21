@@ -16,7 +16,7 @@ export function SegmentThree() {
                     {/* <!-- img --> */}
                     <div
                         className="col-lg-6 d-flex align-items-center justify-content-lg-start justify-content-center ">
-                        <Image className=" w-75 mt-5 mt-lg-0" src="./img/ux.svg" width={558} height={482}
+                        <img className=" w-75 mt-5 mt-lg-0" src="./img/ux.svg" 
                             data-attribute="alt" alt="SEAMLESS SECURITY Of Vultisig" />
                     </div>
 
