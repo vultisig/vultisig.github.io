@@ -14,7 +14,7 @@ export function SegmentTwo() {
                                 data-attribute="alt" src={item.img}
                                 alt="Vultisig is the next evolution in crypto vaults" />
                             <h5 className="menlo mt-5 monserrat-bold mb-4" >{item.title} </h5>
-                            <p className="monserrat-regular text-start">
+                            <p className="monserrat-regular text-center">
                                 <small
                                     dangerouslySetInnerHTML={{ __html: item.description }}>
                                 </small> </p>
