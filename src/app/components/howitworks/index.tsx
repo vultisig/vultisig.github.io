@@ -59,13 +59,13 @@ export function Sections() {
                             <p className="mt-3 fs-lg-6 fs-5 color-neutral monserrat-regular"
                                 dangerouslySetInnerHTML={{ __html: HowItWorksCopy["segment-3"].description }}>
                             </p>
-                            <Image   width={318} height={627} className="my-5 w-75-50" src="/img/asset-hub.png"
+                            <img  className="my-5 w-75-50" src="/img/asset-hub.png"
                                 alt="ASSET MANAGEMENT HUB" />
                         </div>
                     </div>
                     <div className="col-lg-6 ps-lg-4 my-sm-2">
                         <div className="info-box text-center p-4 px-lg-5 pb-5 pb-lg-0 h-100 top-left-gradient">
-                            <Image  width={318} height={627}  className="mt-5 mt-lg-0 w-75-50" src="/img/asset-exchange.png"
+                            <img className="mt-5 mt-lg-0 w-75-50" src="/img/asset-exchange.png"
                                 alt="EASY Asset Exchange" />
                             <h3 className="text-uppercase monserrat-bold text-white mt-5"
                                 dangerouslySetInnerHTML={{ __html: HowItWorksCopy["segment-4"].title }}>
@@ -81,7 +81,7 @@ export function Sections() {
             <div className="info-box mb-5 top-left-gradient">
                 <div className="row p-2 px-lg-5 d-flex align-items-center">
                     <div className="mt-5 col-md-6 px-lg-4 text-center">
-                        <Image  width={600} height={780}  style={{ width: "90%" }} src="/img/store-ipad.png"
+                        <img  style={{ width: "90%" }} src="/img/store-ipad.png"
                             alt="Store Links" />
                     </div>
                     <div className="col-md-6">
