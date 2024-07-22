@@ -904,6 +904,9 @@ hr.solid {
     width: 80% !important;
   }
 
+  .faq{
+    width: 80%;
+  }
   .vix-faq {
     position: relative;
     width: 80%;
@@ -916,7 +919,9 @@ hr.solid {
     .vix-faq {
       width: 100% !important;
     }
-
+    .faq {
+      width: 100% !important;
+    }
     .vix-chart {
       width: 100% !important;
     }
@@ -927,7 +932,9 @@ hr.solid {
     .vix-faq {
       width: 100% !important;
     }
-
+    .faq {
+      width: 100% !important;
+    }
     .vix-chart {
       width: 100% !important;
     }
@@ -985,7 +992,6 @@ hr.solid {
 */
 
 .faq {
-  width: 70%;
   margin: auto;
   margin-bottom: 10rem;
 
@@ -1033,36 +1039,6 @@ hr.solid {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   }
 
-
-
-
-  @media (min-width: 993px) {
-
-    .faq {
-      width: 70%;
-
-    }
-  }
-
-  @media (max-width: 992px) {
-    .faq {
-      width: 90%;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .faq {
-      width: 100%;
-
-    }
-  }
-
-  @media (max-width: 576px) {
-    .faq {
-      width: 100%;
-
-    }
-  }
 }
 
 #img-glow {
