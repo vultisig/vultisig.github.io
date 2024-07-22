@@ -28,8 +28,7 @@ export function Sections() {
                                     aria-labelledby={`collapse-${index}`}
                                     data-bs-parent="#accordionExample">
                                     <div className="accordion-body monserrat-regular color-neutral-200">
-                                        <p>
-                                            {item.a}
+                                        <p dangerouslySetInnerHTML={{ __html: item.a }}>
                                         </p>
                                     </div>
                                 </div>

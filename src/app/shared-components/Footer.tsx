@@ -6,10 +6,10 @@ export function Footer() {
         <>
             <div className="footer text-light">
                 <div className="row" id="contact">
-                    <div className="col-md-6 monserrat-semibold">
+                    <div className="col-lg-4 monserrat-semibold">
                         <h5 dangerouslySetInnerHTML={{ __html: footerCopy.discord.title }}></h5>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-8">
                         <a href={footerCopy.discord.url} target={footerCopy.discord.target}>
                             <button type="submit" style={{ width: "200px" }}
                                 className="btn btn-primary btn-color mb-2 py-3 rounded discord-button"> <Image width={30} height={30} className="discord-link-img" src="/img/discord-white.png" alt="Discord" /> DISCORD
