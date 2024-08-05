@@ -129,9 +129,9 @@ export const BackedByCopy = {
             },
             {
                 "src": "/img/backed-by/avatar-bruce.png",
-                "title": "Bruce",
+                "title": "Coach Bruce",
                 "twitter": "@asparagoid",
-                "url": "https://x.com/asparagoid"
+                "url": "https://x.com/OX_DAO"
             },
             {
                 "src": "/img/backed-by/avatar-saunders.png",
