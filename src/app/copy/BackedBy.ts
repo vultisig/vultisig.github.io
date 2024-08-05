@@ -130,7 +130,7 @@ export const BackedByCopy = {
             {
                 "src": "/img/backed-by/avatar-bruce.png",
                 "title": "Coach Bruce",
-                "twitter": "@asparagoid",
+                "twitter": "@OX_DAO",
                 "url": "https://x.com/OX_DAO"
             },
             {
