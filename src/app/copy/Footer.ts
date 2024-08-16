@@ -52,13 +52,13 @@ export const footerCopy = {
             links: [
                 {
                     name: "Terms of Service",
-                    url: "https://github.com/vultisig/docs/blob/main/other/terms.md",
+                    url: "https://docs.google.com/document/d/101kw3RLzOuO98vxIGe35yLIS2yTlGQOqL_Ga-9BPmz8/edit?usp=sharing",
                     target: "_blank"
                 },
                 {
                     name: "Privacy Policy",
-                    url: "/privacy",
-                    target: "_self"
+                    url: "https://docs.google.com/document/d/1gxA5OcCFGupWDyF3VCyKwwojA99CVngH9fLER8irRvI/edit?usp=sharing",
+                    target: "_blank"
                 }
             ]
         }
