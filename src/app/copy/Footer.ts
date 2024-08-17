@@ -52,13 +52,13 @@ export const footerCopy = {
             links: [
                 {
                     name: "Terms of Service",
-                    url: "https://docs.google.com/document/d/101kw3RLzOuO98vxIGe35yLIS2yTlGQOqL_Ga-9BPmz8/edit?usp=sharing",
-                    target: "_blank"
+                    url: "/termofservice",
+                    target: "_self"
                 },
                 {
                     name: "Privacy Policy",
-                    url: "https://docs.google.com/document/d/1gxA5OcCFGupWDyF3VCyKwwojA99CVngH9fLER8irRvI/edit?usp=sharing",
-                    target: "_blank"
+                    url: "/privacy",
+                    target: "_self"
                 }
             ]
         }
