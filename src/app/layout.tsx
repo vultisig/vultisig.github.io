@@ -58,6 +58,7 @@ export default function RootLayout({
           `}
       </Script>
     </>
+    
       <body className={montserrat.className}>{children}</body>
     </html>
   );
