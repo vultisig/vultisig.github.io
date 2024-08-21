@@ -155,7 +155,7 @@ in or out of Vultisig’s system. You acknowledge that Vultisig will comply will
                     </li>
                     <li>
                     No Refunds and Cross-Chain Transactions.
-                    <ol type="a"></ol>
+                    <ol type="a">
                         <li>
                         Unsupported Digital Assets. Any digital assets that we do not support that are sent to unrelated or inaccurate wallets through the Service cannot be extracted or returned. 
                         </li>
