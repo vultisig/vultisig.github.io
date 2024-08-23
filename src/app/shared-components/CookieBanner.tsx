@@ -11,21 +11,17 @@ export default function CookieBanner() {
       const storedCookieConsent = getLocalStorage("cookie_consent", null);
       setCookieConsent(storedCookieConsent);
     }
-  }, [setCookieConsent]);
+  }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (cookieConsent == null) return;
-      const newValue = cookieConsent ? "granted" : "denied";
-      (window as any).gtag("consent", "update", {
-        analytics_storage: newValue,
-      });
+    if (cookieConsent != null) {
       setLocalStorage("cookie_consent", cookieConsent);
     }
   }, [cookieConsent]);
   return (
     <>
-      {typeof window !== "undefined" && getLocalStorage("cookie_consent", null) == null &&
+      {typeof window !== "undefined" &&
+        getLocalStorage("cookie_consent", null) == null &&
         cookieConsent == null && (
           <div className={`${styles.bannerCont}`}>
             <div className="text-center">
@@ -40,13 +36,19 @@ export default function CookieBanner() {
             <div className={styles.ButtonCont}>
               <button
                 className={styles.declineButton}
-                onClick={() => setCookieConsent(false)}
+                onClick={() => {
+                  setCookieConsent(false);
+                  window.dispatchEvent(new Event("storage"));
+                }}
               >
                 Decline
               </button>
               <button
                 className={styles.acceptButton}
-                onClick={() => setCookieConsent(true)}
+                onClick={() => {
+                  setCookieConsent(true);
+                  window.dispatchEvent(new Event("storage"));
+                }}
               >
                 Allow Cookies
               </button>
