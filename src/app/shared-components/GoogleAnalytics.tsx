@@ -65,7 +65,7 @@ export default function GoogleAnalytics() {
 
     if (hasConsent === true) {
       addGoogleAnalyticsScript();
-    } else if (hasConsent === false || hasConsent === null) {
+    } else if (hasConsent === false) {
       removeGoogleAnalyticsScript();
     }
   }, [hasConsent, pathname]);
