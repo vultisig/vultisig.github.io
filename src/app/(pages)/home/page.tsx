@@ -1,4 +1,3 @@
-"use server"
 import { homeCopy } from "@/app/copy/Home"
 import styles from "./page.module.scss"
 import { SegmentOne } from "@/app/components/home/segment-one"

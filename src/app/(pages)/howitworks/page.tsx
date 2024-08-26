@@ -1,5 +1,3 @@
-
-
 import { Sections } from "@/app/components/howitworks"
 import { Footer } from "@/app/shared-components/Footer"
 import { NavBar } from "@/app/shared-components/NavBar"
