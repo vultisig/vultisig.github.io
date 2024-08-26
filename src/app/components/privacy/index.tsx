@@ -11,7 +11,29 @@ export function Sections() {
             <div className="text-decoration-underline py-2"> 3- FOR WHOM AND FOR WHAT PURPOSE IS THE PRIVACY POLICY INTENDED?				</div>
             <div className="py-2"> This Privacy Policy applies to all persons whose personal data we may process (hereinafter referred to as “you”) when you use our Services, regardless of which channel you use to contact us (e.g., on a website, in an app, via a social network, at an event, etc.). It applies to the processing of personal data that may be collected in the future. </div>
             <div className="text-decoration-underline py-2"> 4- HOW AND WHAT TYPES OF PERSONAL DATA DO WE COLLECT AND PROCESS					</div>
-            <div className="py-2"> Currently, Vultisig does not track or collect any personal data from users. However, in the future, we may collect, store, and use certain personal data that you voluntarily provide to us or as required by law. This may include your IP address, email address, feedback information, and other personal data you may voluntarily provide, such as your name, address, and other contact details. We may also collect information about your interactions with the Website and/or App through technologies such as cookies. </div>
+            <div className="py-2"> 
+            Currently, Vultisig does not track or collect any personal data from users within the App. However, on our Website, we collect certain information to help us understand how visitors interact with our site. 
+This information may include:
+<ul>
+    <li>
+    Details about your device, browser, or operating system; time zone setting; 
+    </li>
+    <li>
+    Your IP address, anonymized to protect your privacy; 
+    </li>
+    <li>
+    Information about interactions you have with the Website (such as scrolling and clicks);
+    </li>
+    <li>
+    Referral Source: How you arrived at our website (e.g., via a search engine or direct link).
+    </li>
+    <li>
+    Demographic Information: Such as age, gender, and interests (this is anonymized and based on Google's demographic reports)
+    </li>
+</ul>
+In the future, we may also collect, store, and use certain personal data that you voluntarily provide to us or as required by law. This may include your email address, feedback information, and other personal data you may voluntarily provide, such as your name, address, and other contact details.
+
+            </div>
             <div className="text-decoration-underline py-2"> 5- FOR WHAT PURPOSES DO WE USE YOUR PERSONAL DATA					</div>
             <div className="py-2"> If we begin collecting personal data in the future, we may use it for the following purposes:
                <ul>
@@ -239,7 +261,46 @@ export function Sections() {
             </ul>
             </div>
             <div className="text-decoration-underline py-2"> 10- ONLINE TRACKING AND INCLUDING USE OF COOKIES		</div>
-            <div className="py-2"> Currently, Vultisig does not use cookies or other tracking technologies. However, in the future, we may use such technologies to enhance user experience and improve our Services.
+            <div className="py-2"> 
+                <p>
+                We use various techniques on our Website that allow us and third parties engaged by us to recognize you during your use of our Website and possibly to track you across several visits. This Section informs you about this.				
+                </p>
+                <p>
+                In essence, we wish to distinguish access by you (through your system) from access by other users, so that we can ensure the functionality of the website and carry out analysis and personalization. We do not intend to determine your identity, even if that is possible where we or third parties engaged by us can identify you by combination with other data. However, even without registration data, the technologies we use are designed in such a way that you are recognized as an individual visitor each time you access the website, for example by our server (or third-party servers) that assign a specific identification number to you or your browser (so-called «cookie»).					
+                </p>
+                <p>
+                Cookies are individual codes (for example a serial number) that our server or a server of our service providers or advertising partners transmits to your system when you connect to our website, and that your system (browser, cell phone) accepts and stores until the set expiration time. Your system transmits these codes to our server or the third-party server with each additional access. That way, you are recognized even if your identity is unknown.					
+                </p>
+                <p>
+                Whenever you access a server (for example when you use the Website , or because an e-mail includes a visible or invisible image), your visits can therefore be «tracked». If we integrate offers from an advertising partners or a provider of an analysis tool on our Website they may track you in the same way, even if you cannot be identified in a particular case.						
+                </p>
+                <p>
+                We use these technologies on our Webite and may allow certain third parties to do so as well. However, depending on the purpose of these technologies, we may ask for consent before they are used. You can access and change your current settings here[link]. You can also set your browser to block or deceive certain types of cookies or alternative technologies, or to delete existing cookies. You can also add software to your browser that blocks certain third-party tracking. You can find more information on the help pages of your browser (usually with the keyword «Privacy») or on the websites of the third parties set out below.
+                </p>
+                <p>
+                Currently we only use the following cookies:
+                </p>
+                <ul>
+                    <li>
+                    Analytical Cookies: Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
+                    </li>
+                </ul>
+            
+                <p>
+
+We currently use offers from the following service providers and advertising partners (where they use data from you or cookies set on your computer for advertising purposes):					
+                </p>
+                <ul>
+                    <li>
+                    Google Analytics: Google LLC is the provider of the service «Google Analytics». 
+                    For the purposes of the GDPR and the Australian Data Protection Act (DPA), Google Ireland Ltd. is the controller (both «Google»). 
+                    Google tracks the behavior of visitors to our Website (duration, page views, geographic region of access etc.) through performance cookies (see above) and on this basis creates reports for us about the use of our Website. 
+                    We have configured the service so that the IP addresses of visitors are truncated by Google in Europe before forwarding them to the United States and then cannot be traced back. 
+                    Google provides us with reports and may therefore be considered our processor, but it also processes data for its own purposes. 
+                    Google may be able to draw conclusions about the identity of visitors based on the data collected, create personal profiles and link this data with the Google accounts of these individuals. 
+                    You should assume that this processing takes place if you consent to the use of performance cookies. Information about data protection with Google Analytics can be found <a href="https://support.google.com/analytics/answer/6004245"> here</a>  and if you have a Google account, you can find more details about Google's processing <a href="https://policies.google.com/technologies/partner-sites?hl=en"> here</a>.
+                    </li>
+                </ul>
             </div>
             <div className="text-decoration-underline py-2"> 11- HOW CAN YOU CONTACT US?				</div>
             <div className="py-2"> 
