@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import { footerCopy } from "../copy/Footer";
+import { trackAction } from "../lib/gtagHelper";
 
 export function Footer() {
     return (
@@ -24,17 +26,17 @@ export function Footer() {
                             <strong className=" monserrat-semibold" style={{ fontSize: "xx-large" }}>{footerCopy.brand.title}</strong>
                         </div>
                         <div className="mt-5">
-                            <a href={footerCopy.social.githubLink.url} target={footerCopy.social.githubLink.target}>
+                            <a href={footerCopy.social.githubLink.url} target={footerCopy.social.githubLink.target} onClick={()=>{trackAction("click","social_link","github")}}>
                                 <Image width={30} height={30} src="/img/github-sign.svg" alt="Github" />
                             </a>
-                            <a className="mx-3" href={footerCopy.social.twitterLink.url} target={footerCopy.social.twitterLink.target}>
+                            <a className="mx-3" href={footerCopy.social.twitterLink.url} target={footerCopy.social.twitterLink.target}  onClick={()=>{trackAction("click","social_link","twitter")}}>
                                 <Image width={30} height={30} src="/img/twitter.svg" alt="Twitter" />
                             </a>
-                            <a className="me-3" href={footerCopy.social.discordLink.url} target={footerCopy.social.discordLink.target}>
+                            <a className="me-3" href={footerCopy.social.discordLink.url} target={footerCopy.social.discordLink.target}  onClick={()=>{trackAction("click","social_link","discord")}}>
                                 <Image width={30} height={30}
                                     className="social-icon" src="/img/discord.png" alt="Discord" />
                             </a>
-                            <a href={footerCopy.social.telegramLink.url} target={footerCopy.social.telegramLink.target}> <Image width={30} height={30}
+                            <a href={footerCopy.social.telegramLink.url} target={footerCopy.social.telegramLink.target}  onClick={()=>{trackAction("click","social_link","telegram")}}> <Image width={30} height={30}
                                 className="social-icon" src="/img/telegram-link.png" alt="Telegram" />
                             </a>
                         </div>
