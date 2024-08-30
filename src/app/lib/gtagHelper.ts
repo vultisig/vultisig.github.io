@@ -3,3 +3,17 @@ export const pageview = (url: string) => {
     page_path: url,
   });
 };
+
+export const trackAction = (
+  action: string,
+  category: string,
+  label?: string,
+  value?: number
+) => {
+  if (!(window as any).gtag) return;
+  (window as any).gtag("event", action, {
+    event_category: category,
+    event_label: label,
+    value: value,
+  });
+};

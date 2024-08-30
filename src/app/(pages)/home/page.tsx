@@ -1,3 +1,4 @@
+"use client"
 import { homeCopy } from "@/app/copy/Home"
 import styles from "./page.module.scss"
 import { SegmentOne } from "@/app/components/home/segment-one"
@@ -7,6 +8,7 @@ import { SegmentFour } from "@/app/components/home/segment-four"
 import { SegmentFive } from "@/app/components/home/segment-five"
 import { SegmentStore } from "@/app/components/home/segment-store"
 import Image from "next/image"
+import { trackAction } from "@/app/lib/gtagHelper"
 export default async function Home() {
     return (
         <> 
@@ -29,17 +31,17 @@ export default async function Home() {
                             {homeCopy.header.downloadTitle}
                         </strong></h4>
                         <div className="mt-4 text-lg-start text-center">
-                            <a href={homeCopy.store.appStoreLink.url} target={homeCopy.store.appStoreLink.traget}>
+                            <a href={homeCopy.store.appStoreLink.url} target={homeCopy.store.appStoreLink.traget} onClick={()=>{trackAction("click","download_app","app_store")}}>
                                 <Image className="my-2 my-lg-1 me-lg-3" src="./img/appstore.svg"
                                    width={180} height={52} 
                                     alt="Download on AppStore" />
                             </a>
-                            <a href={homeCopy.store.githubLink.url} target={homeCopy.store.githubLink.target}>
+                            <a href={homeCopy.store.githubLink.url} target={homeCopy.store.githubLink.target} onClick={()=>{trackAction("click","download_app","github")}}>
                                 <Image className="my-2 my-lg-1 me-lg-3" src="./img/github-download.svg"
                                     width={180} height={52} 
                                     alt="Download on Github" />
                             </a>
-                            <a href={homeCopy.store.playStoreLink.url} target={homeCopy.store.playStoreLink.target}>
+                            <a href={homeCopy.store.playStoreLink.url} target={homeCopy.store.playStoreLink.target} onClick={()=>{trackAction("click","download_app","play_store")}}>
                                 <Image className="my-2 my-lg-1" src="./img/playstore.svg"
                                     width={180} height={52} 
                                     alt="Download on PlayStore" />
