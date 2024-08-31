@@ -24,6 +24,9 @@ export function SegmentStore() {
                                 <a href={homeCopy.store.playStoreLink.url} target={homeCopy.store.playStoreLink.target} onClick={()=>{trackAction("click","download_app","play_store")}}>
                                     <Image className="my-sm-2 me-lg-3" width={180} height={52} src={homeCopy.store.playStoreLink.image} alt={homeCopy.store.playStoreLink.alt} />
                                 </a>
+                                <a href={homeCopy.store.vultiWebLink.url} target={homeCopy.store.vultiWebLink.target} onClick={()=>{trackAction("click","download_app","vultiweb")}}>
+                                    <Image className="my-sm-2 me-lg-3" width={180} height={52} src={homeCopy.store.vultiWebLink.image} alt={homeCopy.store.vultiWebLink.alt} />
+                                </a>
                             </div>
                         </div>
                     </div>
