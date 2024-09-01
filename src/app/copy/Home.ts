@@ -2,7 +2,7 @@ export const homeCopy = {
     header: {
         slogan: "SECURE. SIMPLE.<br/> <span class='ps-lg-5'>COMPLETELY IN</span> <br/> <span class='gradient-text'>YOUR</span> CONTROL.",
         subSlogan: "Introducing <strong class='monserrat-semibold gradient-text'>Vultisig</strong> : <br> A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
-        downloadTitle: "Now Available for iOS, Mac and Android:"
+        downloadTitle: "Now Available for iOS, Mac, Android and Web:"
     },
     segment1: {
         mainTitle: "PROBLEMS",
@@ -127,6 +127,12 @@ export const homeCopy = {
             image: "./img/playstore.svg",
             alt: "Download on PlayStore",
             url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
+            target: "_blank"
+        },
+        vultiWebLink:{
+            image: "./img/vultiweb.svg",
+            alt: "View on VultiWeb",
+            url: "https://web.vultisig.com",
             target: "_blank"
         }
     }

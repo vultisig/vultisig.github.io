@@ -42,9 +42,14 @@ export default async function Home() {
                                     alt="Download on Github" />
                             </a>
                             <a href={homeCopy.store.playStoreLink.url} target={homeCopy.store.playStoreLink.target} onClick={()=>{trackAction("click","download_app","play_store")}}>
-                                <Image className="my-2 my-lg-1" src="./img/playstore.svg"
+                                <Image className="my-2 my-lg-1 me-lg-3" src="./img/playstore.svg"
                                     width={180} height={52} 
                                     alt="Download on PlayStore" />
+                            </a>
+                            <a href={homeCopy.store.vultiWebLink.url} target={homeCopy.store.vultiWebLink.target} onClick={()=>{trackAction("click","download_app","vultiweb")}}>
+                                <Image className="my-2 my-lg-1" src="./img/vultiweb.svg"
+                                    width={180} height={52} 
+                                    alt="View it on VultiWeb" />
                             </a>
                         </div>
                     </div>
