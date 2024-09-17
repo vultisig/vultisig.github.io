@@ -114,7 +114,7 @@ export const homeCopy = {
         appStoreLink: {
             image: "./img/appstore.svg",
             alt: "Download on AppStore",
-            url: "https://testflight.apple.com/join/kpVufItl",
+            url: "https://apps.apple.com/app/vultisig/id6503023896",
             traget: "_blank"
         },
         githubLink: {

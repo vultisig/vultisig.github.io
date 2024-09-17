@@ -21,7 +21,7 @@ export const HowItWorksCopy = {
     "store": {
         "title": "Join thousands of users who trust VULTISIG with their digital assets. <br />There is no registration required.",
         "app-store-link": {
-            "url": "https://testflight.apple.com/join/CHHICwnO"
+            "url": "https://apps.apple.com/app/vultisig/id6503023896"
         },
         "play-store-link": {
             "url": "https://play.google.com/store/apps/details?id=com.vultisig.wallet"
