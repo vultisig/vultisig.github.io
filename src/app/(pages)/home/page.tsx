@@ -13,7 +13,6 @@ export default async function Home() {
   return (
     <>
       <header className="header ">
-        <div className="header-bg mx-auto " />
         <div className="header-content">
           <div className=" monserrat-bold slogan mb-3 ">
             <span
@@ -28,94 +27,82 @@ export default async function Home() {
           </div>
           {/* <!-- DOWNLOAD BOX --> */}
           <div className=" download-box align-content-start">
-                <p>{homeCopy.store.items.Vultisig.title}</p>
-                <div className="items">
-                  {homeCopy.store.items.Vultisig.items.map((item, index) => {
-                    return (
-                      <>
-                        <a
-                          key={index}
-                          href={item.url}
-                          target={item.traget}
-                          onClick={() => 
-                            trackAction(
-                              "click",
-                              "download_app",
-                              item.downloadLabel
-                            )
-                          }
-                        >
-                          <Image
-                            className="my-2 my-lg-1 me-lg-3"
-                            src={item.image}
-                            width={180}
-                            height={52}
-                            alt="Download on AppStore"
-                          />
-                        </a>
-                      </>
-                    );
-                  })}
-                </div>
-                <p>{homeCopy.store.items.VultiWallet.title}</p>
-                <div className="items">
-                  {homeCopy.store.items.VultiWallet.items.map((item, index) => {
-                    return (
-                      <>
-                        <a
-                          key={index}
-                          href={item.url}
-                          target={item.target}
-                          onClick={() => 
-                            trackAction(
-                              "click",
-                              "download_app",
-                              item.downloadLabel
-                            )
-                          }
-                        >
-                          <Image
-                            className="my-2 my-lg-1 me-lg-3"
-                            src={item.image}
-                            width={180}
-                            height={52}
-                            alt="Download on AppStore"
-                          />
-                        </a>
-                      </>
-                    );
-                  })}
-                </div>
-                <p>{homeCopy.store.items.Browser.title}</p>
-                <div className="items">
-                  {homeCopy.store.items.Browser.items.map((item, index) => {
-                    return (
-                      <>
-                        <a
-                          key={index}
-                          href={item.url}
-                          target={item.target}
-                          onClick={() => 
-                            trackAction(
-                              "click",
-                              "download_app",
-                              item.downloadLabel
-                            )
-                          }
-                        >
-                          <Image
-                            className="my-2 my-lg-1 me-lg-3"
-                            src={item.image}
-                            width={180}
-                            height={52}
-                            alt="Download on AppStore"
-                          />
-                        </a>
-                      </>
-                    );
-                  })}
-                </div>
-              </div>
+            <p>{homeCopy.store.items.Vultisig.title}</p>
+            <div className="items">
+              {homeCopy.store.items.Vultisig.items.map((item, index) => {
+                return (
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.traget}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={180}
+                        height={52}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
+                );
+              })}
+            </div>
+            <p>{homeCopy.store.items.VultiWallet.title}</p>
+            <div className="items">
+              {homeCopy.store.items.VultiWallet.items.map((item, index) => {
+                return (
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.target}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={180}
+                        height={52}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
+                );
+              })}
+            </div>
+            <p>{homeCopy.store.items.Browser.title}</p>
+            <div className="items">
+              {homeCopy.store.items.Browser.items.map((item, index) => {
+                return (
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.target}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={180}
+                        height={52}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div className="image-box">
           <img

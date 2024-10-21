@@ -1,27 +1,19 @@
+.home-page {
+  background-image: url("/img/home-page-bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .header {
   margin-top: 140px;
   margin-bottom: 10rem;
-  .header-bg {
-    position: absolute;
-    top: -177px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: -2;
-    // width:1138px ;
-    height: 707px;
-    background-image: url('../../../../public/img/miamanic_a_simple_futuristic.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    
-  }
+
   .slogan {
     position: relative;
-    display: block; 
+    display: block;
     text-align: start;
     font-size: calc(2rem + 4vw);
-    font-size:50px;
+    font-size: 50px;
     font-weight: 900;
     letter-spacing: -0.5px;
     line-height: 117%;
@@ -111,8 +103,6 @@
       img {
         // height: 33.813rem;
         width: 17.375rem;
-      
-        
       }
     }
     .crypto-exchange {
@@ -178,5 +168,3 @@
     bottom: 0;
   }
 }
-
-
