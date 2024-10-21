@@ -144,8 +144,6 @@ export default async function Vult() {
       <div className="container">
         <span className="circle-top-left" />
         <span className="circle-top-left-glow" />
-        <span className="circle-top-right" />
-        <span className="circle-top-right-glow" />
       </div>
     </div>
   );
