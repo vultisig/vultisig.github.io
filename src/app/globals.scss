@@ -230,13 +230,19 @@ h2 {
 }
 
 .download-box {
-  padding-top: 30px;
+  padding-top: 8px;
   .items {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     gap: 7px;
   }
+}
+
+.howitwork-store {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .color-neutral {
@@ -430,7 +436,9 @@ hr.solid {
 }
 
 #store-section {
-  display: flex !important;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 #segment-1 .card-item {
@@ -853,6 +861,10 @@ hr.solid {
         }
       }
     }
+  }
+  .howitwork-store,
+  #store-section {
+    flex-wrap: wrap;
   }
 }
 

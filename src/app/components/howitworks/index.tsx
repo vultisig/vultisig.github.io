@@ -176,9 +176,9 @@ export function Sections() {
       </div>
 
       {/* <---!segment stor---> */}
-      <div className="  howitwork-store  pt-3 px-2 mb-5">
-        <div className="row  ">
-          <div className="col-lg-7 px-lg-5 px-3 d-flex align-items-center justify-content-center">
+      <div className="howitwork-store  pt-3 px-2 mb-5">
+
+          <div className="d-flex align-items-center justify-content-center">
             <div className="ms-1">
               <h2 style={{ lineHeight: "150%" }} className="monserrat-bold">
                 <strong
@@ -284,7 +284,7 @@ export function Sections() {
               </div>
             </div>
           </div>
-          <div className={"col-lg-5 text-center  justify-content-center"}>
+          <div className={"text-center  justify-content-center"}>
             <img
               src="/img/iPhone-Space.png"
               className="store-img img-fluid"
@@ -292,7 +292,6 @@ export function Sections() {
             />
           </div>
         </div>
-      </div>
     </>
   );
 }
