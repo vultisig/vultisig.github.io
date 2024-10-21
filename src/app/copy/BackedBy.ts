@@ -197,7 +197,7 @@ export const BackedByCopy = {
         url: "https://x.com/marcelharmann",
       },
       {
-        src: "/img/backed-by/mattGabriel.jpeg",
+        src: "./img/backed-by/matt.jpeg",
         title: "Matt - CTO <br> THORWallet Co-Founder",
         twitter: "@mattGabriel",
         github: "",
