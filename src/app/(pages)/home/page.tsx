@@ -13,12 +13,12 @@ export default async function Home() {
   return (
     <>
       <header className="header ">
-        <div
-          className="header-bg mx-auto "
-        />
+        <div className="header-bg mx-auto " />
         <div className="header-content">
           <div className=" monserrat-bold slogan mb-3 ">
-             <span dangerouslySetInnerHTML={{ __html: homeCopy.header.slogan }}></span>
+            <span
+              dangerouslySetInnerHTML={{ __html: homeCopy.header.slogan }}
+            ></span>
           </div>
           <div className="blue-section p-3 mt-3 ">
             <p
@@ -27,68 +27,95 @@ export default async function Home() {
             ></p>
           </div>
           {/* <!-- DOWNLOAD BOX --> */}
-          <div className=" download-box  d-flex align-content-start flex-wrap">
-            <a
-              href={homeCopy.store.appStoreLink.url}
-              target={homeCopy.store.appStoreLink.traget}
-              onClick={() => {
-                trackAction("click", "download_app", "app_store");
-              }}
-            >
-              <Image
-                className="my-2 my-lg-1 me-lg-3"
-                src="./img/appstore.svg"
-                width={180}
-                height={52}
-                alt="Download on AppStore"
-              />
-            </a>
-            <a
-              href={homeCopy.store.githubLink.url}
-              target={homeCopy.store.githubLink.target}
-              onClick={() => {
-                trackAction("click", "download_app", "github");
-              }}
-            >
-              <Image
-                className="my-2 my-lg-1 me-lg-3"
-                src="./img/github-download.svg"
-                width={180}
-                height={52}
-                alt="Download on Github"
-              />
-            </a>
-            <a
-              href={homeCopy.store.playStoreLink.url}
-              target={homeCopy.store.playStoreLink.target}
-              onClick={() => {
-                trackAction("click", "download_app", "play_store");
-              }}
-            >
-              <Image
-                className="my-2 my-lg-1 me-lg-3"
-                src="./img/playstore.svg"
-                width={180}
-                height={52}
-                alt="Download on PlayStore"
-              />
-            </a>
-            <a
-              href={homeCopy.store.vultiWebLink.url}
-              target={homeCopy.store.vultiWebLink.target}
-              onClick={() => {
-                trackAction("click", "download_app", "vultiweb");
-              }}
-            >
-              <Image
-                className="my-2 my-lg-1"
-                src="./img/vultiweb.svg"
-                width={180}
-                height={52}
-                alt="View it on VultiWeb"
-              />
-            </a>
-          </div>
+          <div className=" download-box align-content-start">
+                <p>{homeCopy.store.items.Vultisig.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.Vultisig.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.traget}
+                          onClick={() => 
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            )
+                          }
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+                <p>{homeCopy.store.items.VultiWallet.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.VultiWallet.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.target}
+                          onClick={() => 
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            )
+                          }
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+                <p>{homeCopy.store.items.Browser.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.Browser.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.target}
+                          onClick={() => 
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            )
+                          }
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+              </div>
         </div>
         <div className="image-box">
           <img

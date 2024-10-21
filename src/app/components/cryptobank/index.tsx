@@ -1,13 +1,15 @@
+"use client";
 import { useEffect } from "react";
 import { HowItWorksCopy } from "@/app/copy/HowItWorks";
 import { CryptoBankCopy } from "@/app/copy/CryptoBank";
 import { trackAction } from "@/app/lib/gtagHelper";
 import Image from "next/image";
+import { homeCopy } from "@/app/copy/Home";
 
 export function Sections() {
-  //   useEffect(() => {
-  //     require('bootstrap/dist/js/bootstrap.bundle.min.js');
-  // }, []);
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
   return (
     <>
       <header className=" mt-2 cryptoBank-header">
@@ -48,11 +50,11 @@ export function Sections() {
                 Get Started
               </button>
             </div>
-            <div className="col-lg-6 justify-items-start">
-              <div className="header-img-container mx-sm-auto w-100 w-md-75 ">
-                <div className="background-overlay"></div>
+            <div className="col-lg-6  ">
+              <div className="header-img-container mx-sm-auto w-100 ">
+                <div className="background-shadow "></div>
                 <img
-                  className="header-img "
+                  className="header-img  mx-auto"
                   src="/img/credit-cards-3.svg"
                   alt="SIMPLE STEPS, SUPERIOR SECURITY - THE VULTISIG DIFFERENCE"
                 />
@@ -118,14 +120,16 @@ export function Sections() {
               <ul>
                 {item.list.map((item, index) => (
                   <li
-                    className="earn-up-item monserrat-regular text-start mt-4 "
+                    className="earn-up-item monserrat-regular text-start mt-4 d-flex "
                     key={index}
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        '<img src="./img/button-checkmark.svg"></img>' +
-                        item.text,
-                    }}
-                  ></li>
+                  >
+                    <img src="./img/button-checkmark.svg"></img>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: item.text,
+                      }}
+                    ></p>
+                  </li>
                 ))}
               </ul>
               <hr className="hr" />
@@ -221,7 +225,10 @@ export function Sections() {
                   {CryptoBankCopy.segment3.Priviledges.map((item, index) => (
                     <div key={index} className="blur-bg">
                       <h4>{item.q} </h4>
-                      <img className="arrow-right" src="./img/chevron-right-small.svg" />
+                      <img
+                        className="arrow-right"
+                        src="./img/chevron-right-small.svg"
+                      />
                     </div>
                   ))}
                 </div>
@@ -304,10 +311,10 @@ export function Sections() {
         <div className="faq-item">
           <div className="accordion accordion-flush" id="accordionFlushExample">
             {CryptoBankCopy.FandQ.items.map((item, index) => (
-              <div key={index} className="accordion-item monserrat">
-                <h2 className="accordion-header monserrat">
+              <div key={index} className="accordion-item ">
+                <h2 className="accordion-header ">
                   <button
-                    className="accordion-button collapsed "
+                    className="accordion-button  collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#collapse-${index}`}
@@ -319,7 +326,7 @@ export function Sections() {
                 </h2>
                 <div
                   id={`collapse-${index}`}
-                  className={`accordion-collapse collapse `}
+                  className="accordion-collapse collapse"
                   aria-labelledby={`collapse-${index}`}
                   data-bs-parent="#accordionExample"
                 >
@@ -351,52 +358,94 @@ export function Sections() {
                   __html: HowItWorksCopy.store.subTitle,
                 }}
               ></p>
-              <div className=" download-box  d-flex align-content-start flex-wrap">
-                <a
-                  href={HowItWorksCopy.store.appStoreLink.url}
-                  target={HowItWorksCopy.store.appStoreLink.traget}
-                  //   onClick={() => {
-                  //     trackAction("click", "download_app", "app_store");
-                  //   }}
-                >
-                  <Image
-                    className="my-2 my-lg-1 me-lg-3"
-                    src="./img/appstore.svg"
-                    width={180}
-                    height={52}
-                    alt="Download on AppStore"
-                  />
-                </a>
-                <a
-                  href={HowItWorksCopy.store.githubLink.url}
-                  target={HowItWorksCopy.store.githubLink.target}
-                  //   onClick={() => {
-                  //     trackAction("click", "download_app", "github");
-                  //   }}
-                >
-                  <Image
-                    className="my-2 my-lg-1 me-lg-3"
-                    src="./img/github-download.svg"
-                    width={180}
-                    height={52}
-                    alt="Download on Github"
-                  />
-                </a>
-                <a
-                  href={HowItWorksCopy.store.playStoreLink.url}
-                  target={HowItWorksCopy.store.playStoreLink.target}
-                  //   onClick={() => {
-                  //     trackAction("click", "download_app", "play_store");
-                  //   }}
-                >
-                  <Image
-                    className="my-2 my-lg-1 me-lg-3"
-                    src="./img/playstore.svg"
-                    width={180}
-                    height={52}
-                    alt="Download on PlayStore"
-                  />
-                </a>
+               <div className=" download-box align-content-start">
+                <p>{homeCopy.store.items.Vultisig.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.Vultisig.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.traget}
+                          onClick={() => {
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            );
+                          }}
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+                <p>{homeCopy.store.items.VultiWallet.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.VultiWallet.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.target}
+                          onClick={() => {
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            );
+                          }}
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+                <p>{homeCopy.store.items.Browser.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.Browser.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.target}
+                          onClick={() => {
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            );
+                          }}
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

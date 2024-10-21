@@ -1,3 +1,6 @@
+import { link } from "fs";
+import { text } from "stream/consumers";
+
 export const CryptoBankCopy = {
   header: {
     mainTitle: "CRYPTO BANK",
@@ -42,23 +45,25 @@ export const CryptoBankCopy = {
     items: [
       {
         title: "Complete KYC",
+        btn:"KYC",
         list: [
           {
             text: `As soon as you complete the KYC you’ll be able to claim</br> this reward.`,
           },
           { text: "REWARD 10 ARB" },
         ],
-        btn: "Get Started",
+        link: "Get Started",
       },
       {
         title: "1st Card Top Up",
+        btn:"1st Topup",
         list: [
           {
             text: "Top up your card with at least 50 EUR of crypto to</br> claim this reward.",
           },
           { text: "REWARD 15 ARB" },
         ],
-        btn: "Get Started",
+        link: "Get Started",
       },
     ],
   },
@@ -179,28 +184,36 @@ export const CryptoBankCopy = {
     "main-title": "FAQ",
     items: [
       {
-        q: "How do I set up my crypto vault?",
-        a: "",
+        q: "Do I need to do KYC?",
+        a: "Yes, the bank and card service requires KYC with Fiat24",
       },
       {
-        q: "What cryptocurrencies are supported by Vultisig?",
-        a: "",
+        q: "What’s the base currency of the card?",
+        a: "The card is Euro denominated and will debit your Euro account within the app. ",
       },
       {
-        q: "How does the crypto vault app secure my cryptocurrencies?",
-        a: "",
+        q: "With which crypto can I top-up the bank account or debit card?",
+        a: "The bank account can be topped up with USDC (Arbitrum) or via direct bank transfer. You can swap to USDC (Arbitrum) within the app. The card per-se does not need to be topped up, it directly debits the Euro account.",
       },
       {
-        q: "How does Vultisig make money?",
-        a: "",
+        q: "Is the bank account and VISA card Free?",
+        a: "The bank account and VISA card are for free. For the crypto-top up and fx swap there is a 1% fee by Fiat24, as well as an affiliate fee for Thorwallet. ",
       },
       {
-        q: "Can I recover my assets if I lose a device?",
-        a: "",
+        q: "What are the fees for bank wires top up?",
+        a: "Top-up with bank wire transfers are free of charge.",
       },
       {
-        q: "Do I need to register?",
-        a: "",
+        q: "Who is Fiat24 and what license does they have?",
+        a: "Fiat24 is our collaboration partner for the bank account and VISA card. Fiat24 is regulated in Switzerland and holds a FINMA Fintech license as financial institution. ",
+      },
+      {
+        q: "What countries can I open a bank account?",
+        a: "The bank account is available in around 100 countries.<br/><br/>To use the Services, your domicile cannot be in any of the following countries: Afghanistan, Albania, Barbados, Belarus, Bosnia and Herzegovina, Burkina Faso, Burundi, Cambodia, Cameroon, Cayman Islands, Central African Republic, Chad, Congo (Democratic Republic of the), Cote d'Ivoire (Ivory Coast), Cuba, Egypt, Equatorial Guinea, Eritrea, Guinea-Bissau (Republic of), Haiti, Iran (Islamic Republic of), Iraq, Israel, Jamaica, Jordan, Kenya, Korea (Democratic People's Republic of), Lebanon, Liberia, Libya, Mali (Republic of), Malta, Moldova, Montenegro, Morocco, Mozambique, Myanmar (Burma), Nicaragua, Niger, Nigeria, Pakistan, Palestine State, Panama, Philippines, Russian Federation, Saudi Arabia, Senegal, Serbia, Somalia, South Sudan, Sri Lanka, Sudan, Syria (Syrian Arab Republic), Trinidad and Tobago, Tunisia, Turkey, Ukraine, Uganda, United Arab Emirates, United States of America, Vanuatu, Venezuela (Bolivarian Republic of), Yemen, Zimbabwe.",
+      },
+      {
+        q: "What countries can I request the VISA card?",
+        a: "Individual clients living in the following countries: Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and Switzerland.Individuals living outside those countries and business clients are currently not eligible to order the card.",
       },
     ],
   },
@@ -208,29 +221,5 @@ export const CryptoBankCopy = {
     mainTitle: "UPGRADE<span class='gradient-text'> TODAY </span>",
     subTitle:
       "Join thousands of users who trust VULTISIG with their digital assets. There is no registration required. ",
-    appStoreLink: {
-      image: "./img/appstore.svg",
-      alt: "Download on AppStore",
-      url: "https://apps.apple.com/app/vultisig/id6503023896",
-      traget: "_blank",
-    },
-    githubLink: {
-      image: "./img/github-download.svg",
-      alt: "Download on Github",
-      url: "https://github.com/vultisig/vultisig-ios/releases",
-      target: "_blank",
-    },
-    playStoreLink: {
-      image: "./img/playstore.svg",
-      alt: "Download on PlayStore",
-      url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
-      target: "_blank",
-    },
-    vultiWebLink: {
-      image: "./img/vultiweb.svg",
-      alt: "View on VultiWeb",
-      url: "https://web.vultisig.com",
-      target: "_blank",
-    },
   },
 };

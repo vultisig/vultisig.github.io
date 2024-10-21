@@ -1,3 +1,5 @@
+"use client";
+import { homeCopy } from "@/app/copy/Home";
 import { HowItWorksCopy } from "@/app/copy/HowItWorks";
 import { trackAction } from "@/app/lib/gtagHelper";
 import Image from "next/image";
@@ -191,52 +193,94 @@ export function Sections() {
                   __html: HowItWorksCopy.store.subTitle,
                 }}
               ></p>
-              <div className=" download-box  d-flex align-content-start flex-wrap">
-                <a
-                  href={HowItWorksCopy.store.appStoreLink.url}
-                  target={HowItWorksCopy.store.appStoreLink.traget}
-                  //   onClick={() => {
-                  //     trackAction("click", "download_app", "app_store");
-                  //   }}
-                >
-                  <Image
-                    className="my-2 my-lg-1 me-lg-3"
-                    src="./img/appstore.svg"
-                    width={180}
-                    height={52}
-                    alt="Download on AppStore"
-                  />
-                </a>
-                <a
-                  href={HowItWorksCopy.store.githubLink.url}
-                  target={HowItWorksCopy.store.githubLink.target}
-                  //   onClick={() => {
-                  //     trackAction("click", "download_app", "github");
-                  //   }}
-                >
-                  <Image
-                    className="my-2 my-lg-1 me-lg-3"
-                    src="./img/github-download.svg"
-                    width={180}
-                    height={52}
-                    alt="Download on Github"
-                  />
-                </a>
-                <a
-                  href={HowItWorksCopy.store.playStoreLink.url}
-                  target={HowItWorksCopy.store.playStoreLink.target}
-                  //   onClick={() => {
-                  //     trackAction("click", "download_app", "play_store");
-                  //   }}
-                >
-                  <Image
-                    className="my-2 my-lg-1 me-lg-3"
-                    src="./img/playstore.svg"
-                    width={180}
-                    height={52}
-                    alt="Download on PlayStore"
-                  />
-                </a>
+              <div className=" download-box align-content-start">
+                <p>{homeCopy.store.items.Vultisig.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.Vultisig.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.traget}
+                          onClick={() =>
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            )
+                          }
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+                <p>{homeCopy.store.items.VultiWallet.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.VultiWallet.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.target}
+                          onClick={() =>
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            )
+                          }
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
+                <p>{homeCopy.store.items.Browser.title}</p>
+                <div className="items">
+                  {homeCopy.store.items.Browser.items.map((item, index) => {
+                    return (
+                      <>
+                        <a
+                          key={index}
+                          href={item.url}
+                          target={item.target}
+                          onClick={() =>
+                            trackAction(
+                              "click",
+                              "download_app",
+                              item.downloadLabel
+                            )
+                          }
+                        >
+                          <Image
+                            className="my-2 my-lg-1 me-lg-3"
+                            src={item.image}
+                            width={180}
+                            height={52}
+                            alt="Download on AppStore"
+                          />
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

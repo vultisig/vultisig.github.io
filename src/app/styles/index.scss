@@ -8,6 +8,7 @@
 @import "../shared-components/footer.scss";
 @import "../components/howitworks/index.scss";
 @import "../components/cryptobank/index.scss";
+@import "../components/vult/index.scss";
 
 .btn-color {
   background: rgb(51, 230, 191);
@@ -50,10 +51,9 @@
   top: 10px;
   left: 0;
   height: 3.125rem;
-  width: 0.375rem;
+  width: 5px;
   border-radius: 10px;
-  border-left: 5px solid;
-  border-image: linear-gradient(rgba(51, 230, 191, 1), rgba(4, 57, 199, 1)) 5;
+  background-image: linear-gradient(rgba(51, 230, 191, 1), rgba(4, 57, 199, 1)) ;
 
 }
 

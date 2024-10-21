@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const homeCopy = {
   header: {
     slogan:
@@ -112,7 +114,8 @@ export const homeCopy = {
     items: [
       {
         title: "Full DeFi",
-        description: "Swaps, Saving Vaults, Pools, Bridging. All DeFi right from your Vault. ",
+        description:
+          "Swaps, Saving Vaults, Pools, Bridging. All DeFi right from your Vault. ",
         image: "./img/full-defi.svg",
         alt: "Full Defi",
       },
@@ -133,7 +136,8 @@ export const homeCopy = {
     ],
   },
   segment6: {
-    mainTitle: "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>FOR ",
+    mainTitle:
+      "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>FOR ",
     items: [
       {
         title: "CRYPTO NATIVES",
@@ -167,29 +171,71 @@ export const homeCopy = {
   },
   store: {
     title: "SECURE YOUR DIGITAL <br> ASSETS NOW !",
-    appStoreLink: {
-      image: "./img/appstore.svg",
-      alt: "Download on AppStore",
-      url: "https://apps.apple.com/app/vultisig/id6503023896",
-      traget: "_blank",
-    },
-    githubLink: {
-      image: "./img/github-download.svg",
-      alt: "Download on Github",
-      url: "https://github.com/vultisig/vultisig-ios/releases",
-      target: "_blank",
-    },
-    playStoreLink: {
-      image: "./img/playstore.svg",
-      alt: "Download on PlayStore",
-      url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
-      target: "_blank",
-    },
-    vultiWebLink: {
-      image: "./img/vultiweb.svg",
-      alt: "View on VultiWeb",
-      url: "https://web.vultisig.com",
-      target: "_blank",
+    items: {
+      Vultisig: {
+        title: "Vultisig",
+        items: [
+          {
+            image: "./img/appstore.svg",
+            alt: "Download on AppStore",
+            url: "https://apps.apple.com/app/vultisig/id6503023896",
+            traget: "_blank",
+            downloadLabel: "app_store",
+          },
+          {
+            image: "./img/github-download.svg",
+            alt: "Download on Github",
+            url: "https://github.com/vultisig/vultisig-ios/releases",
+            target: "_blank",
+            downloadLabel: "github",
+          },
+          {
+            image: "./img/playstore.svg",
+            alt: "Download on PlayStore",
+            url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
+            target: "_blank",
+            downloadLabel: "play_store",
+          }
+        ],
+      },
+      VultiWallet: {
+        title: "VultiWallet",
+        items: [
+          {
+            image: "./img/appstore.svg",
+            alt: "View on VultiWeb",
+            url: "https://apps.apple.com/ch/app/thorwallet-defi-wallet/id1592064324",
+            target: "_blank",
+            downloadLabel: "app_store",
+          },
+          {
+            image: "./img/playstore.svg",
+            alt: "Download on PlayStore",
+            url: "https://play.google.com/store/apps/details?id=defisuisse.thorwallet",
+            target: "_blank",
+            downloadLabel: "play_store",
+          },
+        ],
+      },
+      Browser: {
+        title: "Browser",
+        items: [
+          {
+            image: "./img/vultiweb.svg",
+            alt: "View on VultiWeb",
+            url: "https://app.vultisig.com",
+            target: "_blank",
+            downloadLabel: "web",
+          },
+          {
+            image: "./img/Vultiweb-c.svg",
+            alt: "View on VultiWeb",
+            url: "https://chromewebstore.google.com/detail/vulticonnect/ggafhcdaplkhmmnlbfjpnnkepdfjaelb?authuser=0&hl=en-GB&pli=1",
+            target: "_blank",
+            downloadLabel: "extention",
+          },
+        ],
+      },
     },
   },
 };

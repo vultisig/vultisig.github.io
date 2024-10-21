@@ -108,6 +108,16 @@ export function NavBar() {
           <Offcanvas />
         </OffcanvasProvider>
       </nav>
+      <div className="banner">
+        <img className="warning-logo-l" src="./img/warning.svg" />
+        <p>
+          Please note, hpyer secure Vultisig vaults are currently only available
+          in the Vultisig App and will come to VultiWallet shortly. <br />
+          Then Vultisig will become the Vultisig: Co-signing app and Vultiwallet
+          will become Vultisig: DeFi Mobile App.
+        </p>
+        <img className="warning-logo-r" src="./img/warning.svg" />
+      </div>
     </>
   );
 }

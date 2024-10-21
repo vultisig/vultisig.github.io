@@ -7,32 +7,20 @@ export function Footer() {
   return (
     <>
       <div className="footer text-light">
-        <div className="mt-2">
-          <div className="row align-items-center">
-            <div className="col-lg-10 cl-md-8 ">
-              <div>
-                <h5
-                  className="join-text"
-                  dangerouslySetInnerHTML={{ __html: footerCopy.discord.title }}
-                ></h5>
-              </div>
-            </div>
-            <div className="col-lg-2 cl-md-4 d-flex justify-content-end">
-              <div className="align-items-center">
-                <a
-                  href={footerCopy.discord.url}
-                  target={footerCopy.discord.target}
-                >
-                  <button
-                    style={{ width: "193px" }}
-                    type="submit"
-                    className="btn btn-primary btn-color mb-2 py-2 rounded discord-button"
-                  >
-                    JOIN DISCORD
-                  </button>
-                </a>
-              </div>
-            </div>
+        <div className="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+          <p
+            className="join-text "
+            dangerouslySetInnerHTML={{ __html: footerCopy.discord.title }}
+          ></p>
+          <div className="align-items-center ">
+            <a href={footerCopy.discord.url} target={footerCopy.discord.target}>
+              <button
+                type="submit"
+                className="btn btn-primary btn-color    rounded discord-button"
+              >
+                JOIN DISCORD
+              </button>
+            </a>
           </div>
         </div>
         <hr className="solid mt-5" />
@@ -56,9 +44,9 @@ export function Footer() {
               <a
                 href={footerCopy.social.githubLink.url}
                 target={footerCopy.social.githubLink.target}
-                onClick={() => {
-                  trackAction("click", "social_link", "github");
-                }}
+                onClick={() => 
+                  trackAction("click", "social_link", "github")
+                }
               >
                 <Image
                   width={30}
@@ -71,9 +59,9 @@ export function Footer() {
                 className="mx-3"
                 href={footerCopy.social.twitterLink.url}
                 target={footerCopy.social.twitterLink.target}
-                onClick={() => {
-                  trackAction("click", "social_link", "twitter");
-                }}
+                onClick={() => 
+                  trackAction("click", "social_link", "twitter")
+                }
               >
                 <Image
                   width={30}
@@ -86,9 +74,9 @@ export function Footer() {
                 className="me-3"
                 href={footerCopy.social.discordLink.url}
                 target={footerCopy.social.discordLink.target}
-                onClick={() => {
-                  trackAction("click", "social_link", "discord");
-                }}
+                onClick={() => 
+                  trackAction("click", "social_link", "discord")
+                }
               >
                 <Image
                   width={30}
@@ -101,9 +89,9 @@ export function Footer() {
               <a
                 href={footerCopy.social.telegramLink.url}
                 target={footerCopy.social.telegramLink.target}
-                onClick={() => {
-                  trackAction("click", "social_link", "telegram");
-                }}
+                onClick={() => 
+                  trackAction("click", "social_link", "telegram")
+                }
               >
                 {" "}
                 <Image

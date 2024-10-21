@@ -67,30 +67,6 @@ export const HowItWorksCopy = {
   store: {
     mainTitle: "UPGRADE<span class='gradient-text'> TODAY </span>",
     subTitle: "Join thousands of users who trust VULTISIG with their digital assets. There is no registration required. ",
-    appStoreLink: {
-      image: "./img/appstore.svg",
-      alt: "Download on AppStore",
-      url: "https://apps.apple.com/app/vultisig/id6503023896",
-      traget: "_blank",
-    },
-    githubLink: {
-      image: "./img/github-download.svg",
-      alt: "Download on Github",
-      url: "https://github.com/vultisig/vultisig-ios/releases",
-      target: "_blank",
-    },
-    playStoreLink: {
-      image: "./img/playstore.svg",
-      alt: "Download on PlayStore",
-      url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
-      target: "_blank",
-    },
-    vultiWebLink: {
-      image: "./img/vultiweb.svg",
-      alt: "View on VultiWeb",
-      url: "https://web.vultisig.com",
-      target: "_blank",
-    },
   },
   alts: {
     header: {

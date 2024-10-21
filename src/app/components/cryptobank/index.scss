@@ -18,28 +18,53 @@
   }
   .header-img-container {
     position: relative;
+    &::after {
+      content: "";
+      border: 1px solid rgba(51, 230, 191, 0.27);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border-radius: 50%;
+      width:  calc(3rem + 8vw);
+      height: calc(3rem + 8vw);
+      z-index: -1;
+    }
+    &::before {
+      content: "";
+      border: 1px solid rgba(51, 230, 191, 0.27);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border-radius: 50%;
+      width:  calc(3rem + 16vw);
+      height: calc(3rem + 16vw);
+      z-index: -1;
+    }
   }
 
-  .background-overlay {
+  .background-shadow {
     position: absolute;
     top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 400px;
-    height: 450px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    margin: 70px;
     background: radial-gradient(
-      circle,
-      rgba(4, 57, 199, 0.56) 0%,
-      rgba(2, 18, 42, 0.59) 100%
+      rgba(4, 57, 199, 0.474),
+      rgba(2, 18, 42, 0.354)
     );
     filter: blur(50px);
+    z-index: -5;
   }
 
   .header-img {
     position: relative;
     width: 100%;
-    object-fit: cover;
   }
 
   .header-boxs {
@@ -90,9 +115,6 @@
 //segment two
 .unlock-vultisig {
   margin-bottom: 15rem;
-  .item-box {
-    width: 423px;
-  }
   .title {
     font-size: 32px;
     font-weight: 700;
@@ -119,8 +141,8 @@
     color: #fff;
     .img-bg {
       position: absolute;
-      left: 460px;
-      top: -39px;
+      right: -25px;
+      top: -25px;
       opacity: 0.5;
       width: 339px;
     }

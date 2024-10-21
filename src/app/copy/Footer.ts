@@ -67,7 +67,7 @@ export const footerCopy = {
             links: [
                 {
                     name: "About",
-                    url: "/about",
+                    url: "/",
                     target: "_self"
                 },
                 {
