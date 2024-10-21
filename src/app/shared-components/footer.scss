@@ -1,0 +1,57 @@
+.footer{
+  .join-text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    // line-height: 60px;
+  }
+  .brand-name{
+    font-size: 2.901rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1200px) {
+    .footer{
+        .join-text{
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 60px;
+        }
+      }
+  }
+  @media (min-width: 1201px) {
+    .footer{
+        .join-text{
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+      }
+  }
+  
+  @media (max-width: 992px) {
+    .footer{
+        .join-text{
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .footer{
+        .join-text{
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+  }
+  
+  @media (max-width: 576px) {
+    .footer{
+        .join-text{
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+  }
+  

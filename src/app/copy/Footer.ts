@@ -4,7 +4,7 @@ export const footerCopy = {
         image: "./img/logo.svg"
     },
     discord: {
-        title: "JOIN THE DISCORD TO REQUEST NEW <br> FEATURES!",
+        title: "JOIN THE DISCORD TO REQUEST NEW FEATURES!",
         url: "https://discord.gg/54wEtGYxuv",
         target: "_blank"
     },
@@ -58,6 +58,21 @@ export const footerCopy = {
                 {
                     name: "Privacy Policy",
                     url: "/privacy",
+                    target: "_self"
+                }
+            ]
+        },
+        {
+            title: "Company",
+            links: [
+                {
+                    name: "About",
+                    url: "/about",
+                    target: "_self"
+                },
+                {
+                    name: "Backed by",
+                    url: "/backedby",
                     target: "_self"
                 }
             ]

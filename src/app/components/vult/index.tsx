@@ -68,7 +68,7 @@ export function Sections() {
 
 
                 <div className="mt-5 text-center ">
-                    <Image className="vix-chart" width={1200} src="./img/vix-chart.svg" alt="Launch Chart" />
+                    <Image className="vix-chart" width={1200} height={479} src="./img/vix-chart.svg" alt="Launch Chart" />
                 </div>
 
                 <div className="mt-5 mb-5 air-drop text-center position-relative" >

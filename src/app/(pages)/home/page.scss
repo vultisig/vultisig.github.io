@@ -1,0 +1,182 @@
+.header {
+  margin-top: 140px;
+  margin-bottom: 10rem;
+  .header-bg {
+    position: absolute;
+    top: -177px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    // width:1138px ;
+    height: 707px;
+    background-image: url('../../../../public/img/miamanic_a_simple_futuristic.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  .slogan {
+    position: relative;
+    display: block; 
+    text-align: start;
+    font-size: calc(2rem + 4vw);
+    font-size:50px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 117%;
+  }
+  .download-box {
+    margin-top: 3.75rem;
+    margin-bottom: 10.938rem;
+  }
+  .image-box {
+    position: relative;
+    .header-img {
+      width: 100%;
+    }
+    .shadow-img {
+      width: 100%;
+      height: 492px;
+      position: absolute;
+      bottom: -15.5rem;
+    }
+  }
+}
+
+//segment on
+
+.problems {
+  margin-bottom: 14.25rem;
+
+  .title {
+    font-size: 2.625rem;
+    font-weight: 700;
+    line-height: 3.938rem;
+    letter-spacing: -2.2%;
+    span {
+      font-size: 2.625rem;
+      font-weight: 700;
+      line-height: 3.938rem;
+      letter-spacing: -2.2%;
+    }
+  }
+  .desc {
+    margin-top: 0.875rem;
+  }
+}
+
+//segment tow
+
+.solutions {
+  margin-top: 10.563rem;
+  margin-bottom: 15.25rem;
+  .mainTitle {
+    font-size: 2.625rem;
+    font-weight: 700;
+  }
+  .item {
+    width: 19.188rem;
+    .title {
+      font-weight: 700;
+      font-size: 1.375rem;
+      line-height: 1.601rem;
+    }
+    .desc {
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.313rem;
+    }
+  }
+}
+
+//segment three
+.user-experience {
+  margin-bottom: 15.063rem;
+}
+
+//segment four
+.best-features {
+  margin-bottom: 15.063rem;
+  .row {
+    .asset-managemant {
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      background-image: linear-gradient(
+        to bottom,
+        rgba(13, 25, 43, 0),
+        rgba(33, 85, 223, 0.3)
+      );
+
+      img {
+        // height: 33.813rem;
+        width: 17.375rem;
+      
+        
+      }
+    }
+    .crypto-exchange {
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      background-image: linear-gradient(
+        to top,
+        rgba(13, 25, 43, 0),
+        rgba(33, 85, 223, 0.3)
+      );
+      img {
+        width: 18.813rem;
+        // height: 36.6rem;
+      }
+    }
+  }
+  .leading-fiat {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    background-image: linear-gradient(
+      to right,
+      rgba(13, 25, 43, 0),
+      rgba(33, 85, 223, 0.3)
+    );
+
+    .title {
+      font-size: 1.75rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+//segment four
+.best-features {
+  margin-bottom: 15.063rem;
+}
+//segment five
+.features {
+  margin-bottom: 15.063rem;
+}
+//segment six
+.whoisfor {
+  margin-bottom: 15.063rem;
+  .item {
+    width: 19.25rem;
+  }
+}
+
+//store
+.store {
+  margin-bottom: 8.313rem;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 32, 119, 0.88),
+    rgba(51, 230, 191, 1)
+  );
+  .store-img {
+    width: 25.688rem;
+    position: relative;
+    bottom: 0;
+  }
+}
+
+

@@ -1,0 +1,312 @@
+.cryptoBank-header {
+  margin-bottom: 15.8rem;
+  .slogan {
+    position: relative;
+    display: block;
+    text-align: start;
+    font-size: calc(1rem + 4vw);
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 117%;
+  }
+  .subTitle {
+    font-weight: 600;
+    font-size: calc(1rem + 1vw);
+  }
+  .desc {
+    font-size: 14px;
+  }
+  .header-img-container {
+    position: relative;
+  }
+
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 400px;
+    height: 450px;
+    background: radial-gradient(
+      circle,
+      rgba(4, 57, 199, 0.56) 0%,
+      rgba(2, 18, 42, 0.59) 100%
+    );
+    filter: blur(50px);
+  }
+
+  .header-img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .header-boxs {
+    .item {
+      width: 297.5px;
+    }
+  }
+}
+
+//segment one
+.earn-up {
+  margin-bottom: 12rem;
+  .btn-box {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    height: 3.125rem;
+    width: 32.313rem;
+    .rounded-btn {
+      display: block;
+      height: 3.125rem;
+      width: 16.156rem;
+      border-radius: 40px;
+      border: none;
+      background-color: inherit;
+      color: rgba(255, 255, 255, 1);
+      font-size: 20px;
+      font-family: 500;
+      padding: 5px;
+    }
+    .active-btn {
+      background: linear-gradient(
+        143deg,
+        rgba(51, 230, 191, 1) 0%,
+        rgba(4, 57, 199, 1) 100%
+      );
+    }
+  }
+  .item-box {
+    background-color: rgba(255, 255, 255, 0.05);
+
+    width: 638px;
+  }
+  .item-box.active {
+    background-image: linear-gradient(rgba(33, 85, 223, 0.2), rgba(0, 0, 0, 0));
+  }
+}
+
+//segment two
+.unlock-vultisig {
+  margin-bottom: 15rem;
+  .item-box {
+    width: 423px;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+  .unlock-vultisig-img {
+    width: 100%;
+    border-radius: 13px;
+  }
+}
+//segment three
+.lowest-fees {
+  margin-bottom: 9.125rem;
+  .box {
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    background-image: linear-gradient(
+      to left top,
+      rgba(153, 153, 153, 0),
+      rgba(255, 255, 255, 0.05)
+    );
+    color: #fff;
+    .img-bg {
+      position: absolute;
+      left: 460px;
+      top: -39px;
+      opacity: 0.5;
+      width: 339px;
+    }
+
+    .blur-bg {
+      h4 {
+        width: 100%;
+      }
+      span {
+        float: left;
+        margin-top: 4px;
+      }
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &:after {
+      border-radius: 20px;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(
+        to left top,
+        rgba(0, 0, 0, 0),
+        rgba(33, 85, 223, 0.2)
+      );
+    }
+
+    .fees {
+      width: 80%;
+      display: flex;
+      gap: 1rem;
+      .air-drop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        .blur-bg {
+          flex-direction: column;
+          div {
+            display: flex;
+            align-items: center;
+            justify-items: flex-start;
+            span {
+              font-size: large;
+            }
+            .arrow-right {
+              width: 35px;
+            }
+          }
+        }
+      }
+    }
+    .fees-privileges {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      .privileges {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        flex-direction: column;
+        .blur-bg {
+          padding: 1.5rem;
+          display: flex;
+          .arrow-right {
+            width: 35px;
+          }
+        }
+        // border: 1px solid yellow;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .fees {
+    flex-direction: column;
+    .air-drop {
+      width: 100%;
+    }
+  }
+}
+//segment four
+.spend-crypto {
+  margin-bottom: 13.625rem;
+  .applePay-img {
+    height: 9.852rem;
+    width: 16.5rem;
+  }
+  .googlePay-img {
+    height: 7.5rem;
+    width: 15rem;
+  }
+}
+
+//f&Q
+.cryptoBank-FandQ {
+  .faq-item {
+    margin-bottom: 10rem;
+    .accordion-item {
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 0;
+      outline: 0;
+      margin-block: 17px;
+    }
+
+    .accordion-button {
+      color: white;
+      border-radius: 10px;
+      background: #061b3a;
+      border: unset;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: white;
+      border-radius: 10px;
+      background: #061b3a;
+    }
+
+    .accordion-collapse {
+      color: #ebeced;
+      background: #02122b;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+      box-shadow: none;
+    }
+
+    .accordion-button.collapsed::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+  }
+  @media (max-width: 576px) {
+    .faq {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .faq {
+      width: 100% !important;
+    }
+  }
+
+  #img-glow {
+    height: 50px;
+    width: 440px;
+    background: radial-gradient(
+      circle,
+      rgba(51, 230, 191, 0.57) 0%,
+      rgba(16, 16, 16, 0.507) 100%
+    );
+    filter: blur(15px);
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .earn-up {
+    .btn-box {
+      height: 3.125rem;
+      width: 20.313rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .earn-up {
+    .btn-box {
+      height: 3.125rem;
+      width: 15.313rem;
+    }
+  }
+}

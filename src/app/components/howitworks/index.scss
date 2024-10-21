@@ -1,0 +1,110 @@
+.howItWorke-header {
+  margin-bottom: 15.688rem;
+  .slogan {
+    position: relative;
+    text-align: start;
+    font-size: calc(1rem + 4vw) !important;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 117%;
+    .how-to-back-logo {
+      position: absolute;
+      bottom: 1.5rem;
+      right: 25%;
+    }
+  }
+
+  .header-img-container {
+    position: relative;
+  }
+
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 400px;
+    height: 450px;
+    background: radial-gradient(
+      circle,
+      rgba(4, 57, 199, 0.56) 0%,
+      rgba(2, 18, 42, 0.59) 100%
+    );
+    filter: blur(50px);
+  }
+
+  .header-img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+//segment one
+.private-keys {
+  margin-bottom: 15.688rem;
+}
+
+//segment two
+.private-keys {
+  margin-bottom: 15.688rem;
+  .item{
+   width: 485px;
+  //  height: 100%;
+  }
+}
+//segment three
+.crypto-security{
+    .crypto-security-box{
+        background-color:rgba(255, 255, 255, 0.05) ;
+        background-image: linear-gradient(rgba(13, 25, 43, 0),rgba(33, 85, 223, 0.3));
+        border: 2px;
+        border-radius: 20px;
+        .trusted-devices-img{
+            // height: 623px;
+            height: 100%;
+            // width:100%;
+            
+            
+        }
+    }
+}
+
+.howitwork-store{
+    background-color:rgba(255, 255, 255, 0.05) ;
+    background-image: linear-gradient(rgba(13, 25, 43, 0),rgba(33, 85, 223, 0.8));
+    border-radius: 20px;
+}
+
+@media (max-width: 1600px) {
+    .crypto-security{
+        .crypto-security-box{
+            .trusted-devices-img{
+                height: 500px;
+                
+            }
+        }
+    }
+  }
+@media (max-width: 1200px) {
+    .crypto-security{
+        .crypto-security-box{
+            .trusted-devices-img{
+                height: 400px;
+                
+            }
+        }
+    }
+  }
+  
+  
+  @media (max-width: 998px) {
+    .crypto-security{
+        .crypto-security-box{
+            .trusted-devices-img{
+                height: 300px;
+                
+            }
+        }
+    }
+  }

@@ -2,6 +2,7 @@ import { Sections } from "@/app/components/howitworks"
 import { Footer } from "@/app/shared-components/Footer"
 import { NavBar } from "@/app/shared-components/NavBar"
 import { Metadata } from "next";
+import { trackAction } from "@/app/lib/gtagHelper";
 export const metadata: Metadata = {
     title: "Vultisig | How it Works",
     metadataBase: new URL("https://vultisig.com/HowItWorks"),
@@ -24,7 +25,6 @@ export const metadata: Metadata = {
 };
 export default async function HowItWork() {
     return (
-
         <main>
             <div className="content">
                 <div className="container">
@@ -40,8 +40,6 @@ export default async function HowItWork() {
                 <div className="circle-middle-left-glow"></div>
                 <div className="circle-middle-right"></div>
                 <div className="circle-middle-right-glow"></div>
-                <div className="circle-bottom"></div>
-                <div className="circle-bottom-glow"></div>
             </div>
         </main>
 

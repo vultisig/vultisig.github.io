@@ -4,16 +4,15 @@ import Image from "next/image";
 export function SegmentOne() {
     return (
         <>
-            <div className="problems mt-5 mb-5">
+            <div className="problems">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h4 className="gradient-text monserrat-medium" >{homeCopy.segment1.mainTitle}</h4>
-                        <h2 className="mt-5 monserrat-bold" style={{ lineHeight: "150%" }}
+                        <h2 className="mt-5 monserrat-bold title" style={{ lineHeight: "150%" }}
                             dangerouslySetInnerHTML={{ __html: homeCopy.segment1.subTitle }}></h2>
                         {homeCopy.segment1.items.map((item, index) => (
-                            <div key={index} className={"mt-5 ps-4 " + styles["gradient-border-left"]}>
+                            <div key={index} className="desc ps-4 gradient-border-left mt-5">
                                 <h3 className="menlo monserrat-bold py-1" >{item.title}</h3>
-                                <p className="monserrat-regular fs-5 color-neutral" dangerouslySetInnerHTML={{ __html: item.description }}>
+                                <p className="monserrat-regular fs-5 color-neutral mt-3" dangerouslySetInnerHTML={{ __html: item.description }}>
                                 </p>
                             </div>
                         ))}
