@@ -111,7 +111,7 @@ export function NavBar() {
       <div className="banner">
         <img className="warning-logo-l" src="./img/warning.svg" />
         <p>
-          Please note, hpyer secure Vultisig vaults are currently only available
+          Please note, hyper secure Vultisig vaults are currently only available
           in the Vultisig App and will come to VultiWallet shortly. <br />
           Then Vultisig will become the Vultisig: Co-signing app and Vultiwallet
           will become Vultisig: DeFi Mobile App.
