@@ -59,7 +59,7 @@ export function SegmentFour() {
             <div className="  col-lg-4 pe-5">
               <img
                 className="fiat-img mx-auto img-fluid"
-                src="/img/best-features-image-3.svg"
+                src="/img/best-features-image-3.png"
                 alt={homeCopy.segment4.itemThree.alt}
               />
             </div>

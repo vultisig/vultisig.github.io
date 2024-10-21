@@ -120,7 +120,7 @@ export default async function Home() {
         <div className="image-box">
           <img
             className="header-img  "
-            src="./img/header-img.png"
+            src="./img/header-img.svg"
             alt="testmckmpp"
           />
           <img

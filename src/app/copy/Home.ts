@@ -228,7 +228,7 @@ export const homeCopy = {
             downloadLabel: "web",
           },
           {
-            image: "./img/Vultiweb-c.svg",
+            image: "./img/Vultiweb-c.png",
             alt: "View on VultiWeb",
             url: "https://chromewebstore.google.com/detail/vulticonnect/ggafhcdaplkhmmnlbfjpnnkepdfjaelb?authuser=0&hl=en-GB&pli=1",
             target: "_blank",

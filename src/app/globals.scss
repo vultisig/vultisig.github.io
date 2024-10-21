@@ -234,6 +234,8 @@ h2 {
   .items {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 7px;
   }
 }
 
@@ -425,6 +427,10 @@ hr.solid {
 .card-item .avatar {
   width: 100px;
   height: 100px;
+}
+
+#store-section {
+  display: flex !important;
 }
 
 #segment-1 .card-item {
