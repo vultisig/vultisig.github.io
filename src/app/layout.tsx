@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import"bootstrap/dist/css/bootstrap.min.css"
+import "./globals.scss";
+import "./styles/index.scss"
 import Script from "next/script";
 import GoogleAnalytics from "./shared-components/GoogleAnalytics";
 import CookieBanner from "../app/shared-components/CookieBanner";

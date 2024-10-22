@@ -1,115 +1,143 @@
-"use client"
-import React, { useCallback, useContext, useEffect, useState } from 'react'
-import scss from './OffCanvas.module.scss'
-import { AppContext } from './Context'
-import { OffcanvasProps } from './Props'
-import { navBarCopy } from "../../copy/NavBar"
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-
-
+"use client";
+import React, { useCallback, useContext, useEffect, useState } from "react";
+import scss from "./OffCanvas.module.scss";
+import { AppContext } from "./Context";
+import { OffcanvasProps } from "./Props";
+import { navBarCopy } from "../../copy/NavBar";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function Offcanvas({
-   
-    position = 'right',
-    backdrop = true,
-    allowClickAway = true,
-    allowEsc = true,
-    allowScroll = true,
-    className = 'simple-offcanvas',
-    styles = {},
-    children
+  position = "right",
+  backdrop = true,
+  allowClickAway = true,
+  allowEsc = true,
+  allowScroll = true,
+  className = "simple-offcanvas",
+  styles = {},
+  children,
 }: OffcanvasProps) {
-    const { handleClose, isOpen, randomId } = useContext(AppContext)
-    const router = usePathname();
-    const [currentPath, setCurrentPath] = useState('');
+  const { handleClose, isOpen, randomId } = useContext(AppContext);
+  const router = usePathname();
+  const [currentPath, setCurrentPath] = useState("");
 
-    useEffect(() => {
-        if (router) {
-            setCurrentPath(router);
-        }
-    }, [router]);
-    const onClickOutside = useCallback(() => {
-        if (!allowClickAway) return
+  useEffect(() => {
+    if (router) {
+      setCurrentPath(router);
+    }
+  }, [router]);
+  const onClickOutside = useCallback(() => {
+    if (!allowClickAway) return;
 
+    if (isOpen) {
+      if (handleClose) handleClose();
+    }
+  }, [allowClickAway, isOpen, handleClose]);
+
+  const onEscKey = useCallback(
+    (event: KeyboardEvent) => {
+      if (!allowEsc) return;
+
+      if (event.key === "Escape") {
         if (isOpen) {
-            if (handleClose) handleClose()
+          if (handleClose) handleClose();
         }
-    }, [allowClickAway, isOpen, handleClose])
+      }
+    },
+    [allowEsc, isOpen, handleClose]
+  );
 
-    const onEscKey = useCallback(
-        (event: KeyboardEvent) => {
-            if (!allowEsc) return
+  useEffect(() => {
+    document.addEventListener("keydown", onEscKey, false);
+    return () => document.removeEventListener("keydown", onEscKey);
+  }, [onEscKey]);
 
-            if (event.key === 'Escape') {
-                if (isOpen) {
-                    if (handleClose) handleClose()
-                }
-            }
-        },
-        [allowEsc, isOpen, handleClose]
-    )
+  useEffect(() => {
+    if (!allowScroll) {
+      if (isOpen) document.body.style.overflow = "hidden";
+    }
 
-    useEffect(() => {
-        document.addEventListener('keydown', onEscKey, false)
-        return () => document.removeEventListener('keydown', onEscKey)
-    }, [onEscKey])
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen, allowScroll]);
 
-
-
-    useEffect(() => {
-        if (!allowScroll) {
-            if (isOpen) document.body.style.overflow = 'hidden'
-        }
-
-        return () => {
-            document.body.style.overflow = ''
-        }
-    }, [isOpen, allowScroll])
-
-    return (
-        <>
-            <div
-                id={`offcanvas_${randomId}`}
-                className={`${scss.offcanvas} ${scss[position]} ${isOpen ? scss.show : ''
-                    } ${className}  text-bg-dark`}
-                tabIndex={-1}
-                style={styles}
-                role="dialog"
-                aria-labelledby={scss.title}
-                aria-modal="true"
-                onClick={(event) => event.stopPropagation()}
-                aria-hidden="true"
-            >
-                <div className={scss.header}>
-                    <h5 className={scss.title}>MENU</h5>
-                    <button
-                        className={scss.close}
-                        onClick={handleClose}
-                        type="button"
-                        tabIndex={0}
-                        aria-label="Close"
-                    />
-                </div>
-                <div className={scss.body}>
-                    <ul className="navbar-nav align-items-center">
-                        {navBarCopy.navbarLinks.map((link, index) => (
-                            <li key={index} className="nav-item my-sm-2 mx-3">
-                                <Link className={`nav-link ${currentPath === link.url ? 'gradient-text' : ''}`}
-                                    href={link.url} target={link.target}  onClick={handleClose}>{link.name}</Link>
-                            </li>
-                        ))
-                        }
-                        <a className="btn px-lg-4 ms-lg-5  btn-primary my-2 mx-lg-2 my-sm-0 btn-color d-flex align-items-center justify-content-center rounded"
-                            style={{ height: "48px", width: "193px" }} href={navBarCopy.download.url} target={navBarCopy.download.target} onClick={handleClose}>
-                            {navBarCopy.download.name}
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            {backdrop && (
-                <div onClick={handleClose} className={`${scss.backdrop} ${isOpen ? scss.show : ''}`} />
-            )}
-        </>
-    )
+  return (
+    <>
+      <div
+        id={`offcanvas_${randomId}`}
+        className={`${scss.offcanvas} ${scss[position]} ${
+          isOpen ? scss.show : ""
+        } ${className}  text-bg-dark`}
+        tabIndex={-1}
+        style={styles}
+        role="dialog"
+        aria-labelledby={scss.title}
+        aria-modal="true"
+        onClick={(event) => event.stopPropagation()}
+        aria-hidden="true"
+      >
+        <div className={scss.header}>
+          <h5 className={scss.title}>MENU</h5>
+          <button
+            className={scss.close}
+            onClick={handleClose}
+            type="button"
+            tabIndex={0}
+            aria-label="Close"
+          />
+        </div>
+        <div className={scss.body}>
+          <ul className="navbar-nav align-items-center">
+            {navBarCopy.navbarLinks.map((link, index) => (
+              <li key={index} className="nav-item my-sm-2 mx-3">
+                <Link
+                  className={`nav-link ${
+                    currentPath === link.url ? "gradient-text" : ""
+                  }`}
+                  href={link.url}
+                  target={link.target}
+                >
+                  {link.name}
+                </Link>
+                {link.children && (
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    {link.children?.map((child, index) => (
+                      <a
+                        key={index}
+                        className="dropdown-item"
+                        href={child.url}
+                        target={child.target}
+                      >
+                        {child.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
+            <li className="nav-item nav-item-download-btn dropdown">
+              <Link
+                className="btn-offcanvas btn-primary btn-color align-items-center justify-content-center rounded"
+                style={{ height: "48px", width: "193px" }}
+                href={navBarCopy.download.url}
+                target={navBarCopy.download.target}
+              >
+                {navBarCopy.download.name}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {backdrop && (
+        <div
+          onClick={handleClose}
+          className={`${scss.backdrop} ${isOpen ? scss.show : ""}`}
+        />
+      )}
+    </>
+  );
 }

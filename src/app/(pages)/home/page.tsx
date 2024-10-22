@@ -1,83 +1,109 @@
-"use client"
-import { homeCopy } from "@/app/copy/Home"
-import styles from "./page.module.scss"
-import { SegmentOne } from "@/app/components/home/segment-one"
-import { SegmentTwo } from "@/app/components/home/segment-two"
-import { SegmentThree } from "@/app/components/home/segment-three"
-import { SegmentFour } from "@/app/components/home/segment-four"
-import { SegmentFive } from "@/app/components/home/segment-five"
-import { SegmentStore } from "@/app/components/home/segment-store"
-import Image from "next/image"
-import { trackAction } from "@/app/lib/gtagHelper"
+"use client";
+import { homeCopy } from "@/app/copy/Home";
+import { SegmentOne } from "@/app/components/home/segment-one";
+import { SegmentTwo } from "@/app/components/home/segment-two";
+import { SegmentThree } from "@/app/components/home/segment-three";
+import { SegmentFour } from "@/app/components/home/segment-four";
+import { SegmentFive } from "@/app/components/home/segment-five";
+import { SegmentSix } from "@/app/components/home/segment-six";
+import { SegmentStore } from "@/app/components/home/segment-store";
+import Image from "next/image";
+import { trackAction } from "@/app/lib/gtagHelper";
 export default async function Home() {
-    return (
-        <> 
-            <header className="header mb-2">
-                <div className=" mt-2 text-white">
-                    <div className={"monserrat-bold " + styles["slogan"]}>
-
-                        <span dangerouslySetInnerHTML={{ __html: homeCopy.header.slogan }}></span>
-                        <Image width={180} height={52} className={styles["back-logo"]} src="./img/back-logo.svg" alt="Vultisig Logo" />
-                    </div>
-
-                    <div className="blue-section text-small color-neutral text-lg-start text-center py-4 px-4 mt-5 col-lg-8 col-12">
-                        <p className="col-lg-9 col-12 monserrat" dangerouslySetInnerHTML={{ __html: homeCopy.header.subSlogan }}>
-                        </p>
-                    </div>
-
-                    {/* <!-- DOWNLOAD BOX --> */}
-                    <div className="blue-section text-small color-neutral text-start py-4 px-4 mt-5 col-lg-8 col-12">
-                        <h4><strong className="col-9 menlo gradient-text  monserrat-bold" >
-                            {homeCopy.header.downloadTitle}
-                        </strong></h4>
-                        <div className="mt-4 text-lg-start text-center">
-                            <a href={homeCopy.store.appStoreLink.url} target={homeCopy.store.appStoreLink.traget} onClick={()=>{trackAction("click","download_app","app_store")}}>
-                                <Image className="my-2 my-lg-1 me-lg-3" src="./img/appstore.svg"
-                                   width={180} height={52} 
-                                    alt="Download on AppStore" />
-                            </a>
-                            <a href={homeCopy.store.githubLink.url} target={homeCopy.store.githubLink.target} onClick={()=>{trackAction("click","download_app","github")}}>
-                                <Image className="my-2 my-lg-1 me-lg-3" src="./img/github-download.svg"
-                                    width={180} height={52} 
-                                    alt="Download on Github" />
-                            </a>
-                            <a href={homeCopy.store.playStoreLink.url} target={homeCopy.store.playStoreLink.target} onClick={()=>{trackAction("click","download_app","play_store")}}>
-                                <Image className="my-2 my-lg-1 me-lg-3" src="./img/playstore.svg"
-                                    width={180} height={52} 
-                                    alt="Download on PlayStore" />
-                            </a>
-                            <a href={homeCopy.store.vultiWebLink.url} target={homeCopy.store.vultiWebLink.target} onClick={()=>{trackAction("click","download_app","vultiweb")}}>
-                                <Image className="my-2 my-lg-1" src="./img/vultiweb.svg"
-                                    width={180} height={52} 
-                                    alt="View it on VultiWeb" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </header>
-
-            <div id="howitworks" className="mt-5 py-5 color-neutral">
-                <SegmentOne />
-                <SegmentTwo />
-                <SegmentThree />
-                <SegmentFour />
-                <SegmentFive />
-                <SegmentStore />
+  return (
+    <>
+      <header className="header ">
+        <div className="header-content">
+          <div className=" monserrat-bold slogan mb-3 ">
+            <span
+              dangerouslySetInnerHTML={{ __html: homeCopy.header.slogan }}
+            ></span>
+          </div>
+          <div className="blue-section p-3 mt-3 ">
+            <p
+              className=""
+              dangerouslySetInnerHTML={{ __html: homeCopy.header.subSlogan }}
+            ></p>
+          </div>
+          {/* <!-- DOWNLOAD BOX --> */}
+          <div className=" download-box align-content-start">
+            <div className="items">
+              {homeCopy.store.items.Vultisig.items.map((item, index) => {
+                return (
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.traget}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={150}
+                        height={43}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
+                );
+              })}
+              {homeCopy.store.items.Browser.items.map((item, index) => {
+                return (
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.target}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={150}
+                        height={43}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
+                );
+              })}
             </div>
+          </div>
+        </div>
+        <div className="image-box">
+          <img
+            className="header-img  "
+            src="./img/header-img.png"
+            alt="testmckmpp"
+          />
+          <img
+            className="shadow-img mx-auto "
+            src="./img/shadow.svg"
+            alt="testmckmpp"
+          />
+        </div>
+      </header>
 
-
-            <div className="circle-top-left"></div>
-            <div className="circle-top-left-glow"></div>
-            <div className="circle-top-right"></div>
-            <div className="circle-top-right-glow"></div>
-            <div className="circle-middle-left"></div>
-            <div className="circle-middle-left-glow"></div>
-            <div className="circle-middle-right"></div>
-            <div className="circle-middle-right-glow"></div>
-            <div className="circle-bottom"></div>
-            <div className="circle-bottom-glow"></div>
-
-        </>
-    )
+      <div id="howitworks" className="mt-5 py-5 color-neutral">
+        <SegmentOne />
+        <SegmentTwo />
+        <SegmentThree />
+        <SegmentFour />
+        <SegmentFive />
+        <SegmentSix />
+        <SegmentStore />
+      </div>
+      <div className="circle-middle-left"></div>
+      <div className="circle-middle-left-glow"></div>
+      <div className="circle-middle-right"></div>
+      <div className="circle-middle-right-glow"></div>
+      <div className="circle-bottom"></div>
+      <div className="circle-bottom-glow"></div>
+    </>
+  );
 }
