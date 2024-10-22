@@ -68,7 +68,7 @@
     font-weight: 700;
   }
   .item {
-    width: 19.188rem;
+    width: 15.188rem;
     .title {
       font-weight: 700;
       font-size: 1.375rem;
@@ -78,6 +78,22 @@
       font-weight: 400;
       font-size: 0.875rem;
       line-height: 1.313rem;
+    }
+  }
+}
+
+@media (min-width: 1633px) {
+  .solutions {
+    .item {
+      width: 19.188rem !important;
+    }
+  }
+}
+
+@media (max-width: 1312px){
+  .solutions {
+    .item {
+      width: 30.188rem !important;
     }
   }
 }

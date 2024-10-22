@@ -45,7 +45,7 @@ export const CryptoBankCopy = {
     items: [
       {
         title: "Complete KYC",
-        btn:"KYC",
+        btn: "KYC",
         list: [
           {
             text: `As soon as you complete the KYC you’ll be able to claim</br> this reward.`,
@@ -56,7 +56,7 @@ export const CryptoBankCopy = {
       },
       {
         title: "1st Card Top Up",
-        btn:"1st Topup",
+        btn: "1st Topup",
         list: [
           {
             text: "Top up your card with at least 50 EUR of crypto to</br> claim this reward.",
@@ -78,7 +78,7 @@ export const CryptoBankCopy = {
             text: "Free Swiss Bank Account (CHF, EUR, USD)",
           },
           {
-            text: "Free EUR Visa Debit Card",
+            text: "Free EUR MasterCard Debit Card",
           },
           {
             text: "1% Crypto Topup & FX fee",
@@ -100,7 +100,7 @@ export const CryptoBankCopy = {
             text: "Free Swiss Bank Account (CHF, EUR, USD)",
           },
           {
-            text: "Free EUR Visa Debit Card",
+            text: "Free EUR MasterCard Debit Card",
           },
           {
             text: "0.5% Crypto Topup & FX fee",
@@ -122,7 +122,7 @@ export const CryptoBankCopy = {
             text: "Free Swiss Bank Account (CHF, EUR, USD)",
           },
           {
-            text: "Free EUR Visa Debit Card",
+            text: "Free EUR MasterCard Debit Card",
           },
           {
             text: "0.25% Crypto Topup & FX fee",
