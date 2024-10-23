@@ -26,12 +26,10 @@ export function NavBar() {
         className="navbar navbar-expand-xl navbar-dark px-lg-4 px-1 my-5"
         style={{ background: "#061B3A", borderRadius: ".75rem" }}
       >
-        <Link
-          className="navbar-brand mx-auto d-flex align-items-center"
-          href="/"
-        >
+      <Link href="/">
+        <a className="navbar-brand mx-auto d-flex align-items-center">
           <Image
-            src="./img/logo.svg"
+            src="/img/logo.svg"  // Ensure absolute path for image
             width={30}
             height={30}
             className="d-inline-block align-top"
@@ -43,7 +41,8 @@ export function NavBar() {
           >
             Vultisig
           </strong>
-        </Link>
+        </a>
+      </Link>
         <div
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
