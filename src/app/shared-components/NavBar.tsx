@@ -114,7 +114,7 @@ export function NavBar() {
             ...MenuItems,
             {
               key: "1000",
-              label: <a href="/#store-section">DOWNLOAD APP</a>,
+              label: <a href="https://vultisig.com/#store-section">DOWNLOAD APP</a>,
             },
           ]}
         />
