@@ -46,10 +46,11 @@ export function NavBar() {
       MenuItems.push({
         key: `${index}`,
         label: link.name,
+        popupClassName: "custom-dropdown-class", // Adding custom class for dropdown
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
-          style:{backgroundColor: "#031635"},
-          label: <Link href={child.url} >{child.name} </Link>,
+          style: { backgroundColor: "#031635" }, // Background color for child items
+          label: <Link href={child.url}>{child.name}</Link>,
         })),
       });
     } else {
@@ -115,6 +116,17 @@ export function NavBar() {
           ]}
         />
       </Drawer>
+
+      <style jsx>{`
+        .custom-dropdown-class {
+          background-color: #031635 !important; /* Set background for dropdown when it has children */
+          color: white;
+        }
+
+        .navbar {
+          background-color: #123456; /* Example navbar background color */
+        }
+      `}</style>
     </>
   );
 }
