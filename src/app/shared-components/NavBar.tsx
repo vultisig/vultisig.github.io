@@ -64,7 +64,7 @@ export function NavBar() {
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
         <Link
           className="navbar-brand mx-auto d-flex align-items-center"
-          href="/"
+          href="https://vultisig.com"
         >
           <Image
             src="./img/logo.svg"
