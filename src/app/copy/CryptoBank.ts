@@ -219,7 +219,6 @@ export const CryptoBankCopy = {
   },
   store: {
     mainTitle: "UPGRADE<span class='gradient-text'> TODAY </span>",
-    subTitle:
-      "Join thousands of users who trust VULTISIG with their digital assets. There is no registration required. ",
+    subTitle: "Join thousands of users who trust VULTISIG with their<br/> digital assets. There is no registration required. ",
   },
 };

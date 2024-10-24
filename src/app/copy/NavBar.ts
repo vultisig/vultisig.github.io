@@ -14,7 +14,7 @@ export const navBarCopy = {
         },
         {
           name: "VultiWallet - DeFi Mobile App (Vaults coming soon)",
-          url: "/#",
+          url: "/#store-section",
           target: "_self",
         },
         {

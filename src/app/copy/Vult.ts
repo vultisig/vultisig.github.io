@@ -30,7 +30,7 @@ export const vultCopy = {
       { src: "/img/vult/carousel-3.3.png" },
       { src: "/img/vult/carousel-3.3.png" },
     ],
-    details_1:"airrop .vultisig.com"
+    details_1:"AIRDROP .vultisig.com"
   },
   faq: [
     {

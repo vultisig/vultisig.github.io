@@ -1,7 +1,7 @@
 export const BackedByCopy = {
   title: "BACKED AND <span class='gradient-text'>TRUSTED</span> BY",
   "segment-1": {
-    title: "Seed-Investors",
+    title: "FUNDS",
     cards: [
       {
         src: "/img/backed-by/logo-21e8.png",
@@ -78,7 +78,7 @@ export const BackedByCopy = {
     ],
   },
   "segment-2": {
-    title: "Founders",
+    title: "SEED INVESRORS",
     cards: [
       {
         src: "/img/backed-by/avatar-jpthor.png",

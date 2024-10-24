@@ -18,13 +18,19 @@
     rgba(4, 57, 199, 1) 100%
   );
 }
+:where(.css-ni1kz0).ant-menu-light.ant-menu-submenu>.ant-menu, :where(.css-ni1kz0).ant-menu-light>.ant-menu.ant-menu-submenu>.ant-menu{
+  background-color: rgb(2 18 43);
+}
+:where(.css-ni1kz0).ant-menu-light, :where(.css-ni1kz0).ant-menu-light>.ant-menu{
+  background-color: rgb(2 18 43);
+}
 .blue-section {
   display: inline-block;
   position: relative;
   background-color: $blue-base;
   color: $gray;
   border-radius: 1rem;
-  border: solid 0.5px $gray-2;
+  border: solid 0.5px rgba(255, 255, 255, 0.1);
 }
 
 .gradient-text {
@@ -195,8 +201,8 @@ body {
 
 .circle-bottom {
   position: absolute;
-  bottom: 59.375rem;
-  left: 5rem;
+  bottom: 45rem;
+  left: 10rem;
   border: 2px solid #33e6bf27;
   border-radius: 50%;
   height: 400px;
