@@ -9,10 +9,8 @@ import { Menu } from "antd";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export function NavBar() {
-  const router = usePathname();
   const [currentPath, setCurrentPath] = useState("");
 
   type MenuItem = Required<MenuProps>["items"][number];
@@ -20,10 +18,10 @@ export function NavBar() {
   const MenuItems: MenuItem[] = [];
 
   useEffect(() => {
-    if (router) {
-      setCurrentPath(router);
+    if (typeof window !== "undefined") {
+      setCurrentPath(window.location.pathname);
     }
-  }, [router]);
+  }, []);
 
   const [loaded, setLoaded] = useState(false);
 
@@ -36,6 +34,17 @@ export function NavBar() {
   const [show, setShow] = useState(false);
   const handleOpen = () => setShow(true);
   const handleClose = () => setShow(false);
+
+  const handleLogoClick = () => {
+    if (typeof window !== "undefined") {
+      window.location.href = "/"; // Navigate to the main page
+    }
+  };
+  const handleStoreClick = () => {
+    if (typeof window !== "undefined") {
+      window.location.href = "/#store-section"; // Navigate to the main page
+    }
+  };
 
   const onClick: MenuProps["onClick"] = (e) => {
     console.log(e.key);
@@ -50,7 +59,7 @@ export function NavBar() {
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
           style:{backgroundColor: "#031635"},
-          label: <Link href={child.url} >{child.name} </Link>,
+          label: <div   onClick={handleStoreClick}   style={{ cursor: "pointer" }} >{child.name} </div>,
         })),
       });
     } else {
@@ -64,9 +73,10 @@ export function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
-        <Link
+        <div
+          onClick={handleLogoClick}
           className="navbar-brand mx-auto d-flex align-items-center"
-          href="https://vultisig.com"
+          style={{ cursor: "pointer" }}
         >
           <Image
             src="./img/logo.svg"
@@ -75,13 +85,10 @@ export function NavBar() {
             className="d-inline-block align-top"
             alt="Vultisig Logo"
           />
-          <strong
-            style={{ fontSize: "x-large" }}
-            className="monserrat-semibold"
-          >
+          <strong style={{ fontSize: "x-large" }} className="monserrat-semibold">
             Vultisig
           </strong>
-        </Link>
+        </div>
         <div
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
