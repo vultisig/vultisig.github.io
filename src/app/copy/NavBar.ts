@@ -4,7 +4,7 @@ export const navBarCopy = {
   navbarLinks: [
     {
       name: "Product",
-      url: "/cryptobank",
+      url: "/#",
       target: "_self",
       children: [
         {
@@ -14,7 +14,7 @@ export const navBarCopy = {
         },
         {
           name: "VultiWallet - DeFi Mobile App (Vaults coming soon)",
-          url: "/#store-section",
+          url: "/#",
           target: "_self",
         },
         {

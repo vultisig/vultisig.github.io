@@ -431,7 +431,7 @@ export function Sections() {
             </div>
           </div>
         </div>
-        <div className="text-center  justify-content-center ms-5">
+        <div className="text-center  justify-content-center">
           <img
             src="/img/cryptobank-store.svg"
             className="store-img img-fluid"
