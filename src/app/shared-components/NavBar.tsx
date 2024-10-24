@@ -46,6 +46,7 @@ export function NavBar() {
       MenuItems.push({
         key: `${index}`,
         label: link.name,
+        popupClassName: "custom-dropdown-class",
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
           style:{backgroundColor: "#031635"},

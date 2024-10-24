@@ -18,7 +18,12 @@
     rgba(4, 57, 199, 1) 100%
   );
 }
-
+:where(.css-ni1kz0).ant-menu-light.ant-menu-submenu>.ant-menu, :where(.css-ni1kz0).ant-menu-light>.ant-menu.ant-menu-submenu>.ant-menu{
+  background-color: #031635;
+}
+:where(.css-ni1kz0).ant-menu-light, :where(.css-ni1kz0).ant-menu-light>.ant-menu{
+  background-color: #031635;
+}
 .blue-section {
   display: inline-block;
   position: relative;
