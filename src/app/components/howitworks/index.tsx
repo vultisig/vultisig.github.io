@@ -126,12 +126,12 @@ export function Sections() {
       {/* <---!segment three---> */}
       <div className="crypto-security mb-5">
         <h2
-          className="monserrat-bold mainTitle text-center mb-5 "
+          className="monserrat-bold mainTitle text-center"
           dangerouslySetInnerHTML={{
             __html: HowItWorksCopy.segment4.mainTitle,
           }}
         ></h2>
-        <div className="crypto-security-box mb-5 top-left-gradient mt-3 ">
+        <div className="crypto-security-box mb-5 top-left-gradient mt-5">
           <div
             className="row trusted-devices-cont py-3 "
             style={{ overflow: "hidden" }}
@@ -176,9 +176,9 @@ export function Sections() {
       </div>
 
       {/* <---!segment stor---> */}
-      <div className="howitwork-store  pt-3 px-5 mb-5 d-flex align-items-center justify-content-center">
+      <div className="howitwork-store  pt-3 px-2 mb-5">
 
-          <div className="d-flex align-items-center justify-content-center me-5">
+          <div className="d-flex align-items-center justify-content-center">
             <div className="ms-1">
               <h2 style={{ lineHeight: "150%" }} className="monserrat-bold">
                 <strong
@@ -188,7 +188,7 @@ export function Sections() {
                 ></strong>
               </h2>
               <p
-                className="monserrat fs-5 "
+                className="monserrat-regular fs-5 "
                 dangerouslySetInnerHTML={{
                   __html: HowItWorksCopy.store.subTitle,
                 }}
@@ -227,6 +227,7 @@ export function Sections() {
                 <div className="items">
                   {homeCopy.store.items.VultiWallet.items.map((item, index) => {
                     return (
+                      <>
                         <a
                           key={index}
                           href={item.url}
@@ -247,6 +248,7 @@ export function Sections() {
                             alt="Download on AppStore"
                           />
                         </a>
+                      </>
                     );
                   })}
                 </div>
@@ -254,6 +256,7 @@ export function Sections() {
                 <div className="items">
                   {homeCopy.store.items.Browser.items.map((item, index) => {
                     return (
+                      <>
                         <a
                           key={index}
                           href={item.url}
@@ -274,13 +277,14 @@ export function Sections() {
                             alt="Download on AppStore"
                           />
                         </a>
+                      </>
                     );
                   })}
                 </div>
               </div>
             </div>
           </div>
-          <div className="text-center  justify-content-center ms-5">
+          <div className={"text-center  justify-content-center"}>
             <img
               src="/img/iPhone-Space.png"
               className="store-img img-fluid"

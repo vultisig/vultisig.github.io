@@ -24,7 +24,7 @@
   background-color: $blue-base;
   color: $gray;
   border-radius: 1rem;
-  border: solid 0.5px rgba(255, 255, 255, 0.1);
+  border: solid 0.5px $gray-2;
 }
 
 .gradient-text {
@@ -195,8 +195,8 @@ body {
 
 .circle-bottom {
   position: absolute;
-  bottom: 45rem;
-  left: 10rem;
+  bottom: 59.375rem;
+  left: 5rem;
   border: 2px solid #33e6bf27;
   border-radius: 50%;
   height: 400px;

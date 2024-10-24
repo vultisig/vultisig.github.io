@@ -1,67 +1,31 @@
 "use client";
-import { Button, Drawer } from "antd";
 import Image from "next/image";
 import { navBarCopy } from "../copy/NavBar";
-import { MenuOutlined } from "@ant-design/icons";
-
-import type { MenuProps } from "antd";
-import { Menu } from "antd";
-
+import { OffcanvasProvider } from "../shared-components/OffCanvas/Context";
+import { Trigger } from "../shared-components/OffCanvas/Trigger";
+import { Offcanvas } from "../shared-components/OffCanvas/OffCanvas";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 export function NavBar() {
   const router = usePathname();
   const [currentPath, setCurrentPath] = useState("");
-
-  type MenuItem = Required<MenuProps>["items"][number];
-
-  const MenuItems: MenuItem[] = [];
 
   useEffect(() => {
     if (router) {
       setCurrentPath(router);
     }
   }, [router]);
-
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, 0);
-  }, []);
-
   const [show, setShow] = useState(false);
-  const handleOpen = () => setShow(true);
-  const handleClose = () => setShow(false);
-
-  const onClick: MenuProps["onClick"] = (e) => {
-    console.log(e.key);
-  };
-
-  navBarCopy.navbarLinks.map((link, index) => {
-    if (link.children) {
-      MenuItems.push({
-        key: `${index}`,
-        label: link.name,
-        children: link.children.map((child, ind) => ({
-          key: `${index}-${ind}`,
-          label: <Link href={child.url}>{child.name}</Link>,
-        })),
-      });
-    } else {
-      MenuItems.push({
-        key: `${index}`,
-        label: <Link href={link.url}>{link.name}</Link>,
-      });
-    }
-  });
-
+  const handleOpen = () => console.log("");
+  // Callback function that is triggered when the Offcanvas is closed
+  const handleClose = () => console.log("");
   return (
     <>
-      <nav className="navbar navbar-expand-xl navbar-dark my-5">
+      <nav
+        className="navbar navbar-expand-xl navbar-dark px-lg-4 px-1 my-5"
+        style={{ background: "#061B3A", borderRadius: ".75rem" }}
+      >
         <Link
           className="navbar-brand mx-auto d-flex align-items-center"
           href="/"
@@ -84,36 +48,76 @@ export function NavBar() {
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
         >
-          {loaded && (
-            <Menu onClick={onClick} mode="horizontal" items={MenuItems} />
-          )}
+          <ul className="navbar-nav align-items-center">
+            {navBarCopy.navbarLinks.map((link, index) =>
+              link.children ? (
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {link.name}
+                  </a>
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    {link.children.map((child, index) => (
+                      <a
+                        key={index}
+                        className="dropdown-item"
+                        href={child.url}
+                        target={child.target}
+                      >
+                        {child.name}
+                      </a>
+                    ))}
+                  </div>
+                </li>
+              ) : (
+                <li key={index} className="nav-item my-sm-2 mx-3">
+                  <Link
+                    className={`nav-link ${
+                      currentPath === link.url ? "gradient-text" : ""
+                    }`}
+                    href={link.url}
+                    target={link.target}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              )
+            )}
+          </ul>
         </div>
         <Link
-          className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
+          className="btn px-lg-4 ms-lg-5  btn-primary my-2 mx-lg-2 my-sm-0 btn-color d-flex align-items-center justify-content-center rounded"
           style={{ height: "48px", width: "193px" }}
           href={navBarCopy.download.url}
           target={navBarCopy.download.target}
         >
           {navBarCopy.download.name}
         </Link>
-        <Button type="link" onClick={handleOpen}>
-          <MenuOutlined />
-        </Button>
+        <OffcanvasProvider onOpen={handleOpen} onClose={handleClose}>
+          <Trigger />
+          <Offcanvas />
+        </OffcanvasProvider>
       </nav>
-
-      <Drawer title="MENU" onClose={handleClose} open={show}>
-        <Menu
-          onClick={onClick}
-          mode="inline"
-          items={[
-            ...MenuItems,
-            {
-              key: "1000",
-              label: <Link href="#store-section">DOWNLOAD APP</Link>,
-            },
-          ]}
-        />
-      </Drawer>
+      <div className="banner">
+        <img className="warning-logo-l" src="./img/warning.svg" />
+        <p>
+          Please note, hyper secure Vultisig vaults are currently only available
+          in the Vultisig App and will come to VultiWallet shortly. <br />
+          Then Vultisig will become the Vultisig: Co-signing app and Vultiwallet
+          will become Vultisig: DeFi Mobile App.
+        </p>
+        <img className="warning-logo-r" src="./img/warning.svg" />
+      </div>
     </>
   );
 }

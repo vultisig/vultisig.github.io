@@ -1,7 +1,5 @@
 "use client";
 import { homeCopy } from "@/app/copy/Home";
-
-import { SegmentTotal } from "@/app/components/home/segment-total";
 import { SegmentOne } from "@/app/components/home/segment-one";
 import { SegmentTwo } from "@/app/components/home/segment-two";
 import { SegmentThree } from "@/app/components/home/segment-three";
@@ -21,15 +19,10 @@ export default async function Home() {
               dangerouslySetInnerHTML={{ __html: homeCopy.header.slogan }}
             ></span>
           </div>
-          <div className="subSlogan">
-            <span
-              dangerouslySetInnerHTML={{ __html: homeCopy.header.subSlogan }}
-            ></span>
-          </div>
           <div className="blue-section p-3 mt-3 ">
             <p
               className=""
-              dangerouslySetInnerHTML={{ __html: homeCopy.header.boxText }}
+              dangerouslySetInnerHTML={{ __html: homeCopy.header.subSlogan }}
             ></p>
           </div>
           {/* <!-- DOWNLOAD BOX --> */}
@@ -37,42 +30,46 @@ export default async function Home() {
             <div className="items">
               {homeCopy.store.items.Vultisig.items.map((item, index) => {
                 return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.traget}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={150}
-                      height={43}
-                      alt="Download on AppStore"
-                    />
-                  </a>
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.traget}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={150}
+                        height={43}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
                 );
               })}
               {homeCopy.store.items.Browser.items.map((item, index) => {
                 return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={150}
-                      height={43}
-                      alt="Download on AppStore"
-                    />
-                  </a>
+                  <>
+                    <a
+                      key={index}
+                      href={item.url}
+                      target={item.target}
+                      onClick={() =>
+                        trackAction("click", "download_app", item.downloadLabel)
+                      }
+                    >
+                      <Image
+                        className="my-2 my-lg-1 me-lg-3"
+                        src={item.image}
+                        width={150}
+                        height={43}
+                        alt="Download on AppStore"
+                      />
+                    </a>
+                  </>
                 );
               })}
             </div>
@@ -91,8 +88,8 @@ export default async function Home() {
           />
         </div>
       </header>
+
       <div id="howitworks" className="mt-5 py-5 color-neutral">
-        <SegmentTotal />
         <SegmentOne />
         <SegmentTwo />
         <SegmentThree />

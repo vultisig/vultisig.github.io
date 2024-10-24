@@ -4,10 +4,8 @@ export const homeCopy = {
   header: {
     slogan:
       "REGAIN CONTROL WITH<br/> THE <span class='gradient-text '>MOST SECURE</span> <br/> CRYPTO WALLET",
-    subSlogan: "<span class='gradient-text '>OPEN-SOURCE AUDITED</span>",
-    boxText:
+    subSlogan:
       "Get best-in class security with Vultsig, the most secure crypto wallet created, powered by the technology <br/> protecting multi-million dollar vaults at THORChain. Self-custodial, multi-chain, DeFi native, no tracking <br/> and with built-in two-factor authentication.",
-
     downloadTitle: "Now Available for iOS, Mac, Android and Web:",
   },
   segment1: {
@@ -197,7 +195,7 @@ export const homeCopy = {
             url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
             target: "_blank",
             downloadLabel: "play_store",
-          },
+          }
         ],
       },
       VultiWallet: {
@@ -239,50 +237,5 @@ export const homeCopy = {
         ],
       },
     },
-  },
-  vult_total: {
-    title:
-      "Safe Smart Accounts are battle-tested and<br/> used more than any otgher",
-    totals: [
-      {
-        title: "downloads",
-        number: "110k",
-      },
-      {
-        title: "Assets in Vault Protection",
-        number: "$100B+",
-      },
-      {
-        title: "Volume",
-        number: "$700m",
-      },
-    ],
-    trusted_title: "trusted by the best",
-    trusted: [
-      {
-        img: "./img/trusted/thorchain.svg",
-        title: "THORChain<br/>Treasury",
-      },
-      {
-        img: "./img/trusted/vultisig.svg",
-        title: "Vultisig<br/>Treasury",
-      },
-      {
-        img: "./img/trusted/wewe.svg",
-        title: "WEWE<br>Treasury",
-      },
-      {
-        img: "./img/trusted/thorwallet.svg",
-        title: "THORWallet<br>Treasury",
-      },
-      {
-        img: "./img/trusted/zkfinance.svg",
-        title: "ZKFinance<br/>Treasury",
-      },
-      {
-        img: "./img/trusted/ruji.svg",
-        title: "RUJI<br/>Treasury",
-      },
-    ],
   },
 };

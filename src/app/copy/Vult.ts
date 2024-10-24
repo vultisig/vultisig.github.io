@@ -9,28 +9,24 @@ export const vultCopy = {
       },
       {
         title: "circulating supply",
-        value: "0",
-      },
-      {
-        title: "Current Price",
-        value: "$1",
+        value: "80,000,000",
       },
     ],
-    text: "$VULT is a cash-back application token (CBAT) and can be staked for $USDC.",
+    text: "All swap and bridge fees buy and burn $VULT. Simply hold in your wallet to participate.",
   },
   airdrop: {
     "main-title": "THE Vultisig AIRDROP",
-    details: {
-      title: "current airdrop value",
-      value: "$10,000,000",
-    },
-    img: [
-      { src: "/img/vult/carousel-3.1.png" },
-      { src: "/img/vult/carousel-3.2.png" },
-      { src: "/img/vult/carousel-3.3.png" },
-      { src: "/img/vult/carousel-3.3.png" },
+    details: [
+      {
+        title: "current airdrop value",
+        value: "10,000,000",
+      },
+      {
+        title: "expected airdrop value",
+        date: "MARCH 2025",
+        value: "$30,000,000",
+      },
     ],
-    details_1:"AIRDROP .vultisig.com"
   },
   faq: [
     {

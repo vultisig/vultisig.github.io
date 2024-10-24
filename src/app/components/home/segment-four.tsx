@@ -11,9 +11,9 @@ export function SegmentFour() {
         <div className="mb-4 mt-5">
           <div className="row">
             <div className="col-lg-6  col-md-12 mt-4 pe-4">
-              <div className="asset-managemant text-center p-4 h-100 pt-5">
+              <div className="asset-managemant text-center p-4 h-100">
                 <h3
-                  className="text-uppercase monserrat-bold text-white mt-5"
+                  className="text-uppercase monserrat-bold text-white mt-2"
                   dangerouslySetInnerHTML={{
                     __html: homeCopy.segment4.itemOne.title,
                   }}
@@ -25,7 +25,7 @@ export function SegmentFour() {
                   }}
                 ></p>
                 <img
-                  className="mt-2 w-75-50 mx-auto "
+                  className="mt-5 w-75-50 mx-auto "
                   src="/img/best-features-image-1.png"
                   alt="Asset Management Hub"
                 />
