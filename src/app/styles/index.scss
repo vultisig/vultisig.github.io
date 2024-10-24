@@ -18,7 +18,7 @@
     rgba(4, 57, 199, 1) 100%
   );
 }
-ul.ant-menu-sub li:has(> .ant-menu-title-content > .childli) {
+:where(.css-ni1kz0).ant-menu-light.ant-menu-submenu>.ant-menu, :where(.css-ni1kz0).ant-menu-light>.ant-menu.ant-menu-submenu>.ant-menu {
   background-color: "#2b67a5";
 }
 .blue-section {
