@@ -1,4 +1,6 @@
 export const navBarCopy = {
+  warning_Message:
+    "Please note, hyper secure Vultisig vaults are currently only available in the Vultisig App and will come to VultiWallet shortly.",
   navbarLinks: [
     {
       name: "Product",
