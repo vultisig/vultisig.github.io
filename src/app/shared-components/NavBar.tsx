@@ -48,7 +48,8 @@ export function NavBar() {
         label: link.name,
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
-          label: <Link href={child.url} className="childli" >{child.name} </Link>,
+          style:{backgroundColor: "#031635"},
+          label: <Link href={child.url} >{child.name} </Link>,
         })),
       });
     } else {
