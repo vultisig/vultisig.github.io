@@ -246,15 +246,15 @@ export const homeCopy = {
     totals: [
       {
         title: "downloads",
-        number: "110k",
+        number: "+110K",
       },
       {
         title: "Assets in Vault Protection",
-        number: "$100B+",
+        number: "+$300M",
       },
       {
         title: "Volume",
-        number: "$700m",
+        number: "+$700M",
       },
     ],
     trusted_title: "trusted by the best",

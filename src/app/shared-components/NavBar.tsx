@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export function NavBar() {
+
   const [currentPath, setCurrentPath] = useState("");
 
   type MenuItem = Required<MenuProps>["items"][number];
@@ -40,10 +41,10 @@ export function NavBar() {
       window.location.href = "/"; // Navigate to the main page
     }
   };
-
-
-  const onClick: MenuProps["onClick"] = (e) => {
-    console.log(e.key);
+  const handleStoreClick = () => {
+    if (typeof window !== "undefined") {
+      window.location.href = "/#store-section"; // Navigate to the main page
+    }
   };
 
   navBarCopy.navbarLinks.map((link, index) => {
@@ -51,11 +52,9 @@ export function NavBar() {
       MenuItems.push({
         key: `${index}`,
         label: link.name,
-        popupClassName: "custom-dropdown-class",
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
-          style:{backgroundColor: "#031635"},
-          label: <a   href="/#store-section"   style={{ cursor: "pointer" }} >{child.name} </a>,
+          label: <div onClick={handleStoreClick} style={{ cursor: "pointer" }} >{child.name} </div>,
         })),
       });
     } else {
@@ -69,8 +68,8 @@ export function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
-        <a
-          href="/"
+      <div
+          onClick={handleLogoClick}
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
         >
@@ -81,26 +80,28 @@ export function NavBar() {
             className="d-inline-block align-top"
             alt="Vultisig Logo"
           />
-          <strong style={{ fontSize: "x-large" }} className="monserrat-semibold">
+          <strong
+            style={{ fontSize: "x-large" }}
+            className="monserrat-semibold"
+          >
             Vultisig
           </strong>
-        </a>
+        </div>
         <div
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
         >
           {loaded && (
-            <Menu onClick={onClick} mode="horizontal" items={MenuItems} />
+            <Menu mode="horizontal" items={MenuItems} selectedKeys={[currentPath]} />
           )}
         </div>
-        <Link
+        <div
           className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
           style={{ height: "48px", width: "193px" }}
-          href={navBarCopy.download.url}
-          target={navBarCopy.download.target}
+          onClick={handleStoreClick}
         >
           {navBarCopy.download.name}
-        </Link>
+        </div>
         <Button type="link" onClick={handleOpen}>
           <MenuOutlined />
         </Button>
@@ -108,15 +109,15 @@ export function NavBar() {
 
       <Drawer title="MENU" onClose={handleClose} open={show}>
         <Menu
-          onClick={onClick}
           mode="inline"
           items={[
             ...MenuItems,
             {
               key: "1000",
-              label: <a href="https://vultisig.com/#store-section">DOWNLOAD APP</a>,
+              label: <Link href="/#store-section">DOWNLOAD APP</Link>,
             },
           ]}
+          selectedKeys={[currentPath]}
         />
       </Drawer>
     </>

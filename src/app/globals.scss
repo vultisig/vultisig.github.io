@@ -209,7 +209,8 @@ h2 {
     gap: 7px;
   }
 }
-.store,.howitwork-store{
+.store,
+.howitwork-store {
   flex-wrap: wrap;
 }
 // .howitwork-store {
@@ -809,8 +810,8 @@ hr.solid {
   color: #ffffffd0 !important;
 }
 
-.ant-menu-vertical{
-  .ant-menu-item-selected{
+.ant-menu-vertical {
+  .ant-menu-item-selected {
     background-color: #081b3a !important;
   }
 }
@@ -928,7 +929,6 @@ hr.solid {
         font-weight: 100;
         text-align: center;
         margin-top: -14px;
-        
       }
     }
   }
@@ -969,7 +969,8 @@ hr.solid {
 :where(
     .css-dev-only-do-not-override-ni1kz0
   ).ant-menu-light.ant-menu-submenu-popup
-  > .ant-menu {
+  > .ant-menu,
+.ant-menu-vertical {
   background-color: #061b3a !important;
 }
 
@@ -1053,10 +1054,13 @@ hr.solid {
       display: none;
     }
   }
-.ant-menu-submenu-active{
-//  background-color: #031e4a !important;
-}
-  .ant-drawer-header,.ant-drawer-body,.ant-menu-light,.ant-menu-item-selected{
+  .ant-menu-submenu-active {
+    background-color: #031e4a !important;
+  }
+  .ant-drawer-header,
+  .ant-drawer-body,
+  .ant-menu-light,
+  .ant-menu-item-selected {
     background-color: #02122b !important;
   }
 }

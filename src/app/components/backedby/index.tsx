@@ -162,7 +162,7 @@ export function Sections() {
               <div className="text-underline text-white d-flex">
                 <span>
                   <Image
-                    src="/img/backed-by/icon-x.png"
+                    src="/img/twitter.svg"
                     alt="X"
                     width={25}
                     height={25}
