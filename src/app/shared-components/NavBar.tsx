@@ -84,7 +84,7 @@ export function NavBar() {
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
         >
-          {loaded && (
+          { (
             <Menu onClick={onClick} mode="horizontal" items={MenuItems} />
           )}
         </div>
