@@ -40,11 +40,7 @@ export function NavBar() {
       window.location.href = "/"; // Navigate to the main page
     }
   };
-  const handleStoreClick = () => {
-    if (typeof window !== "undefined") {
-      window.location.href = "/#store-section"; // Navigate to the main page
-    }
-  };
+
 
   const onClick: MenuProps["onClick"] = (e) => {
     console.log(e.key);
@@ -59,7 +55,7 @@ export function NavBar() {
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
           style:{backgroundColor: "#031635"},
-          label: <div   onClick={handleStoreClick}   style={{ cursor: "pointer" }} >{child.name} </div>,
+          label: <a   href="/#store-section"   style={{ cursor: "pointer" }} >{child.name} </a>,
         })),
       });
     } else {
@@ -73,8 +69,8 @@ export function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
-        <div
-          onClick={handleLogoClick}
+        <a
+          href="/"
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
         >
@@ -88,7 +84,7 @@ export function NavBar() {
           <strong style={{ fontSize: "x-large" }} className="monserrat-semibold">
             Vultisig
           </strong>
-        </div>
+        </a>
         <div
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
@@ -118,7 +114,7 @@ export function NavBar() {
             ...MenuItems,
             {
               key: "1000",
-              label: <Link href="#store-section">DOWNLOAD APP</Link>,
+              label: <a href="/#store-section">DOWNLOAD APP</a>,
             },
           ]}
         />
