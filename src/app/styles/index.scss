@@ -18,8 +18,8 @@
     rgba(4, 57, 199, 1) 100%
   );
 }
-li:has(> span> .childli) {
-  background-color: "#0b2953";
+ul.ant-menu-sub li:has(> .ant-menu-title-content > .childli) {
+  background-color: "#2b67a5";
 }
 .blue-section {
   display: inline-block;
