@@ -34,8 +34,8 @@ export function Sections() {
             </div>
 
             <ul className="list">
-              {vultCopy.header.data.map(({ title, value }) => (
-                <li>
+              {vultCopy.header.data.map(({ title, value },index) => (
+                <li key={index}>
                   <span className="title">{title}</span>
                   <span className="value">{value}</span>
                 </li>
