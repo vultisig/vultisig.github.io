@@ -34,12 +34,12 @@ export default function CookieBanner() {
         style={show ? { display: "flex" } : { display: "none" }}
       >
         <div className="text-center">
-          <Link href="/privacy">
+          <a href="/privacy">
             <p style={{ color: "white", marginBlock: "auto" }}>
               We use <span className={styles.bannerText}>cookies</span> on our
               website.
             </p>
-          </Link>
+          </a>
         </div>
 
         <div className={styles.ButtonCont}>

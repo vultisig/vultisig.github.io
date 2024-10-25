@@ -36,16 +36,7 @@ export function NavBar() {
   const handleOpen = () => setShow(true);
   const handleClose = () => setShow(false);
 
-  const handleLogoClick = () => {
-    if (typeof window !== "undefined") {
-      window.location.href = "/"; // Navigate to the main page
-    }
-  };
-  const handleStoreClick = () => {
-    if (typeof window !== "undefined") {
-      window.location.href = "/#store-section"; // Navigate to the main page
-    }
-  };
+
 
   navBarCopy.navbarLinks.map((link, index) => {
     if (link.children) {
@@ -54,13 +45,13 @@ export function NavBar() {
         label: link.name,
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
-          label: <div onClick={handleStoreClick} style={{ cursor: "pointer" }} >{child.name} </div>,
+          label: <a  href="/#store-section" style={{ cursor: "pointer" }} >{child.name} </a>,
         })),
       });
     } else {
       MenuItems.push({
         key: `${index}`,
-        label: <Link href={link.url}>{link.name}</Link>,
+        label: <a href={link.url}>{link.name}</a>,
       });
     }
   });
@@ -68,8 +59,8 @@ export function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
-      <div
-          onClick={handleLogoClick}
+      <a
+          href="/"
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
         >
@@ -86,7 +77,7 @@ export function NavBar() {
           >
             Vultisig
           </strong>
-        </div>
+        </a>
         <div
           id="navbarToggleMain"
           className="collapse navbar-collapse justify-content-center monserrat-medium"
@@ -95,13 +86,13 @@ export function NavBar() {
             <Menu mode="horizontal" items={MenuItems} selectedKeys={[currentPath]} />
           )}
         </div>
-        <div
+        <a
           className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
           style={{ height: "48px", width: "193px" }}
-          onClick={handleStoreClick}
+          href="/#store-section"
         >
           {navBarCopy.download.name}
-        </div>
+        </a>
         <Button type="link" onClick={handleOpen}>
           <MenuOutlined />
         </Button>
@@ -114,7 +105,7 @@ export function NavBar() {
             ...MenuItems,
             {
               key: "1000",
-              label: <Link href="/#store-section">DOWNLOAD APP</Link>,
+              label: <a href="/#store-section">DOWNLOAD APP</a>,
             },
           ]}
           selectedKeys={[currentPath]}
