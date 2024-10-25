@@ -45,7 +45,7 @@ export function NavBar() {
         label: link.name,
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
-          label: <a  href="/#store-section" style={{ cursor: "pointer" }} >{child.name} </a>,
+          label: <a  href="/#store-section"  onClick={handleClose} style={{ cursor: "pointer" }} >{child.name} </a>,
         })),
       });
     } else {
@@ -63,6 +63,7 @@ export function NavBar() {
           href="/"
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
+          onClick={handleClose}
         >
           <Image
             src="./img/logo.svg"
@@ -90,6 +91,7 @@ export function NavBar() {
           className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
           style={{ height: "48px", width: "193px" }}
           href="/#store-section"
+          onClick={handleClose}
         >
           {navBarCopy.download.name}
         </a>
@@ -105,7 +107,7 @@ export function NavBar() {
             ...MenuItems,
             {
               key: "1000",
-              label: <a href="/#store-section">DOWNLOAD APP</a>,
+              label: <a href="/#store-section" onClick={handleClose}>DOWNLOAD APP</a>,
             },
           ]}
           selectedKeys={[currentPath]}
