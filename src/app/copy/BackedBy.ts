@@ -220,6 +220,14 @@ export const BackedByCopy = {
         iconImg: "twitter.svg",
         url: "https://x.com/crypto_XZ",
       },
+      {
+        src: "/img/backed-by/dorjee.png",
+        title: "Dorjee - Institutions <br/> Former RenBTC",
+        twitter: "@dorjeesun",
+        github: "",
+        iconImg: "twitter.svg",
+        url: "https://x.com/dorjeesun",
+      },
     ],
   },
 };
