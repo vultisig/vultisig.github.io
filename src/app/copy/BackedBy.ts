@@ -213,7 +213,7 @@ export const BackedByCopy = {
         url: "https://github.com/johnnyluo",
       },
       {
-        src: "/img/backed-by/avatar-ncf.png",
+        src: "/img/backed-by/pedro.jpg",
         title: "Pedro - Coo <br/> THORWallet Co-Founder",
         twitter: "@crypto_XZ",
         github: "",
