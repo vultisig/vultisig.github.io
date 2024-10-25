@@ -91,7 +91,7 @@ export function Offcanvas({
           <ul className="navbar-nav align-items-center">
             {navBarCopy.navbarLinks.map((link, index) => (
               <li key={index} className="nav-item my-sm-2 mx-3">
-                <Link
+                <a
                   className={`nav-link ${
                     currentPath === link.url ? "gradient-text" : ""
                   }`}
@@ -99,7 +99,7 @@ export function Offcanvas({
                   target={link.target}
                 >
                   {link.name}
-                </Link>
+                </a>
                 {link.children && (
                   <div
                     className="dropdown-menu"
@@ -120,14 +120,14 @@ export function Offcanvas({
               </li>
             ))}
             <li className="nav-item nav-item-download-btn dropdown">
-              <Link
+              <a
                 className="btn-offcanvas btn-primary btn-color align-items-center justify-content-center rounded"
                 style={{ height: "48px", width: "193px" }}
                 href={navBarCopy.download.url}
                 target={navBarCopy.download.target}
               >
                 {navBarCopy.download.name}
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
