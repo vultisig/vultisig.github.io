@@ -139,7 +139,7 @@ export const homeCopy = {
   },
   segment6: {
     mainTitle:
-      "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>FOR ",
+      "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>",
     items: [
       {
         title: "CRYPTO NATIVES",

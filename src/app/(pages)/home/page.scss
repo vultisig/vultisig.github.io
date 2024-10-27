@@ -47,8 +47,10 @@
 .vult-total {
   .section-totals {
     .totals {
-      // margin-top: 80px;
-      .totals-col {
+      margin-top: 60px;
+      .totals-li {
+        list-style: none;
+        width: 284px;
         .item {
           padding: 15px;
           span {
@@ -79,7 +81,8 @@
       margin-bottom: 219px;
       width: 100%;
       text-align: center;
-      .trusted-col {
+      .trusted-li {
+        list-style: none !important;
         .item {
           display: flex;
           list-style: none;
@@ -98,6 +101,10 @@
             text-align: center;
             margin-top: 30px;
             line-height: 21.6px;
+            li{
+              padding-left:37.5px ;
+              padding-right:37.5px ;
+            }
           }
         }
       }
@@ -240,8 +247,7 @@
 //segment six
 .whoisfor {
   margin-bottom: 15.063rem;
-  .item {
-    width: 19.25rem;
+  .whoisfor-list {
   }
 }
 
@@ -254,9 +260,37 @@
     rgba(0, 32, 119, 0.88),
     rgba(51, 230, 191, 1)
   );
+  overflow: hidden;
   .store-img {
     width: 25.688rem;
     position: relative;
     bottom: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .store {
+    .store-img {
+      width: 17.688rem;
+      position: relative;
+      bottom: -39px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .store {
+    .store-img {
+      width: 25.688rem;
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .store {
+    .store-img {
+      width: 16.688rem;
+      position: relative;
+      bottom: 0;
+    }
   }
 }
