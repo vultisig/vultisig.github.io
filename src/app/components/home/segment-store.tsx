@@ -7,7 +7,7 @@ import { trackAction } from "@/app/lib/gtagHelper";
 export function SegmentStore() {
   return (
     <>
-      <div className="store  pt-3 px-5 mb-5 d-flex align-items-center justify-content-center wrap">
+      <div id="store-section" className="store  pt-3 px-5 mb-5 d-flex align-items-center justify-content-center wrap">
         <div className="ms-1 mb-3">
           <h2 style={{ lineHeight: "150%" }} className="monserrat-bold">
             <strong
@@ -16,8 +16,8 @@ export function SegmentStore() {
               }}
             ></strong>
           </h2>
-          <div className=" download-box ">
-            <p className="   text-center text-md-start ">{homeCopy.store.items.Vultisig.title}</p>
+          <div className="download-box ">
+            <p className="text-center text-md-start ">{homeCopy.store.items.Vultisig.title}</p>
             <div className="items  justify-content-center justify-content-md-start">
               {homeCopy.store.items.Vultisig.items.map((item, index) => {
                 return (

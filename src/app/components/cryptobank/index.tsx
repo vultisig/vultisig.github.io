@@ -63,11 +63,11 @@ export function Sections() {
           </div>
 
           <div className="mt-5">
-            <div className="row gap-3 header-boxs ">
+            <div className="header-boxs ">
               {CryptoBankCopy.header.boxs.map((item, index) => (
                 <div
                   key={index}
-                  className="col-lg-3 col-md-6  blue-section p-3  item bullet-border-left"
+                  className="blue-section p-3  item bullet-border-left"
                 >
                   <Image
                     height={58.91}
@@ -108,11 +108,11 @@ export function Sections() {
           <button className="rounded-btn active-btn">KYC</button>
           <button className="rounded-btn">1st Top up</button>
         </div>
-        <div className="row earn-up-wrapper justify-content-center align-items-center gap-0 column-gap-5">
+        <div className="earn-up-wrapper justify-content-center align-items-center gap-0 column-gap-5">
           {CryptoBankCopy.segment1.items.map((item, index) => (
             <div
               key={index}
-              className="col-lg-6 col-md-6  mt-5 p-4 blue-section   item-box "
+              className="mt-5 p-4 blue-section item-box "
             >
               <h3 className=" monserrat-bold mb-4 text-start mt-3 ms-2">
                 {item.title}

@@ -40,6 +40,11 @@
     object-fit: cover;
   }
 }
+.private-keys-wraper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
+}
 //segment one
 .private-keys {
   margin-bottom: 15.688rem;
@@ -49,7 +54,7 @@
 .private-keys {
   margin-bottom: 15.688rem;
   .item {
-    width: 485px;
+    width: 100%;
     //  height: 100%;
   }
 }
@@ -86,6 +91,9 @@
         height: 400px;
       }
     }
+  }
+  .private-keys-wraper {
+    flex-wrap: wrap;
   }
 }
 

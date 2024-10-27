@@ -27,7 +27,7 @@
       transform: translate(-50%, -50%);
       text-align: center;
       border-radius: 50%;
-      width:  calc(3rem + 8vw);
+      width: calc(3rem + 8vw);
       height: calc(3rem + 8vw);
       z-index: -1;
     }
@@ -40,7 +40,7 @@
       transform: translate(-50%, -50%);
       text-align: center;
       border-radius: 50%;
-      width:  calc(3rem + 16vw);
+      width: calc(3rem + 16vw);
       height: calc(3rem + 16vw);
       z-index: -1;
     }
@@ -68,8 +68,12 @@
   }
 
   .header-boxs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
     .item {
-      width: 297.5px;
+      width: 100%;
     }
   }
 }
@@ -104,11 +108,12 @@
   }
   .item-box {
     background-color: rgba(255, 255, 255, 0.05);
-
-    width: 638px;
   }
   .item-box.active {
     background-image: linear-gradient(rgba(33, 85, 223, 0.2), rgba(0, 0, 0, 0));
+  }
+  .earn-up-wrapper {
+    display: flex;
   }
 }
 
@@ -229,6 +234,14 @@
       width: 100%;
     }
   }
+  .header-boxs {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 18px !important;
+    .item {
+      width: 230px !important;
+    }
+  }
 }
 //segment four
 .spend-crypto {
@@ -314,7 +327,6 @@
     margin-top: -80px;
   }
 }
-
 @media (max-width: 992px) {
   .earn-up {
     .btn-box {
@@ -329,6 +341,12 @@
     .btn-box {
       height: 3.125rem;
       width: 15.313rem;
+    }
+    .earn-up-wrapper {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
     }
   }
 }

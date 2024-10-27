@@ -92,11 +92,11 @@ export function Sections() {
           ></small>
         </span>
         <div className="mt-5">
-          <div className="row  justify-content-center g-5">
+          <div className="private-keys-wraper justify-content-center g-5">
             {HowItWorksCopy.segment2.items.map((item, index) => (
               <div
                 key={index}
-                className="col-lg-3 col-md-6   mx-5  item  text-center "
+                className="mx-5 item text-center "
               >
                 <div className="p-3 blue-section h-100 item ">
                   <Image
