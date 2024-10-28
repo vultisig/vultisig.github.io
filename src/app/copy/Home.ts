@@ -139,7 +139,7 @@ export const homeCopy = {
   },
   segment6: {
     mainTitle:
-      "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>FOR ",
+      "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>",
     items: [
       {
         title: "CRYPTO NATIVES",
@@ -242,7 +242,7 @@ export const homeCopy = {
   },
   vult_total: {
     title:
-      "Safe Smart Accounts are battle-tested and<br/> used more than any otgher",
+      "Safe Smart Accounts are battle-tested and<br/> used more than any other",
     totals: [
       {
         title: "downloads",

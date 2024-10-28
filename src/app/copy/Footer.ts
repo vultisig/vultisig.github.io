@@ -63,17 +63,32 @@ export const footerCopy = {
             ]
         },
         {
-            title: "Company",
+            title: "Vultisig",
             links: [
                 {
-                    name: "About",
-                    url: "/",
+                    name: "How It Works",
+                    url: "/howitworks",
                     target: "_self"
                 },
                 {
                     name: "Backed by",
                     url: "/backedby",
                     target: "_self"
+                },
+                {
+                    name: "Docs",
+                    url: "/docs",
+                    target: "_self"
+                },
+                {
+                    name: "$VULT",
+                    url: "/vult",
+                    target: "_self"
+                },
+                {
+                    name: "Extension",
+                    url: "https://chromewebstore.google.com/detail/vulticonnect/ggafhcdaplkhmmnlbfjpnnkepdfjaelb?authuser=0&hl=en-GB&pli=1",
+                    target: "_blank"
                 }
             ]
         }

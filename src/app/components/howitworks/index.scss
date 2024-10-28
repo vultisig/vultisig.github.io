@@ -40,6 +40,11 @@
     object-fit: cover;
   }
 }
+.private-keys-wraper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
+}
 //segment one
 .private-keys {
   margin-bottom: 15.688rem;
@@ -48,63 +53,99 @@
 //segment two
 .private-keys {
   margin-bottom: 15.688rem;
-  .item{
-   width: 485px;
-  //  height: 100%;
+  .item {
+    width: 100%;
+    //  height: 100%;
   }
 }
 //segment three
-.crypto-security{
-    .crypto-security-box{
-        background-color:rgba(255, 255, 255, 0.05) ;
-        background-image: linear-gradient(rgba(13, 25, 43, 0),rgba(33, 85, 223, 0.3));
-        border: 2px;
-        border-radius: 20px;
-        .trusted-devices-img{
-            // height: 623px;
-            height: 100%;
-            // width:100%;
-            
-            
-        }
-    }
-}
-
-.howitwork-store{
-    background-color:rgba(255, 255, 255, 0.05) ;
-    background-image: linear-gradient(rgba(13, 25, 43, 0),rgba(33, 85, 223, 0.8));
+.crypto-security {
+  .crypto-security-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    background-image: linear-gradient(
+      rgba(13, 25, 43, 0),
+      rgba(33, 85, 223, 0.3)
+    );
+    border: 2px;
     border-radius: 20px;
+    .trusted-devices-img {
+      // height: 623px;
+      height: 100%;
+      // width:100%;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .crypto-security {
+    .crypto-security-box {
+      .trusted-devices-img {
+        height: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .crypto-security {
+    .crypto-security-box {
+      .trusted-devices-img {
+        height: 400px;
+      }
+    }
+  }
+  .private-keys-wraper {
+    flex-wrap: wrap;
+  }
 }
 
-@media (max-width: 1600px) {
-    .crypto-security{
-        .crypto-security-box{
-            .trusted-devices-img{
-                height: 500px;
-                
-            }
-        }
+@media (max-width: 998px) {
+  .crypto-security {
+    .crypto-security-box {
+      .trusted-devices-img {
+        height: 300px;
+      }
     }
   }
+}
+.howitwork-store {
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: linear-gradient(
+    rgba(13, 25, 43, 0),
+    rgba(33, 85, 223, 0.8)
+  );
+  border-radius: 20px;
+  margin-bottom: 8.313rem;
+  overflow: hidden;
+  .store-img {
+    width: 25.688rem;
+    position: relative;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .howitwork-store {
+    .store-img {
+      width: 17.688rem;
+      position: relative;
+      bottom: -71px;
+    }
+  }
+}
 @media (max-width: 1200px) {
-    .crypto-security{
-        .crypto-security-box{
-            .trusted-devices-img{
-                height: 400px;
-                
-            }
-        }
+  .howitwork-store {
+    .store-img {
+      width: 25.688rem;
+      position: relative;
+      bottom: -20px;
     }
   }
-  
-  
-  @media (max-width: 998px) {
-    .crypto-security{
-        .crypto-security-box{
-            .trusted-devices-img{
-                height: 300px;
-                
-            }
-        }
+}
+@media (max-width: 600px) {
+  .howitwork-store {
+    .store-img {
+      width: 16.688rem;
+      position: relative;
+      bottom: -16px;
     }
   }
+}
