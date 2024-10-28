@@ -138,8 +138,7 @@ export const homeCopy = {
     ],
   },
   segment6: {
-    mainTitle:
-      "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>",
+    mainTitle: "VULTISIG IS FOR <span class='gradient-text'>EVERYONE </span>",
     items: [
       {
         title: "CRYPTO NATIVES",
@@ -173,76 +172,10 @@ export const homeCopy = {
   },
   store: {
     title: "SECURE YOUR DIGITAL <br> ASSETS NOW !",
-    items: {
-      Vultisig: {
-        title: "Vultisig",
-        items: [
-          {
-            image: "./img/appstore.svg",
-            alt: "Download on AppStore",
-            url: "https://apps.apple.com/app/vultisig/id6503023896",
-            traget: "_blank",
-            downloadLabel: "app_store",
-          },
-          {
-            image: "./img/github-download.svg",
-            alt: "Download on Github",
-            url: "https://github.com/vultisig/vultisig-ios/releases",
-            target: "_blank",
-            downloadLabel: "github",
-          },
-          {
-            image: "./img/playstore.svg",
-            alt: "Download on PlayStore",
-            url: "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
-            target: "_blank",
-            downloadLabel: "play_store",
-          },
-        ],
-      },
-      VultiWallet: {
-        title: "VultiWallet",
-        items: [
-          {
-            image: "./img/appstore.svg",
-            alt: "View on VultiWeb",
-            url: "https://apps.apple.com/ch/app/thorwallet-defi-wallet/id1592064324",
-            target: "_blank",
-            downloadLabel: "app_store",
-          },
-          {
-            image: "./img/playstore.svg",
-            alt: "Download on PlayStore",
-            url: "https://play.google.com/store/apps/details?id=defisuisse.thorwallet",
-            target: "_blank",
-            downloadLabel: "play_store",
-          },
-        ],
-      },
-      Browser: {
-        title: "Browser",
-        items: [
-          {
-            image: "./img/vultiweb.svg",
-            alt: "View on VultiWeb",
-            url: "https://app.vultisig.com",
-            target: "_blank",
-            downloadLabel: "web",
-          },
-          {
-            image: "/img/vulticonnect.png",
-            alt: "View on VultiWeb",
-            url: "https://chromewebstore.google.com/detail/vulticonnect/ggafhcdaplkhmmnlbfjpnnkepdfjaelb?authuser=0&hl=en-GB&pli=1",
-            target: "_blank",
-            downloadLabel: "extention",
-          },
-        ],
-      },
-    },
   },
   vult_total: {
     title:
-      "Safe Smart Accounts are battle-tested and<br/> used more than any other",
+      "Safe Smart Accounts are battle-tested and<br/> used more than any otgher",
     totals: [
       {
         title: "downloads",

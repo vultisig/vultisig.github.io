@@ -1,0 +1,150 @@
+.download-page {
+  margin-bottom: 140px;
+  .switch-key {
+    display: flex;
+    margin: auto;
+    width: 600px;
+    .switch-items {
+      padding: 10px;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      z-index: 1;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .switch-items.active {
+      color: #ffffff;
+      background: linear-gradient(
+        143deg,
+        rgb(51, 230, 191) 0%,
+        rgb(4, 57, 199) 100%
+      );
+    }
+    .switch-items:first-child {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    .switch-items:last-child {
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+  .items-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    .fade-in {
+      opacity: 1;
+      display: block;
+    }
+
+    .fade-out {
+      opacity: 0;
+      display: none;
+    }
+
+    .image-wrapper {
+      position: relative;
+      .app-face {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .background-shadow {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        background: radial-gradient(
+          rgba(4, 57, 199, 0.474),
+          rgba(2, 18, 42, 0.354)
+        );
+        filter: blur(50px);
+        z-index: -5;
+      }
+      .shadow-bottem {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("/img/download/shadow-bottom.svg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+        height: 152px;
+      }
+    }
+
+    .title {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      z-index: 1;
+      span {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 20px;
+        font-family: "Montserrat-Bold";
+      }
+    }
+
+    .download-buttons-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: -80px;
+    }
+  }
+}
+
+@media (max-width: 775px) {
+  .download-page {
+    .switch-key {
+      flex-direction: column !important;
+      width: 100% !important;
+      .switch-items {
+        width: 100% !important;
+      }
+      .switch-items:first-child {
+        border-top-left-radius: 20px !important;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+      }
+      .switch-items:last-child {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px !important;
+        border-top-right-radius: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .image-wrapper {
+    .app-face {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .image-wrapper {
+    .app-face {
+      width: 150px;
+    }
+    .background-shadow {
+      top: -70px;
+      width: 60%;
+      filter: blur(50px);
+      z-index: -5;
+    }
+  }
+}

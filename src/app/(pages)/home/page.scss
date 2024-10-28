@@ -1,5 +1,4 @@
 .home-page {
-  background-image: url("/img/home-page-bg.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -32,7 +31,7 @@
   }
   .image-box {
     position: relative;
-    .header-img {
+    .header-image {
       width: 100%;
     }
     .shadow-img {
@@ -248,49 +247,5 @@
 .whoisfor {
   margin-bottom: 15.063rem;
   .whoisfor-list {
-  }
-}
-
-//store
-.store {
-  margin-bottom: 8.313rem;
-  border-radius: 20px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 32, 119, 0.88),
-    rgba(51, 230, 191, 1)
-  );
-  overflow: hidden;
-  .store-img {
-    width: 25.688rem;
-    position: relative;
-    bottom: 0;
-  }
-}
-@media (max-width: 1400px) {
-  .store {
-    .store-img {
-      width: 17.688rem;
-      position: relative;
-      bottom: -39px;
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .store {
-    .store-img {
-      width: 25.688rem;
-      position: relative;
-      bottom: 0;
-    }
-  }
-}
-@media (max-width: 600px) {
-  .store {
-    .store-img {
-      width: 16.688rem;
-      position: relative;
-      bottom: 0;
-    }
   }
 }

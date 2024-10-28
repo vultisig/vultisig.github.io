@@ -9,14 +9,15 @@
 @import "../components/howitworks/index.scss";
 @import "../components/cryptobank/index.scss";
 @import "../components/vult/index.scss";
+@import "../components/download/index.scss";
 
 .btn-color {
-  background: rgb(51, 230, 191);
-  background: linear-gradient(
-    143deg,
-    rgba(51, 230, 191, 1) 0%,
-    rgba(4, 57, 199, 1) 100%
-  );
+  // background: rgb(51, 230, 191);
+  // background: linear-gradient(
+  //   143deg,
+  //   rgba(51, 230, 191, 1) 0%,
+  //   rgba(4, 57, 199, 1) 100%
+  // );
 }
 .blue-section {
   display: inline-block;

@@ -5,6 +5,7 @@ import { CryptoBankCopy } from "@/app/copy/CryptoBank";
 import { trackAction } from "@/app/lib/gtagHelper";
 import Image from "next/image";
 import { homeCopy } from "@/app/copy/Home";
+import { navBarCopy } from "@/app/copy/NavBar";
 
 export function Sections() {
   useEffect(() => {
@@ -110,10 +111,7 @@ export function Sections() {
         </div>
         <div className="earn-up-wrapper justify-content-center align-items-center gap-0 column-gap-5">
           {CryptoBankCopy.segment1.items.map((item, index) => (
-            <div
-              key={index}
-              className="mt-5 p-4 blue-section item-box "
-            >
+            <div key={index} className="mt-5 p-4 blue-section item-box ">
               <h3 className=" monserrat-bold mb-4 text-start mt-3 ms-2">
                 {item.title}
               </h3>
@@ -341,99 +339,29 @@ export function Sections() {
       </div>
 
       {/* <---!segment stor---> */}
-      <div className="howitwork-store pt-3 px-5 mb-5 d-flex align-items-center justify-content-center">
-      <div className="ms-1 mb-3">
+      <div className="store align-items-center justify-content-center">
+        <div className="ms-1 mb-3">
           <h2 style={{ lineHeight: "150%" }} className="monserrat-bold">
             <strong
               dangerouslySetInnerHTML={{
-                __html: homeCopy.store.title,
+                __html: HowItWorksCopy.store.title,
               }}
             ></strong>
           </h2>
           <p
-                className="monserrat fs-5 "
-                dangerouslySetInnerHTML={{
-                  __html: HowItWorksCopy.store.subTitle,
-                }}
-              ></p>
+            className="monserrat fs-5 "
+            dangerouslySetInnerHTML={{
+              __html: HowItWorksCopy.store.subTitle,
+            }}
+          ></p>
           <div className=" download-box ">
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.Vultisig.title}
-            </p>
-            <div className="items  justify-content-center justify-content-md-start">
-              {homeCopy.store.items.Vultisig.items.map((item, index) => {
-                return (
-                  <>
-                    <a
-                      key={index}
-                      href={item.url}
-                      target={item.traget}
-                      onClick={() =>
-                        trackAction("click", "download_app", item.downloadLabel)
-                      }
-                    >
-                      <Image
-                        className="my-2 my-lg-1 me-lg-3"
-                        src={item.image}
-                        width={180}
-                        height={52}
-                        alt="Download on AppStore"
-                      />
-                    </a>
-                  </>
-                );
-              })}
-            </div>
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.VultiWallet.title}
-            </p>
-            <div className="items justify-content-center justify-content-md-start">
-              {homeCopy.store.items.VultiWallet.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={180}
-                      height={52}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-            </div>
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.Browser.title}
-            </p>
-            <div className="items justify-content-center justify-content-md-start">
-              {homeCopy.store.items.Browser.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={180}
-                      height={52}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-            </div>
+            <a
+              className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
+              style={{ height: "48px", width: "193px" }}
+              href={navBarCopy.download.url}
+            >
+              {navBarCopy.download.name_b}
+            </a>
           </div>
         </div>
         <div className="text-center  justify-content-center">

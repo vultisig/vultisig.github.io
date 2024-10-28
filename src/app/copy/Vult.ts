@@ -1,6 +1,6 @@
 export const vultCopy = {
   header: {
-    title: "THE <span class='vult-gradient-txt'>$VULT</span> <br>TOKEN",
+    title: "THE $VULT<br>TOKEN",
     price: "$1",
     data: [
       {
@@ -19,18 +19,18 @@ export const vultCopy = {
     text: "$VULT is a cash-back application token (CBAT) and can be staked for $USDC.",
   },
   airdrop: {
-    "main-title": "THE Vultisig AIRDROP",
+    main_title: "how to participate in THE <br><span class='vult-gradient-txt'>$5M</span> VULTISIG AIRDROP",
     details: {
       title: "current airdrop value",
-      value: "$10,000,000",
     },
     img: [
-      { src: "/img/vult/carousel-3.1.png" },
-      { src: "/img/vult/carousel-3.2.png" },
-      { src: "/img/vult/carousel-3.3.png" },
-      { src: "/img/vult/carousel-3.3.png" },
+      { src: "/img/vult/1.png" },
+      { src: "/img/vult/2.png" },
+      { src: "/img/vult/3.png" },
+      { src: "/img/vult/4.png" },
     ],
-    details_1:"AIRDROP .vultisig.com"
+    Join_the_AirDrop: "Join the AirDrop",
+    Join_the_AirDrop_URL: "https://airdrop.vultisig.com/",
   },
   faq: [
     {

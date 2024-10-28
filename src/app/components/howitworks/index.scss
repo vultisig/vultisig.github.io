@@ -75,6 +75,7 @@
     }
   }
 }
+
 @media (max-width: 1600px) {
   .crypto-security {
     .crypto-security-box {
@@ -82,18 +83,6 @@
         height: 500px;
       }
     }
-  }
-}
-@media (max-width: 1200px) {
-  .crypto-security {
-    .crypto-security-box {
-      .trusted-devices-img {
-        height: 400px;
-      }
-    }
-  }
-  .private-keys-wraper {
-    flex-wrap: wrap;
   }
 }
 
@@ -106,46 +95,16 @@
     }
   }
 }
-.howitwork-store {
-  background-color: rgba(255, 255, 255, 0.05);
-  background-image: linear-gradient(
-    rgba(13, 25, 43, 0),
-    rgba(33, 85, 223, 0.8)
-  );
-  border-radius: 20px;
-  margin-bottom: 8.313rem;
-  overflow: hidden;
-  .store-img {
-    width: 25.688rem;
-    position: relative;
-    bottom: -20px;
-  }
-}
 
-@media (max-width: 1400px) {
-  .howitwork-store {
-    .store-img {
-      width: 17.688rem;
-      position: relative;
-      bottom: -71px;
-    }
-  }
-}
 @media (max-width: 1200px) {
-  .howitwork-store {
-    .store-img {
-      width: 25.688rem;
-      position: relative;
-      bottom: -20px;
+  .crypto-security {
+    .crypto-security-box {
+      .trusted-devices-img {
+        height: 400px;
+      }
     }
   }
-}
-@media (max-width: 600px) {
-  .howitwork-store {
-    .store-img {
-      width: 16.688rem;
-      position: relative;
-      bottom: -16px;
-    }
+  .private-keys-wraper {
+    flex-wrap: wrap;
   }
 }

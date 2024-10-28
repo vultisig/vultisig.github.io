@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export function NavBar() {
-
   const [currentPath, setCurrentPath] = useState("");
 
   type MenuItem = Required<MenuProps>["items"][number];
@@ -36,8 +35,6 @@ export function NavBar() {
   const handleOpen = () => setShow(true);
   const handleClose = () => setShow(false);
 
-
-
   navBarCopy.navbarLinks.map((link, index) => {
     if (link.children) {
       MenuItems.push({
@@ -45,7 +42,15 @@ export function NavBar() {
         label: link.name,
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
-          label: <a  href="/#store-section"  onClick={handleClose} style={{ cursor: "pointer" }} >{child.name} </a>,
+          label: (
+            <a
+              href={navBarCopy.download.url}
+              onClick={handleClose}
+              style={{ cursor: "pointer" }}
+            >
+              {child.name}{" "}
+            </a>
+          ),
         })),
       });
     } else {
@@ -59,7 +64,7 @@ export function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
-      <a
+        <a
           href="/"
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
@@ -84,20 +89,26 @@ export function NavBar() {
           className="collapse navbar-collapse justify-content-center monserrat-medium"
         >
           {loaded && (
-            <Menu mode="horizontal" items={MenuItems} selectedKeys={[currentPath]} />
+            <Menu
+              mode="horizontal"
+              items={MenuItems}
+              selectedKeys={[currentPath]}
+            />
           )}
         </div>
         <a
           className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
           style={{ height: "48px", width: "193px" }}
-          href="/#store-section"
+          href={navBarCopy.download.url}
           onClick={handleClose}
         >
-          {navBarCopy.download.name}
+          {navBarCopy.download.name_a}
         </a>
-        <Button type="link" onClick={handleOpen}>
-          <MenuOutlined />
-        </Button>
+        {loaded && (
+          <Button type="link" onClick={handleOpen}>
+            <MenuOutlined />
+          </Button>
+        )}
       </nav>
 
       <Drawer title="MENU" onClose={handleClose} open={show}>
@@ -107,7 +118,11 @@ export function NavBar() {
             ...MenuItems,
             {
               key: "1000",
-              label: <a href="/#store-section" onClick={handleClose}>DOWNLOAD APP</a>,
+              label: (
+                <a href={navBarCopy.download.url} onClick={handleClose}>
+                  {navBarCopy.download.name_a}
+                </a>
+              ),
             },
           ]}
           selectedKeys={[currentPath]}

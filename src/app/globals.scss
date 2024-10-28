@@ -209,10 +209,6 @@ h2 {
     gap: 7px;
   }
 }
-.store,
-.howitwork-store {
-  flex-wrap: wrap;
-}
 
 .color-neutral {
   color: #f3f4f5 !important;
@@ -243,12 +239,12 @@ hr.solid {
 }
 
 .btn-color {
-  background: rgb(51, 230, 191);
-  background: linear-gradient(
-    143deg,
-    rgba(51, 230, 191, 1) 0%,
-    rgba(4, 57, 199, 1) 100%
-  );
+  // background: rgb(51, 230, 191);
+  // background: linear-gradient(
+  //   143deg,
+  //   rgba(51, 230, 191, 1) 0%,
+  //   rgba(4, 57, 199, 1) 100%
+  // );
 }
 
 .nav-link {
@@ -404,11 +400,11 @@ hr.solid {
   height: 100px;
 }
 
-#store-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
+// #store-section {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 10px;
+// }
 
 #segment-1 .card-item {
   width: 250px;
@@ -979,10 +975,6 @@ hr.solid {
       }
     }
   }
-  // .howitwork-store,
-  // #store-section {
-  //   flex-wrap: wrap;
-  // }
 }
 
 @media (max-width: 1250px) {
@@ -1163,5 +1155,97 @@ hr.solid {
     margin-top: -20px !important;
     height: 30px !important;
     width: 280px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .store {
+    .store-img {
+      width: 16.688rem;
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+
+.store {
+  background-color: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(90deg, #b2b8f20c 50%, #003c8f 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  gap: 8rem;
+  display: flex !important;
+  justify-content: center;
+  padding: 0 45px;
+  margin-bottom: 50px;
+  .store-img {
+    width: 25.688rem;
+    position: relative;
+    bottom: 0;
+  }
+  p,
+  .download-box {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1520px) {
+  .store {
+    .store-img {
+      width: 17.688rem;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 1357px) {
+  .store {
+    gap: 1rem !important;
+    .store-img {
+      width: 25.688rem;
+      position: relative;
+      bottom: -20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .store {
+    flex-direction: column;
+    padding-top: 69px !important;
+    h2,
+    p {
+      text-align: center !important;
+    }
+    .download-box {
+      a {
+        margin: auto;
+      }
+    }
+    .store-img {
+      width: 25.688rem;
+      position: relative;
+      bottom: 0;
+    }
+  }
+  .crypto-security {
+    .crypto-security-box {
+      .trusted-devices-img {
+        height: 400px;
+      }
+    }
+  }
+  .private-keys-wraper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1400px) {
+  .store {
+    .store-img {
+      width: 17.688rem;
+      position: relative;
+      bottom: -39px;
+    }
   }
 }

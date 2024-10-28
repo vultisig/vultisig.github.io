@@ -4,7 +4,7 @@ import { Col, Row } from "antd";
 export function SegmentSix() {
   return (
     <>
-      <div className="whoisfor mt-5  pt-5 text-center">
+      <div className="whoisfor text-center">
         <h2
           className="monserrat-bold"
           dangerouslySetInnerHTML={{ __html: homeCopy.segment6.mainTitle }}
