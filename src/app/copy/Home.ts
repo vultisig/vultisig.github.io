@@ -242,7 +242,7 @@ export const homeCopy = {
   },
   vult_total: {
     title:
-      "Safe Smart Accounts are battle-tested and<br/> used more than any otgher",
+      "Safe Smart Accounts are battle-tested and<br/> used more than any other",
     totals: [
       {
         title: "downloads",
