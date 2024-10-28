@@ -126,7 +126,7 @@ export function Offcanvas({
                 href={navBarCopy.download.url}
                 target={navBarCopy.download.target}
               >
-                {navBarCopy.download.name}
+                {navBarCopy.download.name_a}
               </a>
             </li>
           </ul>
