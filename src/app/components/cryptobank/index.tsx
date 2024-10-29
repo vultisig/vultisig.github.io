@@ -56,7 +56,7 @@ export function Sections() {
                 <div className="background-shadow "></div>
                 <img
                   className="header-img  mx-auto"
-                  src="/img/credit-cards-3.svg"
+                  src="/img/credit-cards-3.png"
                   alt="SIMPLE STEPS, SUPERIOR SECURITY - THE VULTISIG DIFFERENCE"
                 />
               </div>
@@ -366,7 +366,7 @@ export function Sections() {
         </div>
         <div className="text-center  justify-content-center">
           <img
-            src="/img/cryptobank-store.svg"
+            src="/img/cryptobank-store.png"
             className="store-img img-fluid"
             alt="SECURE YOUR DIGITAL ASSETS NOW"
           />

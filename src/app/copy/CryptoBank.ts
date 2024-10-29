@@ -88,7 +88,7 @@ export const CryptoBankCopy = {
             text: "Card limit: $10,000/month",
           },
         ],
-        img: "./img/blue-card.svg",
+        img: "./img/blue-card.png",
         btn: "No costs. Get it now!",
       },
       {
@@ -110,7 +110,7 @@ export const CryptoBankCopy = {
             text: "Card limit: $20,000/month",
           },
         ],
-        img: "./img/gray-card.svg",
+        img: "./img/gray-card.png",
         btn: "1 ETH",
       },
       {
@@ -132,7 +132,7 @@ export const CryptoBankCopy = {
             text: "Card limit: personalised",
           },
         ],
-        img: "./img/yellow-card.svg",
+        img: "./img/yellow-card.png",
         btn: "10 ETH",
       },
     ],

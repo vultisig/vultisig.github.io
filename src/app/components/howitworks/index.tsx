@@ -141,12 +141,12 @@ export function Sections() {
               <div className="d-flex h-100 justify-content-center align-items-center my-auto  px-2">
                 <img
                   className="trusted-devices-img "
-                  src="./img/crypto-security-img-2.svg"
+                  src="./img/iphonespaceblackfront.png"
                   alt=""
                 />
                 <img
                   className="trusted-devices-img "
-                  src="./img/crypto-security-img-1.svg "
+                  src="./img/iphonespaceblackleft.png"
                   alt=""
                 />
               </div>
