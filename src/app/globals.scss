@@ -23,6 +23,17 @@ p {
   margin: 0;
 }
 
+.ant-menu-submenu-horizontal {
+  .ant-menu-submenu-title {
+    .ant-menu-item-icon {
+      float: right;
+      margin-left: 10px;
+      margin-top: 17px;
+      color: #fff;
+    }
+  }
+}
+
 .p-text {
   letter-spacing: -0.5px;
   line-height: 150%;
@@ -140,34 +151,6 @@ p {
   z-index: -1;
 }
 
-.circle-bottom {
-  position: absolute;
-  bottom: 700px;
-  left: 100px;
-  border: 2px solid #33e6bf27;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
-  z-index: -1;
-}
-
-.circle-bottom-glow {
-  position: absolute;
-  bottom: 675px;
-  left: 75px;
-  border: 2px solid;
-  filter: blur(35px);
-  background: radial-gradient(
-    circle,
-    rgba(4, 57, 199, 0.17) 0%,
-    rgba(2, 18, 42, 0.41) 100%
-  );
-  border-radius: 50%;
-  height: 450px;
-  width: 450px;
-  z-index: -1;
-}
-
 .header {
   margin-top: 50px;
   // font-size: 50px;
@@ -193,7 +176,7 @@ h2 {
   justify-content: space-between;
   padding: 10px 20px;
   margin-bottom: 41px !important;
-  width: 80%;
+  width: 100%;
   margin: auto;
   p {
     margin: 20px;
@@ -862,7 +845,7 @@ hr.solid {
     display: none;
     color: #fff;
     font-size: x-large;
-    margin-top: -23px;
+    margin-top: -13px;
   }
   a {
     span {
@@ -982,6 +965,25 @@ hr.solid {
     max-width: 80% !important;
   }
 
+  .ant-drawer-content-wrapper {
+    .ant-drawer-content {
+      .ant-drawer-body {
+        .ant-menu {
+          .ant-menu-submenu {
+            .ant-menu-submenu-title {
+              .anticon {
+                display: none !important;
+              }
+              .ant-menu-title-content {
+                margin-inline-start: 0px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .navbar {
     height: unset;
     .ant-btn {
@@ -1023,24 +1025,6 @@ hr.solid {
     }
   }
 
-  .banner {
-    width: 100% !important;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p {
-      margin: 35px 0px 14px 0px;
-    }
-    .warning-logo-l {
-      position: absolute;
-      margin-left: 9px;
-      margin-top: 5px;
-    }
-    .warning-logo-r {
-      display: none;
-    }
-  }
   .ant-menu-submenu-active {
     background-color: #031e4a !important;
   }

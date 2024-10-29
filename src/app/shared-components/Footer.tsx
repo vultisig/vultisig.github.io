@@ -18,7 +18,7 @@ export function Footer() {
                 type="submit"
                 className="btn btn-primary btn-color    rounded discord-button"
               >
-                JOIN DISCORD
+                DISCORD LINK
               </button>
             </a>
           </div>

@@ -1,12 +1,10 @@
-import { title } from "process";
-
 export const homeCopy = {
   header: {
     slogan:
       "REGAIN CONTROL WITH<br/> THE <span class='gradient-text '>MOST SECURE</span> <br/> CRYPTO WALLET",
     subSlogan: "<span class='gradient-text '>OPEN-SOURCE AUDITED</span>",
     boxText:
-      "Get best-in class security with Vultsig, the most secure crypto wallet created, powered by the technology <br/> protecting multi-million dollar vaults at THORChain. Self-custodial, multi-chain, DeFi native, no tracking <br/> and with built-in two-factor authentication.",
+      "Get best-in class security with Vultisig, the most secure crypto wallet created, powered by the technology protecting multi-million dollar vaults at THORChain. Self-custodial, multi-chain, DeFi native, no tracking and with built-in two-factor authentication.",
 
     downloadTitle: "Now Available for iOS, Mac, Android and Web:",
   },
@@ -16,7 +14,7 @@ export const homeCopy = {
       {
         title: "Single-signature wallets are dangerous",
         description:
-          "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your metamask? Forget your backup phrase? Get your iCloud hacked? <br/> <strong class='monserrat-bold'>One mistake and forever rekt.</strong>",
+          "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your hot wallet? Forget your backup phrase? Interacted with malicious smart contract? <br/> <strong class='monserrat-bold'>One mistake and forever rekt.</strong>",
       },
       {
         title: "Hardware wallets are clunky",
@@ -24,44 +22,46 @@ export const homeCopy = {
           "Small screens, small buttons, annoying interfaces. Complicated setup instructions, scary firmware updates and confusing transactions. <br/> <strong class='monserrat-bold'>Why can’t it be better.</strong>",
       },
       {
-        title: "Multi-sig wallets are painful",
+        title: "Multi-signature wallets are painful",
         description:
-          "Lose one key, lose it all. Multi-sig is the solution, but does not work natively. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. <br/> <strong class='monserrat-bold'>If only there was something that works.</strong>",
+          "Lose one key, lose it all. Multi-sig is one solution, but does not work natively. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible.<br/> <strong class='monserrat-bold'>If only there was something that works.</strong>",
       },
       {
         title: "No wallet offers a real crypto bank experience",
         description:
-          "Different wallets for different chains. No easy connection between real world and crypto. Almost impossible to spend your funds in a simple manner. Fiat on and off ramp<strong class='monserrat-bold'> prohibitively</strong> expensive.<strong class='monserrat-bold'> If there only was a true non-custodial crypto bank in your own pocket.</strong>",
+          `Different wallets for different chains. No easy connection between real world and crypto. Almost impossible to spend your funds in an easy way. Fiat on and off ramp
+          <strong class='monserrat-bold'> prohibitively</strong> expensive.<br>
+          <strong class='monserrat-bold'>If there only was a true non-custodial crypto bank in your own pocket.</strong>`,
       },
     ],
   },
   segment2: {
     mainTitle: "THE <span class='gradient-text'>SOLUTION</span> ",
-    subTitle: "Vultisig is the next evolution in crypto vaults",
+    subTitle: "VULTISIG is the next evolution in crypto vaults",
     items: [
       {
         title: "Threshold Signatures",
         description:
-          "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key is vulnerable. No seed phrases. And native to all crypto networks. ",
+          "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key vulnerability. No seed phrases. And native to all blockchains.",
         img: "./img/solution-1.svg",
       },
       {
         title: "Familiar hardware",
         description:
-          "Everyone has a phone, laptop or tablet. They are fast and powerful. They have full encryption and security. They don’t look like crypto wallets! You don’t need anything else. ",
+          "Forget special hardware! Everyone has a phone, laptop or tablet. They are fast and powerful. They have full encryption and security. They don’t look like crypto wallets! You don’t need anything else. ",
         img: "./img/solution-2.svg",
       },
       {
-        title: "Rich hardware",
+        title: "Rich Hardware",
         description:
-          "Forget special hardware - use your current phone as a co-signer device! <br/> Large screens, excellent user experience - easily verify transactions. Camera, bluetooth, wifi, cellular, USBC, secure enclaves, biometrics - all there. ",
+          "Cross-chain transactions simplified. No more switching chains. Experience mobile swaps across blockchains in a simple and decentralized way with no intermediaries",
         img: "./img/solution-3.svg",
       },
 
       {
         title: "Crypto Bank",
         description:
-          "Swap. Save. Borrow. Spend. All possible based on trustless DeFi technology & no intermediaries involved. Optionally choose a free MasterCard and complementary Swiss bank account for secure FIAT rails in over 100 countries ",
+          "Swap. Save. Borrow. Spend. All possible based on trustless DeFi technology with no intermediaries involved. Optionally choose a free MasterCard and complementary Swiss bank account for secure FIAT rails in over 100 countries.",
         img: "./img/solution-4.svg",
       },
     ],
@@ -73,17 +73,22 @@ export const homeCopy = {
       {
         title: "Vault Generation",
         description:
-          "KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 2of2, 2of3, or 3of4 - choose your vault type. Key generation is fast. No device holds the vault private key.",
+          `KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
+          2-of-2, 2-of-3, or 3-of-4 Vault setups. Choose your vault type. <br>
+          Key generation is fast. No device holds the vault private key. `,
       },
       {
         title: "Transaction Signing",
         description:
-          "KeySign time: <strong class='monserrat-bold'>5 - 10 seconds.</strong><br> One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and must be done in-person.",
+          `KeySign time: <strong class='monserrat-bold'>5 - 10 seconds.</strong><br> 
+          One device starts the transaction. A second paired device confirms the <br>transaction. It is natively “two-factor” and is done in real time. `,
       },
       {
         title: "Resharing",
         description:
-          "Reshare Time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> Lost a device? Replace it easily without changing the vault. Want to increase security? Go from 2of3 to 3of4 easily.",
+          `Reshare Time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
+          Lost a device? Replace it easily without changing the vault. Want to increase
+          security? Go from 2-of-3 to 3-of-4 setup easily. `,
       },
     ],
   },
@@ -92,23 +97,22 @@ export const homeCopy = {
     itemOne: {
       title: "ASSET MANAGEMENT HUB",
       description:
-        "All chains are compatible - Bitcoin, Ethereum,<br/> THORChain and even Solana. The first multi-chain<br/> multi-asset multi-signature wallet in the world.<br/>You can deposit, send, swap and more inside Vultisig.",
+        "Vultisig is chain agnostic - Bitcoin, Ethereum, THORChain and even Solana. The first multi-chain, multi-asset, multi-signature wallet in the world. You can deposit, send, swap and more inside Vultisig. ",
       image: "./img/best-features-image-1",
       alt: "Asset Management Hub ",
     },
     itemTwo: {
       title: "EASY CRYPTO EXCHANGE",
-      description:
-        "Vultisig is natively DeFi compatible - rebalance your<br/> portfolio right inside the vault. <br/>It also supports advanced DeFi functions such as<br/> bonding to Nodes, Lending and Savers.",
+      description: `Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault.<br>It also supports advanced DeFi functions such as bonding to Nodes, Staking, Lending and Savers.`,
       image: "./img/best-features-image-2",
       alt: "Easy Crypto Exchange",
     },
     itemThree: {
       title: "LEADING FIAT GATEWAY",
       description:
-        "On- and off ramp from and to crypto in a most secure way directly to your non-custodial vault. Get the hands on a MasterCard and initiate IBAN & SEPA payments out of your own crypto bank in your pocket.",
+        "On and off ramp to and from crypto in a highly secure manner directly to your non-custodial vault. Get the hands on a MasterCard and initiate IBAN & SEPA payments out of your own crypto bank in your pocket.",
       image: "./img/best-features-image-3",
-      alt: "leading Fiat Geteway",
+      alt: "Leading Fiat Gateway",
     },
   },
   segment5: {
@@ -117,21 +121,21 @@ export const homeCopy = {
       {
         title: "Full DeFi",
         description:
-          "Swaps, Saving Vaults, Pools, Bridging. All DeFi right from your Vault. ",
+          "Swaps, Saving Vaults, Pools, Bridging. All DeFi functions right from your Vault. ",
         image: "./img/full-defi.svg",
         alt: "Full Defi",
       },
       {
         title: "Remote Signing",
         description:
-          "Sign with a remote co-signer. All messages are encrypted between devices and can never be intercepted.",
+          "Sign with a remote co-signer. All messages are encrypted between devices and can hardly be intercepted.",
         image: "./img/remote-sign.svg",
         alt: "Remote Signing",
       },
       {
         title: "Transaction Policies",
         description:
-          "Nominate transaction policies for your vault - spend limits, address whitelists and more. <br/>(COMING SOON)",
+          "Define transaction policies for your vault - spending limits, address whitelists and more.  <br>(COMING SOON)",
         image: "./img/tx-policies.svg",
         alt: "Transaction Policies",
       },
@@ -150,21 +154,21 @@ export const homeCopy = {
       {
         title: "WHALES",
         description:
-          "If you have more than $100k in crypto, you MUST consider upgrading to a TSS vault. Your funds are at-risk on all other wallets. Download it now. ",
+          "Do you hold significant funds in crypto? Then you MUST consider upgrading to a Vultisig secure vault. Your funds are at-risk on all other wallets.  Download it now. ",
         image: "./img/whales.svg",
         alt: "",
       },
       {
         title: "FUNDS",
         description:
-          "Vultisig is the open-source audited alternative to your current “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world.",
+          "Vultisig is the open-source audited alternative to your current “custodian”. You know it’s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world. ",
         image: "./img/funds.svg",
         alt: "",
       },
       {
         title: "TREASURIES",
         description:
-          "TSS is natively compatible to all chains. Together with transaction policies, designate your leads the ability to pay staff with limits, whitelists and more.",
+          "Vultisig is natively compatible to all chains. Together with transaction policies, designate your leads the ability to pay staff with limits, whitelists and more. ",
         image: "./img/treasuries.svg",
         alt: "",
       },
@@ -175,7 +179,7 @@ export const homeCopy = {
   },
   vult_total: {
     title:
-      "Safe Smart Accounts are battle-tested and<br/> used more than any otgher",
+      "Vultisig Vaults are battle-tested and trusted by thousands of users, with numbers growing daily.",
     totals: [
       {
         title: "downloads",

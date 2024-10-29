@@ -189,6 +189,7 @@
         align-items: center;
         flex-direction: column;
         padding: 1rem;
+        font-size: small;
         .blur-bg {
           flex-direction: column;
           div {
@@ -218,8 +219,10 @@
         .blur-bg {
           padding: 1.5rem;
           display: flex;
+          justify-content: space-between;
           .arrow-right {
             width: 35px;
+            margin-top: -6px;
           }
         }
         // border: 1px solid yellow;
@@ -257,7 +260,7 @@
 }
 
 //f&Q
-.cryptoBank-FandQ {
+.cryptoBank-FAQ {
   .faq-item {
     margin-bottom: 10rem;
     .accordion-item {

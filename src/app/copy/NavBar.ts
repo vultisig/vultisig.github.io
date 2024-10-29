@@ -9,27 +9,27 @@ export const navBarCopy = {
       children: [
         {
           name: "Vultisig Mobile App",
-          url: "/download",
+          url: "/download/Vultisig",
           target: "_self",
         },
         {
           name: "VultiWallet - DeFi Mobile App (Vaults coming soon)",
-          url: "/#",
+          url: "/download/VultiWallet",
           target: "_self",
         },
         {
           name: "Vultisig macOS",
-          url: "/download",
+          url: "/download/Vultisig",
           target: "_self",
         },
         {
           name: "Vultisig Windows",
-          url: "/download",
+          url: "/download/Vultisig",
           target: "_self",
         },
         {
           name: "VultiConnect (Chrome extension)",
-          url: "/download",
+          url: "/download/browser",
           target: "_self",
         },
       ],
@@ -63,6 +63,7 @@ export const navBarCopy = {
   download: {
     name_a: "Download App",
     name_b: "Download Now",
+    name: "Download",
     url: "/download",
     target: "_self",
   },

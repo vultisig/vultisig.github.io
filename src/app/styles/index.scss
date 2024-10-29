@@ -168,7 +168,7 @@ body {
 }
 .circle-middle-right {
   position: absolute;
-  top: 80%;
+  top: 75%;
   right: -550px;
   border: 2px solid #33e6bf27;
   border-radius: 50%;
@@ -179,7 +179,7 @@ body {
 
 .circle-middle-right-glow {
   position: absolute;
-  top: 80%;
+  top: 75%;
   right: -575px;
   filter: blur(35px);
   background: radial-gradient(
@@ -193,33 +193,4 @@ body {
   width: 750px;
   z-index: -1;
 }
-
-.circle-bottom {
-  position: absolute;
-  bottom: 45rem;
-  left: 10rem;
-  border: 2px solid #33e6bf27;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
-  z-index: -1;
-}
-
-.circle-bottom-glow {
-  position: absolute;
-  bottom: 59.375rem;
-  left: 5rem;
-  border: 2px solid;
-  filter: blur(35px);
-  background: radial-gradient(
-    circle,
-    rgba(4, 57, 199, 0.17) 0%,
-    rgba(2, 18, 42, 0.41) 100%
-  );
-  border-radius: 50%;
-  height: 450px;
-  width: 450px;
-  z-index: -1;
-}
-
 

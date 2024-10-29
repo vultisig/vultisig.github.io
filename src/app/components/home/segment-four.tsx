@@ -63,7 +63,7 @@ export function SegmentFour() {
                 alt={homeCopy.segment4.itemThree.alt}
               />
             </div>
-            <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center ">
+            <div className="col-lg-6 d-flex flex-column justify-content-center ">
               <h1
                 className="text-uppercase monserrat-bold text-start "
                 dangerouslySetInnerHTML={{

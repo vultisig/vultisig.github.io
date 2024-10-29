@@ -2,13 +2,10 @@
 import { Button, Drawer } from "antd";
 import Image from "next/image";
 import { navBarCopy } from "../copy/NavBar";
-import { MenuOutlined } from "@ant-design/icons";
-
+import { MenuOutlined,CaretDownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
-
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 export function NavBar() {
   const [currentPath, setCurrentPath] = useState("");
@@ -40,11 +37,12 @@ export function NavBar() {
       MenuItems.push({
         key: `${index}`,
         label: link.name,
+        icon: <CaretDownOutlined />,
         children: link.children.map((child, ind) => ({
           key: `${index}-${ind}`,
           label: (
             <a
-              href={navBarCopy.download.url}
+              href={child.url}
               onClick={handleClose}
               style={{ cursor: "pointer" }}
             >
@@ -63,6 +61,7 @@ export function NavBar() {
 
   return (
     <>
+
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
         <a
           href="/"
@@ -71,7 +70,7 @@ export function NavBar() {
           onClick={handleClose}
         >
           <Image
-            src="./img/logo.svg"
+            src="/img/logo.svg"
             width={30}
             height={30}
             className="d-inline-block align-top"
@@ -111,6 +110,12 @@ export function NavBar() {
         )}
       </nav>
 
+      <div className="banner">
+        <img className="warning-logo-l" src="/img/warning.svg" />
+        <p>{navBarCopy.warning_Message}</p>
+        <img className="warning-logo-r" src="/img/warning.svg" />
+      </div>
+
       <Drawer title="MENU" onClose={handleClose} open={show}>
         <Menu
           mode="inline"
@@ -128,6 +133,7 @@ export function NavBar() {
           selectedKeys={[currentPath]}
         />
       </Drawer>
+
     </>
   );
 }

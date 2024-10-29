@@ -26,7 +26,7 @@ export function SegmentStore() {
               style={{ height: "48px", width: "193px" }}
               href={navBarCopy.download.url}
             >
-              {navBarCopy.download.name_b}
+              {navBarCopy.download.name}
             </a>
           </div>
         </div>

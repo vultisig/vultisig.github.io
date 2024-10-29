@@ -9,8 +9,6 @@ import { SegmentFour } from "@/app/components/home/segment-four";
 import { SegmentFive } from "@/app/components/home/segment-five";
 import { SegmentSix } from "@/app/components/home/segment-six";
 import { SegmentStore } from "@/app/components/home/segment-store";
-import Image from "next/image";
-import { trackAction } from "@/app/lib/gtagHelper";
 import { navBarCopy } from "@/app/copy/NavBar";
 export default async function Home() {
   return (
@@ -69,12 +67,13 @@ export default async function Home() {
         <SegmentSix />
         <SegmentStore />
       </div>
+      <div className="shadow-top-left"></div>
+      <div className="shadow-top-right"></div>
+      <div className="shadow-middle-left"></div>
       <div className="circle-middle-left"></div>
       <div className="circle-middle-left-glow"></div>
       <div className="circle-middle-right"></div>
       <div className="circle-middle-right-glow"></div>
-      <div className="circle-bottom"></div>
-      <div className="circle-bottom-glow"></div>
     </>
   );
 }

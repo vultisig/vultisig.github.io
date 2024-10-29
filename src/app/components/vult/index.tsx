@@ -51,7 +51,7 @@ export function Sections() {
               />
 
               <h2
-                className="heading monserrat-bold mt-5"
+                className="heading monserrat-bold mt-5 text-uppercase"
                 dangerouslySetInnerHTML={{
                   __html: vultCopy.airdrop.main_title,
                 }}
@@ -68,7 +68,7 @@ export function Sections() {
             </ul>
             <div className="join-airdrop">
               <a
-                className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
+                className="align-items-center btn btn-color btn-primary d-flex justify-content-center text-uppercase"
                 style={{ height: "48px", width: "193px" }}
                 href={vultCopy.airdrop.Join_the_AirDrop_URL}
                 target="_blank"

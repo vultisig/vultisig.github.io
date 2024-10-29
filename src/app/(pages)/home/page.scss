@@ -1,3 +1,25 @@
+.shadow-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 473px;
+  height: 510px;
+  background-image: url("/img/shadow-top-left.png");
+  background-repeat: no-repeat;
+  z-index: -3;
+}
+
+.shadow-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 461px;
+  height: 1052px;
+  background-image: url(/img/shadow-top-right.png);
+  background-repeat: no-repeat;
+  z-index: -3;
+}
+
 .home-page {
   background-position: top center;
   background-repeat: no-repeat;
@@ -100,9 +122,9 @@
             text-align: center;
             margin-top: 30px;
             line-height: 21.6px;
-            li{
-              padding-left:37.5px ;
-              padding-right:37.5px ;
+            li {
+              padding-left: 37.5px;
+              padding-right: 37.5px;
             }
           }
         }
@@ -180,6 +202,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  .shadow-top-left,.shadow-top-right,.circle-top-left,.circle-top-left-glow,.circle-top-right,.circle-top-right-glow
+  ,.circle-middle-left,.circle-middle-left-glow,.circle-middle-right,.circle-middle-right-glow {
+    display: none !important;
+  }
+}
+
 //segment three
 .user-experience {
   margin-bottom: 15.063rem;
@@ -246,6 +275,4 @@
 //segment six
 .whoisfor {
   margin-bottom: 15.063rem;
-  .whoisfor-list {
-  }
 }

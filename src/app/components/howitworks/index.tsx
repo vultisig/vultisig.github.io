@@ -46,7 +46,7 @@ export function Sections() {
         <div className="row">
           <div className="col-lg-6">
             <h2
-              className=" monserrat-bold title"
+              className=" monserrat-bold title text-uppercase"
               style={{ lineHeight: "150%" }}
               dangerouslySetInnerHTML={{
                 __html: HowItWorksCopy.segment1.subTitle,
@@ -80,7 +80,7 @@ export function Sections() {
       {/* <---!segment two---> */}
       <div className="private-keys  mt-5  text-center">
         <h2
-          className="monserrat-bold mainTitle"
+          className="monserrat-bold mainTitle text-uppercase"
           dangerouslySetInnerHTML={{
             __html: HowItWorksCopy.segment2.mainTitle,
           }}
@@ -96,7 +96,7 @@ export function Sections() {
           <div className="private-keys-wraper justify-content-center g-5">
             {HowItWorksCopy.segment2.items.map((item, index) => (
               <div key={index} className="mx-5 item text-center ">
-                <div className="p-3 blue-section h-100 item ">
+                <div className="p-3 px-5 blue-section h-100 item ">
                   <Image
                     height={130}
                     width={200}
@@ -163,8 +163,8 @@ export function Sections() {
                   <p
                     key={index}
                     className="monserrat-regular mt-4 fs-5 color-neutral pe-lg-4 text-medium"
+                    dangerouslySetInnerHTML={{ __html: item.text }}
                   >
-                    {item.text}
                   </p>
                 ))}
               </div>
@@ -195,7 +195,7 @@ export function Sections() {
               style={{ height: "48px", width: "193px" }}
               href={navBarCopy.download.url}
             >
-              {navBarCopy.download.name_a}
+              {navBarCopy.download.name}
             </a>
           </div>
         </div>
