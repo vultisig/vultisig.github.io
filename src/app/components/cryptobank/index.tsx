@@ -179,6 +179,7 @@ export function Sections() {
                 <button
                   type="button"
                   className="btn btn-primary btn-color px-5 py-2  mx-auto "
+                  style={{width:"100%;",fontSize:"14px"}}
                 >
                   {item.btn}
                 </button>
