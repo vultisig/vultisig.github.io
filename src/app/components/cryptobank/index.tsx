@@ -47,6 +47,7 @@ export function Sections() {
               <button
                 type="button"
                 className="btn btn-primary btn-color px-5 py-2 mt-5  ms-3"
+                style={{width:"100%;",fontSize:"14px"}}
               >
                 Get Started
               </button>
@@ -134,6 +135,7 @@ export function Sections() {
               <button
                 type="button"
                 className="btn btn-primary btn-color px-5 py-2  "
+                style={{width:"100%;",fontSize:"14px"}}
               >
                 {item.btn}
               </button>
