@@ -76,7 +76,7 @@ export const CryptoBankCopy = {
             text: "Free Swiss Bank Account (CHF, EUR, USD)",
           },
           {
-            text: "Free EUR Visa Debit Card",
+            text: "Free EUR MasterCard Debit Card",
           },
           {
             text: "1% Crypto Topup & FX fee",
