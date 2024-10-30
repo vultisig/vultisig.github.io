@@ -206,7 +206,7 @@ export const BackedByCopy = {
       },
       {
         src: "/img/backed-by/johnnyluo.png",
-        title: "Johnney - Tech Lead <br> THORWallet Dev",
+        title: "Johnny<br> THORChain Dev",
         twitter: "@johnnyluo",
         github: "",
         iconImg: "github-sign.svg",
