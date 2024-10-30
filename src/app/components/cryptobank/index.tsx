@@ -1,8 +1,9 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { HowItWorksCopy } from "@/app/copy/HowItWorks";
 import { CryptoBankCopy } from "@/app/copy/CryptoBank";
 import { trackAction } from "@/app/lib/gtagHelper";
+import { Radio } from "antd";
 import Image from "next/image";
 import { homeCopy } from "@/app/copy/Home";
 import { navBarCopy } from "@/app/copy/NavBar";
@@ -11,6 +12,7 @@ export function Sections() {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
+  const [btnValue, setbtnValue] = useState("kyc");
   return (
     <>
       <header className=" mt-2 cryptoBank-header">
@@ -106,13 +108,27 @@ export function Sections() {
             __html: CryptoBankCopy.segment1.subTitle,
           }}
         ></p>
-        <div className="btn-box mx-auto mt-5 d-flex justify-content-center  ">
-          <button className="rounded-btn active-btn">KYC</button>
-          <button className="rounded-btn">1st Top up</button>
-        </div>
+        <Radio.Group
+          value={btnValue}
+          onChange={(e) => setbtnValue(e.target.value)}
+          className="btn-box mx-auto mt-5 d-flex justify-content-center  "
+        >
+          {CryptoBankCopy.segment1.btns.map((btn, index) => (
+            <Radio.Button
+              value={btn.value}
+              className={`rounded-btn ${
+                btnValue === btn.value ? "active-btn" : ""
+              } `}
+            >
+              {btn.text}
+            </Radio.Button>
+          ))}
+        </Radio.Group>
         <div className="earn-up-wrapper justify-content-center align-items-center gap-0 column-gap-5">
           {CryptoBankCopy.segment1.items.map((item, index) => (
-            <div key={index} className="mt-5 p-4 blue-section item-box ">
+            <div key={index} className={`mt-5 p-4 blue-section  ${
+              item.value === btnValue ? "item-box-active" : "item-box"
+            }`}>
               <h3 className=" monserrat-bold mb-4 text-start mt-3 ms-2">
                 {item.title}
               </h3>
@@ -137,7 +153,7 @@ export function Sections() {
                 className="btn btn-primary btn-color px-5 py-2  "
                 style={{width:"100%;",fontSize:"14px"}}
               >
-                {item.btn}
+                {item.link}
               </button>
             </div>
           ))}
@@ -181,7 +197,7 @@ export function Sections() {
                 <button
                   type="button"
                   className="btn btn-primary btn-color px-5 py-2  mx-auto "
-                  style={{width:"100%;",fontSize:"14px"}}
+                  style={{fontSize:"14px"}}
                 >
                   {item.btn}
                 </button>

@@ -40,10 +40,20 @@ export const CryptoBankCopy = {
       "<span class='gradient-text '>Earn up to 25 $ARB Rewards</span></br><span class='gradient-text '> as a New Card User!</span>",
     subTitle:
       "Download the Vultisig app and complete the following steps to claim your rewards:",
+    btns: [
+      {
+        text: "KYC",
+        value: "kyc",
+      },
+      {
+        text: "1st Topup",
+        value: "topup",
+      },
+    ],
     items: [
       {
         title: "Complete KYC",
-        btn: "KYC",
+        value: "kyc",
         list: [
           {
             text: `As soon as you complete the KYC you’ll be able to claim the reward.`,
@@ -54,7 +64,7 @@ export const CryptoBankCopy = {
       },
       {
         title: "1st Card Top Up",
-        btn: "1st Topup",
+        value: "topup",
         list: [
           {
             text: "Top up your card with at least 50 EUR of crypto to claim the reward.",

@@ -38,8 +38,6 @@ export default async function BackedBy() {
       </div>
       <div className="shadow-top-left"></div>
       <div className="shadow-middle-left"></div>
-      <div className="circle-middle-right"></div>
-      <div className="circle-middle-right-glow"></div>
     </>
   );
 }

@@ -81,11 +81,17 @@
 //segment one
 .earn-up {
   margin-bottom: 12rem;
+
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    display: none;
+  }
+
   .btn-box {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     height: 3.125rem;
     width: 32.313rem;
+    text-align: center;
     .rounded-btn {
       display: block;
       height: 3.125rem;
@@ -109,8 +115,10 @@
   .item-box {
     background-color: rgba(255, 255, 255, 0.05);
   }
-  .item-box.active {
+  .item-box-active {
+    background-color: rgba(255, 255, 255, 0.05);
     background-image: linear-gradient(rgba(33, 85, 223, 0.2), rgba(0, 0, 0, 0));
+    border: 1px solid rgba(72, 121, 253, 1);
   }
   .earn-up-wrapper {
     display: flex;
@@ -128,6 +136,11 @@
   .unlock-vultisig-img {
     width: 100%;
     border-radius: 13px;
+  }
+  .item-box {
+    .btn {
+      width: 100% !important;
+    }
   }
 }
 //segment three

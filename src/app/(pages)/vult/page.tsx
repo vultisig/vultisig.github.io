@@ -47,8 +47,6 @@ export default async function Faq() {
                   <div className="circle-top-left-glow"></div>
                   <div className="circle-top-right"></div>
                   <div className="circle-top-right-glow"></div>
-                  <div className="circle-middle-right"></div>
-                  <div className="circle-middle-right-glow"></div>
               </div>
           </div>
       </>

@@ -2,7 +2,7 @@
 import { Button, Drawer } from "antd";
 import Image from "next/image";
 import { navBarCopy } from "../copy/NavBar";
-import { MenuOutlined,CaretDownOutlined } from "@ant-design/icons";
+import { MenuOutlined, CaretDownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import { useEffect, useState } from "react";
@@ -12,7 +12,45 @@ export function NavBar() {
 
   type MenuItem = Required<MenuProps>["items"][number];
 
-  const MenuItems: MenuItem[] = [];
+  const MenuItems: MenuItem[] = navBarCopy.navbarLinks.map((link) => {
+    if (link.children) {
+      return {
+        key: link.url, // Use URL as the key for matching selected item
+        label: link.name,
+        icon: <CaretDownOutlined />,
+        children: link.children.map((child) => ({
+          key: child.url, // Use child URL as the key
+          label: (
+            <a
+              href={child.url}
+              onClick={() => {
+                setCurrentPath(child.url);
+                handleClose();
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              {child.name}
+            </a>
+          ),
+        })),
+      };
+    } else {
+      return {
+        key: link.url, // Use URL as the key for consistency
+        label: (
+          <a
+            href={link.url}
+            onClick={() => {
+              setCurrentPath(link.url);
+              handleClose();
+            }}
+          >
+            {link.name}
+          </a>
+        ),
+      };
+    }
+  });
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -32,42 +70,17 @@ export function NavBar() {
   const handleOpen = () => setShow(true);
   const handleClose = () => setShow(false);
 
-  navBarCopy.navbarLinks.map((link, index) => {
-    if (link.children) {
-      MenuItems.push({
-        key: `${index}`,
-        label: link.name,
-        icon: <CaretDownOutlined />,
-        children: link.children.map((child, ind) => ({
-          key: `${index}-${ind}`,
-          label: (
-            <a
-              href={child.url}
-              onClick={handleClose}
-              style={{ cursor: "pointer" }}
-            >
-              {child.name}{" "}
-            </a>
-          ),
-        })),
-      });
-    } else {
-      MenuItems.push({
-        key: `${index}`,
-        label: <a href={link.url}>{link.name}</a>,
-      });
-    }
-  });
-
   return (
     <>
-
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
         <a
           href="/"
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
-          onClick={handleClose}
+          onClick={() => {
+            setCurrentPath("/");
+            handleClose();
+          }}
         >
           <Image
             src="/img/logo.svg"
@@ -92,6 +105,7 @@ export function NavBar() {
               mode="horizontal"
               items={MenuItems}
               selectedKeys={[currentPath]}
+              onClick={({ key }) => setCurrentPath(key)}
             />
           )}
         </div>
@@ -99,7 +113,10 @@ export function NavBar() {
           className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
           style={{ height: "48px", width: "193px" }}
           href={navBarCopy.download.url}
-          onClick={handleClose}
+          onClick={() => {
+            setCurrentPath(navBarCopy.download.url);
+            handleClose();
+          }}
         >
           {navBarCopy.download.name_a}
         </a>
@@ -122,18 +139,24 @@ export function NavBar() {
           items={[
             ...MenuItems,
             {
-              key: "1000",
+              key: navBarCopy.download.url,
               label: (
-                <a href={navBarCopy.download.url} onClick={handleClose}>
+                <a
+                  href={navBarCopy.download.url}
+                  onClick={() => {
+                    setCurrentPath(navBarCopy.download.url);
+                    handleClose();
+                  }}
+                >
                   {navBarCopy.download.name_a}
                 </a>
               ),
             },
           ]}
           selectedKeys={[currentPath]}
+          onClick={({ key }) => setCurrentPath(key)}
         />
       </Drawer>
-
     </>
   );
 }

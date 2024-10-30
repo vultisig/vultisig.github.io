@@ -72,8 +72,6 @@ export default async function Home() {
       <div className="shadow-middle-left"></div>
       <div className="circle-middle-left"></div>
       <div className="circle-middle-left-glow"></div>
-      <div className="circle-middle-right"></div>
-      <div className="circle-middle-right-glow"></div>
     </>
   );
 }
