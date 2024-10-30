@@ -10,7 +10,7 @@ export function SegmentFour() {
         ></h2>
         <div className="mb-4 mt-5">
           <div className="row">
-            <div className="col-lg-6  col-md-12 mt-4 pe-4">
+            <div className="col-lg-6  col-md-12 mt-4">
               <div className="asset-managemant text-center p-4 h-100 pt-5">
                 <h3
                   className="text-uppercase monserrat-bold text-white mt-5"
@@ -31,7 +31,7 @@ export function SegmentFour() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 mt-4 ps-4 ">
+            <div className="col-lg-6 col-md-12 mt-4">
               <div className="crypto-exchange text-center p-4 h-100">
                 <img
                   className="fiat-img w-75-50 mx-auto mb-5 "
@@ -55,7 +55,7 @@ export function SegmentFour() {
           </div>
         </div>
         <div className=" mb-3">
-          <div className=" leading-fiat row p-2  mt-5  justify-content-center ">
+          <div className="leading-fiat row p-2 mt-3 justify-content-center ">
             <div className="  col-lg-4 pe-5">
               <img
                 className="fiat-img mx-auto img-fluid"

@@ -146,11 +146,15 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
       max-width: rem(932) !important;
       padding-bottom: rem(222);
       position: relative;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .vult-page-stats {
+    .vult-container{
+      margin-top: 300px;
+    }
     .heading {
       font-size: 4rem;
       font-weight: 700;
@@ -240,7 +244,7 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
   }
 }
 
-.bg{
+.bg {
   background-image: url("/img/vult/vult-bg.jpg");
   width: 100%;
   height: 1254px;

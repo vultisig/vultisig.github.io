@@ -27,7 +27,6 @@ export default async function Home() {
           </div>
           <div className="blue-section p-3 mt-3 ">
             <p
-              className=""
               dangerouslySetInnerHTML={{ __html: homeCopy.header.boxText }}
             ></p>
           </div>

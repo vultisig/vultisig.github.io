@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <>
       <div className="footer text-light">
-        <div className="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+        <div className="gap-2 d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
           <p
             className="join-text "
             dangerouslySetInnerHTML={{ __html: footerCopy.discord.title }}
@@ -24,8 +24,8 @@ export function Footer() {
           </div>
         </div>
         <hr className="solid mt-5" />
-        <div className="row mt-5 mb-5">
-          <div className="col-lg-6 col-md-12">
+        <div className="item-wrapper mt-5 mb-5">
+          <div className="item">
             <div className="d-flex align-items-center mb-5">
               <Image
                 width={56}
@@ -44,9 +44,7 @@ export function Footer() {
               <a
                 href={footerCopy.social.githubLink.url}
                 target={footerCopy.social.githubLink.target}
-                onClick={() => 
-                  trackAction("click", "social_link", "github")
-                }
+                onClick={() => trackAction("click", "social_link", "github")}
               >
                 <Image
                   width={30}
@@ -59,9 +57,7 @@ export function Footer() {
                 className="mx-3"
                 href={footerCopy.social.twitterLink.url}
                 target={footerCopy.social.twitterLink.target}
-                onClick={() => 
-                  trackAction("click", "social_link", "twitter")
-                }
+                onClick={() => trackAction("click", "social_link", "twitter")}
               >
                 <Image
                   width={30}
@@ -74,9 +70,7 @@ export function Footer() {
                 className="me-3"
                 href={footerCopy.social.discordLink.url}
                 target={footerCopy.social.discordLink.target}
-                onClick={() => 
-                  trackAction("click", "social_link", "discord")
-                }
+                onClick={() => trackAction("click", "social_link", "discord")}
               >
                 <Image
                   width={30}
@@ -89,9 +83,7 @@ export function Footer() {
               <a
                 href={footerCopy.social.telegramLink.url}
                 target={footerCopy.social.telegramLink.target}
-                onClick={() => 
-                  trackAction("click", "social_link", "telegram")
-                }
+                onClick={() => trackAction("click", "social_link", "telegram")}
               >
                 {" "}
                 <Image
@@ -104,63 +96,61 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 mt-3 mt-lg-0">
-            <div>
-              <div className="row justify-content-end">
-                <div className="col-md-4">
-                  <ul className="list-unstyled monserrat">
-                    <li className="mb-2 footer-item-title">
-                      <strong>{footerCopy.footerLinks[2].title}</strong>
+          <div className="item mt-3 mt-lg-0">
+            <div className="nav-bar">
+              <div className="col-md-4">
+                <ul className="list-unstyled monserrat">
+                  <li className="mb-2 footer-item-title">
+                    <strong>{footerCopy.footerLinks[2].title}</strong>
+                  </li>
+                  {footerCopy.footerLinks[2].links.map((link, index) => (
+                    <li key={index} className="mt-2">
+                      <a
+                        href={link.url}
+                        target={link.target}
+                        className="nav-link color-neutral-200"
+                      >
+                        {link.name}
+                      </a>
                     </li>
-                    {footerCopy.footerLinks[2].links.map((link, index) => (
-                      <li key={index} className="mt-2">
-                        <a
-                          href={link.url}
-                          target={link.target}
-                          className="nav-link color-neutral-200"
-                        >
-                          {link.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="col-md-3">
-                  <ul className="list-unstyled monserrat-regular">
-                    <li className="mb-2 footer-item-title">
-                      <strong>{footerCopy.footerLinks[0].title}</strong>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-md-4">
+                <ul className="list-unstyled monserrat-regular">
+                  <li className="mb-2 footer-item-title">
+                    <strong>{footerCopy.footerLinks[0].title}</strong>
+                  </li>
+                  {footerCopy.footerLinks[0].links.map((link, index) => (
+                    <li key={index} className="mt-2">
+                      <a
+                        href={link.url}
+                        target={link.target}
+                        className="nav-link color-neutral-200"
+                      >
+                        {link.name}
+                      </a>
                     </li>
-                    {footerCopy.footerLinks[0].links.map((link, index) => (
-                      <li key={index} className="mt-2">
-                        <a
-                          href={link.url}
-                          target={link.target}
-                          className="nav-link color-neutral-200"
-                        >
-                          {link.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="col-md-4">
-                  <ul className="list-unstyled monserrat">
-                    <li className="mb-2 footer-item-title">
-                      <strong>{footerCopy.footerLinks[1].title}</strong>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-md-4">
+                <ul className="list-unstyled monserrat">
+                  <li className="mb-2 footer-item-title">
+                    <strong>{footerCopy.footerLinks[1].title}</strong>
+                  </li>
+                  {footerCopy.footerLinks[1].links.map((link, index) => (
+                    <li key={index} className="mt-2">
+                      <a
+                        href={link.url}
+                        target={link.target}
+                        className="nav-link color-neutral-200"
+                      >
+                        {link.name}
+                      </a>
                     </li>
-                    {footerCopy.footerLinks[1].links.map((link, index) => (
-                      <li key={index} className="mt-2">
-                        <a
-                          href={link.url}
-                          target={link.target}
-                          className="nav-link color-neutral-200"
-                        >
-                          {link.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

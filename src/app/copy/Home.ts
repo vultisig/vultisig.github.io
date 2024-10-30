@@ -4,7 +4,7 @@ export const homeCopy = {
       "REGAIN CONTROL WITH<br/> THE <span class='gradient-text '>MOST SECURE</span> <br/> CRYPTO WALLET",
     subSlogan: "<span class='gradient-text '>OPEN-SOURCE AUDITED</span>",
     boxText:
-      "Get best-in class security with Vultisig, the most secure crypto wallet created, powered by the technology protecting multi-million dollar vaults at THORChain. Self-custodial, multi-chain, DeFi native, no tracking and with built-in two-factor authentication.",
+      "Get best-in class security with Vultisig, the most secure crypto wallet created, powered by the technology <br/> protecting multi-million dollar vaults at THORChain. Self-custodial, multi-chain, DeFi native, no tracking<br/> and with built-in two-factor authentication.",
 
     downloadTitle: "Now Available for iOS, Mac, Android and Web:",
   },

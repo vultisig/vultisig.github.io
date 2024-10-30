@@ -20,6 +20,8 @@
         rgb(51, 230, 191) 0%,
         rgb(4, 57, 199) 100%
       );
+      border-right: none !important;
+      border-left: none !important;
     }
     .switch-items:first-child {
       border-top-left-radius: 50px;

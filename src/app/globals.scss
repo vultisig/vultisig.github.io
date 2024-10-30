@@ -714,7 +714,6 @@ hr.solid {
 
 .faq {
   margin: auto;
-  width: 80%;
   margin-bottom: 10rem;
 
   .accordion-item {
@@ -845,7 +844,6 @@ hr.solid {
     display: none;
     color: #fff;
     font-size: x-large;
-    margin-top: -23px;
   }
   a {
     span {
@@ -877,6 +875,48 @@ hr.solid {
     font-size: 16px;
     &:hover {
       color: #fff !important;
+    }
+  }
+  .item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      width: 100%;
+      .nav-bar {
+        display: flex;
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .footer {
+    .item-wrapper {
+      flex-direction: column;
+      .item {
+        width: 100%;
+        .nav-bar {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .footer {
+    .item-wrapper {
+      flex-direction: column;
+      .item {
+        width: 100%;
+        .nav-bar {
+          margin-top: 0px !important;
+          display: flex;
+          flex-direction: column;
+          div {
+            margin-top: 30px;
+          }
+        }
+      }
     }
   }
 }
@@ -988,6 +1028,7 @@ hr.solid {
     height: unset;
     .ant-btn {
       display: block !important;
+      display: flex !important;
     }
     .btn {
       display: none !important;
@@ -1148,6 +1189,20 @@ hr.solid {
       width: 16.688rem;
       position: relative;
       bottom: 0;
+    }
+  }
+  .banner {
+    flex-direction: column;
+    p {
+      margin: 5px 0px !important;
+    }
+    .warning-logo-l {
+      width: 30px;
+      margin: auto;
+      margin-top: 10px;
+    }
+    .warning-logo-r {
+      display: none !important;
     }
   }
 }
