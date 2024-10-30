@@ -1,0 +1,20 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "G8Q5XUAJD9.com.vultisig.wallet"
+                ],
+                "components": [
+                    {
+                        "/": "*",
+                        "?": {
+                            "type": "?*"
+                        },
+                        "comment": "Matches any URL that with ?type=??"
+                    }
+                ]
+            }
+        ]
+    }
+}
