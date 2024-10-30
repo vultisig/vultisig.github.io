@@ -1,6 +1,7 @@
 "use client";
 import { homeCopy } from "@/app/copy/Home";
 import { HowItWorksCopy } from "@/app/copy/HowItWorks";
+import { navBarCopy } from "@/app/copy/NavBar";
 import { trackAction } from "@/app/lib/gtagHelper";
 import Image from "next/image";
 
@@ -45,7 +46,7 @@ export function Sections() {
         <div className="row">
           <div className="col-lg-6">
             <h2
-              className=" monserrat-bold title"
+              className=" monserrat-bold title text-uppercase"
               style={{ lineHeight: "150%" }}
               dangerouslySetInnerHTML={{
                 __html: HowItWorksCopy.segment1.subTitle,
@@ -79,7 +80,7 @@ export function Sections() {
       {/* <---!segment two---> */}
       <div className="private-keys  mt-5  text-center">
         <h2
-          className="monserrat-bold mainTitle"
+          className="monserrat-bold mainTitle text-uppercase"
           dangerouslySetInnerHTML={{
             __html: HowItWorksCopy.segment2.mainTitle,
           }}
@@ -94,11 +95,8 @@ export function Sections() {
         <div className="mt-5">
           <div className="private-keys-wraper justify-content-center g-5">
             {HowItWorksCopy.segment2.items.map((item, index) => (
-              <div
-                key={index}
-                className="mx-5 item text-center "
-              >
-                <div className="p-3 blue-section h-100 item ">
+              <div key={index} className="mx-5 item text-center ">
+                <div className="p-3 px-5 blue-section h-100 item ">
                   <Image
                     height={130}
                     width={200}
@@ -142,13 +140,13 @@ export function Sections() {
             >
               <div className="d-flex h-100 justify-content-center align-items-center my-auto  px-2">
                 <img
-                  className="trusted-devices-img "
-                  src="./img/crypto-security-img-2.svg"
+                  className="trusted-devices-img"
+                  src="/img/iphonespaceleft.png"
                   alt=""
                 />
                 <img
-                  className="trusted-devices-img "
-                  src="./img/crypto-security-img-1.svg "
+                  className="trusted-devices-img"
+                  src="/img/iphonespacefront.png"
                   alt=""
                 />
               </div>
@@ -165,8 +163,8 @@ export function Sections() {
                   <p
                     key={index}
                     className="monserrat-regular mt-4 fs-5 color-neutral pe-lg-4 text-medium"
+                    dangerouslySetInnerHTML={{ __html: item.text }}
                   >
-                    {item.text}
                   </p>
                 ))}
               </div>
@@ -176,104 +174,34 @@ export function Sections() {
       </div>
 
       {/* <---!segment stor---> */}
-      <div className="howitwork-store pb-3 pt-3 px-5 mb-5 d-flex align-items-center justify-content-center">
+      <div className="store align-items-center justify-content-center">
         <div className="ms-1 ">
           <h2 style={{ lineHeight: "150%" }} className="monserrat-bold">
             <strong
               dangerouslySetInnerHTML={{
-                __html: homeCopy.store.title,
+                __html: HowItWorksCopy.store.title,
               }}
             ></strong>
           </h2>
           <p
-                className="monserrat fs-5 "
-                dangerouslySetInnerHTML={{
-                  __html: HowItWorksCopy.store.subTitle,
-                }}
-              ></p>
-          <div className=" download-box ">
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.Vultisig.title}
-            </p>
-            <div className="items  justify-content-center justify-content-md-start">
-              {homeCopy.store.items.Vultisig.items.map((item, index) => {
-                return (
-                  <>
-                    <a
-                      key={index}
-                      href={item.url}
-                      target={item.traget}
-                      onClick={() =>
-                        trackAction("click", "download_app", item.downloadLabel)
-                      }
-                    >
-                      <Image
-                        className="my-2 my-lg-1 me-lg-3"
-                        src={item.image}
-                        width={180}
-                        height={52}
-                        alt="Download on AppStore"
-                      />
-                    </a>
-                  </>
-                );
-              })}
-            </div>
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.VultiWallet.title}
-            </p>
-            <div className="items justify-content-center justify-content-md-start">
-              {homeCopy.store.items.VultiWallet.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={180}
-                      height={52}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-            </div>
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.Browser.title}
-            </p>
-            <div className="items justify-content-center justify-content-md-start">
-              {homeCopy.store.items.Browser.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={180}
-                      height={52}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-            </div>
+            className="monserrat fs-5 "
+            dangerouslySetInnerHTML={{
+              __html: HowItWorksCopy.store.subTitle,
+            }}
+          ></p>
+          <div className="download-box">
+            <a
+              className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
+              style={{ height: "48px", width: "193px" }}
+              href={navBarCopy.download.url}
+            >
+              {navBarCopy.download.name}
+            </a>
           </div>
         </div>
         <div className="text-center  justify-content-center">
           <img
-            src="/img/iPhone-Space.png"
+            src="/img/iPhone-Space-b.png"
             className="store-img "
             alt="SECURE YOUR DIGITAL ASSETS NOW"
           />

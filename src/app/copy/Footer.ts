@@ -1,7 +1,7 @@
 export const footerCopy = {
     brand: {
         title: "Vultisig",
-        image: "./img/logo.svg"
+        image: "/img/logo.svg"
     },
     discord: {
         title: "JOIN THE DISCORD TO REQUEST NEW FEATURES!",
@@ -93,5 +93,5 @@ export const footerCopy = {
             ]
         }
     ],
-    copyright: "@ Copyright 2024 - Vultisig."
+    copyright: "© 2024 - Vultisig. All rights reserved."
 }

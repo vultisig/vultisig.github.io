@@ -1,15 +1,18 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { HowItWorksCopy } from "@/app/copy/HowItWorks";
 import { CryptoBankCopy } from "@/app/copy/CryptoBank";
 import { trackAction } from "@/app/lib/gtagHelper";
+import { Radio } from "antd";
 import Image from "next/image";
 import { homeCopy } from "@/app/copy/Home";
+import { navBarCopy } from "@/app/copy/NavBar";
 
 export function Sections() {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
+  const [btnValue, setbtnValue] = useState("kyc");
   return (
     <>
       <header className=" mt-2 cryptoBank-header">
@@ -24,7 +27,7 @@ export function Sections() {
                 ></strong>
               </div>
 
-              <div className="mt-5 subTitle  ms-2">
+              <div className="mt-5 subTitle  ms-2 text-uppercase">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: CryptoBankCopy.header.subTitle,
@@ -46,6 +49,7 @@ export function Sections() {
               <button
                 type="button"
                 className="btn btn-primary btn-color px-5 py-2 mt-5  ms-3"
+                style={{width:"100%;",fontSize:"14px"}}
               >
                 Get Started
               </button>
@@ -55,7 +59,7 @@ export function Sections() {
                 <div className="background-shadow "></div>
                 <img
                   className="header-img  mx-auto"
-                  src="/img/credit-cards-3.svg"
+                  src="/img/credit-cards-3.png"
                   alt="SIMPLE STEPS, SUPERIOR SECURITY - THE VULTISIG DIFFERENCE"
                 />
               </div>
@@ -93,7 +97,7 @@ export function Sections() {
       {/* <---! segment one ---> */}
       <div className="earn-up ">
         <h2
-          className="monserrat-bold mainTitle mb-5 text-center "
+          className="monserrat-bold mainTitle mb-5 text-center text-uppercase"
           dangerouslySetInnerHTML={{
             __html: CryptoBankCopy.segment1.mainTitle,
           }}
@@ -104,16 +108,27 @@ export function Sections() {
             __html: CryptoBankCopy.segment1.subTitle,
           }}
         ></p>
-        <div className="btn-box mx-auto mt-5 d-flex justify-content-center  ">
-          <button className="rounded-btn active-btn">KYC</button>
-          <button className="rounded-btn">1st Top up</button>
-        </div>
+        <Radio.Group
+          value={btnValue}
+          onChange={(e) => setbtnValue(e.target.value)}
+          className="btn-box mx-auto mt-5 d-flex justify-content-center  "
+        >
+          {CryptoBankCopy.segment1.btns.map((btn, index) => (
+            <Radio.Button
+              value={btn.value}
+              className={`rounded-btn ${
+                btnValue === btn.value ? "active-btn" : ""
+              } `}
+            >
+              {btn.text}
+            </Radio.Button>
+          ))}
+        </Radio.Group>
         <div className="earn-up-wrapper justify-content-center align-items-center gap-0 column-gap-5">
           {CryptoBankCopy.segment1.items.map((item, index) => (
-            <div
-              key={index}
-              className="mt-5 p-4 blue-section item-box "
-            >
+            <div key={index} className={`mt-5 p-4 blue-section  ${
+              item.value === btnValue ? "item-box-active" : "item-box"
+            }`}>
               <h3 className=" monserrat-bold mb-4 text-start mt-3 ms-2">
                 {item.title}
               </h3>
@@ -136,8 +151,9 @@ export function Sections() {
               <button
                 type="button"
                 className="btn btn-primary btn-color px-5 py-2  "
+                style={{width:"100%;",fontSize:"14px"}}
               >
-                {item.btn}
+                {item.link}
               </button>
             </div>
           ))}
@@ -147,7 +163,7 @@ export function Sections() {
       {/* <---!segment two---> */}
       <div className="unlock-vultisig">
         <h2
-          className="monserrat-bold mainTitle text-center"
+          className="monserrat-bold mainTitle text-center text-uppercase"
           dangerouslySetInnerHTML={{
             __html: CryptoBankCopy.segment2.mainTitle,
           }}
@@ -181,6 +197,7 @@ export function Sections() {
                 <button
                   type="button"
                   className="btn btn-primary btn-color px-5 py-2  mx-auto "
+                  style={{fontSize:"14px"}}
                 >
                   {item.btn}
                 </button>
@@ -197,9 +214,9 @@ export function Sections() {
               <img className="img-bg" src="./img/circle.svg"></img>
               <div className="fees">
                 <div className="air-drop blur-bg">
-                  <span className="mb-1">$VULT Airdrop Points</span>
+                  <span className="mb-1">{CryptoBankCopy.segment3.points}</span>
                   <div>
-                    <span>2244</span>
+                    <span>{CryptoBankCopy.segment3.points_value}</span>
                     <img
                       className="arrow-right"
                       src="./img/chevron-right-small.svg"
@@ -209,9 +226,9 @@ export function Sections() {
 
                 <div className="air-drop blur-bg">
                   {" "}
-                  <span>Total Referral Rewards</span>
+                  <span>{CryptoBankCopy.segment3.rewards}</span>
                   <div>
-                    <span>3,995.34 $VULT</span>
+                    <span>{CryptoBankCopy.segment3.rewards_value}</span>
                     <img
                       className="arrow-right"
                       src="./img/chevron-right-small.svg"
@@ -222,9 +239,9 @@ export function Sections() {
               <div className="fees-privileges">
                 <h2 className="privileges monserrat-bold">Privileges</h2>
                 <div className="privileges">
-                  {CryptoBankCopy.segment3.Priviledges.map((item, index) => (
+                  {CryptoBankCopy.segment3.Privileges.map((item, index) => (
                     <div key={index} className="blur-bg">
-                      <h4>{item.q} </h4>
+                      <h5>{item.q} </h5>
                       <img
                         className="arrow-right"
                         src="./img/chevron-right-small.svg"
@@ -245,11 +262,11 @@ export function Sections() {
               }}
             ></h2>
             <ul>
-              {CryptoBankCopy.segment4.items.map((item, index) => (
+              {CryptoBankCopy.segment3.items.map((item, index) => (
                 <li key={index} className="desc  mt-4">
                   <p
                     className="monserrat-regular fs-5 "
-                    dangerouslySetInnerHTML={{ __html: item.description }}
+                    dangerouslySetInnerHTML={{ __html: item.text }}
                   ></p>
                 </li>
               ))}
@@ -300,17 +317,17 @@ export function Sections() {
       </div>
 
       {/* <---!F&Q---> */}
-      <div className="cryptoBank-FandQ ">
+      <div className="cryptoBank-FAQ ">
         <h2
           className=" monserrat-bold text-center mb-5"
           style={{ lineHeight: "150%" }}
           dangerouslySetInnerHTML={{
-            __html: CryptoBankCopy.FandQ["main-title"],
+            __html: CryptoBankCopy.FAQ["main-title"],
           }}
         ></h2>
         <div className="faq-item">
           <div className="accordion accordion-flush" id="accordionFlushExample">
-            {CryptoBankCopy.FandQ.items.map((item, index) => (
+            {CryptoBankCopy.FAQ.items.map((item, index) => (
               <div key={index} className="accordion-item ">
                 <h2 className="accordion-header ">
                   <button
@@ -341,104 +358,34 @@ export function Sections() {
       </div>
 
       {/* <---!segment stor---> */}
-      <div className="howitwork-store pt-3 px-5 mb-5 d-flex align-items-center justify-content-center">
-      <div className="ms-1 mb-3">
+      <div className="store align-items-center justify-content-center">
+        <div className="ms-1 mb-3">
           <h2 style={{ lineHeight: "150%" }} className="monserrat-bold">
             <strong
               dangerouslySetInnerHTML={{
-                __html: homeCopy.store.title,
+                __html: HowItWorksCopy.store.title,
               }}
             ></strong>
           </h2>
           <p
-                className="monserrat fs-5 "
-                dangerouslySetInnerHTML={{
-                  __html: HowItWorksCopy.store.subTitle,
-                }}
-              ></p>
+            className="monserrat fs-5 "
+            dangerouslySetInnerHTML={{
+              __html: HowItWorksCopy.store.subTitle,
+            }}
+          ></p>
           <div className=" download-box ">
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.Vultisig.title}
-            </p>
-            <div className="items  justify-content-center justify-content-md-start">
-              {homeCopy.store.items.Vultisig.items.map((item, index) => {
-                return (
-                  <>
-                    <a
-                      key={index}
-                      href={item.url}
-                      target={item.traget}
-                      onClick={() =>
-                        trackAction("click", "download_app", item.downloadLabel)
-                      }
-                    >
-                      <Image
-                        className="my-2 my-lg-1 me-lg-3"
-                        src={item.image}
-                        width={180}
-                        height={52}
-                        alt="Download on AppStore"
-                      />
-                    </a>
-                  </>
-                );
-              })}
-            </div>
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.VultiWallet.title}
-            </p>
-            <div className="items justify-content-center justify-content-md-start">
-              {homeCopy.store.items.VultiWallet.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={180}
-                      height={52}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-            </div>
-            <p className="   text-center text-md-start ">
-              {homeCopy.store.items.Browser.title}
-            </p>
-            <div className="items justify-content-center justify-content-md-start">
-              {homeCopy.store.items.Browser.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={180}
-                      height={52}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-            </div>
+            <a
+              className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
+              style={{ height: "48px", width: "193px" }}
+              href={navBarCopy.download.url}
+            >
+              {navBarCopy.download.name}
+            </a>
           </div>
         </div>
         <div className="text-center  justify-content-center">
           <img
-            src="/img/cryptobank-store.svg"
+            src="/img/cryptobank-store.png"
             className="store-img img-fluid"
             alt="SECURE YOUR DIGITAL ASSETS NOW"
           />

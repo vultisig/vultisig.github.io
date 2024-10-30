@@ -9,8 +9,7 @@ import { SegmentFour } from "@/app/components/home/segment-four";
 import { SegmentFive } from "@/app/components/home/segment-five";
 import { SegmentSix } from "@/app/components/home/segment-six";
 import { SegmentStore } from "@/app/components/home/segment-store";
-import Image from "next/image";
-import { trackAction } from "@/app/lib/gtagHelper";
+import { navBarCopy } from "@/app/copy/NavBar";
 export default async function Home() {
   return (
     <>
@@ -28,59 +27,25 @@ export default async function Home() {
           </div>
           <div className="blue-section p-3 mt-3 ">
             <p
-              className=""
               dangerouslySetInnerHTML={{ __html: homeCopy.header.boxText }}
             ></p>
           </div>
           {/* <!-- DOWNLOAD BOX --> */}
           <div className=" download-box align-content-start">
             <div className="items">
-              {homeCopy.store.items.Vultisig.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.traget}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={150}
-                      height={43}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
-              {homeCopy.store.items.Browser.items.map((item, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={item.url}
-                    target={item.target}
-                    onClick={() =>
-                      trackAction("click", "download_app", item.downloadLabel)
-                    }
-                  >
-                    <Image
-                      className="my-2 my-lg-1 me-lg-3"
-                      src={item.image}
-                      width={150}
-                      height={43}
-                      alt="Download on AppStore"
-                    />
-                  </a>
-                );
-              })}
+              <a
+                className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
+                style={{ height: "48px", width: "193px" }}
+                href={navBarCopy.download.url}
+              >
+                {navBarCopy.download.name_b}
+              </a>
             </div>
           </div>
         </div>
         <div className="image-box">
           <img
-            className="header-img  "
+            className=" header-image mx-auto"
             src="./img/header-img.png"
             alt="testmckmpp"
           />
@@ -101,12 +66,11 @@ export default async function Home() {
         <SegmentSix />
         <SegmentStore />
       </div>
+      <div className="shadow-top-left"></div>
+      <div className="shadow-top-right"></div>
+      <div className="shadow-middle-left"></div>
       <div className="circle-middle-left"></div>
       <div className="circle-middle-left-glow"></div>
-      <div className="circle-middle-right"></div>
-      <div className="circle-middle-right-glow"></div>
-      <div className="circle-bottom"></div>
-      <div className="circle-bottom-glow"></div>
     </>
   );
 }

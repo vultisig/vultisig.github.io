@@ -9,7 +9,7 @@ export const  DocsCopy = {
     },
     "segment-2": {
         "title": "INTEGRATE <br />Vultisig",
-        "sub-title": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions.",
+        "sub-title": "Any DeFi app, Chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions.",
         "link": {
             "name": "LEARN MORE",
             "url": "https://discord.gg/54wEtGYxuv"
@@ -23,7 +23,7 @@ export const  DocsCopy = {
             "logo": "Vultisig Logo"
         },
         "segment-2": {
-            "img": "Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions."
+            "img": "Any DeFi app, Chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions."
         }
     }
 }

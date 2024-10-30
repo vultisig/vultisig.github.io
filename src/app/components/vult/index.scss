@@ -122,7 +122,6 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
         border-radius: rem(8);
         list-style: none;
         padding: rem(24) rem(32);
-        text-align: center;
         min-width: 300px;
       }
     }
@@ -147,11 +146,15 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
       max-width: rem(932) !important;
       padding-bottom: rem(222);
       position: relative;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .vult-page-stats {
+    .vult-container{
+      margin-top: 300px;
+    }
     .heading {
       font-size: 4rem;
       font-weight: 700;
@@ -216,6 +219,13 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
         }
       }
     }
+    .join-airdrop {
+      width: 100%;
+      margin-top: 100px;
+      a {
+        margin: auto;
+      }
+    }
     h2 {
       margin-top: 100px;
       font-size: 4rem;
@@ -232,6 +242,18 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
   .vult-page-footer {
     margin-top: rem(80);
   }
+}
+
+.bg {
+  background-image: url("/img/vult/vult-bg.jpg");
+  width: 100%;
+  height: 1254px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 @media (max-width: 1660px) {
@@ -260,14 +282,14 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
     }
   }
   .vult-page-pics {
-      h2 {
-        font-size: 2rem !important;
-        line-height: 2rem !important;
-      }
+    h2 {
+      font-size: 2rem !important;
+      line-height: 2rem !important;
+    }
   }
   .vult-page-stats {
     .heading {
-      font-size: 3rem !important;
+      font-size: 2rem !important;
       line-height: 3.5rem !important;
     }
     .list {

@@ -1,14 +1,12 @@
-import { link } from "fs";
-import { text } from "stream/consumers";
 
 export const CryptoBankCopy = {
   header: {
     mainTitle: "CRYPTO BANK",
-    subTitle: " <span class='gradient-text '>ONBOARD WITH PEACE OF MIND</span>",
+    subTitle: " <span class='gradient-text '>onramp with peace of mind</span>",
     items: [
       {
         description:
-          "Fully compliant Swiss bank account licensed by Swiss Financial</br> Market Supervisory Authority (FINMA)",
+          "Fully compliant Swiss bank account licensed by Swiss Financial Market Supervisory Authority (FINMA)",
       },
       {
         description:
@@ -21,47 +19,57 @@ export const CryptoBankCopy = {
     boxs: [
       {
         img: "./img/cryptobank-header-box-img-1.svg",
-        desc: "Competitive crypto on &</br> off-ramp rates",
+        desc: "Competitive rates for crypto on & off-ramp",
       },
       {
         img: "./img/cryptobank-header-box-img-2.svg",
-        desc: "Free Swiss bank</br> account</br>(CHF, EUR, USD)",
+        desc: "Free Swiss bank account<br>(CHF, EUR, USD)",
       },
       {
         img: "./img/cryptobank-header-box-img-3.svg",
-        desc: "Free Virtual MasterCard</br> Google Pay & Apple</br> PaySupported",
+        desc: "Free Virtual MasterCard Google Pay & Apple Pay Supported",
       },
       {
         img: "./img/cryptobank-header-box-img-4.svg",
-        desc: "Register and get</br> rewards",
+        desc: "Register and get<br>rewards",
       },
     ],
   },
   segment1: {
     mainTitle:
-      "<span class='gradient-text '>EARN UP TO 25 ARB CARD REWARDS</span></br><span class='gradient-text '> AS A NEWUSER!</span>",
+      "<span class='gradient-text '>Earn up to 25 $ARB Rewards</span></br><span class='gradient-text '> as a New Card User!</span>",
     subTitle:
       "Download the Vultisig app and complete the following steps to claim your rewards:",
+    btns: [
+      {
+        text: "KYC",
+        value: "kyc",
+      },
+      {
+        text: "1st Topup",
+        value: "topup",
+      },
+    ],
     items: [
       {
         title: "Complete KYC",
-        btn: "KYC",
+        value: "kyc",
         list: [
           {
-            text: `As soon as you complete the KYC you’ll be able to claim</br> this reward.`,
+            text: `As soon as you complete the KYC you’ll be able to claim the reward.`,
           },
-          { text: "REWARD 10 ARB" },
+          { text: "REWARD 10 $ARB" },
         ],
         link: "Get Started",
       },
       {
         title: "1st Card Top Up",
-        btn: "1st Topup",
+        value: "topup",
         list: [
           {
-            text: "Top up your card with at least 50 EUR of crypto to</br> claim this reward.",
+            text: "Top up your card with at least 50 EUR of crypto to claim the reward.",
           },
-          { text: "REWARD 15 ARB" },
+          { text: "REWARD 15 $ARB" },
         ],
         link: "Get Started",
       },
@@ -69,7 +77,7 @@ export const CryptoBankCopy = {
   },
   segment2: {
     mainTitle:
-      "<span class='gradient-text '>UNLOCK VULTISIG HIGHER TIERS</span> ",
+      "<span class='gradient-text '>Unlock higher tiers</span> ",
     items: [
       {
         title: "STANDARD",
@@ -90,8 +98,8 @@ export const CryptoBankCopy = {
             text: "Card limit: $10,000/month",
           },
         ],
-        img: "./img/blue-card.svg",
-        btn: "Free.Get it now!",
+        img: "./img/blue-card.png",
+        btn: "No costs. Get it now!",
       },
       {
         title: "SILVER",
@@ -112,7 +120,7 @@ export const CryptoBankCopy = {
             text: "Card limit: $20,000/month",
           },
         ],
-        img: "./img/gray-card.svg",
+        img: "./img/gray-card.png",
         btn: "1 ETH",
       },
       {
@@ -134,7 +142,7 @@ export const CryptoBankCopy = {
             text: "Card limit: personalised",
           },
         ],
-        img: "./img/yellow-card.svg",
+        img: "./img/yellow-card.png",
         btn: "10 ETH",
       },
     ],
@@ -149,10 +157,15 @@ export const CryptoBankCopy = {
         text: "The most competitive crypto top-up fees, with rates as low as 0.25%",
       },
       {
-        text: "Transactions are made on the Arbitrum network, which has affordable gas fees",
+        text: "Transactions with low gas fees, thanks to utilization of the Arbitrum network.",
       },
     ],
-    Priviledges: [
+    points:"$VULT Airdrop Points",
+    points_value:"2244",
+    rewards:"Total Referral Rewards",
+    rewards_value:"3,995.34 $VULT",
+    Privileges_title: "Privileges",
+    Privileges: [
       {
         q: "Top-up Fee Rate: 0.25% - 1%",
         a: "",
@@ -180,7 +193,7 @@ export const CryptoBankCopy = {
       },
     ],
   },
-  FandQ: {
+  FAQ: {
     "main-title": "FAQ",
     items: [
       {
@@ -204,7 +217,7 @@ export const CryptoBankCopy = {
         a: "Top-up with bank wire transfers are free of charge.",
       },
       {
-        q: "Who is Fiat24 and what license does they have?",
+        q: "Who is Fiat24 and what license do they have?",
         a: "Fiat24 is our collaboration partner for the bank account and VISA card. Fiat24 is regulated in Switzerland and holds a FINMA Fintech license as financial institution. ",
       },
       {
@@ -218,7 +231,7 @@ export const CryptoBankCopy = {
     ],
   },
   store: {
-    mainTitle: "UPGRADE<span class='gradient-text'> TODAY </span>",
-    subTitle: "Join thousands of users who trust VULTISIG with their<br/> digital assets. There is no registration required. ",
+    title: "UPGRADE<span class='gradient-text'> TODAY </span>",
+    subTitle: "Join thousands of users who trust VULTISIG with their digital assets. No registration required. ",
   },
 };

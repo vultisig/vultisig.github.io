@@ -1,5 +1,5 @@
 export const BackedByCopy = {
-  title: "BACKED AND <span class='gradient-text'>TRUSTED</span> BY",
+  title: "BACKED AND TRUSTED BY",
   "segment-1": {
     title: "FUNDS",
     cards: [
@@ -78,7 +78,7 @@ export const BackedByCopy = {
     ],
   },
   "segment-2": {
-    title: "SEED INVESRORS",
+    title: "SEED INVESTORS",
     cards: [
       {
         src: "/img/backed-by/avatar-jpthor.png",
@@ -206,7 +206,7 @@ export const BackedByCopy = {
       },
       {
         src: "/img/backed-by/johnnyluo.png",
-        title: "Johnney - Tech Lead <br> THORWallet Dev",
+        title: "Johnny<br> THORChain Dev",
         twitter: "@johnnyluo",
         github: "",
         iconImg: "github-sign.svg",
@@ -214,7 +214,7 @@ export const BackedByCopy = {
       },
       {
         src: "/img/backed-by/pedro.jpg",
-        title: "Pedro - Coo <br/> THORWallet Co-Founder",
+        title: "Pedro - COO <br/> THORWallet Co-Founder",
         twitter: "@crypto_XZ",
         github: "",
         iconImg: "twitter.svg",

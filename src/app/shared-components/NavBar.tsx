@@ -2,21 +2,55 @@
 import { Button, Drawer } from "antd";
 import Image from "next/image";
 import { navBarCopy } from "../copy/NavBar";
-import { MenuOutlined } from "@ant-design/icons";
-
+import { MenuOutlined, CaretDownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
-
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 export function NavBar() {
-
   const [currentPath, setCurrentPath] = useState("");
 
   type MenuItem = Required<MenuProps>["items"][number];
 
-  const MenuItems: MenuItem[] = [];
+  const MenuItems: MenuItem[] = navBarCopy.navbarLinks.map((link) => {
+    if (link.children) {
+      return {
+        key: link.url, // Use URL as the key for matching selected item
+        label: link.name,
+        icon: <CaretDownOutlined />,
+        children: link.children.map((child) => ({
+          key: child.url, // Use child URL as the key
+          label: (
+            <a
+              href={child.url}
+              onClick={() => {
+                setCurrentPath(child.url);
+                handleClose();
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              {child.name}
+            </a>
+          ),
+        })),
+      };
+    } else {
+      return {
+        key: link.url, // Use URL as the key for consistency
+        label: (
+          <a
+            href={link.url}
+            onClick={() => {
+              setCurrentPath(link.url);
+              handleClose();
+            }}
+          >
+            {link.name}
+          </a>
+        ),
+      };
+    }
+  });
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -36,37 +70,20 @@ export function NavBar() {
   const handleOpen = () => setShow(true);
   const handleClose = () => setShow(false);
 
-
-
-  navBarCopy.navbarLinks.map((link, index) => {
-    if (link.children) {
-      MenuItems.push({
-        key: `${index}`,
-        label: link.name,
-        children: link.children.map((child, ind) => ({
-          key: `${index}-${ind}`,
-          label: <a  href="/#store-section"  onClick={handleClose} style={{ cursor: "pointer" }} >{child.name} </a>,
-        })),
-      });
-    } else {
-      MenuItems.push({
-        key: `${index}`,
-        label: <a href={link.url}>{link.name}</a>,
-      });
-    }
-  });
-
   return (
     <>
       <nav className="navbar navbar-expand-xl navbar-dark my-5">
-      <a
+        <a
           href="/"
           className="navbar-brand mx-auto d-flex align-items-center"
           style={{ cursor: "pointer" }}
-          onClick={handleClose}
+          onClick={() => {
+            setCurrentPath("/");
+            handleClose();
+          }}
         >
           <Image
-            src="./img/logo.svg"
+            src="/img/logo.svg"
             width={30}
             height={30}
             className="d-inline-block align-top"
@@ -84,21 +101,37 @@ export function NavBar() {
           className="collapse navbar-collapse justify-content-center monserrat-medium"
         >
           {loaded && (
-            <Menu mode="horizontal" items={MenuItems} selectedKeys={[currentPath]} />
+            <Menu
+              mode="horizontal"
+              items={MenuItems}
+              selectedKeys={[currentPath]}
+              onClick={({ key }) => setCurrentPath(key)}
+            />
           )}
         </div>
         <a
           className="align-items-center btn btn-color btn-primary d-flex justify-content-center"
           style={{ height: "48px", width: "193px" }}
-          href="/#store-section"
-          onClick={handleClose}
+          href={navBarCopy.download.url}
+          onClick={() => {
+            setCurrentPath(navBarCopy.download.url);
+            handleClose();
+          }}
         >
-          {navBarCopy.download.name}
+          {navBarCopy.download.name_a}
         </a>
-        <Button type="link" onClick={handleOpen}>
-          <MenuOutlined />
-        </Button>
+        {loaded && (
+          <Button type="link" onClick={handleOpen}>
+            <MenuOutlined />
+          </Button>
+        )}
       </nav>
+
+      <div className="banner">
+        <img className="warning-logo-l" src="/img/warning.svg" />
+        <p>{navBarCopy.warning_Message}</p>
+        <img className="warning-logo-r" src="/img/warning.svg" />
+      </div>
 
       <Drawer title="MENU" onClose={handleClose} open={show}>
         <Menu
@@ -106,11 +139,22 @@ export function NavBar() {
           items={[
             ...MenuItems,
             {
-              key: "1000",
-              label: <a href="/#store-section" onClick={handleClose}>DOWNLOAD APP</a>,
+              key: navBarCopy.download.url,
+              label: (
+                <a
+                  href={navBarCopy.download.url}
+                  onClick={() => {
+                    setCurrentPath(navBarCopy.download.url);
+                    handleClose();
+                  }}
+                >
+                  {navBarCopy.download.name_a}
+                </a>
+              ),
             },
           ]}
           selectedKeys={[currentPath]}
+          onClick={({ key }) => setCurrentPath(key)}
         />
       </Drawer>
     </>

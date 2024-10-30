@@ -38,8 +38,6 @@ export default async function HowItWork() {
                 <div className="circle-top-right-glow"></div>
                 <div className="circle-middle-left"></div>
                 <div className="circle-middle-left-glow"></div>
-                <div className="circle-middle-right"></div>
-                <div className="circle-middle-right-glow"></div>
             </div>
         </main>
 

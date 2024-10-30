@@ -11,7 +11,7 @@ export const FAQsCopy = {
         },
         {
             "q": "How does the crypto vault app secure my cryptocurrencies?",
-            "a": "Vultisig is audited, open-source and uses a very well-proven TSS libarary."
+            "a": "Vultisig is audited, open-source and uses a very well-proven TSS library."
         },
         {
             "q": "How does Vultisig make money?",
