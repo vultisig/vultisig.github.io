@@ -30,7 +30,7 @@ export const vultCopy = {
       { src: "/img/vult/4.png" },
     ],
     Join_the_AirDrop: "Join the AirDrop",
-    Join_the_AirDrop_URL: "https://airdrop.vultisig.com/",
+    Join_the_AirDrop_URL: "https://airdrop.vultisig.com/"
   },
   faq: [
     {
