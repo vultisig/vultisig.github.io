@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
     url: "https://vultisig.com",
     type: "website",
-    images: "https://vultisig.com/img/home-thumbnail.png",
+    images: "https://vultisig.com/img/thumbnail/home.png",
   },
   twitter: {
     site: "vultisig.com",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Vultisig - Multisig Crypto Vault",
     description:
       "A highly secure self-custodial multi-chain crypto vault with in-built two-factor authentication, and no tracking or registration requirements.",
-    images: "https://vultisig.com/img/home-thumbnail.png",
+    images: "https://vultisig.com/img/thumbnail/home.png",
   },
   icons: {
     icon: "logo.svg",

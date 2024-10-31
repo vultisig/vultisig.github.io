@@ -13,14 +13,14 @@ export const metadata: Metadata = {
         type: "website",
         description: "Vultisig Privacy Policy.",
         url: 'https://vultisig.com/Privacy',
-        images: 'https://vultisig.com/img/privacy-thumbnail.png',
+        images: 'https://vultisig.com/img/thumbnail/privacy.png',
     },
     twitter: {
         site: "vultisig.com/Privacy",
         card: "summary_large_image",
         title: "Vultisig | Privacy Policy",
         description: "Vultisig Privacy Policy.",
-        images: "https://vultisig.com/img/privacy-thumbnail.png"
+        images: "https://vultisig.com/img/thumbnail/privacy.png"
     },
 };
 export default async function Privacy() {

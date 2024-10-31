@@ -13,14 +13,14 @@ export const metadata: Metadata = {
         type: "website",
         description: "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
         url: 'https://vultisig.com/CryptoBank',
-        images: 'https://vultisig.com/img/howitworks-thumbnail.png',
+        images: 'https://vultisig.com/img/thumbnail/cryptobank.png',
     },
     twitter: {
         site: "vultisig.com/CryptoBank",
         card: "summary_large_image",
         title: "Vultisig | How it Works",
         description: "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
-        images: "https://vultisig.com/img/howitworks-thumbnail.png"
+        images: "https://vultisig.com/img/thumbnail/cryptobank.png"
     },
 };
 export default async function HowItWork() {

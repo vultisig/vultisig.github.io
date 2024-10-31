@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
     url: "https://vultisig.com/BackedBy",
-    images: "https://vultisig.com/img/backedby-thumbnail.png",
+    images: "https://vultisig.com/img/thumbnail/backedby.png",
   },
   twitter: {
     site: "vultisig.com/BackedBy",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Vultisig | Backed By",
     description:
       "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
-    images: "https://vultisig.com/img/backedby-thumbnail.png",
+    images: "https://vultisig.com/img/thumbnail/backedby.png",
   },
 };
 
