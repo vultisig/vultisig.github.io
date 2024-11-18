@@ -10,7 +10,7 @@ export function VultiPhone() {
             <strong>{homeCopy.vultiphone.site_name}</strong>
             <p>{homeCopy.vultiphone.site_description}</p>
             <div className="order-btn">
-              <a href={homeCopy.vultiphone.btn_order_url} className="align-items-center btn btn-color btn-primary d-flex justify-content-center">
+              <a href={homeCopy.vultiphone.btn_order_url} target="blank" className="align-items-center btn btn-color btn-primary d-flex justify-content-center">
                 {homeCopy.vultiphone.btn_order}
               </a>
               <span>{homeCopy.vultiphone.shipping}</span>
