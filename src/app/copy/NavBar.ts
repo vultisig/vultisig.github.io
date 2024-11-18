@@ -35,6 +35,11 @@ export const navBarCopy = {
       ],
     },
     {
+      name: "Vultiphone",
+      url: "/#vultiphone",
+      target: "_self",
+    },
+    {
       name: "Crypto Bank",
       url: "/cryptobank",
       target: "_self",

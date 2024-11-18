@@ -28,8 +28,7 @@ export const homeCopy = {
       },
       {
         title: "No wallet offers a real crypto bank experience",
-        description:
-          `Different wallets for different chains. No easy connection between real world and crypto. Almost impossible to spend your funds in an easy way. Fiat on and off ramp
+        description: `Different wallets for different chains. No easy connection between real world and crypto. Almost impossible to spend your funds in an easy way. Fiat on and off ramp
           <strong class='monserrat-bold'> prohibitively</strong> expensive.<br>
           <strong class='monserrat-bold'>If there only was a true non-custodial crypto bank in your own pocket.</strong>`,
       },
@@ -72,21 +71,18 @@ export const homeCopy = {
     items: [
       {
         title: "Vault Generation",
-        description:
-          `KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
+        description: `KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
           2-of-2, 2-of-3, or 3-of-4 Vault setups. Choose your vault type. <br>
           Key generation is fast. No device holds the vault private key. `,
       },
       {
         title: "Transaction Signing",
-        description:
-          `KeySign time: <strong class='monserrat-bold'>5 - 10 seconds.</strong><br> 
+        description: `KeySign time: <strong class='monserrat-bold'>5 - 10 seconds.</strong><br> 
           One device starts the transaction. A second paired device confirms the <br>transaction. It is natively “two-factor” and is done in real time. `,
       },
       {
         title: "Resharing",
-        description:
-          `Reshare Time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
+        description: `Reshare Time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
           Lost a device? Replace it easily without changing the vault. Want to increase
           security? Go from 2-of-3 to 3-of-4 setup easily. `,
       },
@@ -221,5 +217,13 @@ export const homeCopy = {
         title: "RUJI<br/>Treasury",
       },
     ],
+  },
+  vultiphone: {
+    site_name: "VultiPhone",
+    site_description: "Your co-signing companion for Vultisig.",
+    btn_order: "Preorder",
+    btn_order_url:
+      "https://vultiphone.myshopify.com/products/vultiphone-pre-release",
+    shipping: "Shipping 2025",
   },
 };
