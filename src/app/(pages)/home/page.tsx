@@ -2,6 +2,7 @@
 import { homeCopy } from "@/app/copy/Home";
 
 import { SegmentTotal } from "@/app/components/home/segment-total";
+import { VultiPhone } from "@/app/components/home/vultiphone";
 import { SegmentOne } from "@/app/components/home/segment-one";
 import { SegmentTwo } from "@/app/components/home/segment-two";
 import { SegmentThree } from "@/app/components/home/segment-three";
@@ -58,6 +59,7 @@ export default async function Home() {
       </header>
       <div id="howitworks" className="mt-5 py-5 color-neutral">
         <SegmentTotal />
+        <VultiPhone />
         <SegmentOne />
         <SegmentTwo />
         <SegmentThree />
