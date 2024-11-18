@@ -223,7 +223,7 @@ export const homeCopy = {
     site_description: "Your co-signing companion for Vultisig.",
     btn_order: "Preorder",
     btn_order_url:
-      "https://vultiphone.myshopify.com/products/vultiphone-pre-release",
+      "https://vultiphone.com/",
     shipping: "Shipping 2025",
   },
 };
