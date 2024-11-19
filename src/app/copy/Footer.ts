@@ -45,6 +45,12 @@ export const footerCopy = {
                     url: "https://twitter.com/vultisig",
                     target: "_blank"
                 }
+                ,
+                {
+                    name: "News Letter",
+                    url: "https://vultisig.substack.com/subscribe",
+                    target: "_blank"
+                }
             ]
         },
         {

@@ -6,7 +6,7 @@
 }
 /* CONTAINER */
 :root {
-  scroll-behavior: unset !important; 
+  scroll-behavior: unset !important;
 }
 
 .content {
@@ -394,11 +394,9 @@ hr.solid {
   height: 100px;
 }
 
-// #store-section {
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 10px;
-// }
+#store-section {
+  margin-top: 28px;
+}
 
 #segment-1 .card-item {
   width: 250px;
@@ -1072,6 +1070,75 @@ hr.solid {
   }
 }
 
+.stay-tuned {
+  margin-top: rem(40);
+
+  .info {
+    .title {
+      font-size: rem(50);
+      background: linear-gradient(180deg, #ffffff, #81f8de);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
+    .description {
+      font-size: rem(20);
+      margin-top: rem(20);
+    }
+  }
+
+  .get-update {
+    .btn {
+      margin-top: rem(30);
+      width: 60% !important;
+      max-width: 250px;
+    }
+  }
+
+  .stay-tuned-container {
+    display: flex;
+    flex-direction: column;
+    padding: rem(32) rem(32) rem(32) rem(52);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      background: linear-gradient(
+        180deg,
+        rgba(2, 18, 42, 0.8) 46.06%,
+        rgba(8, 29, 72, 0.8) 61.72%,
+        rgba(14, 44, 116, 0.8) 74.93%,
+        rgba(33, 84, 220, 0.8) 90.48%,
+        rgba(3, 225, 255, 0.8) 104.7%
+      );
+      border-radius: rem(20);
+      top: rem(1);
+      bottom: rem(1);
+      right: rem(1);
+      left: rem(1);
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: rem(20);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -2;
+      background-image: linear-gradient(
+        180deg,
+        rgba(47, 82, 114, 0) 0%,
+        #5a9bd8 100%
+      );
+    }
+  }
+}
+
 @media (min-width: rem(576)) {
   .vultiphone {
     .hero-section {
@@ -1083,6 +1150,20 @@ hr.solid {
         p {
           font-size: rem(30);
         }
+      }
+    }
+  }
+
+  .stay-tuned {
+    .info {
+      .description {
+        padding-right: rem(30);
+      }
+    }
+
+    .get-update {
+      .btn {
+        width: 50%;
       }
     }
   }
@@ -1128,6 +1209,34 @@ hr.solid {
         }
       }
     }
+  }
+  .stay-tuned {
+    margin-top: rem(80);
+
+    .info {
+      width: 50%;
+    }
+
+    .get-update {
+      width: 50%;
+      text-align: right;
+      margin-top: rem(40);
+
+      .btn {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+
+    .stay-tuned-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: rem(82) rem(32) rem(82) rem(130);
+    }
+  }
+  #store-section {
+    margin-top: 100px;
   }
 }
 
@@ -1471,3 +1580,4 @@ hr.solid {
     }
   }
 }
+
