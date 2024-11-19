@@ -3,7 +3,7 @@ export function Newsletter() {
   return (
     <>
       <section className="stay-tuned">
-        <div className="container">
+        <div className="stay-tuned-container">
           <div className="info">
             <strong className="title">{homeCopy.stay_tuned.title}</strong>
             <p className="description">{homeCopy.stay_tuned.description}</p>
