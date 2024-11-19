@@ -222,8 +222,14 @@ export const homeCopy = {
     site_name: "VultiPhone",
     site_description: "Your co-signing companion for Vultisig.",
     btn_order: "Preorder",
-    btn_order_url:
-      "https://vultiphone.com/",
+    btn_order_url: "https://vultiphone.com/",
     shipping: "Shipping 2025",
+  },
+  stay_tuned: {
+    title: "Stay Tuned",
+    description:
+      "Be the first to hear about launch dates, new features, and exclusive offers. Enter your email to stay connected.",
+    btn_text: "Newsletter",
+    submit_url: "https://vultisig.substack.com/subscribe",
   },
 };

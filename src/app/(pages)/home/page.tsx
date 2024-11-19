@@ -10,6 +10,7 @@ import { SegmentFour } from "@/app/components/home/segment-four";
 import { SegmentFive } from "@/app/components/home/segment-five";
 import { SegmentSix } from "@/app/components/home/segment-six";
 import { SegmentStore } from "@/app/components/home/segment-store";
+import { Newsletter } from "@/app/components/home/newsletter";
 import { navBarCopy } from "@/app/copy/NavBar";
 export default async function Home() {
   return (
@@ -66,6 +67,7 @@ export default async function Home() {
         <SegmentFour />
         <SegmentFive />
         <SegmentSix />
+        <Newsletter />
         <SegmentStore />
       </div>
       <div className="shadow-top-left"></div>
