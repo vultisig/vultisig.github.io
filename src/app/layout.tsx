@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
-import"bootstrap/dist/css/bootstrap.min.css"
 import "./globals.scss";
-import "./styles/index.scss"
-import Script from "next/script";
+import "./styles/index.scss";
+
 import GoogleAnalytics from "./shared-components/GoogleAnalytics";
 import CookieBanner from "../app/shared-components/CookieBanner";
+import MavaWidget from "./shared-components/MavaWidget";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   keywords: [
     "Vultisig",
     "Vultisig Docs",
-    " Vultisig help",
+    "Vultisig help",
     "Vultisig support",
-    " Vultisig customer service",
+    "Vultisig customer service",
     "Vultisig asset exchange",
   ],
   authors: [{ name: "Vultisig" }, { name: "Vultisig", url: "Vultisig.com" }],
@@ -53,6 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <MavaWidget />
       <GoogleAnalytics />
       <body className={montserrat.className}>
         {children}
