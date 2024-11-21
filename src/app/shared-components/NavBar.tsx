@@ -127,12 +127,6 @@ export function NavBar() {
         )}
       </nav>
 
-      <div className="banner">
-        <img className="warning-logo-l" src="/img/warning.svg" />
-        <p>{navBarCopy.warning_Message}</p>
-        <img className="warning-logo-r" src="/img/warning.svg" />
-      </div>
-
       <Drawer title="MENU" onClose={handleClose} open={show}>
         <Menu
           mode="inline"
