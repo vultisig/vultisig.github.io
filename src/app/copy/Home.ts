@@ -209,8 +209,8 @@ export const homeCopy = {
         title: "THORWallet<br>Treasury",
       },
       {
-        img: "./img/trusted/Valley.png",
-        title: "Crypto Valley<br/>Association Treasury",
+        img: "./img/trusted/zkfinance.svg",
+        title: "ZKFinance<br/>Treasury",
       },
       {
         img: "./img/trusted/ruji.svg",
