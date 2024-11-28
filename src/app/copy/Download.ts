@@ -15,7 +15,7 @@ export const downloadCopy = {
         {
           image: "/img/github-download.svg",
           alt: "Download on Github",
-          url: "https://github.com/vultisig/vultisig-ios/releases",
+          url: "https://github.com/vultisig/vultisig-ios/releases/download/v1.8.1/VultisigApp.v1.8.1.signed.pkg",
           target: "_blank",
           downloadLabel: "github",
         },
@@ -29,7 +29,7 @@ export const downloadCopy = {
         {
           image: "/img/windows.png",
           alt: "Download on Github",
-          url: "https://github.com/vultisig/vultisig-windows/releases/",
+          url: "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.7/Vultisig-amd64-installer.zip",
           target: "_blank",
           downloadLabel: "github",
         },
