@@ -41,7 +41,7 @@ export const homeCopy = {
       {
         title: "Threshold Signatures",
         description:
-          "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key vulnerability. No seed phrases. And native to all blockchains.",
+          "Threshold signatures are the magic. The private key never exits. Vault-shares never hold funds. No single key vulnerability. No seed phrases, just vault shares. And native to all blockchains. ",
         img: "./img/solution-1.svg",
       },
       {
@@ -73,7 +73,7 @@ export const homeCopy = {
         title: "Vault Generation",
         description: `KeyGen time: <strong class='monserrat-bold'>10 - 60 seconds.</strong> <br> 
           2-of-2, 2-of-3, or 3-of-4 Vault setups. Choose your vault type. <br>
-          Key generation is fast. No device holds the vault private key. `,
+          Key generation is fast. No one device holds the vault private key, just vault shares. `,
       },
       {
         title: "Transaction Signing",
