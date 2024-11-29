@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 export const vultCopy = {
   header: {
     title: "THE $VULT<br>TOKEN",
@@ -19,15 +21,20 @@ export const vultCopy = {
     text: "$VULT is a cash-back application token (CBAT) and can be staked for $USDC.",
   },
   airdrop: {
-    main_title: "how to participate in THE <br><span class='vult-gradient-txt'>$5M</span> VULTISIG AIRDROP",
+    main_title:
+      "how to participate in THE <br><span class='vult-gradient-txt'>$5M</span> VULTISIG AIRDROP",
     details: {
       title: "current airdrop value",
     },
     img: [
-      { src: "/img/vult/1.png" },
-      { src: "/img/vult/2.png" },
-      { src: "/img/vult/3.png" },
-      { src: "/img/vult/4.png" },
+      { src: "/img/vult/1.png", url: "" },
+      { src: "/img/vult/2.png", url: "" },
+      { src: "/img/vult/3.png", url: "" },
+      { src: "/img/vult/4.png", url: "" },
+      {
+        src: "/img/vult/5.png",
+        url: "https://t.me/vultirefbot/app?startapp=ref_a25542b3-ebc5-441a-a85b-f87956cb01cc",
+      },
     ],
     Join_the_AirDrop: "Join the AirDrop",
     Join_the_AirDrop_URL: "https://airdrop.vultisig.com/",

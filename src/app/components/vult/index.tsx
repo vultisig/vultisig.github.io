@@ -62,7 +62,13 @@ export function Sections() {
             <ul className="list-vultisig">
               {vultCopy.airdrop.img.map((img, index) => (
                 <li key={index}>
-                  <img src={img.src} alt="Vultisig logo" />
+                  {img.url? (
+                    <a href={img.url} target="_blank">
+                      <img src={img.src} alt="Vultisig logo" />
+                    </a>
+                  ) : (
+                    <img src={img.src} alt="Vultisig logo" />
+                  )}
                 </li>
               ))}
             </ul>
