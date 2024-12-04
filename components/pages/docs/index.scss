@@ -1,0 +1,529 @@
+@use "@/styles/variables" as *;
+
+.docs-page {
+  .introduction {
+    position: relative;
+    margin-bottom: rem(100);
+    .heading-wraper {
+      position: relative;
+      .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .back-logo {
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -30%);
+        top: 50%;
+      }
+    }
+
+    .text {
+      font-size: rem(20);
+      font-weight: 600;
+      margin-top: rem(20);
+      text-align: center;
+      // text-transform: uppercase;
+    }
+
+    .btn {
+      display: block;
+      margin: rem(16) auto 0;
+      max-width: rem(288);
+    }
+
+    .media {
+      margin: rem(40) auto 0;
+      max-width: rem(584);
+      position: relative;
+
+      .image {
+        height: auto !important;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      .gradient-shadow {
+        height: rem(230);
+        left: 40%;
+        position: absolute;
+        transform: translate(-55%, -50%);
+        top: 50%;
+        width: rem(230);
+        &::before {
+          background-image: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba($blue-sharp, 0.2),
+            transparent
+          );
+          content: "";
+          height: rem(230);
+          max-height: rem(960);
+          max-width: rem(960);
+          position: absolute;
+          width: rem(230);
+        }
+        &::after {
+          height: rem(200);
+          left: 50%;
+          transform: translate(-55%, -50%);
+          top: 50%;
+          width: rem(200);
+        }
+      }
+    }
+
+    .gradient-shadow-lt {
+      height: 40vw;
+      left: 0;
+      max-height: rem(480);
+      max-width: rem(480);
+      top: rem(-122);
+      width: 40vw;
+    }
+
+    .gradient-shadow-rt {
+      max-width: rem(410);
+      right: 0;
+      top: 0;
+      transform: translate(24%, -34%);
+      width: 34vw;
+    }
+  }
+  .integrate-vultisig {
+    position: relative;
+    // margin-bottom: rem(100);
+    .heading {
+      font-size: rem(40);
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .text {
+      font-size: rem(20);
+      font-weight: 600;
+      margin-top: rem(20);
+      text-align: center;
+      // text-transform: uppercase;
+    }
+
+    .btn {
+      display: block;
+      margin: rem(16) auto 0;
+      max-width: rem(288);
+    }
+
+    .media {
+      margin: rem(40) auto ;
+      max-width: rem(584);
+      position: relative;
+
+      .image {
+        height: auto !important;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      .gradient-shadow {
+        height: rem(230);
+        left: 75%;
+        position: absolute;
+        transform: translate(-55%, -50%);
+        top: 60%;
+        width: rem(230);
+        &::before {
+          background-image: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba($blue-sharp, 0.2),
+            transparent
+          );
+          content: "";
+          height: rem(230);
+          max-height: rem(960);
+          max-width: rem(960);
+          position: absolute;
+          width: rem(230);
+        }
+        &::after {
+          height: rem(200);
+          left: 50%;
+          transform: translate(-55%, -50%);
+          top: 50%;
+          width: rem(200);
+        }
+      }
+    }
+
+    .gradient-shadow-lt {
+      height: 40vw;
+      left: 0;
+      max-height: rem(480);
+      max-width: rem(480);
+      top: rem(-122);
+      width: 40vw;
+    }
+
+    .gradient-shadow-rt {
+      max-width: rem(410);
+      right: 0;
+      top: 0;
+      transform: translate(24%, -34%);
+      width: 34vw;
+    }
+  }
+}
+
+@media (min-width: rem(576)) {
+  .docs-page {
+    .introduction {
+      .heading-wraper {
+        .heading {
+          font-size: rem(64);
+        }
+        .back-logo {
+          height: rem(100) !important;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -5%);
+          top: 80%;
+          width: rem(100) !important;
+        }
+      }
+
+      .text {
+        font-size: rem(26);
+        margin-top: rem(40);
+      }
+
+      .btn {
+        margin: rem(24) auto 0;
+      }
+      .media {
+        .image {
+          height: auto !important;
+          width: rem(400) !important;
+        }
+        .gradient-shadow {
+          height: rem(390);
+          width: rem(390);
+          &::before {
+            height: rem(390);
+            width: rem(390);
+          }
+          &::after {
+            height: rem(300);
+            width: rem(295);
+          }
+        }
+      }
+    }
+    .integrate-vultisig {
+      .heading {
+        font-size: rem(64);
+      }
+
+      .text {
+        font-size: rem(26);
+        margin-top: rem(40);
+      }
+
+      .btn {
+        margin: rem(24) auto 0;
+      }
+      .media {
+        .image {
+          height: auto !important;
+          width: rem(400) !important;
+        }
+        .gradient-shadow {
+          height: rem(330);
+          width: rem(330);
+          &::before {
+            height: rem(330);
+            width: rem(330);
+          }
+          &::after {
+            height: rem(300);
+            width: rem(295);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: rem(768)) {
+  .docs-page {
+    .introduction {
+      .heading-wraper {
+        .heading {
+          font-size: rem(80);
+        }
+      }
+
+      .text {
+        font-size: rem(20);
+        margin-top: rem(60);
+      }
+
+      .btn {
+        margin: rem(32) auto 0;
+      }
+
+      .media {
+        .image {
+          width: rem(450) !important;
+        }
+        .gradient-shadow {
+          height: rem(400);
+          width: rem(400);
+          &::before {
+            height: rem(430);
+            width: rem(430);
+          }
+          &::after {
+            height: rem(360);
+            width: rem(360);
+          }
+        }
+      }
+    }
+    .integrate-vultisig {
+      .heading {
+        font-size: rem(80);
+      }
+
+      .text {
+        font-size: rem(20);
+        margin-top: rem(60);
+      }
+
+      .btn {
+        margin: rem(32) auto 0;
+      }
+
+      .media {
+        .image {
+          width: rem(450) !important;
+        }
+        .gradient-shadow {
+          // background-color: gray;
+          height: rem(450);
+          width: rem(450);
+          &::before {
+            height: rem(450);
+            width: rem(450);
+          }
+          &::after {
+            height: rem(330);
+            width: rem(330);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: rem(992)) {
+  .docs-page {
+    .introduction {
+      .heading-wraper {
+        .heading {
+          font-size: rem(80);
+          text-align: left;
+        }
+        .back-logo {
+          left: 60%;
+          transform: translate(-30%, -5%);
+          top: 50%;
+        }
+      }
+      .text {
+        text-align: left;
+        // max-width: 80%;
+      }
+
+      .btn {
+        margin: rem(40) 0 0;
+        width: 100%;
+      }
+
+      .media {
+        margin: 0;
+        position: absolute;
+        right: rem(50);
+        top: 50%;
+        transform: translateY(-50%);
+        .image {
+          width: rem(400) !important;
+        }
+        .gradient-shadow {
+          height: rem(430);
+          width: rem(430);
+          &::before {
+            height: rem(430);
+            width: rem(430);
+          }
+          &::after {
+            height: rem(300);
+            width: rem(295);
+          }
+        }
+      }
+
+      .gradient-shadow-lt {
+        top: rem(-138);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: rem(486);
+        padding-right: rem(522);
+        position: relative;
+      }
+    }
+    .integrate-vultisig {
+      .heading {
+        font-size: rem(70);
+        text-align: left;
+      }
+
+      .text {
+        text-align: left;
+      }
+
+      .btn {
+        margin: rem(40) 0 0;
+        width: 100%;
+      }
+
+      .media {
+        margin: 0;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        .image {
+          width: rem(400) !important;
+        }
+        .gradient-shadow {
+          // background-color: gray;
+          height: rem(430);
+          width: rem(430);
+          &::before {
+            height: rem(430);
+            width: rem(430);
+          }
+          &::after {
+            height: rem(300);
+            width: rem(295);
+          }
+        }
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: rem(486);
+        padding-left: rem(522);
+        position: relative;
+      }
+    }
+  }
+}
+
+@media (min-width: rem(1200)) {
+  .docs-page {
+    .introduction {
+      .heading-wraper {
+        position: relative;
+
+        .heading {
+          text-align: left;
+        }
+        .back-logo {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+        }
+      }
+
+      .text {
+        text-align: left;
+      }
+
+      .btn {
+        margin: rem(40) 0 0;
+        width: 100%;
+      }
+
+      .media {
+        margin: 0;
+        position: absolute;
+        right: rem(50);
+        top: 50%;
+        transform: translateY(-50%);
+        .image {
+          width: rem(450) !important;
+        }
+        .gradient-shadow {
+          height: rem(490);
+          width: rem(490);
+          &::before {
+            height: rem(490);
+            width: rem(490);
+          }
+          &::after {
+            height: rem(350);
+            width: rem(350);
+          }
+        }
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: rem(486);
+        padding-right: rem(722);
+        position: relative;
+      }
+    }
+    .integrate-vultisig {
+      .heading {
+        text-align: left;
+      }
+
+      .media {
+        left: rem(100);
+        top: 50%;
+        transform: translateY(-50%);
+        .image {
+          width: rem(450) !important;
+        }
+        .gradient-shadow {
+          height: rem(490);
+          width: rem(490);
+          &::before {
+            height: rem(490);
+            width: rem(490);
+          }
+          &::after {
+            height: rem(350);
+            width: rem(350);
+          }
+        }
+      }
+
+      .container {
+        min-height: rem(486);
+        padding-left: rem(722);
+      }
+    }
+  }
+}

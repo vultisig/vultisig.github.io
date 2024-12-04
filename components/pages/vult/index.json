@@ -1,0 +1,79 @@
+{
+  "header": {
+    "title": "THE $VULT<br>TOKEN",
+    "price": "$1",
+    "data": [
+      {
+        "title": "max supply",
+        "value": "100,000,000"
+      },
+      {
+        "title": "circulating supply",
+        "value": "0"
+      },
+      {
+        "title": "Current Price",
+        "value": "$1"
+      }
+    ],
+    "text": "$VULT is a cash-back application token (CBAT) and can be staked to receive $USDC."
+  },
+  "airdrop": {
+    "main_title": "how to participate in THE <br><span class='vult-gradient-txt'>$5M</span> VULTISIG AIRDROP",
+    "details": {
+      "title": "current airdrop value"
+    },
+    "items": [
+      { 
+        "title":"download </br> app",
+        "description":"Start by downloading the Vultisig app from the App Store or Google Play to get access to the platform and airdrop.",
+        "src": "/images/vult/1.png"
+      },
+      { 
+        "title":"setup multi-factor wallet",
+        "description":"Create a Vultisig Vault with multi-factor authentication to protect your assets and enhance your account’s security.",
+        "src": "/images/vult/2.png"
+      },
+      { 
+        "title":"Backup your Vault",
+        "description":"Each device in a vault has its on backup share. Back it up.",
+        "src": "/images/vult/3.png"
+      },
+      { 
+        "title":"transfer funds to vaults",
+        "description":"Deposit funds into Vultisig vaults to qualify for the airdrop and participate in platform activities.",
+        "src": "/images/vult/4.png"
+      },
+      { 
+         "title":"join the </br> airdrop ",
+         "description":"Join the airdrop and follow the leaderboard on <a href=`aidrop.vultisig.com`>AIDROP.VULTISIG.COM<span>",
+         "src": "/images/vult/5.png" }
+    ],
+    "JoinTheAirDrop": "Join the AirDrop",
+   "JoinTheAirDropURL": "https://airdrop.vultisig.com/"
+  },
+  "faq": [
+    {
+      "q": "How do I register for the airdrop?",
+      "a": "Become a Vultisig user and join the airdrop calculation. <br><br>Note: The airdrop is based on the total amount in your vault multiplied by the time the assets are held in the vault.The largest amounts for the longest time earn the most. Read more about it here. <a href='https://docs.vultisig.com/vultisig-token/airdrop'>here</a>."
+    },
+    {
+      "q": "What assets are counted for the Airdrop?",
+      "a": "Layer 1 assets and most tokens supported by Vultisig are counted. Other active assets such as LPs and Node Bonds from THORChain, MAYA Protocol and staked token are also valid.See the full list <a href='https://docs.vultisig.com/vultisig-token/airdrop#eligble-assets'>here</a>.<br><br>You can register as many vaults as you wish."
+    },
+    {
+      "q": "What is the Airdrop process?",
+      "a": "Your assets will accumulate VULTIES over a period of 12 months. At the end of this period, you will receive your share of the airdrop (5% of $VULT)."
+    }
+  ],
+  "alts": {
+    "header": {
+      "img": "VULT"
+    },
+    "chart": "Launch Chart",
+    "airdrop": {
+      "logo": "Vultisig logo"
+    },
+    "back-logo": "Vultisig logo"
+  }
+}

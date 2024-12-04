@@ -1,0 +1,16 @@
+{
+  "sectionOne": {
+    "heading": "READ THE DOCS",
+    "text":"Vultisig is different. Get educated and enjoy safer asset management.",
+    "image": "/images/docs/doc-header.png",
+    "link":"https://docs.vultisig.com/",
+    "btn": "DOCS"
+  },
+  "sectionTwo": {
+    "heading": "INTEGRATE Vultisig",
+    "text":"Any DeFi app, chrome extension or wallet can integrate the Vultisig SDK - safely let your users generate/upload vault shares and co-sign transactions.",
+    "image": "/images/docs/integration.svg",
+    "link":"https://discord.gg/54wEtGYxuv",
+    "btn": "LEARN MORE"
+  }
+}

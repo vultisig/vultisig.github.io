@@ -1,0 +1,1000 @@
+@use "@/styles/variables" as *;
+.crypto-bank-page {
+  .introduction {
+      position: relative;
+
+    .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    .text {
+        font-size: rem(20);
+        font-weight: 600;
+        margin-top: rem(20);
+        text-align: center;
+        text-transform: uppercase;
+      }
+    .list {
+        margin-top: rem(24);
+
+      .desc {
+          text-align: center;
+        }
+      li {
+        + li {
+            margin-top: rem(16);
+          }
+        }
+      }
+    .btn {
+        display: block;
+        margin: rem(16) auto 0;
+        max-width: rem(288);
+      }
+    .media {
+        margin: rem(40) auto 0;
+        max-width: rem(584);
+        position: relative;
+
+      .image {
+          height: auto !important;
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      .gradient-shadow {
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+
+        &::after {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    .gradient-shadow-lt {
+        height: 40vw;
+        left: 0;
+        max-height: rem(480);
+        max-width: rem(480);
+        top: rem(-122);
+        width: 40vw;
+      }
+    .gradient-shadow-rt {
+        max-width: rem(410);
+        right: 0;
+        top: 0;
+        transform: translate(24%, -34%);
+        width: 34vw;
+      }
+    }
+  .benefits {
+      margin-top: rem(64);
+
+    .image {
+        margin: 0 auto rem(24);
+      }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(32);
+        justify-content: center;
+
+li {
+          background-color: rgba($color: $gray-1, $alpha: 0.05);
+          border: solid rem(1) rgba($color: $gray-1, $alpha: 0.1);
+          border-radius: rem(16);
+          padding: rem(32);
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  .card-user {
+      margin-top: rem(160);
+
+    .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    .text {
+        display: block;
+        font-size: rem(16);
+        font-weight: 400;
+        margin-top: rem(40);
+        text-align: center;
+      }
+    .ant-radio-button-wrapper:not(:first-child)::before {
+        display: none;
+      }
+    .btn-box {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        display: flex;
+        height: rem(50);
+        justify-content: center;
+        margin: rem(60) auto;
+        text-align: center;
+        width: rem(260);
+
+      .rounded-btn {
+          background-color: inherit;
+          border: none;
+          border-radius: 40px;
+          color: rgba(255, 255, 255, 1);
+          display: block;
+          font-size: 20px;
+          font-weight: 500;
+          height: 100%;
+          padding: 7px 5px;
+          width: rem(200);
+        }
+      .active-btn {
+        background: linear-gradient(
+          143deg,
+          rgba(51, 230, 191, 1) 0%,
+          rgba(4, 57, 199, 1) 100%
+        );
+        }
+      }
+    .earn-up-wrapper {
+      .item-box {
+          background-color: rgba(255, 255, 255, 0.05);
+          border-radius: rem(16);
+          margin: 0 auto rem(30) auto;
+          margin-bottom: rem(30);
+          max-width: rem(500);
+          padding: rem(50) rem(30) rem(30) rem(30);
+
+        .title {
+            margin-bottom: rem(15);
+          }
+        .list {
+          li {
+              display: flex;
+              margin-bottom: rem(20);
+              text-align: start;
+
+p {
+                margin-left: rem(10);
+              }
+            }
+          }
+        .hr {
+            color: #dfe6f3;
+            margin: 1rem 0;
+            opacity: 0.25;
+          }
+        .btn {
+            display: block;
+            font-size: rem(16);
+            font-weight: 500;
+            height: 40px;
+            margin-top: rem(10);
+            text-transform: uppercase;
+            width: rem(200);
+          }
+        }
+      .item-box-active {
+          background-color: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(72, 121, 253, 1);
+
+background-image: linear-gradient(
+          rgba(33, 85, 223, 0.2),
+          rgba(0, 0, 0, 0)
+        );
+        }
+      }
+    }
+  .higher-tiers {
+      margin-top: rem(160);
+
+    .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(32);
+        justify-content: center;
+        margin-top: rem(48);
+
+      .image {
+          margin: 0 auto rem(40);
+          width: 100%;
+        }
+      .title {
+          font-family: $secondary-font;
+          font-size: rem(25);
+          font-weight: 700;
+        }
+      .desc-list {
+          margin-top: rem(30);
+          padding: 0 rem(20);
+
+li {
+            display: list-item !important;
+            font-size: rem(14);
+            font-weight: 400;
+            line-height: rem(22);
+            list-style-type: disc;
+            margin-top: rem(8);
+          }
+        }
+      & > li {
+          background-color: rgba($color: $gray-1, $alpha: 0.05);
+          border: solid rem(1) rgba($color: $gray-1, $alpha: 0.1);
+          border-radius: rem(16);
+          max-width: 423px;
+          padding: rem(24) rem(16);
+          text-align: start;
+          width: 100%;
+        }
+      }
+    .hr {
+        color: #dfe6f3;
+        margin: 1rem 0;
+        opacity: 0.25;
+      }
+    .btn {
+        display: block;
+        font-size: rem(16);
+        font-weight: 500;
+        height: 40px;
+        margin-top: rem(10);
+        text-transform: uppercase;
+        width: 100%;
+      }
+    }
+  .lowest-fees {
+      margin-top: rem(150);
+
+    .privileges {
+        border-radius: 20px;
+        color: #fff;
+        max-width: 697px;
+        padding: 20px;
+        position: relative;
+        text-align: start;
+
+      background-image: linear-gradient(
+        to left top,
+        rgba(153, 153, 153, 0),
+        rgba(255, 255, 255, 0.05)
+      );
+      .fees {
+          display: flex;
+          gap: 1rem;
+
+        .air-drop {
+            font-size: rem(14);
+            padding: rem(10);
+            width: 100%;
+
+          .title {
+              display: block;
+              font-weight: 500;
+            }
+          .desc {
+              align-items: center;
+              display: flex;
+              font-size: rem(18);
+              font-weight: 600;
+              justify-content: left;
+              margin-top: rem(10);
+            }
+          }
+        }
+      .fees-privileges {
+          margin-top: 2rem;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
+            width: 100%;
+
+          .item {
+              align-items: center;
+              display: flex;
+              justify-content: space-between;
+              padding: 1.5rem;
+
+            .title {
+                font-size: 1rem;
+                font-weight: 500;
+              }
+            .arrow-right {
+                margin-top: -6px;
+                width: 35px;
+              }
+            }
+          }
+        }
+      .img-bg {
+          opacity: 0.5;
+          position: absolute;
+          right: -70px;
+          top: -30px;
+          width: rem(200);
+        }
+      .blur-bg {
+          background-color: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 1rem;
+        }
+      &:after {
+          border-radius: 20px;
+          bottom: 0;
+          content: "";
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+
+background-image: linear-gradient(
+          to left top,
+          rgba(0, 0, 0, 0),
+          rgba(33, 85, 223, 0.2)
+        );
+        }
+      }
+    .lowest-fees-desc {
+        margin-top: rem(50);
+
+      .heading {
+          display: block;
+          font-size: rem(30);
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      .list {
+          margin: rem(25);
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 70%;
+
+        .desc {
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(24);
+            margin-top: rem(16);
+          }
+        li {
+            list-style: disc;
+            margin-left: rem(30);
+            position: relative;
+
+          + li {
+              margin-top: rem(32);
+            }
+          }
+        }
+      }
+    }
+  .spend-crypto {
+      margin-top: rem(160);
+
+    .desc {
+      .heading {
+          font-size: rem(30);
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      .list {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: rem(40);
+          max-width: 70%;
+          padding-left: rem(20);
+
+        .desc {
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(24);
+            margin-top: rem(16);
+          }
+        li {
+            list-style: disc;
+            position: relative;
+
+          // padding-left: rem(32);
+          + li {
+              margin-top: rem(32);
+            }
+          }
+        }
+      }
+    .media {
+        margin: rem(64) auto;
+        max-width: rem(440);
+        padding: 0 rem(20) rem(40);
+        position: relative;
+        width: 100%;
+
+      .image {
+          height: auto !important;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+      }
+    }
+  .faq {
+      margin-top: rem(150);
+
+    .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        margin-bottom: rem(40);
+        text-align: center;
+        text-transform: uppercase;
+      }
+    .ant-collapse {
+        border: none;
+        border-radius: 0;
+        font-family: $secondary-font;
+
+      .ant-collapse-content-box {
+          color: $gray-5;
+          font-size: rem(16);
+          font-weight: 400;
+          line-height: rem(24);
+          padding: rem(10) rem(16) 0;
+        }
+      .ant-collapse-content {
+          background-color: transparent;
+          border: none;
+        }
+      .ant-collapse-header {
+          background-color: $blue-base;
+          border-radius: rem(8);
+          color: $gray-1;
+          font-size: rem(18);
+          font-weight: 400;
+          line-height: rem(22);
+          padding: rem(20) rem(16);
+        }
+      .ant-collapse-item {
+          border: none;
+
+        + .ant-collapse-item {
+            margin-top: rem(10);
+          }
+        }
+      }
+    }
+  .call-to-action {
+      margin-top: rem(160);
+
+    .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        line-height: rem(64);
+        text-align: center;
+        text-transform: uppercase;
+      }
+    .desc {
+        font-size: rem(22);
+        font-weight: 600;
+        text-align: center;
+      }
+    .btn {
+        width: rem(264);
+      }
+    .image {
+        height: auto !important;
+        height: 300px;
+        max-width: 100%;
+      }
+    .wrapper {
+        align-items: center;
+        border: solid rem(1) rgba($color: $gray-1, $alpha: 0.1);
+        border-radius: rem(16);
+        display: flex;
+        flex-direction: column;
+        gap: rem(32);
+        justify-content: center;
+        padding: rem(64) rem(32) rem(1) rem(32);
+
+background-image: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05)
+        ),
+        linear-gradient(
+          180deg,
+          rgba(13, 25, 43, 0) 36%,
+          rgba(33, 85, 223, 0.3) 90%
+        );
+      }
+    .container {
+        position: relative;
+      }
+    .gradient-shadow {
+        left: rem(16);
+        top: 0;
+        transform: translate(-46%, -46%) scale(0.4);
+      }
+    }
+  }
+@media (min-width: rem(576)) {
+  .crypto-bank-page {
+    .introduction {
+      .heading {
+          font-size: rem(64);
+        }
+      .text {
+          font-size: rem(26);
+          margin-top: rem(40);
+        }
+      .list {
+        .desc {
+            font-size: rem(18);
+          }
+        }
+      .btn {
+          margin: rem(24) auto 0;
+        }
+      }
+    .card-user {
+        margin-top: rem(160);
+
+      .heading {
+          font-size: rem(40);
+          font-weight: 700;
+        }
+      .text {
+          font-size: rem(16);
+          font-weight: 400;
+        }
+      .btn-box {
+          height: rem(50);
+          width: rem(300);
+        }
+      .earn-up-wrapper {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          gap: rem(50);
+          justify-content: center;
+
+        .item-box {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: rem(16);
+            margin: 0;
+
+          .title {
+              margin-bottom: rem(15);
+            }
+          .list {
+            li {
+                display: flex;
+                margin-bottom: rem(20);
+                text-align: start;
+
+p {
+                  margin-left: rem(10);
+                }
+              }
+            }
+          }
+        }
+      }
+    .higher-tiers {
+      .list {
+        .title {
+            font-family: $secondary-font;
+            font-size: rem(30);
+            font-weight: 700;
+          }
+        }
+      }
+    .lowest-fees {
+      .privileges {
+          padding: 20px 20% 20px 20px;
+
+        .fees {
+          .air-drop {
+              font-size: rem(14);
+              padding: rem(20);
+            }
+          }
+        .fees-privileges {
+            margin-top: 2rem;
+
+          .wrapper {
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              margin-top: 2rem;
+              width: 100%;
+
+            .item {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem;
+
+              .title {
+                  font-size: 1rem;
+                  font-weight: 500;
+                }
+              .arrow-right {
+                  margin-top: -6px;
+                  width: 35px;
+                }
+              }
+            }
+          }
+        .img-bg {
+            right: -20px;
+            top: -50px;
+            width: rem(300);
+          }
+        }
+      .lowest-fees-desc {
+          margin-top: rem(50);
+
+        .heading {
+            display: block;
+            font-size: rem(30);
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        .list {
+            margin: rem(25);
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+
+          .desc {
+              font-size: rem(16);
+              font-weight: 400;
+              line-height: rem(24);
+              margin-top: rem(16);
+            }
+          li {
+              list-style: disc;
+              margin-left: rem(30);
+              position: relative;
+
+            + li {
+                margin-top: rem(32);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+@media (min-width: rem(768)) {
+  .crypto-bank-page {
+    .introduction {
+      .heading {
+          font-size: rem(80);
+        }
+      .text {
+          font-size: rem(32);
+          margin-top: rem(60);
+        }
+      .list {
+        .desc {
+            font-size: rem(20);
+          }
+        }
+      .btn {
+          margin: rem(32) auto 0;
+        }
+      .media {
+          margin: rem(80) auto 0;
+
+        .gradient-shadow {
+            transform: translate(-50%, -50%) scale(0.8);
+
+          &::after {
+              transform: translate(-50%, -50%) scale(0.6);
+            }
+          }
+        }
+      }
+    .benefits {
+      .list {
+        li {
+            width: calc(100% / 2 - rem(32 * 1 / 2));
+          }
+        }
+      }
+    .higher-tiers {
+      .list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: rem(32);
+          justify-content: center;
+          margin-top: rem(48);
+
+        .image {
+            margin: 0 auto rem(40);
+            width: 100%;
+          }
+        .title {
+            font-family: $secondary-font;
+            font-size: rem(25);
+            font-weight: 700;
+          }
+        .desc-list {
+            margin-top: rem(30);
+            padding: 0 rem(20);
+
+li {
+              display: list-item !important;
+              font-size: rem(14);
+              font-weight: 400;
+              line-height: rem(22);
+              list-style-type: disc;
+              margin-top: rem(8);
+            }
+          }
+        & > li {
+            background-color: rgba($color: $gray-1, $alpha: 0.05);
+            border: solid rem(1) rgba($color: $gray-1, $alpha: 0.1);
+            border-radius: rem(16);
+            max-width: 423px;
+            padding: rem(24) rem(16);
+            text-align: start;
+            width: 100%;
+          }
+        }
+      .hr {
+          color: #dfe6f3;
+          margin: 1rem 0;
+          opacity: 0.25;
+        }
+      .btn {
+          display: block;
+          font-size: rem(16);
+          font-weight: 500;
+          height: 40px;
+          margin-top: rem(10);
+          text-transform: uppercase;
+          width: 100%;
+        }
+      }
+    .lowest-fees {
+      .privileges {
+          margin: 0 auto;
+          padding: 20px 20% 20px 20px;
+        }
+      }
+    }
+  }
+@media (min-width: rem(992)) {
+  .crypto-bank-page {
+    .introduction {
+      .heading {
+          font-size: rem(96);
+        }
+      .btn {
+          margin: rem(40) auto 0;
+        }
+      .gradient-shadow-lt {
+          top: rem(-138);
+        }
+      }
+    .benefits {
+      .list {
+        li {
+            width: calc(100% / 3 - rem(32 * 2 / 3));
+          }
+        }
+      }
+    .card-user {
+        margin-top: rem(160);
+
+      .heading {
+          font-size: rem(40);
+          font-weight: 700;
+        }
+      .text {
+          font-size: rem(16);
+          font-weight: 400;
+        }
+      .btn-box {
+          height: rem(50);
+          width: rem(600);
+
+        .rounded-btn {
+            width: rem(300);
+          }
+        }
+      .earn-up-wrapper {
+          display: flex;
+        }
+      }
+    .spend-crypto {
+        margin-top: rem(240);
+
+      .desc {
+          padding-right: rem(50);
+
+        .heading {
+            text-align: left;
+            width: 50%;
+          }
+        .list {
+            margin: 0;
+            padding-right: rem(16);
+          }
+        }
+      .media {
+          margin-top: 0;
+          position: absolute;
+          right: rem(16);
+          top: 50%;
+          transform: translateY(-50%);
+
+        .image {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      .container {
+          display: flex;
+          gap: rem(30);
+          justify-content: center;
+        }
+      }
+    .lowest-fees {
+        margin-top: rem(150);
+
+      .container {
+          align-items: center;
+          display: flex;
+          gap: rem(80);
+          justify-content:space-between;
+
+        // flex-wrap: wrap;
+        }
+      .privileges {
+          border-radius: 20px;
+          padding: 20px 10% 20px 20px;
+          position: relative;
+          width: 100%;
+
+        .img-bg {
+            opacity: 0.5;
+            position: absolute;
+            right: -25px;
+            top: -25px;
+            width: rem(250);
+          }
+        }
+      .lowest-fees-desc {
+          margin: 0;
+          padding: 0 10% 0 0;
+
+        .heading {
+            display: block;
+            font-size: rem(30);
+            font-weight: 700;
+            margin-bottom: rem(40);
+            text-align: start;
+            text-transform: uppercase;
+          }
+        .list {
+            display: block;
+            margin: 0;
+            max-width: 100%;
+            padding: 0;
+
+          .desc {
+              font-size: rem(16);
+              font-weight: 400;
+              line-height: rem(24);
+              margin-top: rem(16);
+            }
+          li {
+              list-style: disc;
+              position: relative;
+
+            // padding-left: rem(32);
+            + li {
+                margin-top: rem(32);
+              }
+            }
+          }
+        }
+      }
+    .call-to-action {
+      .wrapper {
+          align-items: start;
+          min-height: rem(478);
+          padding: rem(64) 50% rem(64) rem(64);
+
+background-image: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.05)
+          ),
+          linear-gradient(
+            90deg,
+            rgba(13, 25, 43, 0) 36%,
+            rgba(33, 85, 223, 0.3) 90%
+          );
+        .heading {
+            text-align: left;
+          }
+        .desc {
+            text-align: start;
+          }
+        .image {
+            bottom: rem(1);
+            position: absolute;
+            right: 25%;
+            transform: translateX(50%);
+          }
+        }
+      }
+    }
+  }
+@media (min-width: rem(1200)) {
+  .crypto-bank-page {
+    .introduction {
+      .heading {
+          text-align: left;
+        }
+      .text {
+          text-align: left;
+        }
+      .list {
+          padding-left: rem(28);
+
+        .desc {
+            text-align: left;
+          }
+        li {
+            list-style: disc;
+          }
+        }
+      .btn {
+          margin: rem(40) 0 0;
+          width: 100%;
+        }
+      .media {
+          margin: 0;
+          position: absolute;
+          right: rem(16);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: rem(586);
+          padding-right: rem(622);
+          position: relative;
+        }
+      }
+    .benefits {
+      .list {
+        li {
+            width: calc(100% / 4 - rem(32 * 3 / 4));
+          }
+        }
+      }
+    }
+  }
