@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import content from "@/components/pages/home/index.json";
 
@@ -15,9 +16,9 @@ export default function Component() {
             {content.hero_section.title}
           </span>
           <p className="text">{content.hero_section.desc}</p>
-          <a className="btn" href={content.hero_section.link}>
+          <Link className="btn" href={content.hero_section.link}>
             {content.hero_section.btn}
-          </a>
+          </Link>
           <div className="media">
             <Image
               src="/images/home/introduction-image.png"
