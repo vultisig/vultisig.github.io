@@ -13,14 +13,14 @@ export const metadata: Metadata = {
         type: "website",
         description: "Vultisig Term Of Service.",
         url: 'https://vultisig.com/TermOfService',
-        images: 'https://vultisig.com/img/privacy-thumbnail.png',
+        images: 'https://vultisig.com/img/thumbnail/terms-of-service.png',
     },
     twitter: {
         site: "vultisig.com/TermOfService",
         card: "summary_large_image",
         title: "Vultisig | Term Of Service",
         description: "Vultisig Term Of Service.",
-        images: "https://vultisig.com/img/privacy-thumbnail.png"
+        images: "https://vultisig.com/img/thumbnail/terms-of-service.png"
     },
 };
 export default async function TermOfService() {

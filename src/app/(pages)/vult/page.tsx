@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
     url: "https://vultisig.com/VULT",
-    images: "https://vultisig.com/img/vult-thumbnail.png",
+    images: "https://vultisig.com/img/thumbnail/vult.png",
   },
   twitter: {
     site: "vultisig.com/VULT",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Vultisig | VULT",
     description:
       "Vultisig is a secure and easy-to-use platform that allows you to manage your digital assets.",
-    images: "https://vultisig.com/img/vult-thumbnail.png",
+    images: "https://vultisig.com/img/thumbnail/vult.png",
   },
 };
 
