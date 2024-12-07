@@ -2,7 +2,7 @@
  "switchkey":[
   {
     "title": "Download Vultisig: Secure Crypto Vault",
-    "description":"The Flagship app of Vultisig. You seedless multi-chain, multi-factor wallet.Use Vault Shares instead of Seed Phrases.",
+    "description":"The Flagship app of Vultisig. Your seedless multi-chain, multi-factor wallet.Use Vault Shares instead of Seed Phrases.",
     "key": "vultisig",
     "img": "/images/download/VULTISIG.png",
     "downloadlinks": [
@@ -42,13 +42,6 @@
     "key": "browser",
     "img": "/images/download/BROWSER.png",
     "downloadlinks": [
-      {
-        "image": "/images/download/download-app/vultiweb.svg",
-        "alt": "View on VultiWeb",
-        "url": "https://app.vultisig.com",
-        "target": "_blank",
-        "downloadLabel": "web"
-      },
       {
         "image": "/images/download/download-app/vulticonnect.png",
         "alt": "View on VultiWeb",

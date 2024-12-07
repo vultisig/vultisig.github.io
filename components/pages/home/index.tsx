@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import content from "@/components/pages/home/index.json";
+import Link from "next/link";
 
 export default function Component() {
   return (
@@ -66,7 +66,9 @@ export default function Component() {
             <h3 className="heading">{content.Vultisig_tested.stats.heading}</h3>
           </div>
           <div className="trusted">
-            <h3 className="heading">{content.Vultisig_tested.trusted.heading}</h3>
+            <h3 className="heading">
+              {content.Vultisig_tested.trusted.heading}
+            </h3>
             <ul className="list">
               {content.Vultisig_tested.trusted.items.map((item, index) => (
                 <li key={index}>
@@ -139,7 +141,10 @@ export default function Component() {
                   className="title"
                   dangerouslySetInnerHTML={{ __html: item.title }}
                 ></h4>
-                <p className="desc">{item.description}</p>
+                <p
+                  className="desc"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
               </li>
             ))}
           </ul>
@@ -150,7 +155,9 @@ export default function Component() {
         <div className="container">
           <h3
             className="heading"
-            dangerouslySetInnerHTML={{ __html: content.Seamless_security.heading }}
+            dangerouslySetInnerHTML={{
+              __html: content.Seamless_security.heading,
+            }}
           />
           <ul className="list">
             {content.Seamless_security.items.map((item, index) => (

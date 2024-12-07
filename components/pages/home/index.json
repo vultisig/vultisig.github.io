@@ -31,7 +31,7 @@
         },
         {
           "image": "/images/DeFi-suisse-treasury.svg",
-          "symbol": "DeFi Suisse Treasury",
+          "symbol": "DeFi Suisse",
           "text": "Treasury"
         },
         {
@@ -96,18 +96,18 @@
       },
       {
         "title": "Vault Shares",
-        "description": "No need to write down 24-words.Each device has its own unique Vault share.Store all Vault Shares of every device and you are ready to respawn.",
+        "description": "No need to write down 24-words. Each device has its own unique Vault share. Store all Vault Shares of every device individually and you are ready to respawn.",
         "image": "/images/home/rich-hardware.png"
       },
       {
         "title": "Rich UI",
-        "description": "Have all information displayed on big screens.Easy to see—easy to understand",
+        "description": "Have all information displayed on big screens.<br/> Easy to see—easy to understand",
         "image": "/images/home/crypto-bank.png"
       }
     ]
   },
   "Seamless_security": {
-    "heading": "<span class='gradient-text'>Seamless Security</span>without compromise on experience",
+    "heading": "Experience <span class='gradient-text'>Security</span>Without Sacrifice",
     "items": [
       {
         "title": "Vault Generation",
@@ -125,7 +125,7 @@
         "title": "Resharing",
         "label": "Reshare Time:",
         "value": "10 - 60 seconds.",
-        "description": "Lost a device? Replace it easily without changing the vault. Want to increase security? Go from 2-of-3 to 3-of-4 setup easily."
+        "description": "Lost a device? Replace it easily without changing the vault or address. Want to increase security? Go from 2-of-3 to 3-of-4 setup easily."
       }
     ]
   },
@@ -134,7 +134,7 @@
     "items": [
       {
         "title": "VUltisig: Asset<br/> Management Hub",
-        "description": "Vultisig is chain agnostic - Bitcoin, Ethereum, THORChain and even Solana. The first multi-chain, multi-asset, multi-signature wallet in the world. You can deposit, send, swap and more inside Vultisig. ",
+        "description": "Vultisig is chain agnostic - Bitcoin, Ethereum, Solana, THORChain and many more. The first multi-chain, multi-asset, multi-signature wallet in the world for everyone. You can deposit, send, swap and more inside Vultisig.",
         "image": "/images/home/asset-management.png"
       },
       {
