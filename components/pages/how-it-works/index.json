@@ -9,7 +9,7 @@
     "items": [
       {
         "title": "Private keys",
-        "description": "You need to trust the key generation process or can loose your keys. - Not with Vultisig"
+        "description": "You need to trust the key generation process or can loose your keys.<br/>- Not with Vultisig"
       },
       {
         "title": "Public keys",

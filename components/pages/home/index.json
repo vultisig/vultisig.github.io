@@ -86,7 +86,7 @@
     "items": [
       {
         "title": "Threshold<br/> Signatures",
-        "description": "Multiple devices to sign—no single point of failure. Never lose funds on one compromised device",
+        "description": "Multiple devices to sign—no single point of failure. Never lose funds with one compromised device",
         "image": "/images/home/threshold-signatures.png"
       },
       {
@@ -138,7 +138,7 @@
         "image": "/images/home/asset-management.png"
       },
       {
-        "title": "easy<br/> crypto exchange",
+        "title": "<span class='gradient-text'>DeFi</span> n your<br/> pocket",
         "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. It also supports advanced DeFi functions such as bonding to Nodes, Staking, Lending and Savers. ",
         "image": "/images/home/crypto-exchange.png"
       },

@@ -36,7 +36,10 @@ export default function Component() {
             {content.sectionTwo.items.map((item, index) => (
               <li key={index}>
                 <h4 className="title">{item.title}</h4>
-                <p className="desc">{item.description}</p>
+                <p
+                  className="desc"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
               </li>
             ))}
           </ul>
