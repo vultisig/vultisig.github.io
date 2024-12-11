@@ -1,0 +1,49 @@
+@use "@/styles/variables" as *;
+
+.termofservice-page {
+  .container{
+    font-size: rem(18);
+    .heading {
+      text-align:center ;
+      font-size: rem(40);
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: rem(30);
+    }
+    ol{
+      margin-top: rem(10);
+      margin-left: rem(30);
+      li {
+        list-style-type:lower-roman;
+        margin-bottom: rem(10);
+      }
+      ol{
+        margin-left:rem(30) ;
+        li {
+          margin-bottom: rem(10);
+          list-style-type:lower-alpha;
+        }
+      }
+    }
+
+  }
+  .gradient-shadow-lt {
+    height: 40vw;
+    left: 0;
+    max-height: rem(480);
+    max-width: rem(480);
+    top: rem(-122);
+    width: 40vw;
+  }
+
+  .gradient-shadow-rt {
+    max-width: rem(410);
+    right: 0;
+    top: 0;
+    transform: translate(24%, -34%);
+    width: 34vw;
+  }
+}
+
+

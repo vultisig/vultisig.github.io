@@ -1,0 +1,70 @@
+{
+ "switchkey":[
+  {
+    "title": "Download Vultisig: Secure Crypto Vault",
+    "description":"The Flagship app of Vultisig. Your seedless multi-chain, multi-factor wallet. Use Vault Shares instead of Seed Phrases.",
+    "key": "vultisig",
+    "img": "/images/download/VULTISIG.png",
+    "downloadlinks": [
+      {
+        "image": "/images/download/download-app/appstore.svg",
+        "alt": "Download on AppStore",
+        "url": "https://apps.apple.com/app/vultisig/id6503023896",
+        "target": "_blank",
+        "downloadLabel": "app_store"
+      },
+      {
+        "image": "/images/download/download-app/github-download.svg",
+        "alt": "Download on Github",
+        "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.8.1/VultisigApp.v1.8.1.signed.pkg",
+        "target": "_blank",
+        "downloadLabel": "github"
+      },
+      {
+        "image": "/images/download/download-app/playstore.svg",
+        "alt": "Download on PlayStore",
+        "url": "https://play.google.com/store/apps/details?id=com.vultisig.wallet",
+        "target": "_blank",
+        "downloadLabel": "play_store"
+      },
+      {
+        "image": "/images/download/download-app/windows.png",
+        "alt": "Download on Github",
+        "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.7/Vultisig-amd64-installer.exe",
+        "target": "_blank",
+        "downloadLabel": "github"
+      }
+    ]
+  },
+  {
+    "title": "Install Vulticonnect",
+    "description":"Your gateway to web3 and DeFi. Connect your Vultisig to your favourite Interface without moving your funds",
+    "key": "browser",
+    "img": "/images/download/BROWSER.png",
+    "downloadlinks": [
+      {
+        "image": "/images/download/download-app/vulticonnect.png",
+        "alt": "View on VultiWeb",
+        "url": "https://chromewebstore.google.com/detail/vulticonnect/ggafhcdaplkhmmnlbfjpnnkepdfjaelb?authuser=0&hl=en-GB&pli=1",
+        "target": "_blank",
+        "downloadLabel": "extension"
+      }
+    ]
+  },
+  {
+    "title": "Vultisig Web",
+    "description": "A view only access to your vault and register your Vaults for the airdrop",
+    "key": "web",
+    "img": "/images/download/AirDrop.svg",
+    "downloadlinks": [
+      {
+        "image": "/images/download/download-app/vultiweb.svg",
+        "alt": "Join the AirDrop",
+        "url": "https://airdrop.vultisig.com",
+        "traget": "_blank",
+        "downloadLabel": "AirDrop"
+      }
+    ]
+  }
+ ]
+}

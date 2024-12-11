@@ -1,0 +1,87 @@
+{
+  "sectionOne": {
+    "heading": "<span class='gradient-text'>Next Level Security</span> using your trusted devices",
+    "image": "/images/how-it-works/hero-image.png"
+  },
+  "sectionTwo": {
+    "heading": "How do <span class='gradient-text'>traditional Wallets</span> Work?",
+    "image": "/images/how-it-works/traditional-wallet.png",
+    "items": [
+      {
+        "title": "Private keys",
+        "description": "You need to trust the key generation process or can loose your keys.<br/>- Not with Vultisig"
+      },
+      {
+        "title": "Public keys",
+        "description": "Transforming your private key into a public key through hashing function, then encode it to create your unique address"
+      },
+      {
+        "title": "Seed phrases",
+        "description": "A seed phrase is a human-readable representation of your private key using standardized words"
+      }
+    ]
+  },
+  "sectionThree": {
+    "heading": "PRIVATE KEYS:  A Single Point of Failure",
+    "text": "VULTISIG eliminates the risks of traditional key management with next-gen crypto vaults.",
+    "items": [
+      {
+        "title": "Private key creation",
+        "description": "Creating private keys in one location makes them vulnerable to theft or loss. One mistake, and your assets are at risk.",
+        "image": "/images/how-it-works/private-key.svg"
+      },
+      {
+        "title": "Storage of private keys",
+        "description": "Private keys stored in one place create a single point of failure, exposing your funds to hacking or mismanagement.",
+        "image": "/images/how-it-works/private-key-storage.svg"
+      },
+      {
+        "title": "Human error",
+        "description": "People are susceptible to being exploited or tricked. Most wallet drains happen due to social engineering that reveal the private key.",
+        "image": "/images/how-it-works/human-error.svg"
+      }
+    ]
+  },
+  "sectionFour": {
+    "heading": "How Vultisig solves <span class='gradient-text'>Crypto Security</span>",
+    "itemOne": {
+      "title": "Introducing Vultisigs <span class='gradient-text'>recovery</span>: vault shares instead of seed phrases",
+      "description": [
+        "With Vultisig, you bring your own trusted devices - phone, desktop, laptops or tablets. ",
+        "Your devices create vaults together using their unique shards called “vault shares”, which are unique to each device. <span class='bold-text'>The private key never exists, the devices just proof the collaborative access to it!</span>",
+        "<span class='bold-text'>Individual Vault-shares never store funds</span> and can be safely imported/exported anywhere.",
+        "Each vault is natively multi-factor -- and you can co-sign safely anywhere in the world.",
+        "Store each device's Vault Share separately and sleep soundly."
+      ],
+      "image": "/images/how-it-works/secure-vault.png"
+    }
+  },
+  "sectionFive": {
+    "heading": "Upgrade <span class='gradient-text'>Today</span>",
+    "text": "Join thousands of users who trust VULTISIG with their digital assets. No registration required.",
+    "btn": "Download",
+    "link": "/download/vultisig",
+    "image": "/images/home/secure.png"
+  },
+  "alts": {
+    "header": {
+      "logo": "Vultisig Logo",
+      "img": "SIMPLE STEPS, SUPERIOR SECURITY - THE VULTISIG DIFFERENCE"
+    },
+    "segment-2": {
+      "img": "USE YOUR TRUSTED DEVICES"
+    },
+    "segment-3": {
+      "img": "ASSET MANAGEMENT HUB"
+    },
+    "segment-4": {
+      "img": "EASY Asset Exchange"
+    },
+    "store": {
+      "ipad": "Store Links",
+      "app-store-img": "Download on App Store",
+      "github-img": "Download on GitHub",
+      "play-store-img": "Download on Play Store"
+    }
+  }
+}

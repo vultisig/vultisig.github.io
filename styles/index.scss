@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@use "_variables";
+@use "_normalize";
+@use "_global";
+
+@use "@/components/layouts/default";
+
+@use "@/components/pages/home";
+@use "@/components/pages/crypto-bank";
+@use "@/components/pages/how-it-works";
+@use "@/components/pages/backed-by";
+@use "@/components/pages/docs";
+@use "@/components/pages/vult";
+@use "@/components/pages/download";
+@use "@/components/pages/faq";
+@use "@/components/pages/termofservice";
+@use "@/components/pages/privacy";

@@ -1,0 +1,52 @@
+@use "@/styles/variables" as *;
+
+.faq-page {
+
+  .ant-collapse {
+    border: none;
+    border-radius: 0;
+    font-family: $secondary-font;
+
+    .ant-collapse-content-box {
+      color: $gray-5;
+      font-size: rem(16);
+      font-weight: 400;
+      line-height: rem(24);
+      padding: rem(10) rem(16) 0;
+    }
+
+    .ant-collapse-content {
+      background-color: transparent;
+      border: none;
+    }
+
+    .ant-collapse-header {
+      background-color: $blue-base;
+      border-radius: rem(8);
+      color: $gray-1;
+      font-size: rem(18);
+      font-weight: 400;
+      line-height: rem(22);
+      padding: rem(20) rem(16);
+    }
+
+    .ant-collapse-item {
+      border: none;
+
+      + .ant-collapse-item {
+        margin-top: rem(10);
+      }
+    }
+  }
+
+  .faq{
+    .heading {
+      font-size: rem(40);
+      font-weight: 700;
+      margin-bottom: rem(40);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+

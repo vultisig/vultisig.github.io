@@ -1,0 +1,233 @@
+@use "_variables" as *;
+
+body {
+  background-color: $blue-dark;
+  color: $gray-1;
+  font-family: $primary-font;
+  min-width: rem(360);
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    background-color: $blue-base;
+    width: rem(8);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: $blue-base;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue-light;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(1400);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  position: relative;
+  width: 100%;
+}
+
+.btn {
+  background-color: $btn-base;
+  border-radius: rem(8);
+  color: $gray-1;
+  display: inline-block;
+  font-size: rem(12);
+  font-weight: 600;
+  line-height: rem(40);
+  padding: 0 rem(16);
+  position: relative;
+  text-align: center;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $btn-dark;
+  }
+
+  &.btn-disabled {
+    background-color: $blue-dark;
+    color: $gray-8;
+    cursor: default;
+  }
+}
+
+.gradient-text {
+  background-image: $text-gradient;
+  background-clip: text;
+  color: transparent;
+}
+
+.ant-drawer {
+  .ant-menu-submenu-arrow {
+    color: $gray-1;
+  }
+
+  .ant-menu-title-content {
+    color: $gray-1;
+  }
+
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    background-color: transparent !important;
+  }
+
+  .ant-menu {
+    background-color: transparent;
+    border: none !important;
+  }
+
+  .ant-drawer-title {
+    color: $gray-1;
+  }
+
+  .ant-drawer-header {
+    border-color: rgba($gray-1, 0.06);
+  }
+
+  .ant-drawer-body {
+    padding: rem(16) 0;
+  }
+
+  .ant-drawer-content {
+    background-color: $blue-dark;
+  }
+}
+
+.ant-menu-submenu-popup {
+  .ant-menu-title-content {
+    color: $gray-1;
+  }
+
+  .ant-menu {
+    background-color: $blue-base !important;
+  }
+}
+
+.gradient-shadow {
+  height: 80vw;
+  max-height: rem(960);
+  max-width: rem(960);
+  overflow: hidden;
+  position: absolute;
+  width: 80vw;
+  z-index: -1;
+
+  &::before {
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba($blue-sharp, 0.2),
+      transparent
+    );
+    content: "";
+    height: 80vw;
+    max-height: rem(960);
+    max-width: rem(960);
+    position: absolute;
+    width: 80vw;
+  }
+
+  &::after {
+    border: rem(1) solid rgba($color: $cyan-base, $alpha: 0.3);
+    border-radius: 50%;
+    content: "";
+    height: 60vw;
+    max-height: rem(720);
+    max-width: rem(720);
+    position: absolute;
+    width: 60vw;
+  }
+
+  &.gradient-shadow-lb {
+    &::before {
+      right: 0;
+      top: 0;
+    }
+
+    &::after {
+      right: 10vw;
+      top: 10vw;
+    }
+  }
+
+  &.gradient-shadow-lt {
+    &::before {
+      bottom: 0;
+      right: 0;
+    }
+
+    &::after {
+      bottom: 10vw;
+      right: 10vw;
+    }
+  }
+
+  &.gradient-shadow-rb {
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      left: 10vw;
+      top: 10vw;
+    }
+  }
+
+  &.gradient-shadow-rt {
+    &::before {
+      bottom: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 10vw;
+      left: 10vw;
+    }
+  }
+}
+
+@media (min-width: rem(576)) {
+}
+
+@media (min-width: rem(768)) {
+}
+
+@media (min-width: rem(992)) {
+}
+
+@media (min-width: rem(1200)) {
+  .gradient-shadow {
+    &.gradient-shadow-lb {
+      &::after {
+        right: rem(120);
+        top: rem(120);
+      }
+    }
+
+    &.gradient-shadow-lt {
+      &::after {
+        bottom: rem(120);
+        right: rem(120);
+      }
+    }
+
+    &.gradient-shadow-rb {
+      &::after {
+        left: rem(120);
+        top: rem(120);
+      }
+    }
+
+    &.gradient-shadow-rt {
+      &::after {
+        bottom: rem(120);
+        left: rem(120);
+      }
+    }
+  }
+}
