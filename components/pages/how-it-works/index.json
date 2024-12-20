@@ -9,11 +9,11 @@
     "items": [
       {
         "title": "Private keys",
-        "description": "You need to trust the key generation process or can loose your keys.<br/>- Not with Vultisig"
+        "description": "You need to trust the key generation process or you could lose your keys."
       },
       {
         "title": "Public keys",
-        "description": "Transforming your private key into a public key through hashing function, then encode it to create your unique address"
+        "description": "Converts your private key into a public key using a hash function, then encode it to create your unique address."
       },
       {
         "title": "Seed phrases",
@@ -27,17 +27,17 @@
     "items": [
       {
         "title": "Private key creation",
-        "description": "Creating private keys in one location makes them vulnerable to theft or loss. One mistake, and your assets are at risk.",
+        "description": "Creating private keys in one place makes them vulnerable to theft or loss. One mistake and your assets are at risk.",
         "image": "/images/how-it-works/private-key.svg"
       },
       {
         "title": "Storage of private keys",
-        "description": "Private keys stored in one place create a single point of failure, exposing your funds to hacking or mismanagement.",
+        "description": "Private keys stored in one place create a single point of failure, exposing your funds to hackers or mismanagement.",
         "image": "/images/how-it-works/private-key-storage.svg"
       },
       {
         "title": "Human error",
-        "description": "People are susceptible to being exploited or tricked. Most wallet drains happen due to social engineering that reveal the private key.",
+        "description": "People are vulnerable to being exploited or tricked. Most wallet drains happen due to social engineering that reveals the private key.",
         "image": "/images/how-it-works/human-error.svg"
       }
     ]
@@ -57,8 +57,8 @@
     }
   },
   "sectionFive": {
-    "heading": "Upgrade <span class='gradient-text'>Today</span>",
-    "text": "Join thousands of users who trust VULTISIG with their digital assets. No registration required.",
+    "heading": "Secure your digital assets now!",
+    "text": "",
     "btn": "Download",
     "link": "/download/vultisig",
     "image": "/images/home/secure.png"
