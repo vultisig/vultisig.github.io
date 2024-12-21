@@ -114,6 +114,12 @@ export default function Component() {
       <section className="call-to-action">
         <div className="container">
           <div className="wrapper">
+          <Image
+              src="/images/home/icon-vultisig-logo.png"
+              width={244}
+              height={56}
+              alt="vultisig"
+            />
             <h3
               className="heading"
               dangerouslySetInnerHTML={{ __html: content.sectionFive.heading }}
