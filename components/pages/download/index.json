@@ -30,7 +30,7 @@
         {
           "image": "/images/download/download-app/windows.png",
           "alt": "Download on Github",
-          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.7/Vultisig-amd64-installer.exe",
+          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.8/Vultisig-amd64-installer.exe",
           "target": "_blank",
           "downloadLabel": "github"
         }
