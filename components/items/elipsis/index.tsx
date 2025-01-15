@@ -22,11 +22,10 @@ const Component: FC<ComponentProps> = ({ text }) => {
 
   const ellipsisDidUpdate = (): void => {
     if (elmRef.current) {
-      const [child] = elmRef.current.children;
+      const child = elmRef.current.children[0];
       const parentWidth = elmRef.current.clientWidth;
       const childWidth = child?.clientWidth ?? 0;
       
-      console.log("childWidth",childWidth);
       if (childWidth > parentWidth) {
         const chunkLen = Math.ceil(text.length / 2) - counter;
 
