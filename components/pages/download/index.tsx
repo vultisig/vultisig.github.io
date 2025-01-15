@@ -1,15 +1,31 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
-
+import { CopyOutlined, LockOutlined } from "@ant-design/icons";
+import { Tooltip, Button } from "antd";
 import content from "@/components/pages/download/index.json";
 import Image from "next/image";
+import Elipsis from "@/components/items/elipsis";
 
 interface ComponnentProps {
   tab: string;
 }
 
 const Component: FC<ComponnentProps> = ({ tab }) => {
+  const [tooltipText, setTooltipText] = useState("Click to copy");
+
+  const handleCopy = (textToCopy: any) => {
+    navigator.clipboard.writeText(textToCopy).then(
+      () => {
+        setTooltipText("Copied!");
+        setTimeout(() => setTooltipText("Click to copy"), 2000);
+      },
+      (err) => {
+        console.error("Failed to copy text: ", err);
+        setTooltipText("Failed to copy");
+      }
+    );
+  };
   return (
     <main className="download-page">
       <section className="download">
@@ -26,7 +42,7 @@ const Component: FC<ComponnentProps> = ({ tab }) => {
             ))}
           </div>
           <div className="slider">
-            {content.switchkey.map(({ key, img, downloadlinks, title,description }) =>
+            {content.switchkey.map(({ key, img, downloadlinks, title,description, SHA }) =>
               key === tab ? (
                 <div key={key} className="slide">
                   <div className="content-wrapper">
@@ -42,6 +58,38 @@ const Component: FC<ComponnentProps> = ({ tab }) => {
                         </a>
                       ))}
                     </div>
+                    {SHA ? (
+                        <div className="sha-boxs">
+                          {SHA?.map((sha, shaindex) => (
+                            <div className="sha-box" key={shaindex}>
+                              <div className="heding">
+                                <div className="icons">
+                                  <Image
+                                    height={20}
+                                    width={20}
+                                    className=""
+                                    src={sha.icon}
+                                    alt="App face"
+                                  />
+                                  <LockOutlined className="lock-icon" />
+                                <span>SHA256</span>
+                                </div>
+                                <Tooltip
+                                  title={tooltipText}
+                                  className="copy-icon"
+                                >
+                                  <CopyOutlined
+                                    onClick={() => handleCopy(sha.SHA256)}
+                                  />
+                                </Tooltip>
+                              </div>
+                              <div className="key-wraper">
+                                <Elipsis text={sha.SHA256} />
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : null}
                   </div>
                 </div>
               ) : null

@@ -34,6 +34,16 @@
           "target": "_blank",
           "downloadLabel": "github"
         }
+      ],
+      "SHA":[
+        {
+          "icon":"/images/download/Mac-icon.svg",
+          "SHA256":"26ebcbf27345b95ba7b1a1952ae30204576696b3c435725d67b7d6057034f798"
+        },
+        {
+          "icon":"/images/download/microsoft-icon.png",
+          "SHA256":"d0b7fa1ac01653c312ebc2e713e7dc42edb87ba78de56ec744db339119ec6408"
+        }
       ]
     },
     {
@@ -49,7 +59,8 @@
           "target": "_blank",
           "downloadLabel": "extension"
         }
-      ]
+      ],
+      "SHA":null
     },
     {
       "title": "Vultisig Web",
@@ -64,7 +75,8 @@
           "traget": "_blank",
           "downloadLabel": "AirDrop"
         }
-      ]
+      ],
+      "SHA":null
     }
   ]
 }

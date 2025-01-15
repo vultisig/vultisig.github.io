@@ -24,7 +24,7 @@
       }
       .switch-items.active {
         color: #ffffff;
-        background-color:rgb(4, 57, 199);
+        background-color: rgb(4, 57, 199);
         border-right: none !important;
         border-left: none !important;
       }
@@ -111,6 +111,54 @@
           background-size: contain;
           height: 152px;
         }
+
+        .sha-boxs {
+          margin-top: rem(50);
+          // max-width: 80%;
+          // margin-left: auto;
+          // margin-right: auto;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          .sha-box {
+            margin-top: rem(15);
+            background-color: rgba($color: $gray-13, $alpha: 0.4);
+            border: rem(0.5) solid $gray-1;
+            border-radius: rem(8);
+            padding: rem(16);
+            .heding {
+              display: flex;
+              justify-content: space-between;
+              gap: rem(5);
+              align-items: center;
+              //border-bottom: 0.5px solid $gray-9;
+              .icons {
+                display: flex;
+                align-items: center;
+                gap: rem(7);
+                .anticon svg {
+                  height: rem(25);
+                  width: rem(25);
+                }
+                .lock-icon {
+                  height: rem(20);
+                  width: rem(20);
+                }
+              }
+            }
+            .key-wraper {
+              margin-top: rem(10);
+
+              // display: flex;
+              // align-items: center;
+              // text-align: left;
+              .middle-truncate {
+                color: $gray-6;
+                text-align: left;
+              }
+            }
+          }
+        }
       }
 
       .title {
@@ -173,6 +221,12 @@
             width: 100%;
             max-width: 60%;
           }
+
+          .sha-boxs {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
       }
     }
@@ -185,6 +239,13 @@
       .switch-key {
         .switch-items {
           padding: rem(10) rem(18);
+        }
+      }
+      .slider {
+        .sha-boxs {
+          max-width: rem(763) !important;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }
