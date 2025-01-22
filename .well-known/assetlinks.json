@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.vultisig.wallet",
+        "sha256_cert_fingerprints": [
+          "5E:55:87:5E:BB:5B:57:D8:34:FE:8D:0C:2D:58:02:1F:07:6D:E6:8E:06:60:DF:B4:DC:9A:D1:C8:C1:D9:5D:DA"
+        ]
+      }
+    }
+  ]
