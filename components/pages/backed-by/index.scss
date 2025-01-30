@@ -123,6 +123,115 @@
       }
     }
   }
+
+  .funders {
+    margin-bottom: rem(50);
+    .wraper {
+      background-color: $blue-base;
+      border: 0.5px solid hsla(0, 0%, 100%, 0.1);
+      border-radius: 1rem;
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+      padding-left: rem(3);
+      padding-right: rem(3);
+      .heading {
+        background: linear-gradient(143deg, #33e6bf, #0439c7);
+        background-clip: text;
+        font-size: rem(20);
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(18);
+        justify-content: center;
+        max-width: 80%;
+        margin: rem(48) auto;
+
+        .image {
+          margin: 0 auto rem(5);
+          border-radius: 50%;
+          position: relative;
+        }
+
+        .title,.organ {
+          position: relative;
+          font-family: $secondary-font;
+          font-size: rem(20);
+          font-weight: 600;
+          justify-content: center;
+          display: flex;
+        }
+
+        .contact {
+          position: absolute;
+          display: flex;
+          gap: rem(5);
+          justify-content: center;
+          align-items: center;
+          bottom: rem(25);
+          right: 0;
+          left: 0;
+          margin-right: auto;
+          margin-left: auto;
+          font-size: rem(14);
+          font-weight: 400;
+          line-height: rem(22);
+          text-decoration: underline;
+
+          .icon {
+            border-radius: 50%;
+            color: black !important;
+            background-color:black;
+          }
+        }
+
+        li {
+          width: rem(264);
+
+          a {
+            background-image: linear-gradient(
+              to bottom right,
+              rgba(51, 230, 191, 0.80) 2%,
+              rgba(4, 57, 199, 0.75) 99%
+            );
+            border-radius: rem(16);
+            display: block;
+            padding-bottom: rem(55);
+            padding-left: rem(16);
+            padding-right: rem(16);
+            padding-top: rem(24);
+            position: relative;
+            text-align: center;
+            height: 100%;
+            color: $gray-1;
+            &::before {
+              content: "";
+              top: rem(2);
+              bottom: rem(2);
+              left: rem(2);
+              right: rem(2);
+              position: absolute;
+              border-radius: inherit;
+              background-color: $blue-dark;
+              transition: opacity 0.3s;
+            }
+            &:hover {
+              &::before {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .kols {
     margin-bottom: rem(50);
     .wraper {
@@ -246,6 +355,20 @@
         }
       }
     }
+
+    .funders {
+      .wraper {
+        .heading {
+          font-size: rem(30);
+          font-weight: 700;
+        }
+
+        .list {
+          gap: rem(22);
+        }
+      }
+    }
+
     .kols {
       .wraper {
         .heading {
@@ -266,6 +389,18 @@
       }
     }
     .funds {
+      .wraper {
+        .heading {
+          font-size: rem(35);
+          font-weight: 700;
+        }
+
+        .list {
+          gap: rem(30);
+        }
+      }
+    }
+    .founders {
       .wraper {
         .heading {
           font-size: rem(35);

@@ -1,6 +1,6 @@
 {
   "heading": "BACKED AND TRUSTED BY",
-  "funds":{
+  "funds": {
     "heading": "FUNDS",
     "items": [
       {
@@ -77,9 +77,56 @@
       }
     ]
   },
-  "kols":{
+  "founders": {
+    "heading": "FOUNDERS",
+    "items": [
+      {
+        "name": "JPTHOR",
+        "organ": "THORChain",
+        "src": "/images/backed-by/avatar-jpthor.png",
+        "twitter": "@jpthor",
+        "url": "https://x.com/jpthor"
+      },
+      {
+        "name": "Perklin",
+        "organ": "Shapeshift",
+        "src": "/images/backed-by/avatar-perklin.png",
+        "twitter": "@mperklin",
+        "url": "https://x.com/mperklin"
+      },
+      {
+        "name": "LoiLui",
+        "organ": "Kyber",
+        "src": "/images/backed-by/avatar-loilui.png",
+        "twitter": "@loi_luu",
+        "url": "https://x.com/loi_luu"
+      },
+      {
+        "name": "Marcel",
+        "organ": "THORWallet",
+        "src": "/images/backed-by/avatar-marcel.png",
+        "twitter": "@marcelharmann",
+        "url": "https://x.com/marcelharmann"
+      },
+      {
+        "name": "Viktor",
+        "organ": "TrustWallet",
+        "src": "/images/backed-by/avatar-viktor.png",
+        "twitter": "@Vikmeup",
+        "url": "https://x.com/Vikmeup"
+      },
+      {
+        "name": "Vik",
+        "organ": "CakeWallet",
+        "src": "/images/backed-by/avatar-vik.png",
+        "twitter": "@vikrantnyc",
+        "url": "https://x.com/vikrantnyc"
+      }
+    ]
+  },
+  "kols": {
     "heading": "KOLs",
-    "items":[
+    "items": [
       {
         "src": "/images/backed-by/avatar-thortrades.png",
         "title": "THORTrades",
