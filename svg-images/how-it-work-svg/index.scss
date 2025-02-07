@@ -1,0 +1,129 @@
+@keyframes circleAnimation {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translatey(4px);
+  }
+}
+@keyframes fadeOutShadow {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  65% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes humanShadow {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+// // PrivateKey
+// .privateKeySvg {
+//   .topLeft {
+//     animation: upAndDown 1.2s infinite alternate;
+//     animation-delay: 1s;
+//   }
+//   .bottomLeft {
+//     animation: upAndDown 1.2s infinite alternate;
+//     animation-delay: 2s;
+//   }
+//   .right {
+//     animation: upAndDown 1.2s infinite alternate;
+//     animation-delay: 3s;
+//   }
+//   .shadow {
+//     animation: fadeOutShadow 2s infinite alternate;
+//     animation-delay: 1.5s;
+//   }
+//   .item1 {
+//     animation: upAndDown 2s infinite alternate;
+//     animation-delay: 1.5s;
+//   }
+//   .item2 {
+//     animation: upAndDown 2s infinite alternate;
+//     animation-delay: 1s;
+//   }
+//   .item3 {
+//     animation: upAndDown 2s infinite alternate;
+//     animation-delay: 0.5s;
+//   }
+//   .item4 {
+//     animation: upAndDown 2s infinite alternate;
+//   }
+// }
+
+// //Storage
+// .storage {
+//   .smallblock {
+//     animation: upAndDown 2s infinite alternate;
+//   }
+//   .bigblock {
+//     animation: upAndDown 2s infinite alternate;
+//     animation-delay: 2s;
+//   }
+// }
+
+// //Human
+// .human {
+//   .item1 {
+//     animation: humanShadow 2s infinite alternate;
+//   }
+//   .item2 {
+//     animation: humanShadow 2s infinite alternate;
+//     animation-delay: 1s;
+//   }
+//   .item3 {
+//     animation: humanShadow 2s infinite alternate;
+//     animation-delay: 3s;
+//   }
+//   .item4 {
+//     animation: humanShadow 2s infinite alternate;
+//     animation-delay: 2s;
+//   }
+//   .item5 {
+//     animation: humanShadow 2s infinite alternate;
+//     animation-delay: 3.5s;
+//   }
+//   .item6 {
+//     animation: humanShadow 2s infinite alternate;
+//     animation-delay: 1.5s;
+//   }
+//   .item7 {
+//     animation: humanShadow 2s infinite alternate;
+//     animation-delay: 2.5s;
+//   }
+// }
+
+//TraditionalWallet
+.traditionalWallet {
+  .gpu {
+    animation: upAndDown 2s infinite alternate;
+  }
+  .shadowCircle {
+    animation: humanShadow 1.5s infinite alternate;
+  }
+}

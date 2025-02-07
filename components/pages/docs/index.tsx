@@ -1,14 +1,28 @@
+"use client";
 import Image from "next/image";
-
+import { motion } from "motion/react";
+import { Docs, Integrate } from "@/svg-images/docs-svg";
 import content from "@/components/pages/docs/index.json";
 
 export default function Component() {
+  const motionFadeRight = {
+    initial: { opacity: 0, x: 200 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 1, ease: "easeOut" },
+  };
+  const motionFadeLeft = {
+    initial: { opacity: 0, x: -200 },
+    whileInView: { opacity: 1, x: 0 },
+    transition: { duration: 1, ease: "easeOut" },
+  };
   return (
     <main className="docs-page">
       <section className="introduction">
         <div className="container">
           <div className="heading-wraper">
-            <h3 className="heading">{content.sectionOne.heading}</h3>
+            <motion.h3 {...motionFadeLeft} className="heading">
+              {content.sectionOne.heading}
+            </motion.h3>
             <Image
               src="images/back-logo.svg"
               alt="Vultisig Logo"
@@ -17,19 +31,26 @@ export default function Component() {
               width={70}
             />
           </div>
-          <p className="text">{content.sectionOne.text}</p>
-          <a href={content.sectionOne.link} className="btn">
+          <motion.p
+            {...motionFadeLeft}
+            transition={{ ...motionFadeLeft.transition, delay: 0.5 }}
+            className="text"
+          >
+            {content.sectionOne.text}
+          </motion.p>
+          <motion.a
+            {...motionFadeLeft}
+            transition={{ ...motionFadeLeft.transition, delay: 1 }}
+            href={content.sectionOne.link}
+            className="btn"
+          >
             {content.sectionOne.btn}
-          </a>
+          </motion.a>
           <div className="media">
-            <Image
-              src={content.sectionOne.image}
-              alt={content.sectionOne.heading}
-              className="image"
-              height={300}
-              width={300}
-            />
-            <span className="gradient-shadow" />
+            <motion.div {...motionFadeRight} className="wraper">
+              <Docs className="image " />
+              <span className="gradient-shadow" />
+            </motion.div>
           </div>
         </div>
 
@@ -38,20 +59,29 @@ export default function Component() {
       </section>
       <section className="integrate-vultisig">
         <div className="container">
-          <h3 className="heading">{content.sectionTwo.heading}</h3>
-          <p className="text">{content.sectionTwo.text}</p>
-          <a href={content.sectionTwo.link} className="btn">
+          <motion.h3 {...motionFadeRight} className="heading">
+            {content.sectionTwo.heading}
+          </motion.h3>
+          <motion.p
+            {...motionFadeRight}
+            transition={{ ...motionFadeLeft.transition, delay: 0.5 }}
+            className="text"
+          >
+            {content.sectionTwo.text}
+          </motion.p>
+          <motion.a
+            {...motionFadeRight}
+            transition={{ ...motionFadeLeft.transition, delay: 1 }}
+            href={content.sectionTwo.link}
+            className="btn"
+          >
             {content.sectionTwo.btn}
-          </a>
+          </motion.a>
           <div className="media">
-            <Image
-              src={content.sectionTwo.image}
-              alt={content.sectionTwo.heading}
-              className="image"
-              height={300}
-              width={300}
-            />
-            <span className="gradient-shadow" />
+            <motion.div {...motionFadeLeft} >
+              <Integrate className="image" />
+              <span className="gradient-shadow" />
+            </motion.div>
           </div>
         </div>
       </section>

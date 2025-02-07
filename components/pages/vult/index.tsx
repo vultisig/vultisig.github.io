@@ -1,12 +1,26 @@
+"use client";
 import Image from "next/image";
 import { Collapse, CollapseProps } from "antd";
+import { motion } from "motion/react";
 
 import content from "@/components/pages/vult/index.json";
+
+const motionFadeDown = {
+  initial: { opacity: 0, y: -60 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 1 },
+  viewport: { once: false },
+};
 
 const items: CollapseProps["items"] = content.faq.map((item, index) => ({
   key: index + 1,
   label: item.q,
-  children: <p dangerouslySetInnerHTML={{ __html: item.a }}></p>,
+  children: (
+    <motion.p
+      {...motionFadeDown}
+      dangerouslySetInnerHTML={{ __html: item.a }}
+    ></motion.p>
+  ),
 }));
 export default function Component() {
   return (
@@ -15,21 +29,33 @@ export default function Component() {
       <main className="vult-page">
         <section className="mediaspace">
           <div className="container">
-            <div className="heading">
+            <motion.div {...motionFadeDown} className="heading">
               <span
                 dangerouslySetInnerHTML={{ __html: content.header.title }}
                 className="title monserrat-bold"
               />
-            </div>
+            </motion.div>
             <ul className="list">
-              {content.header.data.map(({ title, value }, index) => (
-                <li key={index}>
+              {content.header.data.map(({ title, value, delay }, index) => (
+                <motion.li
+                  {...motionFadeDown}
+                  transition={{
+                    ...motionFadeDown.transition,
+                    delay: delay,
+                  }}
+                  key={index}
+                >
                   <span className="title">{title}</span>
                   <span className="value">{value}</span>
-                </li>
+                </motion.li>
               ))}
             </ul>
-            <span
+            <motion.span
+              {...motionFadeDown}
+              transition={{
+                ...motionFadeDown.transition,
+                delay: 0.8,
+              }}
               className="description"
               dangerouslySetInnerHTML={{ __html: content.header.text }}
             />
@@ -45,19 +71,27 @@ export default function Component() {
               className="vult-page-icon"
             />
 
-            <h2
+            <motion.h2
+              {...motionFadeDown}
               className="heading monserrat-bold mt-5 text-uppercase"
               dangerouslySetInnerHTML={{
                 __html: content.airdrop.main_title,
               }}
-            ></h2>
+            ></motion.h2>
           </div>
         </section>
         <section className="vult-page-pics">
           <div className="container">
             <ul className="list-vultisig">
               {content.airdrop.items.map((item, index) => (
-                <li key={index}>
+                <motion.li
+                  {...motionFadeDown}
+                  transition={{
+                    ...motionFadeDown.transition,
+                    delay: item.delay,
+                  }}
+                  key={index}
+                >
                   <Image
                     className="vult-page-icon"
                     src={item.src}
@@ -71,20 +105,28 @@ export default function Component() {
                       __html: item.title,
                     }}
                   ></span>
-                  <p className="desc"  dangerouslySetInnerHTML={{
+                  <p
+                    className="desc"
+                    dangerouslySetInnerHTML={{
                       __html: item.description,
-                    }}></p>
-                </li>
+                    }}
+                  ></p>
+                </motion.li>
               ))}
             </ul>
-           
-            <a
+
+            <motion.a
+              {...motionFadeDown}
+              transition={{
+                ...motionFadeDown.transition,
+                delay: 0.7,
+              }}
               className="btn"
               href={content.airdrop.JoinTheAirDropURL}
               target="_blank"
             >
               {content.airdrop.JoinTheAirDrop}
-            </a>
+            </motion.a>
           </div>
         </section>
 
@@ -97,8 +139,9 @@ export default function Component() {
               alt="Vultisig logo"
               className="vult-page-icon"
             />
-
-            <Collapse items={items} defaultActiveKey={[1]} />
+            <motion.div {...motionFadeDown}>
+              <Collapse items={items} defaultActiveKey={[1]} />
+            </motion.div>
           </div>
         </section>
       </main>

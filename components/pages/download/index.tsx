@@ -1,30 +1,25 @@
 "use client";
-import { FC, useState } from "react";
+import { FC } from "react";
 import Link from "next/link";
-import { CopyOutlined, LockOutlined } from "@ant-design/icons";
-import { Tooltip, Button } from "antd";
+import { motion } from "motion/react";
+
 import content from "@/components/pages/download/index.json";
 import Image from "next/image";
-import Elipsis from "@/components/items/elipsis";
 
 interface ComponnentProps {
   tab: string;
 }
 
 const Component: FC<ComponnentProps> = ({ tab }) => {
-  const [tooltipText, setTooltipText] = useState("Click to copy");
-
-  const handleCopy = (textToCopy: any) => {
-    navigator.clipboard.writeText(textToCopy).then(
-      () => {
-        setTooltipText("Copied!");
-        setTimeout(() => setTooltipText("Click to copy"), 2000);
-      },
-      (err) => {
-        console.error("Failed to copy text: ", err);
-        setTooltipText("Failed to copy");
-      }
-    );
+  const motionFadeIn = {
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1 },
+    transition: { duration: 1, ease: "easeOut" },
+  };
+  const motionFadeDown = {
+    initial: { opacity: 0, y: -40 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 1, ease: "easeOut" },
   };
   return (
     <main className="download-page">
@@ -42,57 +37,71 @@ const Component: FC<ComponnentProps> = ({ tab }) => {
             ))}
           </div>
           <div className="slider">
-            {content.switchkey.map(({ key, img, downloadlinks, title,description, SHA }) =>
-              key === tab ? (
-                <div key={key} className="slide">
-                  <div className="content-wrapper">
-                    <h3 className="heading">{title}</h3>
-                    <span className="desc">{description}</span>
-                    <Image height={346} width={256} className="slide-imag" src={img} alt="App face" />
-                    <div className="background-shadow"></div>
-                    <div className="shadow-bottem" />
-                    <div className="download-buttons-wrapper">
-                      {downloadlinks.map((link, linkIndex) => (
-                        <a key={linkIndex} href={link.url} target="_self">
-                          <Image src={link.image} alt={link.alt} width={180}  height={52}/>
-                        </a>
-                      ))}
+            {content.switchkey.map(
+              ({ key, img, downloadlinks, title, description }) =>
+                key === tab ? (
+                  <div key={key} className="slide">
+                    <div className="content-wrapper">
+                      <motion.h3
+                        {...motionFadeDown}
+                        transition={{
+                          ...motionFadeDown.transition,
+                          delay: 0.2,
+                        }}
+                        className="heading"
+                      >
+                        {title}
+                      </motion.h3>
+                      <motion.span
+                        {...motionFadeDown}
+                        transition={{
+                          ...motionFadeDown.transition,
+                          delay: 1,
+                        }}
+                      >
+                        <span className="desc">{description}</span>
+                      </motion.span>
+                      <motion.div
+                        {...motionFadeIn}
+                        transition={{
+                          ...motionFadeDown.transition,
+                          delay: 1,
+                        }}
+                      >
+                        <Image
+                          height={346}
+                          width={256}
+                          className="slide-imag"
+                          src={img}
+                          alt="App face"
+                        />
+                        <div className="background-shadow"></div>
+                      </motion.div>
+                      <div className="shadow-bottem" />
+                      <div className="download-buttons-wrapper">
+                        {downloadlinks.map((link, linkIndex) => (
+                          <motion.a
+                            {...motionFadeDown}
+                            transition={{
+                              ...motionFadeDown.transition,
+                              delay: link.delay,
+                            }}
+                            key={linkIndex}
+                            href={link.url}
+                            target="_self"
+                          >
+                            <Image
+                              src={link.image}
+                              alt={link.alt}
+                              width={180}
+                              height={52}
+                            />
+                          </motion.a>
+                        ))}
+                      </div>
                     </div>
-                    {SHA ? (
-                        <div className="sha-boxs">
-                          {SHA?.map((sha, shaindex) => (
-                            <div className="sha-box" key={shaindex}>
-                              <div className="heding">
-                                <div className="icons">
-                                  <Image
-                                    height={20}
-                                    width={20}
-                                    className=""
-                                    src={sha.icon}
-                                    alt="App face"
-                                  />
-                                  <LockOutlined className="lock-icon" />
-                                <span>SHA256</span>
-                                </div>
-                                <Tooltip
-                                  title={tooltipText}
-                                  className="copy-icon"
-                                >
-                                  <CopyOutlined
-                                    onClick={() => handleCopy(sha.SHA256)}
-                                  />
-                                </Tooltip>
-                              </div>
-                              <div className="key-wraper">
-                                <Elipsis text={sha.SHA256} />
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      ) : null}
                   </div>
-                </div>
-              ) : null
+                ) : null
             )}
           </div>
         </div>

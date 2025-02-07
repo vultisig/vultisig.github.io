@@ -17,32 +17,38 @@
         {
           "image": "/images/thorchain.svg",
           "symbol": "THORChain",
-          "text": "Treasury"
+          "text": "Treasury",
+          "delay":0
         },
         {
           "image": "/images/vultisig.svg",
           "symbol": "Vultisig",
-          "text": "Treasury"
+          "text": "Treasury",
+           "delay":0.1
         },
         {
           "image": "/images/wewe.svg",
           "symbol": "WEWE",
-          "text": "Treasury"
+          "text": "Treasury",
+           "delay":0.2
         },
         {
           "image": "/images/DeFi-suisse-treasury.svg",
           "symbol": "DeFi Suisse",
-          "text": "Treasury"
+          "text": "Treasury",
+           "delay":0.3
         },
         {
           "image": "/images/zkfinance.svg",
           "symbol": "ZKFinance",
-          "text": "Treasury"
+          "text": "Treasury",
+           "delay":0.4
         },
         {
           "image": "/images/ruji.svg",
           "symbol": "RUJI",
-          "text": "Treasury"
+          "text": "Treasury",
+           "delay":0.5
         }
       ]
     }
@@ -66,17 +72,20 @@
       {
         "title": "Single-signature wallets are dangerous",
         "description": "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your hot wallet? Forget your backup phrase? Interacted with malicious smart contract?",
-        "point": "One mistake and forever rekt."
+        "point": "One mistake and forever rekt.",
+         "delay":0.5
       },
       {
         "title": "Hardware wallets are clunky",
         "description": "Small screens, small buttons, annoying interfaces. Complicated setup instructions, scary firmware updates and confusing transactions.",
-        "point": "Why can't it be better?"
+        "point": "Why can't it be better?",
+         "delay":1
       },
       {
         "title": "Multi-signature wallets are painful",
         "description": "Multi-sig is a solution, but it is not chain agnostic or dynamic. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. Create a multi-sig wallet and never be able to change signers without migrating funds",
-        "point": "If only there was something that works for all."
+        "point": "If only there was something that works for all.",
+         "delay":1.5
       }
     ]
   },
@@ -86,42 +95,54 @@
     "items": [
       {
         "title": "Threshold<br/> Signatures",
-        "description": "Multiple devices to sign—no single point of failure. Never lose funds with one compromised device",
-        "image": "/images/home/threshold-signatures.png"
+        "description": "Multiple devices to sign—no single point of failure. Never lose funds on one compromised device",
+        "key":"Threshold",
+        "delay":0.1
       },
       {
         "title": "Familiar<br/> Hardware",
         "description": "Use your phone, laptop, or tablet—fast, secure, and hassle-free. No special devices needed.",
-        "image": "/images/home/familiar-hardware.png"
+        "key":"Familiar",
+        "delay":0.2
+       
       },
       {
         "title": "Vault Shares",
         "description": "No need to write down 24-words. Each device has its own unique Vault share. Store all Vault Shares of every device individually and you are ready to respawn.",
-        "image": "/images/home/rich-hardware.png"
+        "key":"VaultShares",
+        "image":"./images/home/VaultShares.png",
+        "delay":0.3
+        
+      
       },
       {
         "title": "Rich UI",
         "description": "Have all information displayed on big screens.<br/> Easy to see—easy to understand",
-        "image": "/images/home/crypto-bank.png"
+        "image": "/images/home/crypto-bank.png",
+        "key":"RichUi",
+        "delay":0.4
       }
     ]
   },
   "Seamless_security": {
     "heading": "Experience <span class='gradient-text'>Security</span>Without Sacrifice",
     "items": [
-      {
+      { 
+        "delay":1,
         "title": "Vault Generation",
         "label": "KeyGen time:",
         "value": "10 - 60 seconds.",
         "description": "Fast or Secure Vaults. Choose your vault type. Key generation is fast. No one device holds the vault private key, just vault shares."
       },
       {
+        "delay":1.5,
         "title": "Transaction Signing",
         "label": "KeySign time:",
         "value": "5 - 10 seconds.",
         "description": "One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and is done in real time."
       },
       {
+        "delay":2,
         "title": "Resharing",
         "label": "Reshare Time:",
         "value": "10 - 60 seconds.",
@@ -138,7 +159,7 @@
         "image": "/images/home/asset-management.png"
       },
       {
-        "title": "<span class='gradient-text'>DeFi</span> n your<br/> pocket",
+        "title": "easy<br/> crypto exchange",
         "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. It also supports advanced DeFi functions such as bonding to Nodes, Staking, Lending and Savers. ",
         "image": "/images/home/crypto-exchange.png"
       },
@@ -156,19 +177,22 @@
         "title": "Full DeFi",
         "description": "Swaps, Saving Vaults, Pools, Bridging. All DeFi functions right from your Vault.",
         "image": "/images/home/icon-full-defi.svg",
-        "comingSoon": false
+        "comingSoon": false,
+        "delay":0.1
       },
       {
         "title": "Remote Signing",
         "description": "Sign with a remote co-signer. All messages are encrypted between devices and can hardly be intercepted.",
         "image": "/images/home/icon-remote-signing.svg",
-        "comingSoon": false
+        "comingSoon": false,
+        "delay":0.2
       },
       {
         "title": "Transaction Policies",
         "description": "Define transaction policies for your vault - spending limits, address whitelists and more.</br>(COMING SOON)",
         "image": "/images/home/icon-transaction-policies.svg",
-        "comingSoon": true
+        "comingSoon": true,
+        "delay":0.3
       }
     ]
   },
@@ -178,22 +202,26 @@
       {
         "title": "CRYPTO NATIVES",
         "description": "Swap, borrow, save or spend in one wallet. You never need a second wallet again. Interact with the FIAT world in a safe way with the optional free Swiss bank account.",
-        "image": "/images/home/icon-crypto-natives.svg"
+        "image": "/images/home/icon-crypto-natives.svg",
+        "delay":0.1
       },
       {
         "title": "WHALES",
         "description": "Do you hold significant funds in crypto? Then you MUST consider upgrading to a Vultisig secure vault. Your funds are at-risk on all other wallets.  Download it now. ",
-        "image": "/images/home/icon-whales.svg"
+        "image": "/images/home/icon-whales.svg",
+        "delay":0.2
       },
       {
         "title": "FUNDS",
         "description": "Vultisig is the open-source audited alternative to your current “custodian”. You know it`s time to switch to self-custody. Remote co-signing means you can access funds anywhere in the world. ",
-        "image": "/images/home/icon-funds.svg"
+        "image": "/images/home/icon-funds.svg",
+        "delay":0.3
       },
       {
         "title": "TREASURIES",
         "description": "Vultisig is natively compatible to all chains. Together with transaction policies, designate your leads the ability to pay staff with limits, whitelists and more. ",
-        "image": "/images/home/icon-treasuries.svg"
+        "image": "/images/home/icon-treasuries.svg",
+        "delay":0.4
       }
     ]
   },

@@ -4,14 +4,17 @@
     "price": "$1",
     "data": [
       {
+        "delay":0.2,
         "title": "max supply",
         "value": "100,000,000"
       },
       {
+        "delay":0.4,
         "title": "circulating supply",
         "value": "0"
       },
       {
+        "delay":0.6,
         "title": "Current Price",
         "value": "$1"
       }
@@ -25,28 +28,33 @@
     },
     "items": [
       { 
+        "delay":0,
         "title":"download </br> app",
         "description":"Start by downloading the Vultisig app from the App Store or Google Play to get access to the platform and airdrop.",
         "src": "/images/vult/1.png"
       },
       { 
+        "delay":0.2,
         "title":"setup multi-factor wallet",
         "description":"Create a Vultisig Vault with multi-factor authentication to protect your assets and enhance your account’s security.",
         "src": "/images/vult/2.png"
       },
       { 
+        "delay":0.4,
         "title":"Backup your Vault",
         "description":"Each device in a vault has its on backup share. Back it up.",
         "src": "/images/vult/3.png"
       },
       { 
+        "delay":0.6,
         "title":"transfer funds to vaults",
         "description":"Deposit funds into Vultisig vaults to qualify for the airdrop and participate in platform activities.",
         "src": "/images/vult/4.png"
       },
       { 
+        "delay":0.7,
          "title":"join the </br> airdrop ",
-         "description":"Join the airdrop and follow the leaderboard on <a href=\"https://airdrop.vultisig.com\" target=\"_blank\">AIRDROP.VULTISIG.COM<a>",
+         "description":"Join the airdrop and follow the leaderboard on <a href=`aidrop.vultisig.com`>AIDROP.VULTISIG.COM<span>",
          "src": "/images/vult/5.png" }
     ],
     "JoinTheAirDrop": "Join the AirDrop",

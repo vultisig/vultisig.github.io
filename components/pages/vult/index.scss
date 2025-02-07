@@ -29,6 +29,16 @@ $gray-13: #000000;
 
 $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
 
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+
 .vult-page {
   .ant-collapse {
     border: none;
@@ -235,6 +245,11 @@ $linear-gradient: linear-gradient(82deg, $cyan-base 8%, $blue-sharp 132%);
             font-size: rem(12);
             text-decoration: underline !important;
             color: $gray-1;
+          }
+        }
+        &:hover{
+          img{
+            animation: scale 4s infinite alternate;
           }
         }
       }

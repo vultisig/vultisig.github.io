@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { ConfigProvider, Drawer, Menu, MenuProps } from "antd";
 import { CaretDownOutlined, CloseOutlined } from "@ant-design/icons";
@@ -12,6 +11,7 @@ import content from "@/components/layouts/default/index.json";
 import { HamburgerMD, Vultisig } from "@/icons";
 import MavaWidget from "./MavaWidget";
 import GoogleAnalytics from "./GoogleAnalytics";
+
 
 interface InitialState {
   currentPath: string;
@@ -63,6 +63,9 @@ export default function Component({
       setLoaded(true);
     }, 0);
   }, []);
+
+   
+
 
   const navbar: MenuProps["items"] = content.navbar.map(
     ({ label, children, url }, index) =>

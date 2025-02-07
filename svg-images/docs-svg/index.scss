@@ -1,0 +1,87 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* شروع از 0 درجه */
+  }
+  to {
+    transform: rotate(360deg); /* چرخش کامل 360 درجه */
+    transform-origin: center; /* نقطه چرخش */
+  }
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translatey(6px);
+  }
+}
+@keyframes upAndDownBlock {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translatey(-3px);
+  }
+}
+
+.docs-page {
+  .introduction {
+    .wraper {
+      .gearWheel {
+        opacity: 0;
+      }
+      .gearWheel1 {
+        width: 16%;
+        max-width: 71px;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+        animation: spin 25s linear infinite;
+        transform-origin: center;
+      }
+      .gearWheel2 {
+        width: 14%;
+        max-width: 71px;
+        position: absolute;
+        top: 15%;
+        left: 21%;
+        animation: spin 25s linear infinite;
+        transform-origin: center;
+      }
+      .image {
+        .notice {
+          animation: upAndDown 1s infinite alternate;
+        }
+      }
+    }
+  }
+  .integrate-vultisig {
+    .media {
+      .image {
+        .notice1 {
+          animation: upAndDown 1.5s infinite alternate;
+        }
+        .notice2 {
+          animation: upAndDown 1.5s infinite alternate;
+          animation-delay: 1s;
+        }
+        .block1 {
+          animation: upAndDownBlock 2.5s infinite alternate;
+          // animation-delay: 1s;
+        }
+        .block2 {
+          animation: upAndDownBlock 2.5s infinite alternate;
+          animation-delay: 0.5s;
+        }
+        .block3 {
+          animation: upAndDownBlock 2.5s infinite alternate;
+          animation-delay: 1s;
+        }
+        .block4 {
+          animation: upAndDownBlock 2.5s infinite alternate;
+          animation-delay: 1.5s;
+        }
+      }
+    }
+  }
+}
