@@ -84,7 +84,6 @@ const Component: FC<ComponnentProps> = ({ tab }) => {
                             {...motionFadeDown}
                             transition={{
                               ...motionFadeDown.transition,
-                              delay: link.delay,
                             }}
                             key={linkIndex}
                             href={link.url}
