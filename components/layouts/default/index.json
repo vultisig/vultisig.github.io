@@ -27,6 +27,10 @@
           "url": "/download/vultisig"
         },
         {
+          "label": "Vultisig Linux",
+          "url": "/download/vultisig"
+        },
+        {
           "label": "VultiConnect (Chrome extension)",
           "url": "/download/browser"
         }
