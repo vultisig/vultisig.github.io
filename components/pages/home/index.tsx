@@ -263,7 +263,6 @@ export default function Component() {
           </ul>
         </div>
       </section>
-
       <section className="call-to-action">
         <div className="container">
           <div className="wrapper">
@@ -277,16 +276,16 @@ export default function Component() {
             <a className="btn" href={content.call_to_action.link}>
               {content.call_to_action.btn}
             </a>
-            <Image
-              src={content.call_to_action.image}
-              alt={content.call_to_action.heading}
-              className="image"
-              height={414}
-              width={362}
-            />
+            <div className="img-wrapper">
+              <Image
+                src={content.call_to_action.image}
+                alt={content.call_to_action.heading}
+                className="image"
+                height={414}
+                width={362}
+              />
+            </div>
           </div>
-
-          <span className="gradient-shadow gradient-shadow-lb" />
         </div>
       </section>
     </main>

@@ -569,11 +569,11 @@
   }
 
   .call-to-action {
-    margin-top: rem(32);
+    margin-top: rem(115);
     .heading {
-      font-size: rem(40);
+      font-size: rem(30);
       font-weight: 700;
-      line-height: rem(64);
+      line-height: rem(50);
       text-align: center;
       text-transform: uppercase;
     }
@@ -591,11 +591,8 @@
       flex-direction: column;
       gap: rem(32);
       justify-content: center;
-      padding: rem(64) rem(32) rem(1) rem(32);
-
-      background-image: url("/images/home/call-to-action-bg.png");
-      background-size: auto;
-      background-position: center bottom;
+      padding-top: rem(64);
+      padding: rem(64) rem(32) 95% rem(32);
       &::before {
         content: "";
         position: absolute;
@@ -611,20 +608,30 @@
           rgb(33, 85, 223) 100%
         );
       }
-      .image {
-        height: auto !important;
-        max-width: 100%;
+      .img-wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("/images/home/call-to-action-bg.png");
+        border-radius: 0 0 rem(16) rem(16);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 100%;
+        padding-bottom: rem(30);
+        padding-top: 17%;
+        z-index: -2;
+        .image {
+          margin: 0 auto;
+          height: auto !important;
+          max-width: 30%;
+        }
       }
     }
 
     .container {
       position: relative;
-    }
-
-    .gradient-shadow {
-      left: rem(16);
-      top: 0;
-      transform: translate(-46%, -46%) scale(0.4);
     }
   }
 }
@@ -654,6 +661,24 @@
         .list {
           li {
             width: calc(100% / 3 - rem(32 * 2 / 3));
+          }
+        }
+      }
+    }
+    .call-to-action {
+      .heading {
+        font-size: rem(35);
+        font-weight: 700;
+        line-height: rem(60);
+      }
+
+      .wrapper {
+        justify-content: center;
+        padding: rem(64) rem(32) 90% rem(32);
+        .img-wrapper {
+          padding-top: 10%;
+          .image {
+            max-width: 35%;
           }
         }
       }
@@ -738,6 +763,23 @@
         }
       }
     }
+
+    .call-to-action {
+      .heading {
+        font-size: rem(40);
+        font-weight: 700;
+        line-height: rem(64);
+      }
+      .wrapper {
+        justify-content: center;
+        padding: rem(64) rem(32) 70% rem(32);
+        .img-wrapper {
+          .image {
+            max-width: 30%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -765,7 +807,6 @@
             top: 20%;
             padding-right: rem(20);
             background-image: url("/images/home/best-featurs-circles-back-right.png");
-
           }
 
           &:nth-child(odd) {
@@ -944,19 +985,32 @@
 
     .call-to-action {
       .wrapper {
+        position: relative;
         align-items: start;
         min-height: rem(478);
         padding: rem(64) 50% rem(64) rem(64);
+        background-size: 80% 100%;
+        background-image: url("/images/home/call-to-action-bg.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
 
         .heading {
           text-align: left;
         }
-
-        .image {
-          right: 25%;
-          position: absolute;
-          transform: translateX(50%);
-          max-width: 20% !important;
+        .img-wrapper {
+          background-image: none;
+          top: 0;
+          // left: 0;
+          margin: 0;
+          padding-top: 2%;
+          z-index: 3;
+          max-width: 50%;
+          transform: translateX(90%);
+          .image {
+            margin-top: 3%;
+            // margin-left: 60%;
+            max-width: rem(200) !important;
+          }
         }
       }
     }
