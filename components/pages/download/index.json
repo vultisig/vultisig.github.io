@@ -33,6 +33,13 @@
           "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.14/Vultisig-amd64-installer-v1.0.14.exe",
           "target": "_blank",
           "downloadLabel": "github"
+        },
+        {
+          "image": "/images/download/download-app/linux.svg",
+          "alt": "Download on linux",
+          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.14/vultisig_1.0.14_amd64.deb",
+          "target": "_blank",
+          "downloadLabel": "linux"
         }
       ],
       "SHA":[
@@ -43,6 +50,10 @@
         {
           "icon":"/images/download/microsoft-icon.png",
           "SHA256":"f0f58d2e689281073a72bd08198eda17f50ee30fb096931a8707b74e9ec1d77f"
+        },
+        {
+          "icon":"/images/download/linux-icon.png",
+          "SHA256":"b5c1dccd29ee0337e7cd6f8223428b8a1772c5a5354b19412af7065439cffe0f"
         }
       ]
     },
