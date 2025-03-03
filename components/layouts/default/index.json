@@ -86,11 +86,6 @@
           "label": "Contact Us",
           "url": "https://twitter.com/vultisig",
           "newTab": true
-        },
-        {
-          "label": "News Letter",
-          "url": "https://vultisig.substack.com/subscribe",
-          "newTab": true
         }
       ]
     },
