@@ -1,5 +1,5 @@
 {
-  "copyright": "@ Copyright 2024 - Vultisig.",
+  "copyright": "© Copyright 2025 - Vultisig.",
   "discord": {
     "title": "JOIN THE DISCORD TO REQUEST NEW FEATURES!",
     "url": "https://discord.gg/54wEtGYxuv",
@@ -24,6 +24,10 @@
         },
         {
           "label": "Vultisig Windows",
+          "url": "/download/vultisig"
+        },
+        {
+          "label": "Vultisig Linux",
           "url": "/download/vultisig"
         },
         {
@@ -81,11 +85,6 @@
         {
           "label": "Contact Us",
           "url": "https://twitter.com/vultisig",
-          "newTab": true
-        },
-        {
-          "label": "News Letter",
-          "url": "https://vultisig.substack.com/subscribe",
           "newTab": true
         }
       ]

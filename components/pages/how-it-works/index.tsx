@@ -13,7 +13,7 @@ export default function Component() {
           />
           <div className="media">
             <Image
-              src={content.sectionOne.image}
+              src="/images/home/secure.png"
               alt="Trusted Devices"
               className="image"
               height={966}
@@ -23,7 +23,6 @@ export default function Component() {
         </div>
 
         <span className="gradient-shadow gradient-shadow-lt" />
-        <span className="gradient-shadow gradient-shadow-rt" />
       </section>
 
       <section className="traditional-wallets">
@@ -53,8 +52,6 @@ export default function Component() {
             />
           </div>
         </div>
-
-        <span className="gradient-shadow gradient-shadow-lt" />
       </section>
 
       <section className="private-keys">
@@ -77,6 +74,7 @@ export default function Component() {
             ))}
           </ul>
         </div>
+        <span className="gradient-shadow gradient-shadow-lt" />
       </section>
 
       <section className="solutions">
@@ -114,27 +112,25 @@ export default function Component() {
       <section className="call-to-action">
         <div className="container">
           <div className="wrapper">
-          <Image
+            <Image
               src="/images/home/icon-vultisig-logo.png"
               width={244}
               height={56}
               alt="vultisig"
             />
-            <h3
-              className="heading"
-              dangerouslySetInnerHTML={{ __html: content.sectionFive.heading }}
-            />
-            <p className="text">{content.sectionFive.text}</p>
-            <a href={content.sectionFive.link} className="btn">
-              {content.sectionFive.btn}
+            <h3 className="heading">{content.call_to_action.heading}</h3>
+            <a className="btn" href={content.call_to_action.link}>
+              {content.call_to_action.btn}
             </a>
-            <Image
-              src={content.sectionFive.image}
-              alt={content.sectionFive.heading}
-              className="image"
-              height={414}
-              width={362}
-            />
+            <div className="img-wrapper">
+              <Image
+                src={content.call_to_action.image}
+                alt={content.call_to_action.heading}
+                className="image"
+                height={414}
+                width={362}
+              />
+            </div>
           </div>
         </div>
       </section>

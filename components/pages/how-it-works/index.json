@@ -56,11 +56,10 @@
       "image": "/images/how-it-works/secure-vault.png"
     }
   },
-  "sectionFive": {
+  "call_to_action": {
     "heading": "Secure your digital assets now!",
-    "text": "",
     "btn": "Download",
-    "link": "/download/vultisig",
+    "link": "/download",
     "image": "/images/home/secure.png"
   },
   "alts": {
