@@ -16,7 +16,7 @@
         {
           "image": "/images/download/download-app/github-download.svg",
           "alt": "Download on Github",
-          "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.11.0/VultisigApp.v1.11.0.signed.pkg",
+          "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.12.3/VultisigApp.v1.12.3.signed.pkg",
           "target": "_blank",
           "downloadLabel": "github"
         },
