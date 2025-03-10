@@ -14,7 +14,7 @@
           "downloadLabel": "app_store"
         },
         {
-          "image": "/images/download/download-app/github-download.svg",
+          "image": "/images/download/download-app/mac-os.png",
           "alt": "Download on Github",
           "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.12.3/VultisigApp.v1.12.3.signed.pkg",
           "target": "_blank",
