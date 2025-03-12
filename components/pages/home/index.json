@@ -1,8 +1,14 @@
 {
+  "banner": {
+    "title": "Vultisig Airdrop is<span class='gradient-text'> LIVE!</span>",
+    "subtitle": "Don’t miss your chance to claim your share of VULT and be part of the future of decentralized security.",
+    "button": "Go tp Airdrop",
+    "link": "https://airdrop.vultisig.com"
+  },
   "hero_section": {
     "slogan": "Regain control with the <span class='gradient-text'>Seedless, Multi-chain</span> crypto wallet",
     "title": "OPEN-SOURCE AUDITED",
-    "desc": "Experience top-tier security with Vultsig, the ultimate self-custodial, multi-chain crypto wallet. It's based on THORChain's vault technology. It's the first institutional-grade, privacy-focused, multi-chain wallet on the market.",
+    "desc": "Experience top-tier security with Vultisig, the ultimate self-custodial, multi-chain crypto wallet. It's based on THORChain's TSS vault technology. It's the first seedless, institutional-grade, multi-chain wallet for everyone on the market.",
     "btn": "Download Now",
     "link": "/download/vultisig",
     "downloadTitle": "Now Available for iOS, Mac, Android and Web:"
