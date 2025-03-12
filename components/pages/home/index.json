@@ -160,13 +160,13 @@
     "items": [
       {
         "title": "Full DeFi",
-        "description": "Swaps, Saving Vaults, Pools, Bridging. All DeFi functions right from your Vault.",
+        "description": "Swaps, Pools, Bridging. All DeFi functions right from your Vault.",
         "image": "/images/home/icon-full-defi.svg",
         "comingSoon": false
       },
       {
         "title": "Remote Signing",
-        "description": "Sign with a remote co-signer. All messages are encrypted between devices and can hardly be intercepted.",
+        "description": "Sign with a remote co-signer. All messages are encrypted between devices.",
         "image": "/images/home/icon-remote-signing.svg",
         "comingSoon": false
       },
@@ -183,7 +183,7 @@
     "items": [
       {
         "title": "CRYPTO NATIVES",
-        "description": "Swap, borrow, save or spend in one wallet. You never need a second wallet again. Interact with the FIAT world in a safe way with the optional free Swiss bank account.",
+        "description": "Swap, borrow, save, or spend in one wallet with institutional-grade security. You never need a second wallet again.",
         "image": "/images/home/icon-crypto-natives.svg"
       },
       {
