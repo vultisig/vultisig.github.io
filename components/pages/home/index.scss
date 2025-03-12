@@ -27,10 +27,81 @@
   .introduction {
     position: relative;
 
+    .banner {
+      position: relative;
+      display: flex;
+      border: solid rem(1) rgba($color: $btn-base, $alpha: 0.5);
+      border-radius: rem(16);
+      text-align: center;
+      padding: rem(20);
+      &::before {
+        content: "";
+        border-radius: rem(16);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,#1f61be98 5%, #024a9230 50%);
+        opacity: 0.5;
+      }
+      .banner-content {
+        .banner-title {
+          text-transform: uppercase;
+          display: block;
+          font-size: calc(rem(35) + 1vw);
+          font-weight: bold;
+        }
+
+        .banner-description {
+          color: $gray-1;
+          line-height: rem(30);
+          max-width: rem(800);
+          font-size: rem(20);
+          margin-top: rem(20);
+        }
+        .btn {
+          margin-top: rem(30);
+        }
+      }
+      .bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/images/home/banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: rem(16);
+        z-index: -1;
+        opacity: 0.4;
+      }
+      .circle-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 32%;
+        z-index: 2;
+        width: 199px;
+        height: 67px;
+      }
+      .circle-bottom {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 29%;
+        z-index: 2;
+        width: 435px;
+        height: 161px;
+      }
+    }
+
     .slogan {
       font-size: calc(rem(16) + 5vw);
       font-weight: 700;
       text-transform: uppercase;
+      margin-top: rem(30);
     }
 
     .title {
@@ -44,6 +115,7 @@
       color: $gray-6;
       line-height: rem(30);
       max-width: rem(800);
+      text-align: justify;
     }
 
     .btn {
@@ -654,6 +726,14 @@
       .media {
         padding-bottom: rem(102);
       }
+
+      .banner {
+        text-align: left;
+
+        .banner-content {
+          max-width: rem(450);
+        }
+      }
     }
 
     .information {
@@ -724,6 +804,13 @@
       }
       .media {
         padding-bottom: rem(150);
+      }
+
+      .banner {
+        padding: rem(50) !important;
+        .bg {
+          opacity: 1 !important;
+        }
       }
     }
 
@@ -819,6 +906,16 @@
     .introduction {
       padding-bottom: rem(100);
       margin-bottom: rem(80);
+
+      .banner {
+        .bg {
+          background-position: right -21px !important;
+        }
+        .circle-bottom {
+          display: block !important;
+        }
+      }
+
       .slogan {
         font-size: calc(rem(16) + 4vw);
         font-weight: 700;
@@ -850,7 +947,7 @@
         bottom: rem(30);
         right: -5%;
         max-width: 60%;
-        top: 20%;
+        top: 54%;
 
         .image {
           height: auto !important;
@@ -1020,6 +1117,11 @@
 @media (min-width: rem(1200)) {
   .home-page {
     .introduction {
+      .banner {
+        .bg {
+          background-position: right -60px !important;
+        }
+      }
       .slogan {
         font-size: calc(rem(16) + 4.5vw);
       }
@@ -1037,7 +1139,7 @@
         position: absolute;
         bottom: rem(30);
         right: -3%;
-        top: 20%;
+        top: 50%;
 
         .image {
           height: auto !important;
@@ -1153,6 +1255,15 @@
 @media (min-width: rem(1400)) {
   .home-page {
     .introduction {
+      .banner {
+        .banner-content {
+          max-width: rem(550) !important;
+        }
+        .circle-top {
+          display: block !important;
+        }
+      }
+
       .slogan {
         font-size: calc(rem(16) + 4.5vw);
       }
@@ -1171,7 +1282,7 @@
         bottom: rem(30);
         right: -5%;
         // max-width: 80%;
-        top: 20%;
+        top: 55%;
       }
     }
     .description {
@@ -1197,7 +1308,7 @@
         bottom: rem(30);
         right: -15%;
         // max-width: 80%;
-        top: 25%;
+        top: 57%;
 
         .image {
           height: auto !important;

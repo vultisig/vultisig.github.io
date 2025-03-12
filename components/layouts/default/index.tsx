@@ -12,6 +12,8 @@ import content from "@/components/layouts/default/index.json";
 import { HamburgerMD, Vultisig } from "@/icons";
 import MavaWidget from "./MavaWidget";
 import GoogleAnalytics from "./GoogleAnalytics";
+import GoogleTagManager from "./GoogleTagManager";
+import GoogleTagManager_NoScript from "./GoogleTagManager_NoScript";
 
 interface InitialState {
   currentPath: string;
@@ -84,9 +86,11 @@ export default function Component({
 
   return (
     <html lang="en">
+      <GoogleTagManager />
       <MavaWidget />
       <GoogleAnalytics />
       <body className="layout">
+        <GoogleTagManager_NoScript />
         <ConfigProvider theme={{ token: { fontFamily: "inherit" } }}>
           <header>
             <div className="container">

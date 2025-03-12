@@ -8,6 +8,34 @@ export default function Component() {
     <main className="home-page">
       <section className="introduction">
         <div className="container">
+          <div className="banner">
+            <div className="banner-content">
+              <span
+                className="banner-title"
+                dangerouslySetInnerHTML={{ __html: content.banner.title }}
+              ></span>
+              <p className="banner-description">{content.banner.subtitle}</p>
+              <Link className="btn" href={content.banner.link} target="_blank">
+                {content.banner.button}
+              </Link>
+            </div>
+            <div className="bg">
+            </div>
+              <Image
+                src="/images/home/circle-top.png"
+                alt=""
+                className="circle-top"
+                height={300}
+                width={600}
+              />
+              <Image
+                src="/images/home/circle-bottom.png"
+                alt=""
+                className="circle-bottom"
+                height={300}
+                width={600}
+              />
+          </div>
           <p
             dangerouslySetInnerHTML={{ __html: content.hero_section.slogan }}
             className="slogan"
@@ -263,6 +291,7 @@ export default function Component() {
           </ul>
         </div>
       </section>
+
       <section className="call-to-action">
         <div className="container">
           <div className="wrapper">
