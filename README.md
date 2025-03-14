@@ -1,6 +1,6 @@
 # 🛡️ Vultisig - Secure Multi-Signature Wallet Solution
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![Website](https://img.shields.io/badge/Website-Visit-brightgreen)](https://vultisig.github.io)
 
 ## 🚀 Overview
@@ -32,7 +32,7 @@ For comprehensive documentation, please visit our [docs](https://vultisig.github
 
 ## 📃 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## 🙏 Acknowledgments
 
