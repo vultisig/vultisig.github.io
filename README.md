@@ -1,27 +1,42 @@
-# 🛡️ Vultisig - Secure Multi-Signature Wallet Solution
+# 🌐 Vultisig Landing Page Repository
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![Website](https://img.shields.io/badge/Website-Visit-brightgreen)](https://vultisig.github.io)
 
 ## 🚀 Overview
 
-Vultisig is a secure, user-friendly multi-signature wallet solution designed to provide enhanced security for crypto asset management through distributed signing authority.
+This repository contains the source code for the Vultisig official landing page and documentation site. The site is built using Next.js and deployed via GitHub Pages at [vultisig.github.io](https://vultisig.github.io).
 
-## ✨ Features
+## ✨ Repository Features
 
-- 🔒 **Multi-Signature Security**: Distribute signing authority across multiple devices or individuals
-- 🌐 **Cross-Platform Support**: Available as browser extension, web application, and more
-- 💼 **Enterprise-Ready**: Advanced features for team and business use cases
-- 🔄 **Seamless Integration**: Works with major blockchain networks and wallets
-- 👤 **User-Friendly**: Simplified interface for complex cryptographic operations
+- 🔥 **Next.js Framework**: Modern React framework with server-side rendering capabilities
+- 📱 **Responsive Design**: Mobile-friendly interface that works across all devices
+- 🎨 **Custom Components**: Reusable UI components built with Ant Design
+- 📊 **Analytics Integration**: Includes Google Analytics and Tag Manager setup
+- 🔄 **CI/CD**: Automated deployment through GitHub Actions
 
-## 🛠️ Installation
+## 🛠️ Development
 
-Visit our [download page](https://vultisig.github.io/download) to get started with Vultisig.
+### Prerequisites
 
-## 📚 Documentation
+- Node.js (v16 or higher)
+- npm or yarn
 
-For comprehensive documentation, please visit our [docs](https://vultisig.github.io/docs).
+### Local Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/vultisig/vultisig.github.io.git
+cd vultisig.github.io
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The development server will be available at http://localhost:3000.
 
 ## 🤝 Community
 
