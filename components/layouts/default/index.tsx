@@ -192,6 +192,7 @@ export default function Component({
                 </ul>
 
                 <span className="copyright">{content.copyright}</span>
+                <span className="version">v1.0.0</span>
               </div>
 
               <div className="links">
