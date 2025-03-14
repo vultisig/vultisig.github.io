@@ -52,5 +52,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 🙏 Acknowledgments
 
 Thanks to all our contributors, supporters, and the open-source community!
-
-=)
