@@ -1,11 +1,11 @@
 # 🌐 Vultisig Landing Page Repository
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
-[![Website](https://img.shields.io/badge/Website-Visit-brightgreen)](https://vultisig.github.io)
+[![Website](https://img.shields.io/badge/Website-Visit-brightgreen)](https://vultisig.com)
 
 ## 🚀 Overview
 
-This repository contains the source code for the Vultisig official landing page and documentation site. The site is built using Next.js and deployed via GitHub Pages at [vultisig.github.io](https://vultisig.github.io).
+This repository contains the source code for the Vultisig official landing page and documentation site. The site is built using Next.js and deployed via GitHub Pages at [vultisig.com](https://vultisig.com).
 
 ## ✨ Repository Features
 
