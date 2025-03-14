@@ -6,9 +6,9 @@
     "link": "https://airdrop.vultisig.com"
   },
   "hero_section": {
-    "slogan": "Regain control with the <span class='gradient-text'>Seedless, Multi-chain</span> crypto wallet",
+    "slogan": "Regain control with the <span class='gradient-text'>Seedless, Multi-chain</span> crypto vault",
     "title": "OPEN-SOURCE AUDITED",
-    "desc": "Experience top-tier security with Vultisig, the ultimate self-custodial, multi-chain crypto wallet. It's based on THORChain's TSS vault technology. It's the first seedless, institutional-grade, multi-chain wallet for everyone on the market.",
+    "desc": "Experience top-tier security with Vultisig, the ultimate self-custodial, multi-chain crypto vault. It's based on secure threshold signatures. It's the first seedless, institutional-grade, multi-chain vault for everyone on the market.",
     "btn": "Download Now",
     "link": "/download/vultisig",
     "downloadTitle": "Now Available for iOS, Mac, Android and Web:"
@@ -54,7 +54,7 @@
     }
   },
   "airdrop": {
-    "heading": "Vultisigs <span class='gradient-text'>$5M</span> airdrop is live.",
+    "heading": "Vultisig <span class='gradient-text'>AIRDROP</span> is live!",
     "description": "Join now, secure your Share of <span class='gradient-text'>$VULT</span> and store your assets safely.",
     "btn": "Join today",
     "link": "https://airdrop.vultisig.com"
@@ -71,7 +71,7 @@
     "items": [
       {
         "title": "Single-signature wallets are dangerous",
-        "description": "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your hot wallet? Forget your backup phrase? Interacted with malicious smart contract?",
+        "description": "Accidentally lose your phone? Upload your private keys to a phishing site? Download a trojan and drain your hot wallet?",
         "point": "One mistake and forever rekt."
       },
       {
@@ -81,7 +81,7 @@
       },
       {
         "title": "Multi-signature wallets are painful",
-        "description": "Multi-sig is a solution, but it is not chain agnostic or dynamic. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible. Create a multi-sig wallet and never be able to change signers without migrating funds",
+        "description": "Multi-sig is a solution, but it is not chain agnostic or dynamic. Different networks (ETH, BTC, SOL) have different multi-sig setups, making a single UX impossible.",
         "point": "If only there was something that works for all."
       }
     ]
@@ -102,7 +102,7 @@
       },
       {
         "title": "Vault Shares",
-        "description": "No need to write down 24-words. Each device has its own unique Vault share. Store all Vault Shares of every device individually and you are ready to respawn.",
+        "description": "No need to write down seed phrases. Store your Vault Shares online safely and respawn anywhere!",
         "image": "/images/home/rich-hardware.png"
       },
       {
@@ -118,19 +118,19 @@
       {
         "title": "Vault Generation",
         "label": "KeyGen time:",
-        "value": "10 - 60 seconds.",
+        "value": "3-5 seconds.",
         "description": "Fast or Secure Vaults. Choose your vault type. Key generation is fast. No one device holds the vault private key, just vault shares."
       },
       {
         "title": "Transaction Signing",
         "label": "KeySign time:",
-        "value": "5 - 10 seconds.",
+        "value": "1-3 seconds.",
         "description": "One device starts the transaction. A second paired device confirms the transaction. It is natively “two-factor” and is done in real time."
       },
       {
         "title": "Resharing",
         "label": "Reshare Time:",
-        "value": "10 - 60 seconds.",
+        "value": "3-5 seconds.",
         "description": "Lost a device? Replace it easily without changing the vault or address. Want to increase security? Go from 2-of-3 to 3-of-4 setup easily."
       }
     ]
@@ -145,7 +145,7 @@
       },
       {
         "title": "<span class='gradient-text'>DeFi</span> In your<br/> pocket",
-        "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. It also supports advanced DeFi functions such as bonding to Nodes, Staking, Lending and Savers. ",
+        "description": "Vultisig is natively DeFi compatible - rebalance your portfolio right inside the vault. It also supports advanced DeFi functions such as bonding to Nodes, Staking and more!",
         "image": "/images/home/crypto-exchange.png"
       },
       {
