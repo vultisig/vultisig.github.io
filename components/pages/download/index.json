@@ -16,7 +16,7 @@
         {
           "image": "/images/download/download-app/mac-os.png",
           "alt": "Download on Github",
-          "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.13.4/VultisigApp.v1.13.4.signed.pkg",
+          "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.14.0/VultisigApp.v1.14.0.signed.pkg",
           "target": "_blank",
           "downloadLabel": "github"
         },
@@ -30,14 +30,14 @@
         {
           "image": "/images/download/download-app/windows.png",
           "alt": "Download on Github",
-          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.16/Vultisig-amd64-installer-v1.0.16.exe",
+          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.17/Vultisig-amd64-installer-v1.0.17.exe",
           "target": "_blank",
           "downloadLabel": "github"
         },
         {
           "image": "/images/download/download-app/linux.svg",
           "alt": "Download on linux",
-          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.16/vultisig_1.0.16_amd64.deb",
+          "url": "https://github.com/vultisig/vultisig-windows/releases/download/v1.0.17/vultisig_1.0.17_amd64.deb",
           "target": "_blank",
           "downloadLabel": "linux"
         }
@@ -45,15 +45,15 @@
       "SHA":[
         {
           "icon":"/images/download/Mac-icon.svg",
-          "SHA256":"d23b14b52110f6ee18f7c7a5d66b3783c484cf3357512c277fbe37decd24ac65"
+          "SHA256":"182f4aee5a10a29190f2b2639878a15294abf357036e2e4a73163e65b6a6334c"
         },
         {
           "icon":"/images/download/microsoft-icon.png",
-          "SHA256":"2ee0a7a39bd53a72ede61930c95f951452083e3ca22b5b0847eeaac36b896d58"
+          "SHA256":"3dac3abda06b2bd6d5127af247a089d75ede510438a0bcf51f88a710a5ff7cc2"
         },
         {
           "icon":"/images/download/linux-icon.png",
-          "SHA256":"035fcf6a6e01dcd7436cd785fb9bdf1109d092640a6d70f2a1d205b9a3310f83"
+          "SHA256":"e0a210d65b8e98c316cc61028473eb9747ae3b3782581b822da15d1c4cecd050"
         }
       ]
     },
