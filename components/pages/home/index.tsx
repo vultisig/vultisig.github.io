@@ -19,23 +19,23 @@ export default function Component() {
                 {content.banner.button}
               </Link>
             </div>
-            <div className="bg">
-            </div>
-              <Image
-                src="/images/home/circle-top.png"
-                alt=""
-                className="circle-top"
-                height={300}
-                width={600}
-              />
-              <Image
-                src="/images/home/circle-bottom.png"
-                alt=""
-                className="circle-bottom"
-                height={300}
-                width={600}
-              />
+            <div className="bg"></div>
+            <Image
+              src="/images/home/circle-top.png"
+              alt=""
+              className="circle-top"
+              height={300}
+              width={600}
+            />
+            <Image
+              src="/images/home/circle-bottom.png"
+              alt=""
+              className="circle-bottom"
+              height={300}
+              width={600}
+            />
           </div>
+
           <p
             dangerouslySetInnerHTML={{ __html: content.hero_section.slogan }}
             className="slogan"
@@ -47,6 +47,7 @@ export default function Component() {
           <Link className="btn" href={content.hero_section.link}>
             {content.hero_section.btn}
           </Link>
+
           <div className="media">
             <Image
               src="/images/home/introduction-image.png"
@@ -55,7 +56,6 @@ export default function Component() {
               height={754}
               width={1328}
             />
-            <span className="gradient-shadow " />
           </div>
         </div>
 
@@ -162,13 +162,13 @@ export default function Component() {
                   src={item.image}
                   alt={item.title}
                   className="image"
-                  height={130}
-                  width={153}
+                  height={170}
+                  width={193}
                 />
-                <h4
+                <p
                   className="title"
                   dangerouslySetInnerHTML={{ __html: item.title }}
-                ></h4>
+                ></p>
                 <p
                   className="desc"
                   dangerouslySetInnerHTML={{ __html: item.description }}
@@ -306,12 +306,10 @@ export default function Component() {
               {content.call_to_action.btn}
             </a>
             <div className="img-wrapper">
-              <Image
+              <img
                 src={content.call_to_action.image}
                 alt={content.call_to_action.heading}
                 className="image"
-                height={414}
-                width={362}
               />
             </div>
           </div>
