@@ -27,7 +27,7 @@ export default function Component() {
                   {Icon && <Icon className="icon" />}
                   <h4 className="title">{item.title}</h4>
                   <p className="desc">{item.description}</p>
-                  <a href="#" className="link">
+                  <a href={item.href?item.href:'#'} target={item.target?item.target:'_blank'} className="link">
                     {item.link}
                   </a>
                 </li>
