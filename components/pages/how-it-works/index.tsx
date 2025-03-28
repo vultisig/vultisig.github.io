@@ -13,7 +13,7 @@ export default function Component() {
           />
           <div className="media">
             <img
-              src="/images/how-it-works/iphone.png"
+              src="/images/how-it-works/iphone13.png"
               alt="Trusted Devices"
               className="image"
             />
