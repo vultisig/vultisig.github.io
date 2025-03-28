@@ -42,7 +42,6 @@
       .image {
         height: auto !important;
         margin: 0 auto;
-        max-width: 100%;
       }
 
       .gradient-shadow {
@@ -359,6 +358,7 @@
         transform: translateY(-50%);
         .image {
           width: rem(400) !important;
+          margin-left: -148px;
         }
         .gradient-shadow {
           height: rem(430);

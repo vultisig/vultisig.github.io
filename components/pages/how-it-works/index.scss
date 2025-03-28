@@ -1,6 +1,10 @@
 @use "@/styles/variables" as *;
 
 .how-it-works-page {
+  .gradient-shadow{
+    z-index: -1 !important;
+  }
+  
   .trusted-devices {
     position: relative;
     font-size: calc(1rem + 5vw);
@@ -10,38 +14,21 @@
       position: relative;
       z-index: 9;
     }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      //background-image: url(/images/home/call-to-action-bg.png);
-      background-position: center;
-      background-size: auto;
-      background-repeat: no-repeat;
-      z-index: -2;
-    }
-    .media {
-      background-image: url("/images/home/call-to-action-bg.png");
-      background-size: 120% 100%;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      padding-top: 10%;
-      padding-bottom: 8%;
-      z-index: -99;
-      width: 100%;
-      box-sizing: border-box;
-      box-shadow: inset -15px -15px 50px 20px $blue-dark;
 
+    .media {
+      background-image: url("/images/how-it-works/private-key-circles-back.png");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: rem(30);
       .image {
+        margin-top: rem(30);
         margin: 0 auto;
         height: auto !important;
-        max-width: 30%;
-      }
-      .container {
-        padding-top: 95%;
+        max-width: 100%;
       }
     }
+
     .gradient-shadow {
       z-index: 1;
     }
@@ -129,8 +116,7 @@
     .media {
       margin-top: rem(64);
       width: 100%;
-      // max-width: rem(434);
-      // padding: rem(32) rem(32) rem(40);
+
       padding: rem(30);
       background-image: url(/images/how-it-works/traditional-wallets-bg.png);
       background-position: center center;
@@ -213,13 +199,14 @@
         text-align: center;
       }
     }
+
     .media {
-      background-image: url(/images/how-it-works/private-key-circles-back.png);
+      padding: 50px;
+      margin-top: 30px;
+      background-image: url("/images/how-it-works/private-key-circles-back.png");
       background-position: center center;
       background-size: contain;
       background-repeat: no-repeat;
-      padding: 50px;
-      margin-top: 30px;
 
       &::before {
         content: "";
@@ -240,6 +227,7 @@
         max-width: 84%;
       }
     }
+    
     .gradient-shadow {
       right: 0;
       max-width: rem(350);
@@ -357,19 +345,18 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url("/images/home/call-to-action-bg.png");
-        border-radius: 0 0 rem(16) rem(16);
+        border-radius: 0 0 1rem 1rem;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
-        width: 100%;
+        width: 89%;
         padding-bottom: rem(30);
-        padding-top: 17%;
         z-index: -2;
+        margin: auto;
         .image {
-          margin: 0 auto;
+          margin: auto;
           height: auto !important;
-          max-width: 30%;
+          max-width: 90%;
         }
       }
     }
@@ -388,18 +375,6 @@
         font-weight: 700;
         text-transform: uppercase;
         // max-width: 90vw;
-      }
-
-      .media {
-        // margin: rem(20) auto;
-        padding-top: 6%;
-        .image {
-          max-width: 30%;
-        }
-
-        &::before {
-          top: rem(-60);
-        }
       }
     }
     .traditional-wallets {
@@ -420,12 +395,6 @@
       .wrapper {
         justify-content: center;
         padding: rem(64) rem(32) 90% rem(32);
-        .img-wrapper {
-          padding-top: 10%;
-          .image {
-            max-width: 35%;
-          }
-        }
       }
     }
   }
@@ -440,12 +409,6 @@
         text-transform: uppercase;
         max-width: 80vw;
       }
-
-      .media {
-        .image {
-          max-width: 25%;
-        }
-      }
     }
     .call-to-action {
       .heading {
@@ -455,12 +418,6 @@
       }
       .wrapper {
         justify-content: center;
-        padding: rem(64) rem(32) 70% rem(32);
-        .img-wrapper {
-          .image {
-            max-width: 30%;
-          }
-        }
       }
     }
   }
@@ -487,25 +444,22 @@
         width: 25vw;
         // z-index: 1;
       }
-      .media {
-        padding-top: rem(250);
-        padding-bottom: rem(250);
-        position: absolute;
-        right: -10%;
-        top: -50px;
-        bottom: 0;
-        width: 90%;
-        .image {
-          position: absolute;
-          right: 25%;
-          top: 12%;
-          margin: 0;
-          max-width: rem(200);
-        }
-      }
       .container {
         position: relative;
-        padding-right: 40%;
+        display: flex;
+        flex-direction: row;
+
+        .heading {
+          padding-right: 22%;
+          margin-top: 8%;
+        }
+        .media {
+          position: absolute;
+          right: rem(20);
+          .image {
+            width: 76%;
+          }
+        }
       }
     }
 
@@ -529,13 +483,13 @@
         padding: rem(32);
         max-width: 40%;
         position: absolute;
-        right: rem(16);
+        left: rem(16);
         top: 50%;
         transform: translateY(-50%);
       }
 
       .container {
-        padding-right: rem(498);
+        padding-left: rem(498);
         position: relative;
       }
     }
@@ -572,27 +526,18 @@
         min-height: rem(478);
         padding: rem(64) 50% rem(64) rem(64);
         background-size: 80% 100%;
-        background-image: url("/images/home/call-to-action-bg.png");
         background-repeat: no-repeat;
         background-position: right bottom;
-
+        overflow: hidden;
+        top: -20%;
         .heading {
           text-align: left;
         }
         .img-wrapper {
-          background-image: none;
-          top: 0;
-          // left: 0;
-          margin: 0;
-          padding-top: 2%;
-          z-index: 3;
-          max-width: 50%;
-          transform: translateX(90%);
-          .image {
-            margin-top: 3%;
-            // margin-left: 60%;
-            max-width: rem(200) !important;
-          }
+          left: unset;
+          right: -8%;
+          width: 79%;
+          top: -102px;
         }
       }
     }
@@ -606,23 +551,13 @@
 
       .heading {
         font-size: calc(rem(16) + 5.5vw);
-        max-width: 80vw;
+        padding-right: 0% !important;
       }
-
-      .media {
-        padding-top: rem(300);
-        padding-bottom: rem(300);
-        position: absolute;
-        right: -10%;
-        top: -50px;
-        bottom: 0;
-        width: 90%;
-        .image {
-          position: absolute;
-          right: 27%;
-          top: 13%;
-          margin: 0;
-          max-width: rem(240);
+      .container{
+        .media{
+          .image {
+            width: 90%;
+          }
         }
       }
       .container {
@@ -632,23 +567,18 @@
 
     .traditional-wallets {
       .container {
-        padding-right: rem(750) !important;
+        padding-left: rem(750) !important;
         .media {
           max-width: 38%;
           padding: rem(0);
-          right: 10%;
+          left: 10%;
         }
       }
     }
-    .call-to-action {
-      .wrapper {
-        .image {
-          max-width: 16% !important;
-        }
-      }
-    }
+
   }
 }
+
 @media (min-width: rem(1400)) {
   .how-it-works-page {
     .trusted-devices {
@@ -656,22 +586,7 @@
         font-size: rem(97);
         max-width: 70vw;
       }
-      .media {
-        padding-top: rem(300);
-        padding-bottom: rem(300);
-        position: absolute;
-        right: -10%;
-        top: -50px;
-        bottom: 0;
-        width: 90%;
-        .image {
-          position: absolute;
-          right: 27%;
-          top: 13%;
-          margin: 0;
-          max-width: rem(240);
-        }
-      }
+
       .container {
         padding-right: rem(500);
       }

@@ -12,12 +12,10 @@ export default function Component() {
             className="heading"
           />
           <div className="media">
-            <Image
-              src="/images/home/secure.png"
+            <img
+              src="/images/how-it-works/iphone13.png"
               alt="Trusted Devices"
               className="image"
-              height={966}
-              width={494}
             />
           </div>
         </div>
@@ -27,6 +25,15 @@ export default function Component() {
 
       <section className="traditional-wallets">
         <div className="container">
+          <div className="media">
+            <Image
+              src={content.sectionTwo.image}
+              alt="Traditional Wallets"
+              className="image"
+              height={400}
+              width={400}
+            />
+          </div>
           <h3
             dangerouslySetInnerHTML={{ __html: content.sectionTwo.heading }}
             className="heading"
@@ -42,15 +49,6 @@ export default function Component() {
               </li>
             ))}
           </ul>
-          <div className="media">
-            <Image
-              src={content.sectionTwo.image}
-              alt="Traditional Wallets"
-              className="image"
-              height={400}
-              width={400}
-            />
-          </div>
         </div>
       </section>
 
@@ -123,12 +121,10 @@ export default function Component() {
               {content.call_to_action.btn}
             </a>
             <div className="img-wrapper">
-              <Image
+              <img
                 src={content.call_to_action.image}
                 alt={content.call_to_action.heading}
                 className="image"
-                height={414}
-                width={362}
               />
             </div>
           </div>

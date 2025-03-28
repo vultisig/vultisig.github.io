@@ -101,12 +101,12 @@
         "image": "/images/home/familiar-hardware.png"
       },
       {
-        "title": "Vault Shares",
+        "title": "Vault<br/> Shares",
         "description": "No need to write down seed phrases. Store your Vault Shares online safely and respawn anywhere!",
         "image": "/images/home/rich-hardware.png"
       },
       {
-        "title": "Rich UI",
+        "title": "Rich<br/> UI",
         "description": "Have all information displayed on big screens.<br/> Easy to see—easy to understand",
         "image": "/images/home/crypto-bank.png"
       }
