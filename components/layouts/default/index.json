@@ -73,6 +73,11 @@
       "title": "Support",
       "links": [
         {
+          "label": "Support",
+          "url": "/support",
+          "newTab": false
+        },
+        {
           "label": "FAQs",
           "url": "/faq",
           "newTab": false
