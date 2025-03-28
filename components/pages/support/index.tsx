@@ -8,7 +8,8 @@ export default function Component() {
     (item, index) => ({
       key: index + 1,
       label: item.q,
-      children: <p dangerouslySetInnerHTML={{ __html: item.a }}></p>,
+    // children: <p dangerouslySetInnerHTML={{ __html: item.a }}></p>,
+      disabled: true,
     })
   );
 
@@ -40,7 +41,7 @@ export default function Component() {
         <div className="container">
           <h2 className="heading">{content.faq.heading}</h2>
 
-          <Collapse items={items} defaultActiveKey={[1]} />
+          <Collapse items={items} />
         </div>
       </section>
     </main>
