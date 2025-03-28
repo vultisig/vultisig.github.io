@@ -14,10 +14,6 @@
         "a": "Vultisig is audited, open-source and uses a very well-proven TSS library."
     },
     {
-        "q": "How does Vultisig make money?",
-        "a": "Vultisig only charges a flat fee on swap and bridging. There are no other hidden fees."
-    },
-    {
         "q": "Can I recover my assets if I lose a device?",
         "a": "You can back-up your vault by exporting the vault shares."
     },
