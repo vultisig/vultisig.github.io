@@ -1,0 +1,42 @@
+{
+  "introduction": {
+    "heading": "Support",
+    "description": "Need Help? We're Here for You. If you're experiencing issues, have questions, or need help with your multi-sig wallet, our team is ready to assist.",
+    "items": [
+      {
+        "title": "Contact support",
+        "description": "Please contact us for any inquiries or questions regarding Vultisig.",
+        "icon": "MessagesSquare",
+        "link": "support@vultisig.com",
+        "target": "_blank",
+        "href": "mailto:support@vultisig.com"
+
+      },
+      {
+        "title": "User Support",
+        "description": "Join our Discord and chat with the team to get direct help.",
+        "icon": "Discord",
+        "link": "Join Discord",
+        "target": "_blank",
+        "href": "https://discord.gg/54wEtGYxuv"
+
+      },
+      {
+        "title": "Read the docs",
+        "description": "Get educated and enjoy safer asset management.",
+        "icon": "BookOpenText",
+        "link": "Go to Docs",
+        "target": "_blank",
+        "href": "https://docs.vultisig.com"
+      },
+      {
+        "title": "Vulti Holdings Limited",
+        "description": "Intershore Chambers, Road Town, Tortola, British Virgin Islands",
+        "icon": "BriefcaseBusiness",
+        "link": "contact@vultisig.com",
+        "target": "_blank",
+        "href": "mailto:contact@vultisig.com"
+      }
+    ]
+  }
+}
