@@ -38,42 +38,5 @@
         "href": "mailto:contact@vultisig.com"
       }
     ]
-  },
-  "faq": {
-    "heading": "FAQ",
-    "items": [
-      {
-        "q": "Do I need to do KYC?",
-        "a": "Answer"
-      },
-      {
-        "q": "What’s the base currency of the card?",
-        "a": "Answer"
-      },
-      {
-        "q": "With which crypto can I top-up the bank account or debit card?",
-        "a": "Answer"
-      },
-      {
-        "q": "Is the bank account and MasterCard Free?",
-        "a": "Answer"
-      },
-      {
-        "q": "What are the fees for bank wires top up?",
-        "a": "Answer"
-      },
-      {
-        "q": "Who is Fiat24 and what license does they have?",
-        "a": "Answer"
-      },
-      {
-        "q": "What countries can I open a bank account?",
-        "a": "Answer"
-      },
-      {
-        "q": "What countries can I request the MasterCard?",
-        "a": "Answer"
-      }
-    ]
   }
 }

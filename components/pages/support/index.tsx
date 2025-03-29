@@ -4,15 +4,6 @@ import content from "@/components/pages/support/index.json";
 import * as Icons from "@/icons";
 
 export default function Component() {
-  const items: CollapseProps["items"] = content.faq.items.map(
-    (item, index) => ({
-      key: index + 1,
-      label: item.q,
-    // children: <p dangerouslySetInnerHTML={{ __html: item.a }}></p>,
-      disabled: true,
-    })
-  );
-
   return (
     <main className="support-page">
       <section className="introduction">
@@ -35,13 +26,6 @@ export default function Component() {
               );
             })}
           </ul>
-        </div>
-      </section>
-      <section className="faq">
-        <div className="container">
-          <h2 className="heading">{content.faq.heading}</h2>
-
-          <Collapse items={items} />
         </div>
       </section>
     </main>
