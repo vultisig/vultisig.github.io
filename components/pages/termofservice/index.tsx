@@ -9,7 +9,7 @@ export default function Component() {
             <h1 className="heading">
               Terms of Service
             </h1>
-            <div  style={{ fontSize: "1rem",textAlign: "center" }}>
+            <div style={{ fontSize: "1rem", textAlign: "center" }}>
               Last modified: August 2024{" "}
             </div>
             <p>
@@ -76,28 +76,25 @@ export default function Component() {
             </p>
             <p></p>
             <ol type="i" className="Use-of-the-Service">
-              <li >
+              <li>
                 Use of the Service
                 <ol type="a">
                   <li>
-                    Eligibility to use the Service. You shall not use the
-                    Service unless you are in full compliance with these Terms
-                    and all applicable laws. You shall not use any part of the
-                    Service if you lack legal capacity to act in relation to
-                    Vultisig. Any use of or access to the Service by anyone
-                    under 18 is prohibited. Currently, we do not allow Users
-                    residing or present in the following jurisdictions to use
-                    the Service: the State of New York, the State of Washington,
-                    any jurisdiction sanctioned by the United States Treasury’s
-                    Office of Foreign Assets Control or any jurisdictions
-                    sanctioned by Australia (in particular as communicated,
-                    controlled and ad mistered by the State Secretariat for
-                    Economic Affairs) and/or by the United Nations (in
-                    particular the UN Security Council) , or any other
-                    jurisdiction that we determine to present a high risk of
-                    fraud. You shall not use the Service if you reside or are
-                    present in one of the jurisdictions listed in the previous
-                    sentence.
+                    Eligibility to use the Service.  
+                    You shall not use the Service unless you are in full compliance with these Terms and all applicable laws.  
+                    You shall not use any part of this Service if you lack legal capacity to act in relation to Vultisig. 
+                    If you are entering into these Terms for an entity, such as the company you work for, 
+                    you represent to us that you have legal authority to bind that entity. 
+                    Any use of access to the Service by anyone under 18 is prohibited.  
+                    Currently, we do not allow Users residing or present in the following jurisdictions to use the Service: 
+                    Afghanistan, Burundi, Central African Republic, Crimea Region of Ukraine, Cuba, Democratic Republic of Congo, 
+                    Eritrea, Guinea, Republic of Guinea-Bissau, Haiti, Iran,Iraq, Lebanon, Libya, Mali, Myanmar, Nicaragua, 
+                    Democratic People’s Republic of Korea, Pakistan, Somalia, Sudan, South Sudan, Syria, Venezuela, Yemen, 
+                    Zimbabwe or any other state, country or region that is included in the Sanctions Lists, any jurisdiction 
+                    sanctioned by the United States Treasury’s Office of Foreign Assets Control or any jurisdiction sanctioned 
+                    by Australia (in particular by the UN Security Council), or any other jurisdiction we 
+                    determine to present a high risk of fraud.  You shall not use the Service if you reside or 
+                    are present in one of the jurisdictions in the previous sentence.  
                     <br></br>
                     <br></br>
                   </li>
@@ -236,51 +233,54 @@ export default function Component() {
                 Transactions on the Service
                 <ol type="a">
                   <li>
-                    Digital Wallet. You may be required to create or link with
-                    the Service a digital wallet in order to utilize certain
-                    portions of the Service, including initiating and completing
-                    Transactions. WHEN YOU CREATE A NEW DIGITAL WALLET, YOU MUST
-                    BACK UP YOUR VAULT SHARES TO RETAIN ACCESS TO ANY DIGITAL
-                    ASSETS STORED IN SUCH WALLET. THIS IS NECESSARY TO RETAIN OR
-                    RECOVER ANY APPLICABLE DIGITAL ASSETS IF YOU DELETE THE
-                    Vultisig APP OR IF Vultisig CEASES OPERATION. You are solely
-                    responsible for the management of any digital wallet you
-                    control and the digital assets within such digital wallet.
-                    Vultisig may not be able to recover any digital wallet or
-                    digital asset for you in the event you lose your vault
-                    shares. You acknowledge that Vultisig will not be liable for
-                    any loss of funds or digital assets due to your loss of your
-                    vault shares.
+                    Digital Wallet.
+                    You may be required to create or link with the Service a digital wallet in order to
+                    utilize certain aspects of the service, including initiating and completing Blockchain Networks Transactions.
+                    WHEN YOU CREATE A NEW DIGITAL WALLET, YOU MUST BACK UP ALL YOUR VAULT SHARES TO RETAIN ACCESS
+                    TO ANY DIGITAL ASSETS STORED IN SUCH WALLET.
+                    THIS IS NECESSARY TO RETAIN OR RECOVER ANY APPLICABLE DIGITAL ASSETS IF YOU DELETE THE Vultisig APP OR IF
+                    Vultisig CEASES OPERATION.  You are solely responsible for the management of any digital wallet you control
+                    and the digital assets within such digital wallet.  Vultisig may not be able to recover any digital wallet or
+                    digital asset for you in the event you lose your vault shares.  You acknowledge that Vultisig will not be
+                    liable for any loss of funds or digital assets due to your loss of your vault shares.
                     <br />
                     <br />
                   </li>
                   <li>
-                    Digital Asset Prices. You acknowledge that prices for
-                    Transactions are determined by the respective blockchains on
-                    which they occur. Digital assets are experimental and risky.
-                    This information is volatile and subject to change without
-                    advance notice and instantaneously.
+                    In order to be completed, all network transactions with cryptocurrency, digital tokens or digital assets
+                    ("virtual currency") must be confirmed and recorded in the associated public blockchain.
+                    Such networks are decentralized, peer-to-peer networks supported by independent third parties,
+                    which we do not own, control, or operate. Vultisig has no control over the Blockchain Networks and,
+                    therefore, cannot and do not ensure that any transaction details that you submit via the Interface
+                    will be confirmed and processed. By using the Interface, you acknowledge and agree that the transaction
+                    details you submit may not be completed, or may be substantially delayed, by the Blockchain Networks.
+                    You understand and accept that digital assets present market volatility risk, technical software risks,
+                    regulatory risks, and cybersecurity risks. You understand that the cost and speed of a blockchain-based
+                    system is variable, that cost may increase dramatically at any time, and that cost and speed is not within
+                    the capability of our control.
                     <br></br>
                   </li>
                   <li>
-                    Transactions Generally. You acknowledge that Vultisig cannot
-                    reverse a Transaction which has been broadcast to a
-                    blockchain network and that once you initiate a Transaction,
-                    it may finalize. You acknowledge that you or Vultisig may
-                    not be able to reverse or change any Transaction denoted as
-                    complete or pending.
+                    Vultisig does not store, transfer, transmit, convert, broker, hold, escrow, mint, mine,
+                    or otherwise interact with any virtual currency, security, financial instrument,
+                    or other digital or physical asset and all the interactions are performed on the third-party protocols,
+                    subject to any associated third-party terms.
+                    Any transfer that occurs in any virtual currency occurs on the Blockchain Network and not on a
+                    network owned by Vultisig. Vultisig therefore does not guarantee that we can affect the transfer
+                    of title or right in any virtual Currency. You accept and acknowledge that Vultisig is not responsible
+                    for any errors or omissions that you make in connection with any virtual currency transaction initiated
+                    via the Interface. Vultisig strongly encourages you to review your transaction details carefully before
+                    attempting to transfer a virtual currency.
                     <br></br>
                   </li>
                   <li>
-                    Digital Assets. Vultisig does not guarantee the listing of
-                    any asset on the Service and we may add or remove digital
-                    assets to the Service in our sole discretion. We may impose
-                    Transaction or amount limits to any digital asset on our
-                    Service. You shall not attempt to use the Services to store,
-                    send, request, or receive digital assets that are not
-                    supported by Vultisig. Vultisig assumes no responsibility or
-                    liability in connection with any attempt to use the Service
-                    for digital assets that we do not support.
+                    Completion of transactions that you instruct for through the Interface also depends on the availability and operation
+                    of the Blockchain Networks.
+                    Errors or forks in the Blockchain Networks may cause transactions that you initiate through the Interface to fail.
+                    This may mean that the transaction you were originally intending to perform will no longer be available.
+                    Unfortunately, due to the decentralized nature of the Blockchain Networks,
+                    there is no one single point of failure, and so neither Vultisig nor any particular party will be responsible to you
+                    for errors or any losses that you suffer as a result.
                     <br></br>
                   </li>
                   <li>
@@ -312,18 +312,6 @@ export default function Component() {
                     damages related to an unsupported branch of a forked digital
                     asset protocol.
                     <br></br>
-                  </li>
-                  <li>
-                    Taxes. It is your sole responsibility to determine whether,
-                    and to what extent, any taxes apply to any Transaction you
-                    conduct through the Service, and to withhold, collect,
-                    report, and remit the correct amounts of taxes to the
-                    appropriate tax authorities. Your Transaction history is
-                    available in the App. You acknowledge that Vultisig will
-                    have no liability for any taxes associated with your
-                    Transactions.
-                    <br />
-                    <br />
                   </li>
                 </ol>
               </li>
@@ -900,6 +888,18 @@ export default function Component() {
                     such right or provision.
                   </li>
                   <li>
+                    Taxes. It is your sole responsibility to determine whether,
+                    and to what extent, any taxes apply to any Transaction you
+                    conduct through the Service, and to withhold, collect,
+                    report, and remit the correct amounts of taxes to the
+                    appropriate tax authorities. Your Transaction history is
+                    available in the App. You acknowledge that Vultisig will
+                    have no liability for any taxes associated with your
+                    Transactions.
+                  <br />
+                  <br />
+                  </li>
+                  <li>
                     Contact. If you have any questions regarding these Terms,
                     you may contact us at: info@vultisig.com, Cortina Ventures
                     Pty Ltd, 46 Singlefin Crescent, Bokarina, Queensland,
@@ -913,7 +913,6 @@ export default function Component() {
             <br></br>
           </>
         </div>
-
         <span className="gradient-shadow gradient-shadow-lt" />
         <span className="gradient-shadow gradient-shadow-rt" />
       </section>
