@@ -230,7 +230,7 @@ export default function Component() {
                 </ol>
               </li>
               <li>
-                Transactions on the Service
+                Blockchain Network Transactions
                 <ol type="a">
                   <li>
                     Digital Wallet.
