@@ -154,7 +154,8 @@ export default function Component() {
                     privacy policies, or other agreements with such third parties. 
                     You may be required to authenticate to or create separate accounts 
                     to use Third-Party Services on the websites or via the technology platforms of their respective providers. 
-                    You, and not Vultisig, will be responsible for any and all costs and charges associated with your use of any Third-Party Services. 
+                    You, and not Vultisig, will be responsible for any and all costs and 
+                    charges associated with your use of any Third-Party Services. 
                     Vultisig enables these Third-Party Services solely as a convenience, 
                     and the integration or inclusion of such Third-Party Services does not imply an endorsement or recommendation. 
                     Any dealings you have with third parties while using our products are between you and the third party. 
