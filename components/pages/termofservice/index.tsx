@@ -147,24 +147,21 @@ export default function Component() {
                     <br></br>
                   </li>
                   <li>
-                    Third-Party Integrations. You acknowledge that the Service
-                    is based on third-party blockchain platforms, and may
-                    contain links or integrations to third-party (i.e., not
-                    Vultisig or any of our affiliates) materials, services, or
-                    software that are not owned, controlled, and/or offered by
-                    us but by third parties, including, in particular, smart
-                    contracts (each, a “Third-Party Service”). WE DO NOT OFFER,
-                    ENDORSE, OR ASSUME ANY RESPONSIBILITY FOR ANY THIRD-PARTY
-                    SERVICE. IF YOU ACCESS AND/OR USE A THIRD-PARTY SERVICE FROM
-                    THE SERVICES OR SHARE ANY CONTENT ON OR THROUGH SUCH
-                    THIRD-PARTY SERVICE, YOU ACKNOWLEDGE THAT: YOU DO SO AT YOUR
-                    OWN RISK; THESE TERMS AND OUR PRIVACY POLICY DO NOT APPLY TO
-                    SUCH THIRD-PARTY SERVICE; YOU MAY BE REQUIRED BY SUCH
-                    THIRD-PARTY TO AGREE TO CERTAIN ADDITIONAL TERMS OR CREATE
-                    AN ACCOUNT; AND THAT CERTAIN THIRD-PARTY SERVICES MAY
-                    PUBLISH TO A PUBLIC BLOCKCHAIN INFORMATION YOU SEND TO SUCH
-                    THIRD-PARTY. You shall not hold us liable for any damages
-                    you incur related to your use of any Third-Party Service.
+                    Third-Party Integrations. Our interface may include integrations, 
+                    links, or other access to third-party services, websites, technology, 
+                    content, and resources (each a “Third-Party Service”). 
+                    Your access and use of the Third-Party Services may also be subject to additional terms and conditions, 
+                    privacy policies, or other agreements with such third parties. 
+                    You may be required to authenticate to or create separate accounts 
+                    to use Third-Party Services on the websites or via the technology platforms of their respective providers. 
+                    You, and not Vultisig, will be responsible for any and all costs and 
+                    charges associated with your use of any Third-Party Services. 
+                    Vultisig enables these Third-Party Services solely as a convenience, 
+                    and the integration or inclusion of such Third-Party Services does not imply an endorsement or recommendation. 
+                    Any dealings you have with third parties while using our products are between you and the third party. 
+                    Vultisig disclaims all liability in connection with any actions or omissions of third parties, 
+                    and will not be responsible or liable, directly or indirectly, for any damage or loss caused 
+                    or alleged to be caused by or in connection with the use of or reliance on any Third-Party Services.
                     <br></br>
                     <br></br>
                     <p>
