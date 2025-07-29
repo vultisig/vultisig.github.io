@@ -16,7 +16,7 @@
         {
           "image": "/images/download/download-app/mac-os.png",
           "alt": "Download on Github",
-          "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.21.2/VultisigApp.v1.21.2.signed.pkg",
+          "url": "https://github.com/vultisig/vultisig-ios/releases/download/v1.22.3/VultisigApp.v1.22.3.signed.pkg",
           "target": "_blank",
           "downloadLabel": "github"
         },
@@ -45,7 +45,7 @@
       "SHA":[
         {
           "icon":"/images/download/Mac-icon.svg",
-          "SHA256":"fe9a2e119c24a994138f4938ab51a8e8cdb13736ffb9c5874dc83fced3624eca"
+          "SHA256":"d656950f531ad80a201cfe61d6505bca8d14430be9b6527144becefc86422ad7"
         },
         {
           "icon":"/images/download/microsoft-icon.png",
